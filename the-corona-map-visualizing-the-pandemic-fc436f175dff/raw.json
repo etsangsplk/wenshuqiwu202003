@@ -1,0 +1,104 @@
+[{
+  "tag": "H1",
+  "text": "The Corona Map: Visualizing the Pandemic",
+  "translation": "日冕地图：可视化大流行"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*XGuHjsSa9Pq1Vyxa9FxP-A.png?q=20",
+  "caption": "thecoronamap.com",
+  "type": "image",
+  "file": "1!XGuHjsSa9Pq1Vyxa9FxP-A.png"
+}, {
+  "tag": "P",
+  "text": "The Novel Corona Virus, the Pandemic of the Century has brought hysteria all over the world. Stock markets witnessed their worst day since the 2008 crises and oil prices saw their biggest fall in 29 years.",
+  "translation": "世纪大流行的新型冠状病毒已在世界范围内引起歇斯底里。 股市见证了自2008年危机以来最糟糕的一天，而油价则创下了29年来的最大跌幅。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*kOgUu8_nZZqXYMa1RwaY7Q.png?q=20",
+  "caption": "Dow chart",
+  "type": "image",
+  "file": "1!kOgUu8_nZZqXYMa1RwaY7Q.png"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*OYztMxSoosKOtWlvBhLuJA.png?q=20",
+  "caption": "Oil Prices",
+  "type": "image",
+  "file": "1!OYztMxSoosKOtWlvBhLuJA.png"
+}, {
+  "tag": "P",
+  "text": "First of all, let us understand what is this new Corona Virus or the COVID-19. Corona isn’t a single virus, it is a family of viruses that causes diseases like flu, etc. It is the newest discovery from that family which has been named the Novel Corona Virus or the COVID-19.",
+  "translation": "首先，让我们了解什么是新的冠状病毒或COVID-19。 Corona不是单个病毒，而是导致流感等疾病的病毒家族。这是该家族的最新发现，被称为新型Corona病毒或COVID-19。"
+}, {
+  "tag": "P",
+  "text": "So how is this new Coronavirus different from the old Coronaviruses that don’t seem to hurt much? Well, the main issue is that it is new and we don’t yet have much research and/or medicine available to treat this. Another issue with this virus is that it is highly contagious.",
+  "translation": "那么，这种新的冠状病毒与似乎没有受到太大伤害的旧冠状病毒有何不同？ 好吧，主要的问题是它是新的，我们还没有足够的研究和/或药物来治疗这种情况。 该病毒的另一个问题是它具有高度传染性。"
+}, {
+  "tag": "P",
+  "text": "Around 97% of its victims survive but people with weak immune systems can’t fight it and we don’t have the medicine to kill this virus yet.",
+  "translation": "大约有97％的受害者幸存下来，但免疫系统较弱的人无法抵抗它，我们还没有杀死这种病毒的药物。"
+}, {
+  "tag": "P",
+  "text": "Scientists and researchers are working on it and soon we will have vaccinations and treatment available for this. Governments and private institutions worldwide are working to mitigate the disaster and contain the virus.",
+  "translation": "科学家和研究人员正在研究它，很快我们将为此提供疫苗和治疗。 全世界的政府和私人机构都在努力减轻灾难并控制病毒。"
+}, {
+  "tag": "H1",
+  "text": "How can GIS help?",
+  "translation": "GIS如何提供帮助？"
+}, {
+  "tag": "P",
+  "text": "“GIS provides excellent means for visualizing and analyzing epidemiological data, revealing trends, dependencies, and inter-relationships.”",
+  "translation": "“ GIS提供了出色的手段来可视化和分析流行病学数据，揭示趋势，依存关系和相互关系。”"
+}, {
+  "tag": "P",
+  "text": "To respond to the disasters we need data about them and in this age of data analytics and the tools we have available now, there is a lot that can be done. In this regard, the Johns Hopkins CSSE did great work. They have been collecting data and posting it daily on their repository. They also created a portal that shows current information.",
+  "translation": "为了应对灾难，我们需要有关灾难的数据，在当今的数据分析时代以及我们现在可以使用的工具中，可以做很多事情。 在这方面，约翰霍普金斯大学CSSE做得很好。 他们一直在收集数据并将其每天发布到其存储库中。 他们还创建了一个显示当前信息的门户。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*do16NG0BuPIrTgm_7xAFQQ.png?q=20",
+  "type": "image",
+  "file": "1!do16NG0BuPIrTgm_7xAFQQ.png"
+}, {
+  "tag": "P",
+  "text": "The above portal does a great job of providing the latest information but lacks the historical information on the map which is present in the datasets that they have provided. They do provide historic data in their charts but not on the map.",
+  "translation": "上面的门户网站在提供最新信息方面做得很好，但是缺少地图上提供的数据集中存在的历史信息。 他们确实在图表中提供了历史数据，但在地图上却没有。"
+}, {
+  "tag": "P",
+  "text": "What we are doing?",
+  "translation": "我们在做什么？"
+}, {
+  "tag": "P",
+  "text": "I believe that visualizing historic data related to this Pandemic in space would add value for the researchers and whoever wants to study more about the COVID-19. So, I and my friend decided to build a small tool: The Corona Map.",
+  "translation": "我相信，可视化与此太空大流行有关的历史数据将为研究人员以及任何想研究更多有关COVID-19的人增加价值。 因此，我和我的朋友决定建立一个小工具：Corona Map。"
+}, {
+  "tag": "P",
+  "text": "This is a free and minimalistic tool that we have developed for those interested in studying how the disease has spread and what is the status of it around the globe. It could be beneficial for travelers, doctors, researchers, NGOs, governments and anyone who wants to study and/or find out the current status of the impact of this disease.",
+  "translation": "这是我们为那些对研究疾病如何传播及其在全球的状况感兴趣的人们所开发的免费而简约的工具。 对于旅行者，医生，研究人员，非政府组织，政府以及任何想要研究和/或了解这种疾病影响的现状的人来说，这可能是有益的。"
+}, {
+  "tag": "P",
+  "text": "We have only worked on it for a week so far and we plan to add more layers of data to it in the future and will keep updating the current data every day. Right now, it shows the global stats about each day on the map, and the stats for each country for each day since the first case was reported there.",
+  "translation": "到目前为止，我们仅对其进行了一周的工作，并且我们计划在将来向其中添加更多数据层，并将继续每天更新当前数据。 现在，它在地图上显示每天的全局统计信息，以及自报告第一个病例以来每个国家/地区每天的统计信息。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*iUejN__ZaaIp_SzuOUq9Hw.png?q=20",
+  "caption": "Calendar at the bottom right allows you to check the status of Corona on any date",
+  "type": "image",
+  "file": "1!iUejN__ZaaIp_SzuOUq9Hw.png"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*R_uCk166aKTRubdSGJzNEg.jpeg?q=20",
+  "caption": "Stats of Coronavirus in China until March 09, 2020",
+  "type": "image",
+  "file": "1!R_uCk166aKTRubdSGJzNEg.jpeg"
+}, {
+  "tag": "P",
+  "text": "We are looking at more sources of data and will add them to make it more useful for researchers. If you want to do your bit and want to share data or ideas that can really help researchers and organizations fighting against the disease, please reach out to us so that we can make The Corona Map more helpful for them.",
+  "translation": "我们正在寻找更多的数据来源，并将添加它们以使其对研究人员更加有用。 如果您想尽自己的一份努力，并且希望分享可以真正帮助研究人员和组织抗击该疾病的数据或想法，请与我们联系，以便我们使《电晕地图》对他们更有帮助。"
+}, {
+  "tag": "P",
+  "text": "I am Ramiz Sami. I climb mountains, lift heavy weights and build WebGIS solutions. Feel free to get connected with me on Linkedin.",
+  "translation": "我是拉米兹·萨米（Ramiz Sami）。 我爬山，举起重物，并建立WebGIS解决方案。 随时在Linkedin上与我联系。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Ramiz Sami的文章《The Corona Map: Visualizing the Pandemic》，参考：https://towardsdatascience.com/the-corona-map-visualizing-the-pandemic-fc436f175dff)",
+  "translation": "（本文翻译自Ramiz Sami的文章，《电晕地图：可视化大流行》，参考：https：//towardsdatascience.com/the-corona-map-visualizing-the-pandemic-fc436f175dff）"
+}]

@@ -1,0 +1,190 @@
+[{
+  "tag": "H1",
+  "text": "Time to change",
+  "translation": "是时候改变了"
+}, {
+  "tag": "P",
+  "text": "I’ve demonstrated how easy it is to obtain calculations that are actually relevant to the reader. The above example is only relevant to 92% of the population, the other 8% are equally as important. The example conditions the probability of death on age, but underlying-health may be equally as important. The probability of dying given no underlying health conditions is actually 0.9%². Of course, ideally, we would have a big model taking into account all of age, underlying health conditions, and other relevant background information, but at that point, we’re entering the realms of more advanced statistics that go beyond the scope of a short article.",
+  "translation": "我已经展示了获取与读者实际相关的计算是多么容易。 上面的示例仅与92％的人口相关，其他8％同样重要。 该示例确定了随着年龄增长而死亡的可能性，但是基础健康可能同样重要。 如果没有潜在的健康状况，那么死亡的可能性实际上是0.9％²。 当然，理想情况下，我们将拥有一个考虑到所有年龄，基本健康状况以及其他相关背景信息的大模型，但是到那时，我们正在进入更高级的统计领域，而这超出了范围。 简短的文章。"
+}, {
+  "tag": "P",
+  "text": "I am fed up, frustrated and scared. Because despite understanding statistics I still see the same glaring headlines again and again. It’s time for more responsible reporting of statistics and I have some ideas for how this can happen.",
+  "translation": "我受够了，沮丧和害怕。 因为尽管了解统计数据，但我仍然一次又一次看到相同的标题。 现在该是更负责任的统计报告了，我对如何做到这一点有一些想法。"
+}, {
+  "tag": "H1",
+  "text": "A Way Forward…On Some Conditions",
+  "translation": "前进的道路……在某些情况下"
+}, {
+  "tag": "OL",
+  "texts": ["For the reader: Learn what an unconditional probability tells you. When we hear about a mortality rate of 3.4%, what we are actually being told is that of all the people who have contracted COVID-19, 3.4% of them have died (past tense). It does not mean that in a room of 100 people with covid, 3 people will die. Unconditional probabilities can tell us about the past and can tell us simple statistics that leave out important and vital information. Unconditional probabilities should never be used to make claims about the future.", "For the media: Stop reporting unconditional probabilities. Instead try: “less than 1% of those contracting COVID-19 who are under the age of 65 have died” or “less than 1% of people without underlying health conditions have died from COVID-19”. Of course, this risks separating readers by age and health, but it’s a start.", "For the media: Okay so you probably won’t stop, but if you insist on continuing to report unconditional probabilities, you must emphasise exactly what they do and what they do not represent. Emphasise the past-tense, not the future — “3.4% have died”. Emphasise a lack of knowledge — “3.4% of reported cases have died but this number depends on personal circumstances” (okay that one is less catchy but you get the idea)."],
+  "translations": ["对于读者：了解无条件概率告诉您什么。 当我们听说死亡率为3.4％时，实际上是在告诉所有感染COVID-19的人，其中3.4％死了（过去时）。 这并不意味着在有100个人的情况下，会有3个人死亡。 无条件的概率可以告诉我们过去，也可以告诉我们简单的统计信息，而忽略了重要和重要的信息。 无条件概率绝不能用于对未来进行索赔。", "对于媒体：停止报告无条件概率。 而是尝试：“在感染COVID-19的65岁以下人群中死亡的比例不到1％”或“在没有基本健康状况的人群中，只有不到1％的人群因COVID-19死亡”。 当然，这有可能按年龄和健康状况区分读者，但这是一个开始。", "对于媒体：好吧，所以您可能不会停下来，但是如果您坚持要继续报告无条件概率，则必须准确强调它们的作用和不代表的情况。 强调过去时态，而不是未来时态：“ 3.4％的人死亡”。 强调缺乏知识-“ 3.4％的已报告病例已死亡，但这一数字取决于个人情况”（好吧，虽然不那么吸引人，但您可以理解）。"]
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/40/0*Y7D17-4lI-WUdHA3?q=20",
+  "caption": "Keep washing your hands — Photo by Curology on Unsplash",
+  "type": "image",
+  "file": "0!Y7D17-4lI-WUdHA3"
+}, {
+  "tag": "H1",
+  "text": "References",
+  "translation": "参考文献"
+}, {
+  "tag": "P",
+  "text": "¹ The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team. The Epidemiological Characteristics of an Outbreak of 2019 Novel Coronavirus Diseases (COVID-19) — China, 2020[J]. China CDC Weekly, 2020, 2(8): 113–122. http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51.² https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/³ https://www.bbc.co.uk/news/health-51674743⁴ https://ourworldindata.org/age-structure",
+  "translation": "¹新型冠状病毒性肺炎紧急反应流行病学团队。 [3]邓小平，李明。2019年新型冠状病毒病（COVID-19）爆发的流行病学特征-中国，2020年[J]。 中国疾病预防控制中心周刊，2020，2（8）：113-122。 http://weekly.chinacdc.cn/zh/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51.²https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/³https： //www.bbc.co.uk/news/health-51674743⁴https://ourworldindata.org/age-structure"
+}, {
+  "tag": "H1",
+  "text": "Coronavirus and Probability — The media must learn how to report statistics now",
+  "translation": "冠状病毒和概率—媒体必须立即学习如何报告统计信息"
+}, {
+  "tag": "H2",
+  "text": "With widespread panic around COVID-19, the media must learn the difference now between two hugely different statistics.",
+  "translation": "随着围绕COVID-19的普遍恐慌，媒体现在必须了解两种截然不同的统计数据之间的区别。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*-oKQaqRvvviGDajSW4cQiQ.png?q=20",
+  "caption": "Source: https://www.bbc.co.uk/news/uk-51759602",
+  "type": "image",
+  "file": "1!-oKQaqRvvviGDajSW4cQiQ.png"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*4ac9r-IqL9lanuophta-Jg.png?q=20",
+  "caption": "Source: https://www.bbc.co.uk/news/uk-51771815",
+  "type": "image",
+  "file": "1!4ac9r-IqL9lanuophta-Jg.png"
+}, {
+  "tag": "P",
+  "text": "The phrase “underlying symptoms” crops up in almost all news stories in which someone dies from what seems a common incident. Whether it’s an allergy-sufferer, or a victim of coronavirus (‘covid’), the “underlying symptoms” phrase is used to lessen fear. Being an unfortunate combination of both a hypochondriac and a statistician, whenever I see a news article like this I immediately skim to find the relevant line and think to myself “phew, I’m okay then”. Of course this is incredibly self-centred thinking. But as long as unconditional probabilities are reported in the media, the public’s (well certainly my) sense of personal danger is heightened.",
+  "translation": "在几乎所有新闻报道中都会出现“潜在症状”这一短语，其中有人死于看起来很常见的事件。 不管是过敏患者还是冠状病毒（“ covid”）的受害者，“潜在症状”都是用来减轻恐惧的。 作为下位症和统计学家的不幸组合，每当我看到这样的新闻文章时，我都会立即浏览并找到相关内容，然后对自己说：“ phe，那我可以。” 当然，这是难以置信的以自我为中心的思维。 但是，只要媒体报道了无条件的概率，公众（当然是我）的人身危险感就会增强。"
+}, {
+  "tag": "H1",
+  "text": "Unconditional vs. Conditional Probability",
+  "translation": "无条件与条件概率"
+}, {
+  "tag": "P",
+  "text": "To better explain the problem I’m talking about, we’re going to have to look at the stats a little bit, I’ll keep it as basic as possible here, later we will go into a bit more detail.",
+  "translation": "为了更好地解释我正在谈论的问题，我们将不得不稍微看一下统计数据，在这里我将其保持为尽可能基本，稍后我们将进行更详细的介绍。"
+}, {
+  "tag": "P",
+  "text": "Let’s say we want to predict the probability of a die landing on the number 6 when thrown, we want to know:"
+}, {
+  "tag": "P",
+  "text": "P(Die = 6)",
+  "translation": "P（模具= 6）"
+}, {
+  "tag": "P",
+  "text": "Which is read as “the probability that a die equals 6”. Now say we want to predict the probability of a die landing on the number 6, given that we know (for whatever reason) that it must land on a number greater than 3. Then we want to know:",
+  "translation": "读作“骰子等于6的概率”。 现在，假设我们知道（无论出于何种原因）骰子必须降落在大于3的数字上，我们要预测骰子降落在6上的概率。那么我们想知道："
+}, {
+  "tag": "P",
+  "text": "P(Die = 6 | Die > 3)",
+  "translation": "P（模具= 6 |模具> 3）"
+}, {
+  "tag": "P",
+  "text": "Where the vertical line “|”, means “given that”.",
+  "translation": "垂直线“ |”表示“给定”。"
+}, {
+  "tag": "P",
+  "text": "The difference between these two equations is that the first is unconditional — we want to know the probability of an event occurring given no other information — and the second is conditional — we want to know the probability of an event occuring and conditioned on (or “given”) some other condition or event.",
+  "translation": "这两个方程式的区别在于，第一个方程式是无条件的-我们想在没有其他信息的情况下知道事件发生的可能性-第二个方程式是有条件的-我们想知道事件发生的可能性并取决于（或“ 给定”）其他条件或事件。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*T1dzR4sLxpzek6gj?q=20",
+  "caption": "Photo by Mike Szczepanski on Unsplash",
+  "type": "image",
+  "file": "0!T1dzR4sLxpzek6gj"
+}, {
+  "tag": "H1",
+  "text": "Bayes’ Theorem",
+  "translation": "贝叶斯定理"
+}, {
+  "tag": "P",
+  "text": "Where this really makes a difference is when we start talking about Bayes’ Theorem (or Bayes’ rule). Be warned: here lies maths and stats, feel free to jump ahead to “Time to Change” if you’d rather never look at an equation again.",
+  "translation": "当我们开始谈论贝叶斯定理（或贝叶斯定律）时，这才真正与众不同。 请注意：这里有数学和统计数据，如果您不想再看方程式，可以随时跳到“改变的时间”。"
+}, {
+  "tag": "P",
+  "text": "Bayes’ Theorem is used to calculate or update a conditional probability based on other information available. The equation is:",
+  "translation": "贝叶斯定理用于根据其他可用信息来计算或更新条件概率。 等式为："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*lEM7S0lL5tw-4eN8SaSWjA.png?q=20",
+  "caption": "Bayes’ Theorem",
+  "type": "image",
+  "file": "1!lEM7S0lL5tw-4eN8SaSWjA.png"
+}, {
+  "tag": "P",
+  "text": "In words: the probability of an event A occurring, given some event B, is equal to the probability of event B occurring given event A, multiplied by the probability of event A, and divided by the probability of event B. A bit of a mouthful, so let’s instead look at an example.",
+  "translation": "换句话说：给定某个事件B，事件A发生的概率等于给定事件A发生事件B的概率，再乘以事件A的概率，再除以事件B的概率。 一口，所以让我们来看一个例子。"
+}, {
+  "tag": "P",
+  "text": "We will call A the event: death by coronavirus (see where I’m going with this?), and B the event: being under the age of 65. Now we have:",
+  "translation": "我们将事件A称为：冠状病毒死亡（请问我要去哪儿吗？），事件B称为：未满65岁。"
+}, {
+  "tag": "P",
+  "text": "P(Dying from covid given being under the age of 65) = P(Being under the age of 65 given died from covid) × P(Dying from covid) / P(Being under the age of 65)",
+  "translation": "P（死于covid，未满65岁）= P（死于65岁，死于covid）×P（死于covid）/ P（未满65岁）"
+}, {
+  "tag": "P",
+  "text": "And with some algebra to tidy it up:",
+  "translation": "并用一些代数对其进行整理："
+}, {
+  "tag": "P",
+  "text": "P(C|A < 65) = P(A<65|C) × P(C) / P(A< 65)",
+  "translation": "P（C | A <65）= P（A <65 | C）×P（C）/ P（A <65）"
+}, {
+  "tag": "P",
+  "text": "where we read C as dying from covid, and A being someone’s age.",
+  "translation": "在这里，我们将C视为死于covid，而A则为某人的年龄。"
+}, {
+  "tag": "P",
+  "text": "So given the stats that are being thrown around in the news, let’s see if we can find a more relevant risk of dying. We need to find:",
+  "translation": "因此，考虑到新闻中发布的统计数据，让我们看看是否可以找到更相关的死亡风险。 我们需要找到："
+}, {
+  "tag": "UL",
+  "texts": ["P(A<65|C) — The probability of being under 65-years-old given dying from covid.", "P(C) — The (unconditional) probability of dying from covid.", "P(A<65) — The (unconditional) probability of being under 65."],
+  "translations": ["P（A <65 | C）-死于covid的不到65岁的概率。", "P（C）—死于covid的（无条件）概率。", "P（A <65）—低于65的（无条件）概率。"]
+}, {
+  "tag": "P",
+  "text": "Warning: My numbers aren’t going to be too exact here.",
+  "translation": "警告：我的电话号码在这里不会太准确。"
+}, {
+  "tag": "P",
+  "text": "We know from studies and reports that the current estimated mortality rate is 3.4%³, so",
+  "translation": "从研究和报告中我们知道，目前的估计死亡率为3.4％³，因此"
+}, {
+  "tag": "P",
+  "text": "P(C) = 0.034",
+  "translation": "P（碳）= 0.034"
+}, {
+  "tag": "P",
+  "text": "According to one website⁴, 8% of the population is over 65, which means",
+  "translation": "根据一个网站的说法⁴，人口的8％是65岁以上，这意味着"
+}, {
+  "tag": "P",
+  "text": "P(A < 65) = 0.92",
+  "translation": "P（A <65）= 0.92"
+}, {
+  "tag": "P",
+  "text": "Now the harder part is to work out the probability of being under 65, given death from covid. At this point, we have to turn to the raw data. The data cannot tell us the exact mortality rate, P(C|A<65), because we don’t know who does and doesn’t have the virus, i.e. there could be many unreported cases. (This is also a problem with P(C) but I’m ignoring that for the sake of this example). However, the data can tell us exactly P(A<65|C). We will use data from a recent study from the Chinese Center for Disease Control and Prevention¹. According to this study,",
+  "translation": "现在最困难的部分是计算由于covid死亡而低于65岁的概率。 在这一点上，我们不得不转向原始数据。 数据无法告诉我们确切的死亡率P（C | A <65），因为我们不知道谁感染和不感染该病毒，即可能有许多未报告的病例。 （这也是P（C）的问题，但出于本示例的考虑，我将其忽略了）。 但是，数据可以准确地告诉我们P（A <65 | C）。 我们将使用中国疾病预防控制中心¹的最新研究数据。 根据这项研究，"
+}, {
+  "tag": "P",
+  "text": "P(A < 65|C) = 0.19",
+  "translation": "P（A <65 | C）= 0.19"
+}, {
+  "tag": "P",
+  "text": "This figure is actually for P(A < 60|C), but it’s good enough for us. So putting this all together we have",
+  "translation": "这个数字实际上是针对P（A <60 | C），但对我们来说足够了。 所以把所有这些放在一起"
+}, {
+  "tag": "P",
+  "text": "P(C|A<65) = 0.19 × 0.034/0.92 = 0.007 = 0.7%.",
+  "translation": "P（C | A <65）= 0.19×0.034 / 0.92 = 0.007 = 0.7％。"
+}, {
+  "tag": "P",
+  "text": "So, if you’re under 65 the probability of dying from COVID-19 is actually only around 0.7% by our calculations (which are in line with more accurate estimates²).",
+  "translation": "因此，如果您的年龄在65岁以下，那么根据我们的计算，死于COVID-19的可能性实际上仅约为0.7％（与更准确的估算值相符²）。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Raphael Sonabend的文章《Coronavirus and Probability — The media must learn how to report statistics now》，参考：https://towardsdatascience.com/coronovarius-and-probability-the-media-must-learn-how-to-report-statistics-now-973ed2d52959)",
+  "translation": "（本文翻译自Raphael Sonabend的文章《冠状病毒与概率-媒体必须立即学习如何报告统计信息》，参考：https：//towardsdatascience.com/coronovarius-and-probability-the-media-must-learn-how- 现在要报告统计信息973ed2d52959）"
+}]

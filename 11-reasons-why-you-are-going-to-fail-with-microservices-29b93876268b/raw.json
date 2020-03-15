@@ -1,0 +1,276 @@
+[{
+  "tag": "H1",
+  "text": "11 Reasons Why You Are Going To Fail With Microservices",
+  "translation": "使用微服务失败的11个原因"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*_ZC-n_e2tLqEXXVn9UAohg.jpeg?q=20",
+  "type": "image",
+  "file": "1!_ZC-n_e2tLqEXXVn9UAohg.jpeg"
+}, {
+  "tag": "P",
+  "text": "Over the last couple of years I have done architecture review of multiple product teams that are on their digital transformation journey. Most of the teams were building products following Microservices architecture. They had all the right intentions to use Microservices based architecture — faster development, better scalability, smaller independent teams, independent deployment, using the right technology for the job, etc. But, most often I found teams struggling with Microservices. They failed to leverage the benefits of Microservices to their advantage. In this post, I will share reasons why I think teams were struggling with Microservices.",
+  "translation": "在过去的几年中，我已经完成了对处于数字化转型过程中的多个产品团队的架构审查。 大多数团队都在按照微服务架构构建产品。 他们有使用基于微服务的体系结构的所有正确意图-更快的开发，更好的可伸缩性，更小的独立团队，独立的部署，使用正确的技术来完成工作，等等。但是，我经常发现团队在微服务方面苦苦挣扎。 他们未能充分利用微服务的优势。 在这篇文章中，我将分享我认为团队在微服务方面苦苦挣扎的原因。"
+}, {
+  "tag": "P",
+  "text": "For people new to Microservices I recommend reading Martin Fowler’s article on Microservices. I like the Microservices architecture definition mentioned in the article.",
+  "translation": "对于微服务新手，我建议阅读Martin Fowler的微服务文章。 我喜欢本文中提到的微服务架构定义。"
+}, {
+  "tag": "P",
+  "text": "The microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.",
+  "translation": "微服务架构风格是一种将单个应用程序开发为一组小型服务的方法，每个小型服务都在自己的进程中运行并与轻量级机制（通常是HTTP资源API）进行通信。 这些服务围绕业务功能构建，并且可以由全自动部署机制独立部署。 这些服务的集中管理几乎没有，可以用不同的编程语言编写并使用不同的数据存储技术。"
+}, {
+  "tag": "H1",
+  "text": "Reason 1: Management underestimate complexity of developing Microservices",
+  "translation": "原因1：管理层低估了开发微服务的复杂性"
+}, {
+  "tag": "P",
+  "text": "I have worked with multiple customers who are very bullish on Microservices. For them Microservices is the silver bullet solution to all their problems. In my discussions I found that most teams and their management underestimate the complexity of Microservices development.",
+  "translation": "我曾与多个对微服务非常看好的客户一起工作。 对他们来说，微服务是解决所有问题的灵丹妙药。 在讨论中，我发现大多数团队及其管理层低估了微服务开发的复杂性。"
+}, {
+  "tag": "P",
+  "text": "To develop Microservices developers need a productive local environment setup.",
+  "translation": "要开发微服务，开发人员需要高效的本地环境设置。"
+}, {
+  "tag": "P",
+  "text": "As services in your system start to increase it becomes difficult to run the subset of the application on a single machine. This especially happens when you are building applications with languages that consume relatively more memory like Java.",
+  "translation": "随着系统中服务的增加，变得越来越难在一台计算机上运行应用程序的子集。 当您使用消耗相对较多内存的语言（例如Java）构建应用程序时，尤其会发生这种情况。"
+}, {
+  "tag": "P",
+  "text": "Below are the main points related to local development setup.",
+  "translation": "以下是与本地开发设置有关的要点。"
+}, {
+  "tag": "OL",
+  "texts": ["The first important aspect of local development is a good development machine. I find it hard that most organisations want to use all the latest and greatest technologies but they don’t want to replace the poor Windows development machine. Developers are limited by their development machines. I have seen developers using VDI images or machines with poor configuration to build Microservices based systems. This reduces their productivity and they fail to apply themselves completely. A side effect of using a poor development machine is that developers don’t get quick feedback. If you know you have to wait for minutes to run your integration test suite then you will rather not write more of them and increase your pain. Poor development machines promotes bad development practices.", "Once you have got your developers reasonable machines to work. The next thing is to ensure all services use a build tool. You should be able to build the entire application on a new machine without much configuration. In my experience even with Microservices it helps to use a root build script that can build the entire application.", "The next important point is to enable developers to run parts of the application on their system with ease. You should use multiple docker-compose files to spin up different services with all the ports and volume configured.", "Next, if you are using a container orchestration tool like Kubernetes then you should invest in tools like Telepresence that makes it easy to debug applications in Kubernetes cluster."],
+  "translations": ["本地开发的第一个重要方面是好的开发机器。 我发现大多数组织都很难使用所有最新和最先进的技术，但是他们不想替换性能低下的Windows开发机器。 开发人员受其开发机器的限制。 我已经看到开发人员使用VDI映像或配置较差的机器来构建基于微服务的系统。 这降低了他们的生产力，他们无法完全应用自己。 使用劣质的开发机器的副作用是，开发人员无法获得快速反馈。 如果您知道必须等待几分钟才能运行集成测试套件，那么您宁愿不用编写更多内容也不会增加工作量。 不良的开发机器会导致不良的开发实践。", "一旦有了您的开发人员，合理的机器就可以工作。 接下来的事情是确保所有服务都使用构建工具。 您应该能够在无需太多配置的情况下在一台新计算机上构建整个应用程序。 以我在微服务方面的经验，即使使用根构建脚本也可以构建整个应用程序，这很有帮助。", "下一个重点是使开发人员能够轻松地在系统上运行应用程序的某些部分。 您应该使用多个docker-compose文件来启动配置了所有端口和卷的不同服务。", "接下来，如果您使用的是Kubernetes之类的容器编排工具，则应该投资于Telepresence之类的工具，该工具可以轻松调试Kubernetes集群中的应用程序。"]
+}, {
+  "tag": "P",
+  "text": "If an organization doesn’t understand the Microservices development complexity then team velocity will go down over time.",
+  "translation": "如果组织不了解微服务的开发复杂性，那么团队速度会随着时间的推移而下降。"
+}, {
+  "tag": "H1",
+  "text": "Reason 2: No process to update libraries and tools to the latest versions",
+  "translation": "原因2：没有将库和工具更新到最新版本的过程"
+}, {
+  "tag": "P",
+  "text": "In my reviews I found that a new platform has already become a legacy. Teams were not ensuring that dependencies are kept up to date or tools like databases are on the latest version. So, the modernisation effort that started two years back has months of technical debt today.",
+  "translation": "在我的评论中，我发现新平台已经成为历史。 团队无法确保依赖关系保持最新状态，或者数据库等工具是否为最新版本。 因此，两年前开始的现代化工作如今已经有数月的技术债务。"
+}, {
+  "tag": "P",
+  "text": "Many teams a few years back started using the Spring Cloud Netflix OSS project for Microservices. They are using container orchestration tools like Kubernetes but because they started with Netflix OSS they are not using all the features offered by Kubernetes. They are still using Eureka as the service discovery when Kubernetes comes inbuilt with service discovery. Also, with service mesh like Istio you can get rid of most of what Netflix OSS offers. This helps reduce complexity and move a lot of cross cutting concerns to the platform.",
+  "translation": "几年前，许多团队开始将Spring Cloud Netflix OSS项目用于微服务。 他们使用的是Kubernetes之类的容器编排工具，但由于它们是从Netflix OSS开始的，因此并未使用Kubernetes提供的所有功能。 当Kubernetes内置服务发现时，他们仍将Eureka用作服务发现。 此外，借助Istio这样的服务网格，您可以摆脱Netflix OSS提供的大多数功能。 这有助于降低复杂性，并将很多交叉问题转移到平台上。"
+}, {
+  "tag": "P",
+  "text": "Another point to keep in mind is to keep dependency versions in sync for all the services. I was helping a client recently that used Spring Boot for building Microservices. They had built more than 20 Spring Boot services in the last two years. In their environment they were using Spring Boot versions ranging from 1.5 to 2.1. This means when someone sets up their machine they have to download multiple versions of Spring Boot. Also, they are missing many improvements made in Spring Boot since 1.5.",
+  "translation": "要记住的另一点是，要使所有服务的依赖项版本保持同步。 我最近在帮助一个使用Spring Boot构建微服务的客户。 在过去的两年中，他们已经构建了20多个Spring Boot服务。 在他们的环境中，他们使用的Spring Boot版本范围从1.5到2.1。 这意味着当有人设置他们的机器时，他们必须下载多个版本的Spring Boot。 此外，他们缺少自1.5以来在Spring Boot中所做的许多改进。"
+}, {
+  "tag": "P",
+  "text": "Our recommendation is that organization should create technical debt items for these upgrades in their backlog. These technical debt items should be discussed as part of the architecture board meetings and resolved periodically. In my last project we setup one week sprint every three months to update all dependencies to the latest version.",
+  "translation": "我们的建议是组织应在积压的订单中为这些升级创建技术债务项目。 这些技术债务项目应在架构委员会会议上进行讨论并定期解决。 在我的上一个项目中，我们每三个月设置一个星期的冲刺，以将所有依赖项更新到最新版本。"
+}, {
+  "tag": "P",
+  "text": "Also, teams should invest time in upgrading tools like databases, messaging queues, and caches to the latest version.",
+  "translation": "此外，团队应该花时间在升级工具上，例如数据库，消息队列和缓存，以升级到最新版本。"
+}, {
+  "tag": "H1",
+  "text": "Reason 3: Use of shared services for local development",
+  "translation": "原因3：将共享服务用于本地发展"
+}, {
+  "tag": "P",
+  "text": "Because of the poor local development most teams start relying on a shared environment for key services. The first thing that goes out of the developer machine is the database. Most young developers do not realise that shared database based development is evil. Following are the main issues that I have seen with the shared database:",
+  "translation": "由于本地发展不佳，大多数团队开始依靠共享环境提供关键服务。 开发人员机器中的第一件事就是数据库。 大多数年轻的开发人员都没有意识到基于共享数据库的开发是邪恶的。 以下是我在共享数据库中遇到的主要问题："
+}, {
+  "tag": "OL",
+  "texts": ["Team members have to set up a social contract of working to avoid the last writer wins problem. A developer can wipe out data written by another developer for their work. This way of working is painful and failure prone. Sooner or later this bites the team.", "Developers fear experimentation as their work can impact some other team members. We all know that the better way to learn is experimentation and quick feedback. With shared database experimentation goes out of the door. We need experimentation to come up with database schema and to do tasks like performance tuning.", "Another side effect is that it becomes difficult to test changes in isolation. Your integration tests become flaky. Thus further reducing development velocity.", "Shared database has to be treated like a pet because you don’t want it to have an inconsistent and unpredictable state. You might have a developer that wants to test the edge case when a table is empty but others need a table to have records.", "Only shared databases have all the data that is required for the system to work. Team members over time lose the traceability of the changes so no one knows how they replicate the same set up on their machine. The only way is to take the complete database dump and work with it.", "Difficult to work when you are not connected to the network. This typically happens when you have a long commute or you are on a flight."],
+  "translations": ["团队成员必须建立工作的社会契约，以避免最后的作家胜出问题。 开发人员可以清除另一位开发人员为其工作编写的数据。 这种工作方式既痛苦又容易失败。 迟早这会咬伤团队。", "开发人员担心实验会影响他们的其他团队成员。 我们都知道，更好的学习方法是实验和快速反馈。 有了共享数据库，就可以进行实验了。 我们需要进行实验以提出数据库架构并执行性能调整之类的任务。", "另一个副作用是很难单独测试更改。 您的集成测试变得不稳定。 从而进一步降低了显影速度。", "共享数据库必须像宠物一样对待，因为您不希望共享数据库的状态不一致且不可预测。 您可能有一个开发人员想要在表为空但其他人需要表具有记录的情况下测试边缘情况。", "仅共享数据库具有系统正常工作所需的所有数据。 随着时间的流逝，团队成员失去了更改的可追溯性，因此没人知道他们如何复制他们计算机上相同的设置。 唯一的方法是获取完整的数据库转储并使用它。", "未连接到网络时很难工作。 通勤时间长或乘飞机时，通常会发生这种情况。"]
+}, {
+  "tag": "P",
+  "text": "Database is just one example of a shared service but it can also be messaging queue, centralized cache like Redis or any other services that a service can mutate.",
+  "translation": "数据库只是共享服务的一个示例，但它也可以是消息传递队列，像Redis这样的集中式缓存或服务可以改变的任何其他服务。"
+}, {
+  "tag": "P",
+  "text": "The best way to solve this is to make it easy for developers to run databases on their machine ( as docker container) and invest in creating SQL scripts to setup schema and initial master data. These SQL scripts should be kept in version control and maintained just like any other piece of code.",
+  "translation": "解决此问题的最佳方法是使开发人员可以轻松地在其计算机上运行数据库（作为docker容器），并投资创建SQL脚本来设置架构和初始主数据。 这些SQL脚本应保留在版本控制中，并像其他任何代码一样进行维护。"
+}, {
+  "tag": "H1",
+  "text": "Reason 4: Lack of visibility in their version control hosting platform",
+  "translation": "原因4：版本控制托管平台缺乏可见性"
+}, {
+  "tag": "P",
+  "text": "I was working with a client that had more than 1000 repositories in their version control system. They were using the Gitlab version control platform. They had 5 products and each product was made up of multiple Microservices. The first question I asked them was to help us understand which all services and their respective code repositories were part of product A. Their chief architect had to spent a day figuring out all the repositories that made the product A. After spend a day still she was not sure if she has covered all the services.",
+  "translation": "我正在与一个在其版本控制系统中具有1000多个存储库的客户端一起工作。 他们正在使用Gitlab版本控制平台。 他们有5个产品，每个产品都由多个微服务组成。 我问他们的第一个问题是帮助我们了解哪些服务及其各自的代码存储库是产品A的一部分。他们的首席架构师不得不花一天的时间弄清楚构成产品A的所有存储库。 不知道她是否涵盖了所有服务。"
+}, {
+  "tag": "P",
+  "text": "The best way to solve this is to group your Microservices in some way from the start so that you always have visibility on your product ecosystem. Gitlab gives a way to create a group and then create project repositories inside it. Github does not have group functionality so you can either use topics or naming conventions to achieve it.",
+  "translation": "解决此问题的最佳方法是从一开始就以某种方式对微服务进行分组，以使您始终对产品生态系统具有可见性。 Gitlab提供了一种创建组，然后在其中创建项目存储库的方法。 Github没有组功能，因此您可以使用主题或命名约定来实现它。"
+}, {
+  "tag": "P",
+  "text": "I personally prefer mono repos as I find them really convenient. Most developers that I meet consider it as an anti-pattern. I agree with Dan Lua post where he mentioned following benefits of mono repo",
+  "translation": "我个人更喜欢mono repos，因为我发现它们真的很方便。 我遇到的大多数开发人员都将其视为反模式。 我同意Dan Lua的帖子，他在文章中提到了mono repo的以下好处"
+}, {
+  "tag": "P",
+  "text": "* Simplified organization",
+  "translation": "*简化的组织"
+}, {
+  "tag": "P",
+  "text": "* Simplified dependencies",
+  "translation": "*简化的依赖关系"
+}, {
+  "tag": "P",
+  "text": "* Tooling",
+  "translation": "*工具"
+}, {
+  "tag": "P",
+  "text": "* Cross project change",
+  "translation": "*跨项目变更"
+}, {
+  "tag": "H1",
+  "text": "Reason 5: No clear definition of a service",
+  "translation": "原因5：没有明确的服务定义"
+}, {
+  "tag": "P",
+  "text": "Most teams are not aware of what should be considered a service. There is a lot of confusion and fud around what actually constitutes a single Microservices. Let’s take an example that your application has a plugin-like architecture where you will be integrating with multiple third-party services. Should each integration be a Microservice? I have seen multiple teams going the path of creating one Microservice per integration. This becomes unmanageable very soon as the number of integrations rises. These services typically are too small that they running them as a separate process add more overhead.",
+  "translation": "大多数团队都不知道应该将什么视为服务。 关于实际上构成单个微服务的东西有很多困惑和困惑。 让我们举一个例子，您的应用程序具有类似插件的架构，您将在其中与多个第三方服务集成。 每个集成都应该是微服务吗？ 我已经看到多个团队正在为每个集成创建一个微服务。 随着集成数量的增加，这很快变得难以管理。 这些服务通常太小，以至于它们作为单独的进程运行会增加更多的开销。"
+}, {
+  "tag": "P",
+  "text": "I think it is better to have few large services than to have too many small services. I will start by creating a service that models an entire department within a business organization. This is in accordance with DDD as well. I break a domain into subdomains and bounded contexts. A bounded context represents a department within a company such as finance and marketing. You might think that this could lead to large Microservices and you will be right. But, in my experience it is always easier to refactor a monolithic to Microservices than doing vice-versa. As you gain more knowledge you can move towards fine-grained microservices that represent smaller concerns. You can apply Single Responsibility Principle to understand if your Microservice is becoming too big and doing too many things. You can then break it down into smaller independent services. No service should directly talk to the database of another service. They should only communicate through the published contracts. You can read more about decompose by subdomain pattern mentioned on Microservices.io website.",
+  "translation": "我认为拥有少量大型服务总比拥有太多小型服务好。我将首先创建一个对业务组织中整个部门建模的服务。这也符合DDD。我将一个域分为子域和有界上下文。有界上下文表示公司内部的部门，例如财务和市场营销。您可能认为这可能会导致大型微服务，这是正确的。但是，以我的经验来看，将单片重构为微服务总是比反之容易。随着您获得更多的知识，您可以转向代表较小关注点的细粒度微服务。您可以应用“单一责任原则”来了解您的微服务是否变得太大而做太多的事情。然后，您可以将其分解为较小的独立服务。任何服务都不应直接与另一个服务的数据库对话。他们只能通过已发布的合同进行沟通。您可以阅读Microservices.io网站上提到的有关按子域模式分解的更多信息。"
+}, {
+  "tag": "P",
+  "text": "I also follow the advice mentioned in the backendlore document. This advice can help limit service to service communication which is the number one reason for low performance in Microservice based systems.",
+  "translation": "我也遵循后端文档中提到的建议。 该建议可以帮助限制服务之间的通信，这是基于微服务的系统性能低下的首要原因。"
+}, {
+  "tag": "P",
+  "text": "If two pieces of information are dependent on each other, they should belong to a single server. In other words, the natural boundaries for a service should be the natural boundaries of its data.",
+  "translation": "如果两条信息相互依赖，则它们应属于一台服务器。 换句话说，服务的自然边界应该是其数据的自然边界。"
+}, {
+  "tag": "H1",
+  "text": "Reason 6: No clear strategy on code reuse",
+  "translation": "原因6：没有明确的代码重用策略"
+}, {
+  "tag": "P",
+  "text": "I was working with a client that had copied four Java files related to a specific concern in all their Java based Microservices. So, if a bug is found in that code based it needs to be applied everywhere. We all know under time pressure we will miss out applying our change to one or more services. This will waste more time and increase frustration.",
+  "translation": "我正在与一个客户一起工作，该客户已在其所有基于Java的微服务中复制了四个与特定问题相关的Java文件。 因此，如果在该代码中发现错误，则需要将其应用到所有地方。 我们都知道，在时间压力下，我们会错过将更改应用于一项或多项服务的机会。 这将浪费更多时间并增加挫败感。"
+}, {
+  "tag": "P",
+  "text": "It is not that development teams don’t know the right thing. But, the way organisations are structured people always default to easy and error-prone way of doing things.",
+  "translation": "开发团队并不了解正确的事情。 但是，组织的结构化方式人们总是默认使用简单且容易出错的做事方式。"
+}, {
+  "tag": "P",
+  "text": "The right way is to use an artifact manager like Bintray or Nexus and publish dependencies there. Then, each Microservice should depend on that library. You need to build tooling so that when a new version of library is published all Microservices should be updated and redeployed.",
+  "translation": "正确的方法是使用工件管理器（如Bintray或Nexus）并在其中发布依赖项。 然后，每个微服务都应依赖该库。 您需要构建工具，以便在发布新版本的库时，应更新并重新部署所有微服务。"
+}, {
+  "tag": "P",
+  "text": "Using Microservices does not mean you should not use the best practices that have worked for us so far. You need to invest in tooling to make it easy to upgrade Microservices so that a human does not have to do this.",
+  "translation": "使用微服务并不意味着您不应使用迄今为止对我们有用的最佳实践。 您需要在工具上进行投资，以使其易于升级微服务，从而使人类不必这样做。"
+}, {
+  "tag": "P",
+  "text": "Using Microservices without proper tooling and automation is a recipe for disaster.",
+  "translation": "在没有适当工具和自动化的情况下使用微服务是灾难的根源。"
+}, {
+  "tag": "H1",
+  "text": "Reason 7: Polyglot programming",
+  "translation": "原因7：多种语言编程"
+}, {
+  "tag": "P",
+  "text": "I find teams using multiple programming languages, multiple databases, multiple caches in the name of best tool for the job. This all works in the initial phase of the project but as your product is in production these choices start to show their real colour. Reasons like we were building Java Spring Boot applications but we realised Java consumes more memory and performance was poor so we decided to switch to Node.js. In my last assignment, I explained to the team that their reasoning is weak.",
+  "translation": "我找到了使用多种编程语言，多个数据库，多个缓存的团队，这是工作的最佳工具。 所有这些都在项目的初始阶段起作用，但是当您的产品投入生产时，这些选择就开始显示出它们的真实色彩。 诸如我们在构建Java Spring Boot应用程序之类的原因，但我们意识到Java占用了更多内存，并且性能很差，因此我们决定切换到Node.js。 在上一个任务中，我向团队解释说他们的推理能力很弱。"
+}, {
+  "tag": "OL",
+  "texts": ["Node.js has better performance than Java. Node.js typically performs better if you have workload that is IO based. Java beats node.js on any compute intensive workload. You can have better performance with Java for IO workloads by using reactive paradigm. Spring Boot Reactor performs equivalent to Node.js for IO workloads.", "Node.js consume less memory than Java. This is partially true as Node.js application typically use less memory than Java. Java Spring Boot applications are not as bad as most people think. I ran a load test on one of the Spring Boot Java Microservice and memory consumption remained less than 1 GB. You can optimise Java memory utilisation by OpenJ9 JVM, limiting dependencies on your class path, and by tuning default JVM parameters. Also, there are new alternatives to Spring Boot in Java like Micronaut and Quarkus that consumes memory equivalent to Node.js.", "Node.js is more productive than Java. This depends on the developer writing code. Java with static typing and static analysis tools can help find problems early in the development lifecycle."],
+  "translations": ["Node.js的性能优于Java。 如果您有基于IO的工作负载，则Node.js通常会表现更好。 Java在任何计算密集型工作负载上均胜过node.js。 通过使用响应式范例，Java for IO工作负载可以具有更好的性能。 Spring Boot Reactor在IO工作负载方面的性能与Node.js相当。", "Node.js消耗的内存少于Java。 这部分是正确的，因为Node.js应用程序通常使用的内存少于Java。 Java Spring Boot应用程序并不像大多数人想象的那样糟糕。 我在其中一个Spring Boot Java Microservice上进行了负载测试，并且内存消耗仍然少于1 GB。 您可以通过OpenJ9 JVM，限制对类路径的依赖性以及通过调整默认JVM参数来优化Java内存利用率。 另外，Java中的Spring Boot替代品还有Micronaut和Quarkus等，它们消耗的内存等于Node.js。", "Node.js比Java更高效。 这取决于开发人员编写代码。 带有静态类型和静态分析工具的Java可以帮助在开发生命周期的早期发现问题。"]
+}, {
+  "tag": "P",
+  "text": "Most of the time it all depends on the context. If your developers lack maturity you will develop poor products irrespective of the programming language you use.",
+  "translation": "大多数时候，这全都取决于上下文。 如果您的开发人员不成熟，则无论使用哪种编程语言，您都将开发出不良的产品。"
+}, {
+  "tag": "P",
+  "text": "I recommend that an organisation publishes a list of languages that teams can use. I think 2–3 is a good number. Also, list down reasons why one language should be used over the other.",
+  "translation": "我建议组织发布团队可以使用的语言列表。 我认为2–3是个好数字。 另外，列出为什么应使用一种语言代替另一种语言的原因。"
+}, {
+  "tag": "P",
+  "text": "There are multiple reasons you should think before you choose a language:",
+  "translation": "选择语言之前，应考虑以下多种原因："
+}, {
+  "tag": "OL",
+  "texts": ["How easy is it to find mature enterprise software developers easily?", "How easy is it to retrain developers to new technology? We found Java developers can relatively easily learn Golang.", "How easy can developers outside the initial team can contribute, transfer, and maintain code written by others?", "How mature is the ecosystem in terms of tooling and libraries?"],
+  "translations": ["轻松找到成熟的企业软件开发人员有多容易？", "重新培训开发人员使用新技术有多容易？ 我们发现Java开发人员可以相对轻松地学习Golang。", "最初团队之外的开发人员可以多么容易地贡献，传输和维护他人编写的代码？", "就工具和库而言，生态系统的成熟程度如何？"]
+}, {
+  "tag": "P",
+  "text": "This is not just limited to programming languages. This applies to databases as well. If you already have MongoDB in your system then why do you want to use ArangoDB in your ecosystem? They both are primarily document databases.",
+  "translation": "这不仅限于编程语言。 这也适用于数据库。 如果您的系统中已经有MongoDB，那么为什么要在生态系统中使用ArangoDB？ 它们都主要是文档数据库。"
+}, {
+  "tag": "P",
+  "text": "Always think about the maintenance and operation aspect of using multiple technologies.",
+  "translation": "始终考虑使用多种技术的维护和操作方面。"
+}, {
+  "tag": "H1",
+  "text": "Reason 8: People dependency",
+  "translation": "原因8：人们依赖性"
+}, {
+  "tag": "P",
+  "text": "This is not specific to Microservices but it becomes more rampant in Microservices ecosystem. The reason is that most teams are focussed on their specific services so they don’t understand the complete ecosystem. In my work with different customers, I found that there are only a bunch of architects who know the overall picture. But, the problem with these architects is that they are not active in day to day activities so their influence on development is limited.",
+  "translation": "这并非特定于微服务，但在微服务生态系统中变得更加普遍。 原因是大多数团队专注于他们的特定服务，因此他们不了解完整的生态系统。 在与不同客户的合作中，我发现只有一小部分了解整体情况的建筑师。 但是，这些架构师的问题在于他们在日常活动中不活跃，因此对开发的影响有限。"
+}, {
+  "tag": "P",
+  "text": "I think the best is to ensure all teams have one representative part of the architecture group so that they can align their teams with the overall architecture team roadmap and goals. To become a mature organization, you need to invest in setting up a lightweight governance.",
+  "translation": "我认为最好的办法是确保所有团队在架构小组中只有一个代表性的部分，以便他们可以使团队与整体架构团队的路线图和目标保持一致。 要成为一个成熟的组织，您需要投资建立轻量级的治理。"
+}, {
+  "tag": "H1",
+  "text": "Reason 9: Lack of documentation",
+  "translation": "原因9：缺少文档"
+}, {
+  "tag": "P",
+  "text": "Most organisations that we interacted in the last couple of years struggle with documentation. Most developers and architects either don’t write documentation or the documentation they write is not useful. Even if they want to write they don’t know how they should document their architecture.",
+  "translation": "过去几年中与我们互动的大多数组织都在文档方面苦苦挣扎。 大多数开发人员和架构师要么不编写文档，要么他们编写的文档没有用。 即使他们想写，他们也不知道应该如何记录其体系结构。"
+}, {
+  "tag": "P",
+  "text": "At minimum we should document following:",
+  "translation": "至少我们应该记录以下内容："
+}, {
+  "tag": "OL",
+  "texts": ["Design documents", "Context and container diagrams in C4 model", "Keeping track of key architecture decisions in the form of architecture decision records", "Developer onboarding guide"],
+  "translations": ["设计文件", "C4模型中的上下文和容器图", "以架构决策记录的形式跟踪关键架构决策", "开发人员入门指南"]
+}, {
+  "tag": "P",
+  "text": "I recommend all the documentation be maintained in a version control system.",
+  "translation": "我建议所有文档都保留在版本控制系统中。"
+}, {
+  "tag": "H1",
+  "text": "Reason 10: Feature over platform maturity",
+  "translation": "原因10：功能超过平台成熟度"
+}, {
+  "tag": "P",
+  "text": "I have briefly touched upon this reason in other points but I think it deserves to be mentioned as a top level reason. Microservices are more complex than your traditional monolithic application because you are building a distributed system with many moving parts. Most developers do not yet comprehend different failure modes of the system. Most Microservices are built with a happy path in mind. So, if your management only wants to focus on features sooner than later you are going to fail. Features built on a weak platform fail to deliver value.",
+  "translation": "我在其他方面简要地谈到了这个原因，但是我认为值得一提的是它的首要原因。 微服务比传统的单片应用程序更为复杂，因为您正在构建具有许多活动部件的分布式系统。 大多数开发人员尚未理解系统的不同故障模式。 大多数微服务在构建时都考虑了一条愉快的路。 因此，如果您的管理层只想早于专注于功能，那么您将失败。 在弱平台上构建的功能无法带来价值。"
+}, {
+  "tag": "P",
+  "text": "Organisations need to get into the platform mentality. Platform mentality does not only mean using containers and Kubernetes. They are part of the solution but not the complete solution in themselves. You need to think about distributed tracing, observability, chaos testing, function calls vs network calls, secure service to service communication, debuggability, etc. This requires serious effort and investment in building the right platform and tooling team.",
+  "translation": "组织需要进入平台心态。 平台心态不仅意味着使用容器和Kubernetes。 它们是解决方案的一部分，但本身并不是完整的解决方案。 您需要考虑分布式跟踪，可观察性，混乱测试，函数调用与网络调用，服务到服务通信的安全服务，可调试性等。这需要大量的精力和投资来建立合适的平台和工具团队。"
+}, {
+  "tag": "P",
+  "text": "If you are a startup with limited resources my suggestion will be to rethink your Microservices strategy. Please understand what you are getting into.",
+  "translation": "如果您是一家资源有限的初创公司，我的建议是重新考虑您的微服务策略。 请了解您正在进入什么。"
+}, {
+  "tag": "H1",
+  "text": "Reason 11: Lack of automated testing",
+  "translation": "原因11：缺乏自动化测试"
+}, {
+  "tag": "P",
+  "text": "Most teams know how critical automation testing is in the overall quality of the product but still they fail to do it. Microservice architectures provide more options for where and how to test. If you don’t do thorough automation testing then you are going to fail badly.",
+  "translation": "大多数团队都知道自动化测试对产品的整体质量有多重要，但他们仍然没有做到。 微服务架构为在何处以及如何进行测试提供了更多选择。 如果您不进行全面的自动化测试，那么您将严重失败。"
+}, {
+  "tag": "P",
+  "text": "I will not write much on this point as it has been covered by many other people on the web. The below diagram that I took from the Microservices testing article published on Martin Fowler website talks about the test pyramid of Microservices based systems.",
+  "translation": "关于这一点，我不会写太多，因为网络上许多其他人已经讨论过这一点。 我从Martin Fowler网站上发布的Microservices测试文章中获取的下图讨论了基于Microservices的系统的测试金字塔。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*PTbKRl9iChCFw2P2QtjU8w.png?q=20",
+  "caption": "Microservices Test Pyramid",
+  "type": "image",
+  "file": "1!PTbKRl9iChCFw2P2QtjU8w.png"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Shekhar Gulati的文章《11 Reasons Why You Are Going To Fail With Microservices》，参考：https://medium.com/xebia-engineering/11-reasons-why-you-are-going-to-fail-with-microservices-29b93876268b)",
+  "translation": "（本文翻译自Shekhar Gulati的文章，《微服务失败的11个原因》，参考：https：//medium.com/xebia-engineering/11-reasons-why-you-going-to-fail -with-microservices-29b93876268b）"
+}]

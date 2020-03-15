@@ -1,0 +1,173 @@
+[{
+  "tag": "H1",
+  "text": "9 fascinating Novel Coronavirus statistics and data visualizations",
+  "translation": "9令人着迷的新型冠状病毒统计数据和数据可视化"
+}, {
+  "tag": "H2",
+  "text": "Here’s what you should know about the coronavirus as of today",
+  "translation": "截至今天，您应该了解的冠状病毒"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*RVkbm191mysYi-ITuoAA_w.png?q=20",
+  "caption": "Photo by Macau Photo Agency on Unsplash",
+  "type": "image",
+  "file": "1!RVkbm191mysYi-ITuoAA_w.png"
+}, {
+  "tag": "P",
+  "text": "These numbers are as of February 15, 2020 and are taken from WHO’s situation reports, the National Health Commission (NHC) of the People’s Republic of China, and the Health Commission of Hubei Province, China. Links are provided at the bottom.",
+  "translation": "这些数字截至2020年2月15日，摘自WHO的情况报告，中华人民共和国国家卫生委员会（NHC）和中国湖北省卫生委员会。 底部提供了链接。"
+}, {
+  "tag": "P",
+  "text": "Note: I’ve received a lot of comments about the inaccuracy of these numbers and the interpretation of them. The information below is information retrieved from other sources and is not influenced by my subjectivity. Also, keep in mind that the numbers continue to differ from the ones below as time goes by. Nonetheless, take what you would like from this and enjoy!",
+  "translation": "注意：关于这些数字的不准确性及其解释，我收到了很多评论。 以下信息是从其他来源获取的信息，不受我的主观性的影响。 另外，请记住，随着时间的流逝，数字仍会与以下数字有所不同。 但是，从中获取您想要的东西并享受吧！"
+}, {
+  "tag": "H1",
+  "text": "1) 98.87% of the coronavirus cases are based in China",
+  "translation": "1）98.87％的冠状病毒病例来自中国"
+}, {
+  "tag": "P",
+  "text": "More specifically, 68,509 out of the 69,289 total cases are based in China. Equivalently, this means that there’s approximately one case outside of China for every 87.5 cases in China.",
+  "translation": "更具体地说，在69289例病例中，有68509例来自中国。 同样，这意味着中国每87.5例病例中就有1例在中国境外。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*lQw1CaEKBtJeojVDhSg7oQ.png?q=20",
+  "caption": "The ratio of cases between China and the rest of the world",
+  "type": "image",
+  "file": "1!lQw1CaEKBtJeojVDhSg7oQ.png"
+}, {
+  "tag": "H1",
+  "text": "2) Furthermore, approximately 81.7% of the cases in China are from Hubei.",
+  "translation": "2）此外，中国约有81.7％的病例来自湖北。"
+}, {
+  "tag": "P",
+  "text": "This makes up about 71.5 of the 87.5 cases as shown above. Guangdong has the second highest number of cases (1294), followed by Henan (1212), Zhejiang (1162), and Hunan (1001).",
+  "translation": "如上所述，这占87.5个案例的约71.5。 广东的病例数第二多（1294），其次是河南（1212），浙江（1162）和湖南（1001）。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/42/1*zUXa421wkS45DF8VYbyFQQ.png?q=20",
+  "caption": "Number of cases in Hubei",
+  "type": "image",
+  "file": "1!zUXa421wkS45DF8VYbyFQQ.png"
+}, {
+  "tag": "H1",
+  "text": "3) 9,883 people who tested positive have recovered",
+  "translation": "3）9,883名测试阳性的人已经康复"
+}, {
+  "tag": "P",
+  "text": "That represents 86% of the 11,554 closed cases and 14% of the total number of cases.",
+  "translation": "占11,554宗结案的86％，占总数的14％。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/32/1*EjjzGWEI23E7yyLuxG0U9g.png?q=20",
+  "caption": "Emoji’s from Google",
+  "type": "image",
+  "file": "1!EjjzGWEI23E7yyLuxG0U9g.png"
+}, {
+  "tag": "H1",
+  "text": "4) Of the 29 countries affected, there are eight countries where all cases have recovered from the infection",
+  "translation": "4）在受影响的29个国家中，有八个国家的所有病例均已从感染中恢复"
+}, {
+  "tag": "P",
+  "text": "The list of countries include India (3), Russia (2), Spain (2), Belgium (1), Sri Lanka (1), Finland (1), Cambodia (1), and Nepal (1).",
+  "translation": "国家列表包括印度（3），俄罗斯（2），西班牙（2），比利时（1），斯里兰卡（1），芬兰（1），柬埔寨（1）和尼泊尔（1）。"
+}, {
+  "tag": "P",
+  "text": "Green represents countries that have recovered from all cases. Red represents countries with active cases.",
+  "translation": "绿色代表已从所有案件中恢复过来的国家。 红色代表案件活跃的国家。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*kutz5TcNa9agUWEuQDeceg.png?q=20",
+  "caption": "Created with mapchart.net",
+  "type": "image",
+  "file": "1!kutz5TcNa9agUWEuQDeceg.png"
+}, {
+  "tag": "H1",
+  "text": "5) The estimated mortality rate is 2%",
+  "translation": "5）估计死亡率为2％"
+}, {
+  "tag": "P",
+  "text": "The mortality rate is defined as the number of deaths in a given area or period, or from a particular cause.",
+  "translation": "死亡率定义为在给定区域或时期内或特定原因下的死亡人数。"
+}, {
+  "tag": "P",
+  "text": "On February 4, 2020, the National Health Commission (NHC) of China announced that the current mortality rate (also known as case fatality rate or CFR) was 2.1%. This was calculated by taking the cumulative current total deaths divided by the current number of confirmed cases. [1]",
+  "translation": "2020年2月4日，中国国家卫生委员会（NHC）宣布，目前的死亡率（也称为病死率或CFR）为2.1％。 这是通过将当前累计死亡总数除以当前确诊病例数得出的。 [1]"
+}, {
+  "tag": "P",
+  "text": "In comparison, the CFR was 10% for SARS and 34% for MERS.",
+  "translation": "相比之下，SARS的CFR为10％，MERS的CFR为34％。"
+}, {
+  "tag": "H1",
+  "text": "6) The growth factor has been trending downward and has been below 1.00 for the past three days.",
+  "translation": "6）增长因子一直呈下降趋势，并且在过去三天内一直低于1.00。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*DsLeA7PuhlLTnAMpbdXURg.png?q=20",
+  "caption": "Growth Rates since January 24, 2020",
+  "type": "image",
+  "file": "1!DsLeA7PuhlLTnAMpbdXURg.png"
+}, {
+  "tag": "P",
+  "text": "The growth factor is calculated as the number of new cases today divided by the number of new cases yesterday. For example, if there were 107 cases today and 100 cases yesterday, the growth factor from yesterday to today would be 1.07.",
+  "translation": "增长因子是用今天的新病例数除以昨天的新病例数来计算的。 例如，如果今天有107例，昨天有100例，那么从昨天到今天的增长因子将是1.07。"
+}, {
+  "tag": "P",
+  "text": "A growth factor below 1 or a growth factor above 1 but trending downwards is a good sign that the spreading of the virus is plateauing. On the other hand, a growth factor above 1 signals exponential growth.",
+  "translation": "低于1的增长因子或高于1的增长因子但呈下降趋势是表明病毒传播处于稳定状态的好兆头。 另一方面，高于1的增长因子表示指数增长。"
+}, {
+  "tag": "P",
+  "text": "The cause of the spike on February 12 is explained in the next point and the drop to 0.37 on the following day is partly due to a correction of the number of reported cases due to “repeated statistics”.",
+  "translation": "下一点解释了2月12日上升的原因，第二天跌至0.37的部分原因是由于“重复的统计数据”对报告的病例数进行了校正。"
+}, {
+  "tag": "H1",
+  "text": "8) There were 14,840 new cases in Hubei on February 12, 2020.",
+  "translation": "8）截至2020年2月12日，湖北省共有14840例新病例。"
+}, {
+  "tag": "P",
+  "text": "This was mainly due to the adoption of a new diagnosis classification, which ultimately contributed 13,332 of the 14,840 new cases that day. As of Feb 12, Hubei and all other provinces will include the number of clinically diagnosed cases in addition to the number of confirmed cases.",
+  "translation": "这主要是由于采用了新的诊断分类，最终在当天的14840新病例中贡献了13332。 截至2月12日，湖北和所有其他省份将除确诊病例数之外还包括临床诊断病例数。"
+}, {
+  "tag": "H1",
+  "text": "9) Approximately 80% of those who died were over the age of 60 and 75% had pre-existing health conditions such as cardiovascular diseases and diabetes. [2]",
+  "translation": "9）大约80％的死者年龄在60岁以上，而75％的人曾患有心血管疾病和糖尿病等健康状况。 [2]"
+}, {
+  "tag": "P",
+  "text": "Therefore, if you are young and healthy, statistically speaking, it’s unlikely for the coronavirus to be fatal should you catch up.",
+  "translation": "因此，从统计学上来说，如果您既年轻又健康，那么如果您赶上了冠状病毒，就不可能致命。"
+}, {
+  "tag": "P",
+  "text": "If you want to keep up with the latest on the coronavirus, checkout the Worldometer here, or WHO’s daily situation reports here.",
+  "translation": "如果您想了解最新的冠状病毒，请在此处查看Worldometer，或在此处查看WHO的每日情况报告。"
+}, {
+  "tag": "H1",
+  "text": "Thanks for reading!",
+  "translation": "谢谢阅读！"
+}, {
+  "tag": "P",
+  "text": "If you like my work and want to support me, sign up on my email list here!",
+  "translation": "如果您喜欢我的工作并想支持我，请在此处注册我的电子邮件列表！"
+}, {
+  "tag": "H1",
+  "text": "References / Resources",
+  "translation": "参考资料/资源"
+}, {
+  "tag": "P",
+  "text": "[1] NHS Press Conference, Feb 4, 2020 — National Health Commission (NHC) of the People’s Republic of China",
+  "translation": "[1] NHS新闻发布会，2020年2月4日-中华人民共和国国家卫生委员会（NHC）"
+}, {
+  "tag": "P",
+  "text": "[2] Coronavirus, Window of opportunity to act, World Health Organization says, BBC News",
+  "translation": "[2]冠状病毒，行动的机会之窗，世界卫生组织说，英国广播公司新闻"
+}, {
+  "tag": "P",
+  "text": "Coronavirus Cases, Worldometer",
+  "translation": "冠状病毒盒，Worldometer"
+}, {
+  "tag": "P",
+  "text": "Coronavirus disease (COVID-2019) situation reports, WHO",
+  "translation": "世卫组织冠状病毒疾病（COVID-2019）情况报告"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Terence Shin的文章《9 fascinating Novel Coronavirus statistics and data visualizations》，参考：https://towardsdatascience.com/9-fascinating-novel-coronavirus-statistics-and-data-visualizations-710cfa039dfd)",
+  "translation": "（本文翻译自Terence Shin的文章《 9种新颖的冠状病毒统计和数据可视化》，参考：https：//towardsdatascience.com/9-fascinating-novel-coronavirus-statistics-and-data-visualizations-710cfa039dfd）"
+}]

@@ -1,0 +1,187 @@
+[{
+  "tag": "H1",
+  "text": "Priority Queues in Python",
+  "translation": "Python中的优先级队列"
+}, {
+  "tag": "H2",
+  "text": "Heap Implementation of Priority Queues",
+  "translation": "优先队列的堆实现"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*jNJtE3Y33D5dSnppdMjuGg.jpeg?q=20",
+  "caption": "Source",
+  "type": "image",
+  "file": "1!jNJtE3Y33D5dSnppdMjuGg.jpeg"
+}, {
+  "tag": "P",
+  "text": "A priority queue is a data structure that is similar to ordinary queues or stacks, but each element has an associated priority. Elements with high priority are served before lower priority elements. Priority queues are typically implemented using a heap data structure.",
+  "translation": "优先级队列是一种与普通队列或堆栈相似的数据结构，但是每个元素都具有关联的优先级。 高优先级的元素先于低优先级的元素提供。 优先级队列通常使用堆数据结构来实现。"
+}, {
+  "tag": "P",
+  "text": "In this post, we will discuss the implementation of a priority queue in python using a heap data structure.",
+  "translation": "在本文中，我们将讨论使用堆数据结构在python中实现优先级队列的方法。"
+}, {
+  "tag": "P",
+  "text": "Let’s get started!",
+  "translation": "让我们开始吧！"
+}, {
+  "tag": "P",
+  "text": "It is worth familiarizing ourselves with the python ‘heapq’ module before we build our ‘PriorityQueue’ class. To start let’s import the ‘heapq’ module:",
+  "translation": "在构建“ PriorityQueue”类之前，值得熟悉python“ heapq”模块。 首先，我们导入“ heapq”模块："
+}, {
+  "tag": "PRE",
+  "text": "import heapq",
+  "translation": "导入heapq"
+}, {
+  "tag": "P",
+  "text": "Suppose we have a list of historical prices for IBM:",
+  "translation": "假设我们有一个IBM的历史价格清单："
+}, {
+  "tag": "PRE",
+  "text": "ibm_prices = [108.68, 109.65, 121.01, 122.78, 120.16]",
+  "translation": "ibm_prices = [108.68、109.65、121.01、122.78、120.16]"
+}, {
+  "tag": "P",
+  "text": "If we wanted to get the N lowest or highest prices we can use the ‘.nsmallest()’ and ‘.nlargest()’ methods respectively. To get the three lowest prices we can do the following:",
+  "translation": "如果我们想获得N的最低价格或最高价格，可以分别使用“ .nsmallest（）”和“ .nlargest（）”方法。 要获得三个最低价格，我们可以执行以下操作："
+}, {
+  "tag": "PRE",
+  "text": "print(heapq.nsmallest(3, ibm_prices))",
+  "translation": "打印（heapq.nsmallest（3，ibm_prices））"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*NxO4VFQZPAPhEtweGviCug.png?q=20",
+  "type": "image",
+  "file": "1!NxO4VFQZPAPhEtweGviCug.png"
+}, {
+  "tag": "P",
+  "text": "And for the three highest prices:",
+  "translation": "对于三个最高价格："
+}, {
+  "tag": "PRE",
+  "text": "print(heapq.nlargest(3, ibm_prices))",
+  "translation": "打印（heapq.nlargest（3，ibm_prices））"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*l3KmVGLZQQM5Bmcdg3NCBw.png?q=20",
+  "type": "image",
+  "file": "1!l3KmVGLZQQM5Bmcdg3NCBw.png"
+}, {
+  "tag": "P",
+  "text": "To make things a bit more interesting, suppose we have a portfolio of tech company stocks:",
+  "translation": "为了使事情变得更有趣，假设我们有一个科技公司股票组合："
+}, {
+  "tag": "PRE",
+  "text": "portfolio = [       {'name': 'IBM', 'shares': 200, 'price': 108.68},       {'name': 'AAPL', 'shares': 75, 'price': 277.97},       {'name': 'FB', 'shares': 40, 'price': 170.28},       {'name': 'HPQ', 'shares':125, 'price': 17.18},       {'name': 'UBER', 'shares': 50, 'price': 22.60},       {'name': 'TWTR', 'shares': 95, 'price': 29.29}]",
+  "translation": "Portfolio = [{'name'：'IBM'，'shares'：200，'price'：108.68}，{'name'：'AAPL'，'shares'：75，'price'：277.97}，{'name '：'FB'，'shares'：40，'price'：170.28}，{'name'：'HPQ'，'shares'：125，'price'：17.18}，{'name'：'UBER'， '份额'：50，'价格'：22.60}，{'名称'：'TWTR'，'份额'：95，'价格'：29.29}]"
+}, {
+  "tag": "P",
+  "text": "We can use the ‘.nsmallest()’ and ‘.nlargest()’ to pull the cheapest and most expensive stocks respectively:",
+  "translation": "我们可以使用“ .nsmallest（）”和“ .nlargest（）”分别提取最便宜和最昂贵的股票："
+}, {
+  "tag": "PRE",
+  "text": "cheap_stocks = heapq.nsmallest(3, portfolio, key=lambda s: s['price'])expensive_stocks = heapq.nlargest(3, portfolio, key=lambda s: s['price'])",
+  "translation": "cheap_stocks = heapq.nsmallest（3，Portfolio，key = lambda s：s ['price']）expensive_stocks = heapq.nlargest（3，Portfolio，key = lambda s：s ['price']）"
+}, {
+  "tag": "P",
+  "text": "Let’s print the results:",
+  "translation": "让我们打印结果："
+}, {
+  "tag": "PRE",
+  "text": "print(\"Cheap Stocks: \", cheap_stocks)print(\"Expensive Stocks: \", expensive_stocks)",
+  "translation": "打印（“廉价股票：”，廉价股票）打印（“昂贵股票：”，昂贵股票）"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*hRghvMqSvvS8FVPOgpJvkQ.png?q=20",
+  "type": "image",
+  "file": "1!hRghvMqSvvS8FVPOgpJvkQ.png"
+}, {
+  "tag": "P",
+  "text": "These function provide superior performance especially when the size of the N elements (largest or smallest) is small compared to the entire collection.",
+  "translation": "这些功能提供了卓越的性能，特别是当N个元素的大小（最大或最小）与整个集合相比较小时。"
+}, {
+  "tag": "P",
+  "text": "Now we are equipped to build our priority queue class. Let’s create a priority queue class using the ‘heapq’ module. First, we create the initialization method:",
+  "translation": "现在，我们可以构建优先级队列类了。 让我们使用“ heapq”模块创建优先级队列类。 首先，我们创建初始化方法："
+}, {
+  "tag": "PRE",
+  "text": "class PriorityQueue:    def __init__(self):        self._queue = []        self._index = 0",
+  "translation": "class PriorityQueue：def __init __（self）：self._queue = [] self._index = 0"
+}, {
+  "tag": "P",
+  "text": "Let’s also define a method that will allow us to check if the queue is empty:",
+  "translation": "我们还定义一个方法，该方法将允许我们检查队列是否为空："
+}, {
+  "tag": "PRE",
+  "text": "class PriorityQueue:    ...    def is_empty(self):        return not self._queue",
+  "translation": "class PriorityQueue：... def is_empty（self）：不返回self._queue"
+}, {
+  "tag": "P",
+  "text": "Next, let’s define a method that will allow us to push objects into our priority queue. We employ the ‘heappush’ method which will take the priority and the item value:",
+  "translation": "接下来，让我们定义一个方法，该方法将允许我们将对象推送到优先级队列中。 我们采用“ heappush”方法，该方法将具有优先级和项目值："
+}, {
+  "tag": "PRE",
+  "text": "class PriorityQueue:    ...    def push(self, item, priority):        heapq.heappush(self._queue, (priority, self._index, item))        self._index += 1",
+  "translation": "class PriorityQueue：... def push（（self，item，priority））：heapq.heappush（self._queue，（priority，self._index，item））self._index + = 1"
+}, {
+  "tag": "P",
+  "text": "Finally, we will add a method that will let us remove elements from our priority queue, using the ‘heappop’ method:",
+  "translation": "最后，我们将使用'heappop'方法添加一个方法，使我们可以从优先级队列中删除元素："
+}, {
+  "tag": "PRE",
+  "text": "class PriorityQueue:    ...    def pop(self):        return heapq.heappop(self._queue)[-1]",
+  "translation": "class PriorityQueue：... def pop（self）：返回heapq.heappop（self._queue）[-1]"
+}, {
+  "tag": "P",
+  "text": "Next let’s define a class, called Stock , that we will use to demonstrate the use of our priority queue class. The class will have an ‘__init__’ method that will let us initialize values for stock price, shares and ticker:",
+  "translation": "接下来，我们定义一个名为Stock的类，该类将用于演示优先级队列类的用法。 该类将具有“ __init__”方法，该方法可让我们初始化股价，股票和股票代码的值："
+}, {
+  "tag": "PRE",
+  "text": "class Stock:    def __init__(self, stock_ticker, stock_price, stock_share):        self.stock_ticker = stock_ticker        self.stock_price = stock_price        self.stock_share = stock_share",
+  "translation": "类库存：def __init __（self，stock_ticker，stock_price，stock_share）：self.stock_ticker =股票_ticker self.stock_price =股票_价格self.stock_share = stock_share"
+}, {
+  "tag": "P",
+  "text": "We can also define a method that allows us to print the representation of the class attributes:",
+  "translation": "我们还可以定义一个方法，使我们可以打印类属性的表示形式："
+}, {
+  "tag": "PRE",
+  "text": "class Stock:    ...    def __repr__(self):        return 'Stock({}, {}, {})'.format(self.stock_ticker ,   self.stock_price,  self.stock_share)",
+  "translation": "类库存：... def __repr __（self）：返回'Stock（{}，{}，{}）'。format（self.stock_ticker，self.stock_price，self.stock_share）"
+}, {
+  "tag": "P",
+  "text": "Now we are ready to initialize our priority queue and add items:",
+  "translation": "现在我们准备初始化优先级队列并添加项目："
+}, {
+  "tag": "PRE",
+  "text": "q = PriorityQueue()",
+  "translation": "q = PriorityQueue（）"
+}, {
+  "tag": "P",
+  "text": "Let’s add the stock attributes from our initial porfolio to our priority queue. We will prioritize cheap stocks:",
+  "translation": "让我们将初始投资组合中的股票属性添加到优先级队列中。 我们将优先处理廉价股票："
+}, {
+  "tag": "PRE",
+  "text": "q.push(Stock('IBM', 108.68, 200), 4)q.push(Stock('HPQ', 17.18, 125), 1)q.push(Stock('TWTR', 29.29, 95), 3)q.push(Stock('UBER', 22.6, 50), 2)q.push(Stock('AAPL', 277.97, 75), 6)q.push(Stock('FB', 170.28, 40), 5)",
+  "translation": "q.push（股票（'IBM'，108.68，200），4）q.push（股票（'HPQ'，17.18，125），1）q.push（股票（'TWTR'，29.29，95），3 ）q.push（股票（'UBER'，22.6，50），2）q.push（股票（'AAPL'，277.97，75），6）q.push（股票（'FB'，170.28，40）， 5）"
+}, {
+  "tag": "P",
+  "text": "Now let’s print the items in our priority queue:",
+  "translation": "现在，让我们在优先级队列中打印项目："
+}, {
+  "tag": "PRE",
+  "text": "while not q.is_empty():    print(q.pop())",
+  "translation": "而不是q.is_empty（）：print（q.pop（））"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*VNyh2m_6WwyPZ8gqVzM2ow.png?q=20",
+  "type": "image",
+  "file": "1!VNyh2m_6WwyPZ8gqVzM2ow.png"
+}, {
+  "tag": "P",
+  "text": "I’ll stop here but feel free to play around with the heap implementation of priority queues. Additionally, you can try building a priority queue with ordinary lists or linked lists. You can find some examples of other priority queue implementations in python here. I hope you found this post useful/interesting. The code from this post is available on GitHub. Thank you for reading!",
+  "translation": "我将在这里停止，但可以随意使用优先级队列的堆实现。 此外，您可以尝试使用普通列表或链接列表构建优先级队列。 您可以在python中找到其他优先级队列实现的一些示例。 我希望您发现这篇文章有用/有趣。 这篇文章中的代码可在GitHub上找到。 感谢您的阅读！"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Sadrach Pierre, Ph.D.的文章《Priority Queues in Python》，参考：https://towardsdatascience.com/priority-queues-in-python-3baf0bac2097)",
+  "translation": "（本文翻译自Sadrach Pierre，博士的文章《 Python中的优先级队列》，参考：https：//towardsdatascience.com/priority-queues-in-python-3baf0bac2097）"
+}]

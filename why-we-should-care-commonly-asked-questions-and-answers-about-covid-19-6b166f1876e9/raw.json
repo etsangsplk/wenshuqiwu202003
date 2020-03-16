@@ -1,0 +1,166 @@
+[{
+  "tag": "H1",
+  "text": "Separating the Facts From the Misinformation About COVID-19",
+  "translation": "将事实与关于COVID-19的错误信息区分开"
+}, {
+  "tag": "H2",
+  "text": "The facts, the ethics, and the protective measures you should take",
+  "translation": "您应采取的事实，道德和保护措施"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/44/0*1RDA2_VWDccr7Zyf?q=20",
+  "caption": "Photo: CDC/Unsplash",
+  "type": "image",
+  "file": "0!1RDA2_VWDccr7Zyf"
+}, {
+  "tag": "P",
+  "text": "Follow Elemental’s ongoing coverage of the coronavirus outbreak here.",
+  "translation": "在此关注Elemental对冠状病毒爆发的持续报道。"
+}, {
+  "tag": "P",
+  "text": "I’m an expert on online disinformation, misinformation, and mathematics relevant to disease transmission. Recently I’ve been answering a lot of common questions about COVID-19 on social media — trying to dispel misconceptions and falsehoods.",
+  "translation": "我是与疾病传播相关的在线虚假信息，错误信息和数学专家。 最近，我在社交媒体上回答了许多有关COVID-19的常见问题，以消除误解和虚假信息。"
+}, {
+  "tag": "P",
+  "text": "In this piece, I’ve compiled a list of the most commonly asked questions and responses, with the hope of making this information more accessible. Please note: I am not a public health or medical professional; however, I have taken extra care to square all my responses here with official guidance and medical advice.",
+  "translation": "在本篇文章中，我整理了一份最常见的问题和回答的清单，希望可以使这些信息更易于访问。 请注意：我不是公共卫生或医疗专业人员； 但是，我已经格外小心地将我在这里的所有答复与官方指导和医疗建议相吻合。"
+}, {
+  "tag": "H2",
+  "text": "Why are people freaking out about COVID-19 more than flu?",
+  "translation": "为什么人们比流感更害怕COVID-19？"
+}, {
+  "tag": "P",
+  "text": "Each person infected with seasonal influenza may infect approximately 1.3 other people. For SARS-CoV-2 (the virus that causes COVID-19), it is estimated to infect about three times as many people (estimated at two to four). This number is called the reproductive factor — or R0, sometimes pronounced “R-naught” — and you may see it referred to that way. A higher reproductive factor means COVID-19 will lead to many, many more cases very quickly and may overwhelm an already burdened medical system.",
+  "translation": "每个感染季节性流感的人都可能感染约1.3其他人。 对于SARS-CoV-2（导致COVID-19的病毒），估计感染的人数约为三倍（估计为2-4）。 该数字称为生殖因子（或R0，有时发音为“ R-naught”），您可能会看到它的提法。 较高的生殖因子意味着COVID-19将很快导致更多很多病例，并且可能使已经负担沉重的医疗系统不堪重负。"
+}, {
+  "tag": "P",
+  "text": "Even if you are not at high risk yourself, we still all have a public health obligation to take interventions that will prevent its spread.",
+  "translation": "即使您自己没有高风险，我们仍然都有公共卫生义务采取干预措施以防止其扩散。"
+}, {
+  "tag": "H2",
+  "text": "Why should I even care if I get it? It doesn’t seem that lethal.",
+  "translation": "为什么我什至应该关心我是否得到它？ 似乎并不致命。"
+}, {
+  "tag": "P",
+  "text": "It’s true that for healthy people under age 50, it’s not especially lethal — the mortality rate is quite low, though still up to 20 times higher than flu. But it becomes more lethal for older patients. The chart below gives good estimates for mortality rate by age bracket compared to flu. The WHO estimates an average mortality rate of 3.4%, which is around 100 times higher than flu — but do note that average is across age brackets. Current evidence suggests that the fatality rate from COVID-19 ranges from 9% to 19% for older individuals, as well as for people with conditions such as cardiovascular disease, diabetes, and cancer and those who are immunocompromised. Even if you are not at high risk yourself, we still all have a public health obligation to take interventions that will prevent spread that could overwhelm the health care system, as is happening now in Italy.",
+  "translation": "的确，对于50岁以下的健康人来说，它的致死性并不特别强-死亡率相当低，尽管仍比流感高20倍。 但是对年老的患者来说，致死性更大。 下图根据年龄段和流感相比，给出了死亡率的良好估算。 世界卫生组织估计平均死亡率为3.4％，约为流感的100倍-但要注意的是，平均死亡率跨年龄段。 当前的证据表明，对于老年人以及患有心血管疾病，糖尿病和癌症等疾病以及免疫力低下的人，COVID-19的死亡率为9％至19％。 即使您自己没有高风险，我们仍然都有公共卫生义务采取干预措施，以防止可能使卫生保健系统不堪重负的传播，就像意大利现在发生的情况一样。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/52/1*CULXjfVhqJaJvAgN-CMS6w.jpeg?q=20",
+  "caption": "Covid-19 mortality rates go up dramatically with age, compared with flu.",
+  "type": "image",
+  "file": "1!CULXjfVhqJaJvAgN-CMS6w.jpeg"
+}, {
+  "tag": "H2",
+  "text": "If I’m likely to get it, why not just get on with my daily routines if it doesn’t seem that dangerous?",
+  "translation": "如果我有可能得到它，为什么在看起来不太危险的情况下为什么不继续日常工作呢？"
+}, {
+  "tag": "P",
+  "text": "Don’t be the person who takes up medical resources that someone else needs more than you do. This is our ethical North Star with this disease. The goal should be to minimize spread so that as health resources (diagnostics, treatments, ventilators, oxygen concentrators, etc.) are needed, they are available to the people who need them most. The graphic below explains exactly why this is important. If we can slow down the spread, we have more time to react and make necessary preparations. A slower spread will save many lives, because an overwhelmed health care system will not be able to provide care to all who need it. Health care experts call this “flattening the curve,” and it’s perhaps our best and only strategy for mitigating this situation.",
+  "translation": "不要成为占用别人比您更需要的医疗资源的人。 这是我们道德上与这种疾病有关的北极星。 目标应该是最大程度地减少传播，以便在需要卫生资源（诊断，治疗，呼吸机，氧气浓缩器等）时，最需要它们的人可以使用它们。 下图确切说明了为什么这很重要。 如果我们可以放慢传播速度，我们将有更多时间做出反应并进行必要的准备。 传播速度减慢将挽救许多生命，因为不堪重负的医疗保健系统将无法为所有需要的人提供护理。 医疗保健专家称此为“拉平曲线”，这也许是我们减轻这种情况的最佳且唯一的策略。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*9DWdZ8LKTvOyzfn-qrmcfA.jpeg?q=20",
+  "type": "image",
+  "file": "1!9DWdZ8LKTvOyzfn-qrmcfA.jpeg"
+}, {
+  "tag": "H2",
+  "text": "Aren’t other diseases like SARS, MERS, or H1N1 more lethal? So why freak out about this one?",
+  "translation": "其他疾病（例如SARS，MERS或H1N1）是否更具致命性？ 那么，为什么要吓一跳呢？"
+}, {
+  "tag": "P",
+  "text": "The issue isn’t the lethality of COVID-19 as much as the overall impact of the outbreak. While these other diseases may be more lethal, the combination of reproductive factor (R0), receptivity in the population (susceptibility), and immunity may make them much more manageable. SARS-CoV-2 (the virus that causes COVID-19) is totally new to the population, so no one is immune. Each year, people are already immune to the flu because of exposure to prior variants or because of annual vaccination. There is no vaccine available yet for SARS-CoV-2. We should expect it will be at least Q1 2021 before a tested vaccine is widely available. In the meantime, everyone is likely vulnerable, so we should expect that an extremely large number of people will be infected.",
+  "translation": "问题不在于COVID-19的致死性，而在于爆发的整体影响。 虽然这些其他疾病可能更具致死性，但生殖因子（R0），人群的接受性（敏感性）和免疫力的结合可能使它们更易于控制。 SARS-CoV-2（引起COVID-19的病毒）对人群来说是全新的，因此没有人可以免疫。 每年，由于接触先前的变种或每年进行疫苗接种，人们已经对流感免疫。 尚无SARS-CoV-2疫苗。 我们应该期望至少在2021年第一季度才能广泛使用经过测试的疫苗。 同时，每个人都可能容易受到攻击，因此我们应该期望会有大量人被感染。"
+}, {
+  "tag": "H2",
+  "text": "How many people will be infected? Is this really a big deal?",
+  "translation": "有多少人会被感染？ 这真的很重要吗？"
+}, {
+  "tag": "P",
+  "text": "Yes, it is a really big deal. Because there are no real barriers to spread and the reproductive factor (R0) is so high, it is possible and indeed likely that 20% to 70% of the global population will be infected. That is 1.5 billion to 5 billion people. With an estimated mortality rate of about 2%, that is 30 million to 100 million deaths globally.",
+  "translation": "是的，这确实很重要。 由于没有真正的传播障碍并且生殖因子（R0）很高，因此有可能而且确实有可能感染全球20％至70％的人口。 那是15亿到50亿人。 估计死亡率约为2％，即全球有3000万至1亿人死亡。"
+}, {
+  "tag": "P",
+  "text": "In the United States, we might expect 66 million to 231 million people will be infected, with as many as 1.2 million to 4.6 million dead, possibly more. That may well also be an overestimate; we don’t know a “true” mortality rate yet, but the WHO estimates it may be as high as 3.4%. But the mortality rate isn’t as important as the fact that the medical system will be overwhelmed, because this will all happen really fast. And yes, many people will die. We just don’t know how many yet. But we can limit the total number of people infected if we take serious containment measures early on. That will save lives.",
+  "translation": "在美国，我们可以预计将有6600万至2.31亿人被感染，其中120万至460万人死亡，甚至可能更多。 这也可能被高估了。 我们还不知道“真正的”死亡率，但是世界卫生组织估计它可能高达3.4％。 但是死亡率并不像医疗系统不堪重负的事实那样重要，因为这一切都会很快发生。 是的，很多人会死。 我们只是不知道有多少。 但是，如果我们尽早采取严格的收容措施，我们可以限制受感染的总人数。 这样可以挽救生命。"
+}, {
+  "tag": "H2",
+  "text": "How quickly will it spread?",
+  "translation": "它会传播多快？"
+}, {
+  "tag": "P",
+  "text": "We don’t know, but the rate of doubling of known cases seems to be every few days — with the caveat that reported numbers are likely undercounting actual cases. This means that without major interventions, this infection will reach much of the world’s population in a matter of weeks or a few months. This could be as many as 1.5 billion to 5 billion people, as mentioned above.",
+  "translation": "我们不知道，但是已知病例的翻倍速度似乎是每隔几天-需要提醒的是，报告的数字可能会低估实际病例。 这意味着，无需重大干预，这种感染将在几周或几个月内传播到世界上大部分人口。 如上所述，这可能多达15亿至50亿人。"
+}, {
+  "tag": "H2",
+  "text": "Won’t this calm down in summer, with warmer temperatures, as the flu does?",
+  "translation": "像流感一样，夏天气温升高时，这种镇静会不会平静下来？"
+}, {
+  "tag": "P",
+  "text": "We don’t know yet. There is some reason to think this disease may slow in warmer temperatures. However, it has a high reproductive factor (R0), a high prodromal (asymptomatic) period of about 14 days, and it’s not the same as flu. Warmer countries like Singapore have cases right now. We are watching developments in other warm countries that also have cases. And people may be carriers without showing symptoms. While transmission via surfaces (where it can survive for several days) may diminish with temperature, we don’t know how or if host-to-host transmission may be affected. So it may persist into summer despite warmer temperatures, while also shifting its prevalence into the Southern Hemisphere, where it is cooler. In fall, it may resume where it left off and continue infecting people, if there are susceptible people left to infect. Or it may reinfect people, if somehow reinfection is possible or if a mutation appears. Do not expect this to be over by September.",
+  "translation": "我们还不知道。 有一些理由认为这种疾病可能会在温度升高时减慢。 但是，它的生殖因子（R0）高，前驱病（无症状）周期高，大约14天，与流感不同。 像新加坡这样的较温暖的国家现在也有这种情况。 我们正在观察其他有案例的温暖国家的事态发展。 人们可能是携带者而没有出现症状。 虽然通过表面传播（可以在其中存活数天）会随温度降低，但我们不知道宿主之间的传播方式或方式是否受到影响。 因此，尽管温度升高，它可能会持续到夏季，同时还将其流行转移到温度较低的南半球。 在秋天，如果有易感人群被感染，它可能会从停止的地方恢复并继续感染人。 如果可能以某种方式再次感染或出现突变，它可能会重新感染人。 不要期望到9月结束。"
+}, {
+  "tag": "H2",
+  "text": "When will a vaccine be available? Can’t we just stop this thing?",
+  "translation": "什么时候可以接种疫苗？ 我们不能停止这件事吗？"
+}, {
+  "tag": "P",
+  "text": "Vaccines are under development, but getting a workable, tested vaccine out to market will take time. While some teams claim to have vaccines now, it will take some time to refine, test, manufacture, market, and deliver these solutions. Producing enough vaccines for billions of people will not be a small task and will take time, capital, and coordination with governments. Estimates suggest the soonest any vaccines will be available is Q1 2021.",
+  "translation": "疫苗正在开发中，但是将可行的，经过测试的疫苗推向市场需要时间。 虽然有些团队声称现在已经接种疫苗，但仍需要一些时间来完善，测试，制造，销售和提供这些解决方案。 为数十亿人生产足够的疫苗绝非易事，将需要时间，资金和与政府的协调。 估计表明，最快将在2021年第一季度提供任何疫苗。"
+}, {
+  "tag": "H2",
+  "text": "How should I protect myself? Should I stock up on hand sanitizer?",
+  "translation": "我应该如何保护自己？ 我应该购买手消毒液吗？"
+}, {
+  "tag": "P",
+  "text": "Your best defense is frequent hand-washing with soap and water and not touching your face, nose, eyes, and other mucous organs. While hand sanitizers with high levels of alcohol work, soap and water are extremely effective and should be your first choice. Soap molecules have a fatty end that attaches to and penetrates the lipid shell of the virus and a hydrophilic (water-loving) end that water attaches to and rinses away the soap with the virus. Hand sanitizer may render the virus impotent, but it leaves the virus on your hands. Wash hands frequently. Keep your distance from other people, and try to avoid unnecessary travel and social gatherings. Here are some CDC recommendations. If you’re somewhere without ready access to soap and water, go to someplace where you do and stay there.",
+  "translation": "最好的防御方法是经常用肥皂和水洗手，而不要碰到脸，鼻子，眼睛和其他粘液器官。 虽然酒精含量高的洗手液有效，但肥皂和水非常有效，应该是您的首选。 肥皂分子的脂肪端附着并穿透病毒的脂质壳，而亲水端（嗜水）端则水附着在病毒上并用病毒冲洗掉肥皂。 洗手液可能会使病毒无能为力，但会将病毒留在您的手上。 经常洗手。 与他人保持距离，并避免不必要的旅行和社交聚会。 以下是CDC的一些建议。 如果您不方便使用肥皂和水，请去您可以去的地方呆在那里。"
+}, {
+  "tag": "P",
+  "text": "A slower spread will save many lives, because an overwhelmed health care system will not be able to provide care to all who need it.",
+  "translation": "传播速度减慢将挽救许多生命，因为不堪重负的医疗保健系统将无法为所有需要的人提供护理。"
+}, {
+  "tag": "H2",
+  "text": "China and South Korea proved this can be slowed and stopped. Can’t we just do what they did?",
+  "translation": "中国和韩国证明这可以放慢和停止。 我们不能只是做他们做的事吗？"
+}, {
+  "tag": "P",
+  "text": "Both the Chinese and South Korean governments took extremely decisive actions to minimize the spread of this disease. The Chinese government is an authoritarian regime that could unilaterally impose and enforce a lockdown of several weeks. Governments in the United States and Europe will have a harder time doing this, but we will likely see increasing momentum around school closings, event cancellations, movement restrictions, and other social distancing measures. Italy enacted a lockdown for a month. Nicholas Christakis, an expert on the 1918 flu, suggests that the sooner we do this, the more lives will be spared.",
+  "translation": "中国和韩国政府都采取了极为果断的行动，以尽量减少这种疾病的传播。 中国政府是一个独裁政权，可以单方面强加并实施数周的封锁。 美国和欧洲的政府将很难做到这一点，但我们可能会看到关闭学校，取消活动，限制行动和其他社会疏远措施的势头越来越大。 意大利实行了一个月的封锁。 尼古拉斯·克里斯塔基斯（Nicholas Christakis）是1918年流感的专家，他建议我们越早这样做，将挽救更多的生命。"
+}, {
+  "tag": "H2",
+  "text": "When will things be back to “normal”?",
+  "translation": "什么时候情况会恢复“正常”？"
+}, {
+  "tag": "P",
+  "text": "We don’t know. Expect March, April, May, and June 2020 to be heavily disrupted. Beyond that, we may see a reprieve in parts of the world with warmer weather (see above). But given that it will take until 2021 to have a workable vaccine at scale, we should expect at least some disruptions until around that time. We should be able to make better estimations with each passing month. But don’t expect that things will get back to normal on any predictable timeline. We could also see another resurgence in the fall.",
+  "translation": "我们不知道 预计2020年3月，4月，5月和6月将受到严重干扰。 除此之外，我们可能会在天气温暖的情况下看到世界上部分地区的缓和（见上文）。 但是，鉴于要在2021年之前大规模生产可行的疫苗，我们应该至少希望在那之前会有一些中断。 我们应该能够对每个月进行更好的估计。 但是不要期望在任何可预测的时间表上一切都会恢复正常。 我们还可以看到秋天再次复苏。"
+}, {
+  "tag": "H2",
+  "text": "Panic seems worse than the disease itself. Should we really be worried about this? Why is there so much fear?",
+  "translation": "恐慌似乎比疾病本身还糟。 我们真的应该为此担心吗？ 为什么会有这么多恐惧？"
+}, {
+  "tag": "P",
+  "text": "Yes! Panic, worry, and fear are totally unhelpful. Instead, we should be realistic and prepared, and we should have a rational framework for thinking about our response to this, with full transparency from government agencies. While we may be falling short of this standard at the moment, we can certainly calm down and understand the mathematics behind this — and take reasonable actions to minimize risk. Making sure to have two to three weeks of food and necessary medicines on hand is a great preparation. Avoid hoarding supplies, especially things like breathing masks, which are only helpful if you are in at-risk situations. Hopefully this list of questions and answers helps put things in proper perspective.",
+  "translation": "是! 恐慌，担忧和恐惧完全无济于事。 相反，我们应该现实而有准备，我们应该有一个合理的框架来考虑我们对此的反应，并在政府机构的完全透明下进行。 尽管目前我们可能未达到此标准，但我们当然可以冷静下来并理解其背后的数学原理，并采取合理的措施将风险降至最低。 确保准备两到三周的食物和必要的药物是一个很好的准备。 避免ho积补给品，尤其是呼吸面罩之类的东西，这仅在处于危险状况时才有用。 希望此问题和答案列表有助于以正确的角度看待问题。"
+}, {
+  "tag": "H2",
+  "text": "Why are conferences being canceled?",
+  "translation": "为什么会议被取消？"
+}, {
+  "tag": "P",
+  "text": "The CDC has suggested that social distancing measures and limiting nonessential travel can help slow the spread of the disease in communities. Many conference organizers are also facing pushback from attendees, sponsors, and contractors about attending or working at events. In some cases, local governments are forcing the cancellation of large events. For this reason, many organizers are deciding to postpone events to a later date or put things on hiatus while this situation is addressed. In general, you should consider that minimizing your exposure to large groups is the most socially responsible thing to do. And if you must travel, you might consider driving versus flying or taking a train. Some are advising that all unnecessary gatherings and activities be canceled.",
+  "translation": "疾病预防控制中心（CDC）提出，社会疏远措施和限制不必要的旅行可以帮助减缓疾病在社区中的传播。 许多会议组织者还面临与会人员，赞助商和承包商关于参加活动或在活动中工作的退缩。 在某些情况下，地方政府强迫取消大型活动。 因此，许多组织者正在决定将事件推迟到以后再解决，或者将事情搁置一旁。 通常，您应该考虑最大程度地减少与大型团体的接触是对社会负责的事情。 而且，如果您必须旅行，则可以考虑开车，乘飞机或乘火车。 有些人建议取消所有不必要的聚会和活动。"
+}, {
+  "tag": "P",
+  "text": "For more comprehensive and scientifically detailed answers than these, I encourage you to stay abreast of what the CDC and WHO have to say. Again, I am not a medical expert — just someone good at reading, math, and basic reasoning. We must all encourage straightforward information sharing and prevention methods and discourage panic. Together, we can get through this.",
+  "translation": "要获得比这些更全面，更科学详细的答案，我鼓励您紧跟CDC和WHO的意见。 再一次，我不是医学专家，只是一个擅长阅读，数学和基础推理的人。 我们都必须鼓励采取直接的信息共享和预防方法，并防止恐慌。 在一起，我们可以解决这个问题。"
+}, {
+  "tag": "P",
+  "text": "The coronavirus outbreak is rapidly evolving. To stay informed, check the U.S. Centers for Disease Control and Prevention and your local health department for updates. If you’re feeling emotionally overwhelmed, reach out to the Crisis Text Line.",
+  "translation": "冠状病毒的爆发正在迅速发展。 要保持最新状态，请查看美国疾病控制与预防中心和您当地的卫生部门以获取最新信息。 如果您在情感上不知所措，请与“危机文本行”联系。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Dave Troy的文章《Separating the Facts From the Misinformation About COVID-19》，参考：https://elemental.medium.com/why-we-should-care-commonly-asked-questions-and-answers-about-covid-19-6b166f1876e9)",
+  "translation": "（本文翻译自Dave Troy的文章《将事实与关于COVID-19的错误信息分开》，参考：https：//elemental.medium.com/why-we-should-care-commonly-asked-questions-and-answers -about-covid-19-6b166f1876e9）"
+}]

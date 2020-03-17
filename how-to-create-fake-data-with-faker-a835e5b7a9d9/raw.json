@@ -1,0 +1,328 @@
+[{
+  "tag": "H1",
+  "text": "Create a Quick Profile Data",
+  "translation": "创建快速配置文件数据"
+}, {
+  "tag": "P",
+  "text": "We can quickly create a profile with:",
+  "translation": "我们可以使用以下方法快速创建个人资料："
+}, {
+  "tag": "PRE",
+  "text": "fake = Faker()fake.profile()",
+  "translation": "假= Faker（）fake.profile（）"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*AKRqWnP-79XJKwOMIYHuww.png?q=20",
+  "type": "image",
+  "file": "1!AKRqWnP-79XJKwOMIYHuww.png"
+}, {
+  "tag": "P",
+  "text": "As we can see, most relevant information about a person is created with ease, even with mail, ssn, username, and website.",
+  "translation": "如我们所见，即使使用邮件，ssn，用户名和网站，也可以轻松创建有关某个人的大多数相关信息。"
+}, {
+  "tag": "P",
+  "text": "What is even more useful is that we can create a dataframe of 100 users from different countries",
+  "translation": "更有用的是，我们可以创建一个来自不同国家/地区的100个用户的数据框"
+}, {
+  "tag": "PRE",
+  "text": "import pandas as pdfake = Faker(['it_IT','ja_JP', 'zh_CN', 'de_DE','en_US'])profiles = [fake.profile() for i in range(100)]pd.DataFrame(profiles).head()",
+  "translation": "导入大熊猫作为pdfake = Faker（['it_IT'，'ja_JP'，'zh_CN'，'de_DE'，'en_US']）profiles = [fake.profile（）for i in range（100）] pd.DataFrame（profiles ）。头（）"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*-uLBTN0EQ5jKZep3HS3QEQ.gif?q=20",
+  "type": "image",
+  "file": "1!-uLBTN0EQ5jKZep3HS3QEQ.gif"
+}, {
+  "tag": "P",
+  "text": "Or create a customized profile",
+  "translation": "或创建自定义配置文件"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/khuyentran1401/80f6d3e0fa9ace1f196a108a1f7e6960/raw/e34efa2ad1a7b46fb2ff95f51ccff6af3f7f71e0/friends.py",
+  "code": "from faker import Faker \nimport json            # To create a json file                 \nimport numpy as np\nfake = Faker() \ndef create_data(x): \n  \n    # dictionary \n    friends_data ={} \n    for i in range(0, x): \n        friends_data[i]={} \n        friends_data[i]['name']= fake.name() \n        friends_data[i]['address']= fake.address() \n        friends_data[i]['city']= fake.city() \n        friends_data[i]['color']= fake.color()\n        friends_data[i]['closeness (1-5)'] = np.random.randint(0,5)\n    \n    return friends_data\n    \nfriends = create_data(10)\npd.DataFrame.from_dict(friends)"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*H7a3jet8ZXMrSlMd_fPyKg.png?q=20",
+  "type": "image",
+  "file": "1!H7a3jet8ZXMrSlMd_fPyKg.png"
+}, {
+  "tag": "H1",
+  "text": "Create Random Python Datatypes",
+  "translation": "创建随机Python数据类型"
+}, {
+  "tag": "P",
+  "text": "If we just care about the type of your data, without caring so much about the information, we can easily generate random datatypes such as:",
+  "translation": "如果我们只关心您的数据类型，而不关心这些信息，那么我们可以轻松生成随机数据类型，例如："
+}, {
+  "tag": "P",
+  "text": "Boolean",
+  "translation": "布尔型"
+}, {
+  "tag": "PRE",
+  "text": ">>> fake.pybool()False",
+  "translation": ">>> fake.pybool（）为假"
+}, {
+  "tag": "P",
+  "text": "A list of 5 elements with different data_type",
+  "translation": "具有不同data_type的5个元素的列表"
+}, {
+  "tag": "PRE",
+  "text": ">>> fake.pylist(nb_elements=5, variable_nb_elements=True)['TiZaWQDCzVIgSALOSKJD',  8100,  'hZTFGZpYVwJUcGZUoauG',  Decimal('-3512.1951'),  37442800222.8852,  'XIxdbnwYMfOJDsZlaowZ']",
+  "translation": ">>> fake.pylist（nb_elements = 5，variable_nb_elements = True）['TiZaWQDCzVIgSALOSKJD'，8100，'hZTFGZpYVwJUcGZUoauG'，Decimal（'-3512.1951'），37442800222.8852，'XIxdbnwYMfOJD"
+}, {
+  "tag": "P",
+  "text": "A decimal with 5 left digits and 6 right digits (after the .)",
+  "translation": "一个小数点，左边5位，右边6位（在。之后）。"
+}, {
+  "tag": "PRE",
+  "text": ">>> fake.pydecimal(left_digits=5, right_digits=6, positive=False, min_value=None, max_value=None)Decimal('92511.722977')",
+  "translation": ">>> fake.pydecimal（left_digits = 5，right_digits = 6，positive = False，min_value = None，max_value = None）十进制（'92511.722977'）"
+}, {
+  "tag": "P",
+  "text": "You can find more about other Python datatypes that you can create here",
+  "translation": "您可以在此处找到有关其他Python数据类型的更多信息"
+}, {
+  "tag": "H1",
+  "text": "Conclusion",
+  "translation": "结论"
+}, {
+  "tag": "P",
+  "text": "I hope you find Faker a helpful tool to create data efficiently. You may find this tool useful for what you are working on or may not at the moment. But it is helpful to know that there exists a tool that enables you to generate data with ease for your specific needs such as testing.",
+  "translation": "我希望您发现Faker是有效创建数据的有用工具。 您可能会发现此工具对您正在做的事情有用，或者暂时不起作用。 但是，知道有一个工具可以使您轻松满足特定需求（例如测试）来生成数据，这对您很有帮助。"
+}, {
+  "tag": "P",
+  "text": "You can find the notebook for this article here: https://colab.research.google.com/drive/1eC6D89STdObBH8MqmbPQaczrnb8aMQvP or more information about Faker here.",
+  "translation": "您可以在这里找到本文的笔记本：https：//colab.research.google.com/drive/1eC6D89STdObBH8MqmbPQaczrnb8aMQvP或有关Faker的更多信息。"
+}, {
+  "tag": "P",
+  "text": "I like to write about basic mathematical concepts, play with different algorithms and data science tools. Follow me on Medium to get updated about my latest articles. You could also connect with me on LinkedIn and Twitter.",
+  "translation": "我喜欢写一些基本的数学概念，并使用不同的算法和数据科学工具。 在Medium上关注我，以获取有关我最新文章的更新。 您也可以在LinkedIn和Twitter上与我联系。"
+}, {
+  "tag": "P",
+  "text": "Check out my other blogs on math and data science topics:",
+  "translation": "查看我关于数学和数据科学主题的其他博客："
+}, {
+  "tag": "H2",
+  "text": "Convex Hull: An Innovative Approach to Gift-Wrap your Data",
+  "translation": "凸包：一种创新的礼物包装方式"
+}, {
+  "tag": "H3",
+  "text": "How to Leverage Data Visualization with Wrapping Algorithm",
+  "translation": "如何通过包装算法利用数据可视化"
+}, {
+  "tag": "H2",
+  "text": "Dictionary as an Alternative to If-Else",
+  "translation": "字典作为If-Else的替代方法"
+}, {
+  "tag": "H3",
+  "text": "Use Dictionaries to Create a Cleaner Code of If-Else Function",
+  "translation": "使用字典创建If-Else函数的简洁代码"
+}, {
+  "tag": "H2",
+  "text": "Python Tricks for Keeping Track of Your Data",
+  "translation": "Python技巧来跟踪您的数据"
+}, {
+  "tag": "H3",
+  "text": "How to keep track of information with a list, dictionary counter, and named tuple",
+  "translation": "如何使用列表，字典计数器和命名元组跟踪信息"
+}, {
+  "tag": "H2",
+  "text": "Timing for Efficient Python Code",
+  "translation": "高效Python代码的时间"
+}, {
+  "tag": "H3",
+  "text": "How to compare the performance between list, set and other methods",
+  "translation": "如何比较列表，集合和其他方法的性能"
+}, {
+  "tag": "H2",
+  "text": "Cython-A Speed-Up Tool for your Python Function",
+  "translation": "Cython-A Python工具加速工具"
+}, {
+  "tag": "H3",
+  "text": "When tweaking your algorithm gives small improvements, you may want to get an additional speed up with Cython, a…",
+  "translation": "调整算法可以带来较小的改进时，您可能希望通过Cython进一步提高速度，…"
+}, {
+  "tag": "H1",
+  "text": "Create Text",
+  "translation": "建立文字"
+}, {
+  "tag": "H2",
+  "text": "Create Random Text",
+  "translation": "创建随机文本"
+}, {
+  "tag": "P",
+  "text": "We can create random text with",
+  "translation": "我们可以使用创建随机文本"
+}, {
+  "tag": "PRE",
+  "text": ">>> fake.text()'Lay industry reach move candidate from local spring. Wind someone really but. One rock fund different down own.'",
+  "translation": ">>> fake.text（）'行业从本地春季起进入移动候选人。 风真的有人但是。 一支拥有不同资金的摇滚基金。"
+}, {
+  "tag": "P",
+  "text": "Try with the Japanese language",
+  "translation": "尝试日语"
+}, {
+  "tag": "PRE",
+  "text": ">>> fake = Faker('ja_JP')>>> fake.text()'普通の器官証言する仕上げ鉱山癌。カラム索引障害自体今ブラケット創傷。細かい見出し見出し目的自体持っていました。\\nピックバケツリンク自体。職人サワーカラム人形自体。癌ブランチ普通のデフォルト同行ヘア不自然な。\\nあった偏差〜偏差今特徴敵。バストスパン拡張助けて。\\nスマッシュ彼女ボトル隠す品質隠すサンプル。ヘアパイオニアスマッシュ風景。\\nパン発生する装置尊敬する。偏差省略自体。'",
+  "translation": ">>> fake = Faker（'ja_JP'）>>> fake.text（）'普通の生物证言する仕上げ鉱山癌。 ブリンク自体。职人サワーカラム人形自体。 スマッシュ风景。\\ nパン発生する装置尊敬する。偏差省略自体。"
+}, {
+  "tag": "H2",
+  "text": "Create Text from Selected Words",
+  "translation": "从所选单词创建文本"
+}, {
+  "tag": "P",
+  "text": "Or we can also create text from a list of words",
+  "translation": "或者我们也可以从单词列表创建文本"
+}, {
+  "tag": "PRE",
+  "text": "fake = Faker()my_information = ['dog','swimming', '21', 'slow', 'girl', 'coffee', 'flower','pink']fake.sentence(ext_word_list=my_information)",
+  "translation": "假= Faker（）my_information = ['dog'，'swimming'，'21'，'slow'，'girl'，'coffee'，'flower'，'pink'] fake.sentence（ext_word_list = my_information）"
+}, {
+  "tag": "P",
+  "text": "First run:",
+  "translation": "第一次运行："
+}, {
+  "tag": "PRE",
+  "text": "'Girl slow slow girl flower flower girl.'",
+  "translation": "“女孩慢女孩慢花女孩。”"
+}, {
+  "tag": "P",
+  "text": "and second run",
+  "translation": "第二轮"
+}, {
+  "tag": "PRE",
+  "text": "'Flower 21 flower coffee flower dog.'",
+  "translation": "“花21花咖啡花狗。”"
+}, {
+  "tag": "H1",
+  "text": "Basics of Faker",
+  "translation": "Faker的基础"
+}, {
+  "tag": "P",
+  "text": "Start with installing the package",
+  "translation": "从安装软件包开始"
+}, {
+  "tag": "PRE",
+  "text": "pip install Faker",
+  "translation": "点安装Faker"
+}, {
+  "tag": "P",
+  "text": "Import Faker",
+  "translation": "进口法克"
+}, {
+  "tag": "PRE",
+  "text": "from faker import Faker",
+  "translation": "从假货进口法克"
+}, {
+  "tag": "P",
+  "text": "Some basic methods of Faker:",
+  "translation": "Faker的一些基本方法："
+}, {
+  "tag": "PRE",
+  "text": ">>> fake.color_name()'SeaGreen'>>> fake.name()'Vanessa Schroeder'>>> fake.address()'3138 Jennings Shore\\nPort Anthony, MT 90833'>>> fake.job()'Buyer, industrial'>>> fake.date_of_birth(minimum_age=30)datetime.date(1906, 9, 18)>>> fake.city()'Rebeccastad'",
+  "translation": ">>> fake.color_name（）'SeaGreen'>>> fake.name（）'Vanessa Schroeder'>>> fake.address（）'3138 Jennings Shore \\ n安东尼港，MT 90833'>>> fake.job（） '工业用买方'>>> fake.date_of_birth（minimum_age = 30）datetime.date（1906，9，18）>>> fake.city（）'Rebeccastad'"
+}, {
+  "tag": "P",
+  "text": "Let’s say you are an author of a fiction book who want to create a character but find it difficult and time-consuming to come up with a realistic name and information. You can write",
+  "translation": "假设您是一本小说的作者，他想创建一个角色，但是发现一个现实的名称和信息既困难又耗时。 你可以写"
+}, {
+  "tag": "PRE",
+  "text": ">>> name = fake.name()>>> color = color = fake.color_name()>>> city = fake.city()>>> job = fake.job()>>> print('Her name is {}. She lives in {}. Her favorite color is {}. She works as a {}'.format(name, city,color, job))",
+  "translation": ">>>名称= fake.name（）>>> color =颜色= fake.color_name（）>>> city = fake.city（）>>> job = fake.job（）>>> print（'她的名字 是{}。她居住在{}。她最喜欢的颜色是{}。她的工作方式是{}'。format（名称，城市，颜色，工作）"
+}, {
+  "tag": "P",
+  "text": "Outcome:",
+  "translation": "结果："
+}, {
+  "tag": "PRE",
+  "text": "Her name is Natalie Gamble. She lives in East Tammyborough. Her favorite color is Magenta. She works as a Metallurgist",
+  "translation": "她的名字叫娜塔莉·赌博。 她住在东塔米伯勒。 她最喜欢的颜色是洋红色。 她是冶金学家"
+}, {
+  "tag": "P",
+  "text": "With Faker, you can generate a persuasive example instantly!",
+  "translation": "使用Faker，您可以立即产生有说服力的示例！"
+}, {
+  "tag": "H1",
+  "text": "But what if I need the Information to be Specific to one Location?",
+  "translation": "但是，如果我需要信息特定于一个位置怎么办？"
+}, {
+  "tag": "P",
+  "text": "Luckily, we can also specify the location of the data we want to fake. Maybe the character you want to create is from Italy. You also want to create instances of her friends. Since you are from the US, it is difficult for you to generate relevant information to that location. That can be easily taken care of by adding location parameter in the class Faker",
+  "translation": "幸运的是，我们还可以指定要伪造的数据的位置。 也许您要创建的角色来自意大利。 您还希望创建她的朋友的实例。 由于您来自美国，因此您很难生成该位置的相关信息。 通过在Faker类中添加location参数，可以轻松解决这一问题"
+}, {
+  "tag": "PRE",
+  "text": "fake = Faker('it_IT')for _ in range(10):print(fake.name())",
+  "translation": "假= Faker（'it_IT'）for _ in range（10）：print（fake.name（））"
+}, {
+  "tag": "P",
+  "text": "Outcome:",
+  "translation": "结果："
+}, {
+  "tag": "PRE",
+  "text": "Lando Bertoli-Bulzoni Danilo Gianvecchio Dott. Margherita Veneziano Bianca Morabito  Alfredo Rossetti Claudia Chechi Dott. Gastone Loredan  Dott. Fulvio Russo Camilla Crisafulli-Gentileschi Agnolo Gioberti",
+  "translation": "Lando Bertoli-Bulzoni Danilo Gianvecchio Dott。 玛格丽塔（Margherita Veneziano）比安卡（Bianca Morabito）阿尔弗雷多（Alfredo Rossetti）克劳迪娅（Claudia）Chechi Dott。 加斯通·洛丹·多特（Gastone Loredan Dott）。 富尔维奥·鲁索·卡米拉·克里斯萨弗里·Gentileschi Agnolo Gioberti"
+}, {
+  "tag": "P",
+  "text": "Or create information from multiple locations",
+  "translation": "或从多个位置创建信息"
+}, {
+  "tag": "PRE",
+  "text": "fake = Faker(['ja_JP','zh_CN','es_ES','en_US','fr_FR'])for _ in range(10):print(fake.city())",
+  "translation": "假= Faker（[（'ja_JP'，'zh_CN'，'es_ES'，'en_US'，'fr_FR']）for _ in range（10）：print（fake.city（））"
+}, {
+  "tag": "P",
+  "text": "Outcome:",
+  "translation": "结果："
+}, {
+  "tag": "PRE",
+  "text": "Ceuta Juanhaven 佳市 East Sarah 山武郡横芝光町 川崎市宮前区 Blondel-sur-Pottier West Christine Lake Amandahaven Weekshaven",
+  "translation": "休达（Ceuta Juanhaven）佳市东萨拉（Sarah）山武郡横芝光町川崎市宫前区"
+}, {
+  "tag": "P",
+  "text": "If you are from these specific countries, I hope you recognize the location. In case you are curious about other locations that you can specify, check out the doc here.",
+  "translation": "如果您来自这些特定国家/地区，希望您能认出该位置。 如果您对可以指定的其他位置感到好奇，请在此处查看文档。"
+}, {
+  "tag": "H1",
+  "text": "How to Create Fake Data with Faker",
+  "translation": "如何使用Faker创建虚假数据"
+}, {
+  "tag": "H2",
+  "text": "You can either Collect Data or Create your Own Data",
+  "translation": "您可以收集数据或创建自己的数据"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*FRDnXejNj_-d52yM?q=20",
+  "caption": "Photo by Paweł Czerwiński on Unsplash",
+  "type": "image",
+  "file": "0!FRDnXejNj_-d52yM"
+}, {
+  "tag": "H1",
+  "text": "Motivation",
+  "translation": "动机"
+}, {
+  "tag": "P",
+  "text": "Let’s say you want to create data with certain data types (bool, float, text, integers) with special characteristics (names, address, color, email, phone number, location) to test some Python libraries or specific implementation. But it takes time to find that specific kind of data. You wonder: is there a quick way that you can create your own data?",
+  "translation": "假设您要创建具有特定数据类型（布尔，浮点，文本，整数）且具有特殊特征（名称，地址，颜色，电子邮件，电话号码，位置）的数据，以测试某些Python库或特定实现。 但是找到特定种类的数据需要花费时间。 您想知道：有没有一种快速的方法可以创建自己的数据？"
+}, {
+  "tag": "P",
+  "text": "What if there is a package that enables you to create fake data in one line of code such as this:",
+  "translation": "如果有一个程序包使您能够在这样的一行代码中创建虚假数据，该怎么办："
+}, {
+  "tag": "PRE",
+  "text": "fake.profile()",
+  "translation": "fake.profile（）"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*MHYddJXP1IgfH4XpTFD5VA.png?q=20",
+  "type": "image",
+  "file": "1!MHYddJXP1IgfH4XpTFD5VA.png"
+}, {
+  "tag": "P",
+  "text": "This can be done with Faker, a Python package that generates fake data for you, ranging from a specific data type to specific characteristics of that data, and the origin or language of the data. Let’s discover how we can use Faker to create fake data.",
+  "translation": "这可以通过Faker来完成，Faker是一个Python程序包，可以为您生成伪造的数据，范围从特定的数据类型到该数据的特定特征，以及数据的来源或语言。 让我们发现如何使用Faker创建虚假数据。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Khuyen Tran的文章《How to Create Fake Data with Faker》，参考：https://towardsdatascience.com/how-to-create-fake-data-with-faker-a835e5b7a9d9)",
+  "translation": "（本文翻译自Khuyen Tran的文章，《如何用Faker创建虚假数据》，参考：https：//towardsdatascience.com/how-to-create-fake-data-with-faker-a835e5b7a9d9）"
+}]

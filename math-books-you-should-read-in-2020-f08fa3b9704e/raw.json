@@ -1,0 +1,154 @@
+[{
+  "tag": "P",
+  "text": "This list will allow you to grasp how mathematics, statistics and algorithms shape the world we live in. Thanks to that knowledge you’ll be able to operate more efficiently and be more confident.",
+  "translation": "此列表使您可以掌握数学，统计数据和算法如何塑造我们所生活的世界。借助这些知识，您将能够更有效地运作并且更有信心。"
+}, {
+  "tag": "P",
+  "text": "Have fun reading them!",
+  "translation": "祝他们阅读愉快！"
+}, {
+  "tag": "P",
+  "text": "*disclaimer: the above links are affiliate*",
+  "translation": "*免责声明：以上链接均为会员*"
+}, {
+  "tag": "H1",
+  "text": "Math Books you should read in 2020",
+  "translation": "您应该在2020年阅读的数学书"
+}, {
+  "tag": "H2",
+  "text": "Learn how mathematics influence every aspect of our life.",
+  "translation": "了解数学如何影响我们生活的各个方面。"
+}, {
+  "tag": "P",
+  "text": "Mathematics is behind every single process in today’s world. We breath mathematics even though we might not be aware of how it influences our behaviours. Maths is behind all the technological products we use. No matter what’s your background, you need to know how mathematics work in order to understand the world around you. These books will help you with that.",
+  "translation": "在当今世界的每一个过程中，数学都是至关重要的。 即使我们可能不知道数学如何影响我们的行为，我们也会呼吸数学。 数学是我们使用的所有技术产品的背后。 无论您是什么背景的人，都需要了解数学的工作原理才能理解周围的世界。 这些书将帮助您。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*vkiIHePlmzrog8P_X9ABZA.jpeg?q=20",
+  "caption": "Math books you should read in 2020",
+  "type": "image",
+  "file": "1!vkiIHePlmzrog8P_X9ABZA.jpeg"
+}, {
+  "tag": "H1",
+  "text": "Math books to read",
+  "translation": "阅读数学书"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/38/0*eKt-m20pxMljiCfB?q=20",
+  "type": "image",
+  "file": "0!eKt-m20pxMljiCfB"
+}, {
+  "tag": "P",
+  "text": "The Art of Statistics: How to Learn from Data is a book which explains the importance of statistics in our daily life on great examples:",
+  "translation": "统计的艺术：如何从数据中学习是一本书，它通过一些出色的例子解释了统计在我们日常生活中的重要性："
+}, {
+  "tag": "UL",
+  "texts": ["How many trees are there on the planet?", "Do busier hospitals have higher survival rates?", "Why do old men have big ears?"],
+  "translations": ["这个星球上有几棵树？", "繁忙的医院有更高的生存率吗？", "为什么老人耳朵大？"]
+}, {
+  "tag": "P",
+  "text": "David Spiegelhalter guides the reader through the essential principles we need in order to derive knowledge from data. Drawing on real world problems to introduce conceptual issues, he shows us how statistics can help us determine the luckiest passenger on the Titanic, whether serial killer Harold Shipman could have been caught earlier, and if screening for ovarian cancer is beneficial.",
+  "translation": "David Spiegelhalter指导读者完成我们从数据中获取知识所需的基本原则。 他利用现实世界中的问题来介绍概念性问题，向我们展示了统计数据如何帮助我们确定泰坦尼克号上最幸运的乘客，连环杀手Harold Shipman是否可能早些被抓到以及筛查卵巢癌是否有益。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/38/0*M86x6ow2IFxjU1jo?q=20",
+  "type": "image",
+  "file": "0!M86x6ow2IFxjU1jo"
+}, {
+  "tag": "P",
+  "text": "Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy is a book about algorithms and how they affect our lives:",
+  "translation": "数学毁灭性武器：大数据如何增加不平等和威胁民主是一本有关算法及其如何影响我们生活的书："
+}, {
+  "tag": "UL",
+  "texts": ["where we go to school,", "whether we get a car loan,", "how much we pay for health insurance-"],
+  "translations": ["我们上学的地方", "我们是否获得汽车贷款，", "我们为健康保险支付多少？"]
+}, {
+  "tag": "P",
+  "text": "Those decisions often are being made not by humans, but by mathematical models. In theory, this should lead to greater fairness: everyone is judged according to the same rules, and bias is eliminated.",
+  "translation": "这些决定通常不是由人做出的，而是由数学模型做出的。 从理论上讲，这应该导致更大的公平性：每个人都按照相同的规则进行评判，并且消除了偏见。"
+}, {
+  "tag": "P",
+  "text": "But as Cathy O’Neil reveals in this book, the opposite is true. The models being used today are opaque, unregulated, and incontestable, even when they’re wrong. Most troubling, they reinforce discrimination: If a poor student can’t get a loan because a lending model deems him too risky (by virtue of his zip code), he’s then cut off from the kind of education that could pull him out of poverty, and a vicious spiral ensues. Models are propping up the lucky and punishing the downtrodden, creating a “toxic cocktail for democracy.” Welcome to the dark side of Big Data.",
+  "translation": "但是正如Cathy O’Neil在这本书中所揭示的，事实恰恰相反。 当今使用的模型是不透明的，不受监管的且无可争议的，即使它们是错误的。 最令人不安的是，它们加剧了歧视：如果一个贫穷的学生因为借贷模型认为他风险太大而无法获得贷款（凭借他的邮政编码），那么他就脱离了可能使他摆脱贫困的那种教育。 ，随之而来的是恶性循环。 模特们支撑着幸运，并惩罚了被压迫者，创造了“民主的有毒鸡尾酒”。 欢迎来到大数据的阴暗面。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/38/0*ihpKNKAbb5mzE28-?q=20",
+  "type": "image",
+  "file": "0!ihpKNKAbb5mzE28-"
+}, {
+  "tag": "P",
+  "text": "The Black Swan: The Impact of the Highly Improbable is a book about black swan events and how they shape our world. A black swan is a highly improbable event with three principal characteristics: It is unpredictable; it carries a massive impact; and, after the fact, we concoct an explanation that makes it appear less random, and more predictable, than it was. The astonishing success of Google was a black swan; so was 9/11. For Nassim Nicholas Taleb, black swans underlie almost everything about our world, from the rise of religions to events in our own personal lives.",
+  "translation": "《黑天鹅：高度不可能的影响》是一本有关黑天鹅事件及其如何塑造我们世界的书。 黑天鹅是极不可能发生的事件，具有三个主要特征：不可预测； 它产生了巨大的影响； 并且，事实上，我们编造了一个解释，使它看起来比以前看起来更随机，更容易预测。 Google的惊人成功是一只黑天鹅。 9/11也是如此。 对于纳西姆·尼古拉斯·塔勒布（Nassim Nicholas Taleb）而言，黑天鹅几乎构成了我们世界上所有事物的基础，从宗教的兴起到我们个人生活中的事件。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/40/0*tCIRosrpYoiZpOuw?q=20",
+  "type": "image",
+  "file": "0!tCIRosrpYoiZpOuw"
+}, {
+  "tag": "P",
+  "text": "Infinite Powers: How Calculus Reveals the Secrets of the Universe is a book about calculus.",
+  "translation": "无限力量：微积分如何揭示宇宙的秘密是一本有关微积分的书。"
+}, {
+  "tag": "P",
+  "text": "Without calculus, we wouldn’t have cell phones, TV, GPS, or ultrasound. We wouldn’t have unraveled DNA or discovered Neptune or figured out how to put 5,000 songs in your pocket.",
+  "translation": "没有微积分，我们就不会有手机，电视，GPS或超声波。 我们不会发现DNA，也不会发现海王星，也不会想出如何将5,000首歌曲放入口袋的方法。"
+}, {
+  "tag": "P",
+  "text": "Steven Strogatz’s brilliantly creative, down-to-earth history shows that calculus is not about complexity; it’s about simplicity. It harnesses an unreal number — infinity — to tackle real-world problems, breaking them down into easier ones and then reassembling the answers into solutions that feel miraculous.",
+  "translation": "史蒂文·斯特罗加兹（Steven Strogatz）出色的创造力，扎实的历史表明，演算与复杂性无关。 这是关于简单性。 它利用一个虚幻的数字（无穷大）来解决现实世界中的问题，将它们分解成更简单的问题，然后将答案重新组合成让人感到神奇的解决方案。"
+}, {
+  "tag": "P",
+  "text": "Infinite Powers recounts how calculus tantalised and thrilled its inventors, starting with its first glimmers in ancient Greece and bringing us right up to the discovery of gravitational waves (a phenomenon predicted by calculus). Strogatz reveals how this form of math rose to the challenges of each age: how to determine the area of a circle with only sand and a stick; how to explain why Mars goes “backwards” sometimes; how to make electricity with magnets; how to ensure your rocket doesn’t miss the moon; how to turn the tide in the fight against AIDS.",
+  "translation": "“无穷大国”（Infinite Powers）讲述了微积分如何使发明家们陶醉并为之振奋，从古希腊的第一缕微光开始，一直到引力波的发现（微积分预测的现象）。 斯特罗加兹（Strogatz）揭示了这种数学形式如何应对每个时代的挑战：如何仅用沙子和棍子确定圆的面积； 如何解释为什么火星有时会“后退”； 如何用磁铁发电； 如何确保火箭不会错过月球； 如何在抗击艾滋病方面扭转局面。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/40/0*L7pT79HB5LuHfyHi?q=20",
+  "type": "image",
+  "file": "0!L7pT79HB5LuHfyHi"
+}, {
+  "tag": "P",
+  "text": "Humble Pi: When Math Goes Wrong in the Real World is a book about how mathematics influences our life at every level: from the code running a website to the equations enabling the design of skyscrapers and bridges. Most of the time this math works quietly behind the scenes… until it doesn’t. All sorts of seemingly innocuous mathematical mistakes can have significant consequences.",
+  "translation": "谦虚的Pi：《现实世界中的数学错误》是一本关于数学如何在各个层面上影响我们生活的书：从运行网站的代码到启用摩天大楼和桥梁设计的方程式。 在大多数情况下，这种数学方法在幕后悄悄进行，直到不起作用为止。 各种看似无害的数学错误都可能产生重大后果。"
+}, {
+  "tag": "P",
+  "text": "Math is easy to ignore until a misplaced decimal point upends the stock market, a unit conversion error causes a plane to crash, or someone divides by zero and stalls a battleship in the middle of the ocean.",
+  "translation": "数学运算很容易被忽略，直到错误的小数点使股票市场崩溃，单位转换错误导致飞机坠毁，或者有人除以零并使一艘战舰停滞在海洋中间。"
+}, {
+  "tag": "P",
+  "text": "Exploring and explaining a litany of glitches, near misses, and mathematical mishaps involving the internet, big data, elections, street signs, lotteries, the Roman Empire, and an Olympic team, Matt Parker uncovers the bizarre ways math trips us up, and what this reveals about its essential place in our world. Getting it wrong has never been more fun.",
+  "translation": "在探讨和解释一连串的故障，未命中以及涉及互联网，大数据，选举，路牌，彩票，罗马帝国和奥林匹克队的数学不幸之后，马特·帕克（Matt Parker）发现了数学使我们绊倒的奇特方式，以及什么 这揭示了它在我们世界中的重要地位。 弄错它从未如此有趣。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/38/0*xAHSl92fw37skBlc?q=20",
+  "type": "image",
+  "file": "0!xAHSl92fw37skBlc"
+}, {
+  "tag": "P",
+  "text": "Do Dice Play God?: The Mathematics of Uncertainty is a book about uncertainty. Uncertainty is everywhere: the weather, the economy, the sex of an unborn child — even quantities we think that we know such as populations or the transit of the planets contain the possibility of error. It’s no wonder that, throughout that history, we have attempted to produce rigidly defined areas of uncertainty — we prefer the surprise party to the surprise asteroid.",
+  "translation": "骰子扮演上帝吗？：不确定性是一本关于不确定性的书。 不确定性无处不在：天气，经济状况，未出生婴儿的性别-甚至我们认为我们知道的诸如人口或行星过境之类的数量都可能出错。 难怪在整个这段历史中，我们一直试图产生严格定义的不确定性区域-我们更喜欢惊喜小行星而不是惊喜小行星。"
+}, {
+  "tag": "P",
+  "text": "Ian Stewart explores the history and mathematics of uncertainty. Touching on gambling, probability, statistics, financial and weather forecasts, censuses, medical studies, chaos, quantum physics, and climate, he makes one thing clear: a reasonable probability is the only certainty.",
+  "translation": "伊恩·斯图尔特（Ian Stewart）探索不确定性的历史和数学。 在谈到赌博，概率，统计数据，金融和天气预报，人口普查，医学研究，混乱，量子物理学和气候时，他明确了一件事：合理的概率是唯一的确定性。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/48/0*EBk5O3dqnBR49Pgh?q=20",
+  "type": "image",
+  "file": "0!EBk5O3dqnBR49Pgh"
+}, {
+  "tag": "P",
+  "text": "The Princeton Companion to Mathematics is the ultimate guide to modern mathematics. This book, edited by Timothy Gowers, a recipient of the Fields Medal, presents nearly two hundred entries, written by world’s leading mathematicians. You will be introduced to:",
+  "translation": "普林斯顿数学随笔是现代数学的终极指南。 这本书由菲尔兹奖获得者蒂莫西·高尔斯（Timothy Gowers）编辑，介绍了近200篇由世界领先的数学家撰写的作品。 您将被介绍给："
+}, {
+  "tag": "UL",
+  "texts": ["basic mathematical tools and vocabulary;", "trace the development of modern mathematics;", "explain essential terms and concepts;", "examine core ideas in major areas of mathematics;", "describe the achievements of scores of famous mathematicians;", "explore the impact of mathematics on other disciplines such as biology, finance, and music."],
+  "translations": ["基本的数学工具和词汇；", "追踪现代数学的发展；", "解释基本术语和概念；", "审查数学主要领域的核心思想；", "描述著名数学家分数的成就；", "探索数学对其他学科（例如生物学，金融和音乐）的影响。"]
+}, {
+  "tag": "P",
+  "text": "Everyone should have it on a shelf to look up any math concept coming up in their work or life.",
+  "translation": "每个人都应该将其放在架子上，以查找工作或生活中出现的任何数学概念。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Przemek Chojecki的文章《Math Books you should read in 2020》，参考：https://medium.com/swlh/math-books-you-should-read-in-2020-f08fa3b9704e)",
+  "translation": "（本文翻译自Przemek Chojecki的文章《 2020年你应该读的数学书籍》，参考：https：//medium.com/swlh/math-books-you-should-read-in-2020-f08fa3b9704e）"
+}]

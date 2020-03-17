@@ -1,0 +1,442 @@
+[{
+  "tag": "H1",
+  "text": "Conclusion",
+  "translation": "结论"
+}, {
+  "tag": "P",
+  "text": "Thanks for reading! I hope you enjoyed it.",
+  "translation": "谢谢阅读！ 我希望你喜欢它。"
+}, {
+  "tag": "H1",
+  "text": "Namespaces Are One Honking Great Idea — Let’s Do More of Those!",
+  "translation": "命名空间是一个很好的主意-让我们做更多的事！"
+}, {
+  "tag": "P",
+  "text": "Last but not least, a namespace is a set of symbols that are used to organize objects of various kinds so that these objects may be referred to by unique names. In Python, a namespace is a system composed of:",
+  "translation": "最后但并非最不重要的一点是，名称空间是一组符号，用于组织各种对象，以便可以用唯一的名称来引用这些对象。 在Python中，名称空间是由以下内容组成的系统："
+}, {
+  "tag": "OL",
+  "texts": ["Built-in namespaces: Can be called without creating a self-defined function or importing modules such as the print() function.", "Global namespaces: When a user creates a class or function, a global namespace gets created.", "Local namespaces: The namespace inside local scopes."],
+  "translations": ["内置名称空间：可以在不创建自定义函数或导入诸如print（）函数之类的模块的情况下调用。", "全局名称空间：用户创建类或函数时，将创建全局名称空间。", "本地名称空间：本地范围内的名称空间。"]
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*WEXG468jngrIyhx7Jn9i8Q.png?q=20",
+  "caption": "Diagram of namespace relations.",
+  "type": "image",
+  "file": "1!WEXG468jngrIyhx7Jn9i8Q.png"
+}, {
+  "tag": "P",
+  "text": "The namespace system prevents Python from conflicting between module names.",
+  "translation": "命名空间系统可防止Python在模块名称之间发生冲突。"
+}, {
+  "tag": "H1",
+  "text": "If the Implementation Is Easy to Explain, It May Be a Good Idea",
+  "translation": "如果易于解释该实现，则可能是一个好主意"
+}, {
+  "tag": "P",
+  "text": "It’s programming expertise to make the design (or even people’s lives) easier while the background knowledge may be profound, and I think this is the hardest part of programming.",
+  "translation": "借助编程专业知识，可以使设计（甚至人们的生活）变得更容易，而背景知识可能很深，我认为这是编程中最难的部分。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*8EelYbWTNaia8Y0Y?q=20",
+  "caption": "Photo by Thought Catalog on Unsplash.",
+  "type": "image",
+  "file": "0!8EelYbWTNaia8Y0Y"
+}, {
+  "tag": "P",
+  "text": "Take advantage of the simplicity and readability in Python to implement crazy ideas.",
+  "translation": "利用Python的简单性和可读性来实现疯狂的想法。"
+}, {
+  "tag": "H1",
+  "text": "If the Implementation Is Hard to Explain, It’s a Bad Idea",
+  "translation": "如果难以解释实施方式，那是个坏主意"
+}, {
+  "tag": "P",
+  "text": "Recall the idea of “Complex is better than complicated.” Usually, the complicated code means weak design—especially in high-level programming languages like Python. In some cases, however, the complexity of its domain knowledge could make implementation hard to explain, and how to optimize its lucidity matters. Here’s a guideline for structuring projects that leverages your achievement.",
+  "translation": "回想一下“复杂胜于复杂”的想法。 通常，复杂的代码意味着较弱的设计-尤其是在像Python这样的高级编程语言中。 但是，在某些情况下，其领域知识的复杂性可能会使实现难以解释，而如何优化其透明度也很重要。 这是利用您的成就来组织项目的指南。"
+}, {
+  "tag": "H2",
+  "text": "Structuring Your Project — The Hitchhiker’s Guide to Python",
+  "translation": "结构化项目—《搭便车的Python指南》"
+}, {
+  "tag": "H3",
+  "text": "By “structure” we mean the decisions you make concerning how your project best meets its objective. We need to consider…",
+  "translation": "“结构”是指您就项目如何最好地实现其目标而做出的决策。 我们需要考虑..."
+}, {
+  "tag": "H1",
+  "text": "Although Never Is Often Better Than *Right* Now",
+  "translation": "虽然从来没有比现在*对*好"
+}, {
+  "tag": "P",
+  "text": "“Now is better than never” doesn’t mean that planning is useless. Writing the ideas down and setting a goal to conquer is better than doing it at the very moment. For example, I usually spend an hour every Sunday to scratch out my weekly schedule and update my plan for tomorrow right before I go to bed to check out anything that has to be put off.",
+  "translation": "“现在总比没有好”，并不意味着规划是没有用的。 写下想法并设定要征服的目标比此时此刻要好。 例如，我通常每个星期日花一个小时来草拟我的每周日程安排，并在上床睡觉之前检查要推迟的所有事情，以更新明天的计划。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*RKu9hsWw9qm-n0ud?q=20",
+  "caption": "Photo by Djim Loic on Unsplash.",
+  "type": "image",
+  "file": "0!RKu9hsWw9qm-n0ud"
+}, {
+  "tag": "H1",
+  "text": "Now Is Better Than Never",
+  "translation": "现在总比没有好"
+}, {
+  "tag": "P",
+  "text": "“You may delay, but time will not, and lost time is never found again.” — Benjamin Franklin",
+  "translation": "“您可能会延迟，但时间不会，而且再也找不到丢失的时间。” - 本杰明·富兰克林"
+}, {
+  "tag": "P",
+  "text": "For those who suffer from procrastination like me and are searching for change, check this out and cooperate with the panic monster.",
+  "translation": "对于那些像我这样的拖延症患者并且正在寻求改变的人，请检查一下并与恐慌怪物合作。"
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "P",
+  "text": "On the other hand, another side of the aphorism is to stop you from over-planning, which is no more productive than watching Netflix.",
+  "translation": "另一方面，格言的另一面是阻止您进行过度计划，这比观看Netflix效率更高。"
+}, {
+  "tag": "P",
+  "text": "The mutual attribute of procrastination and over-planning is that“Nothing is done.”",
+  "translation": "拖延和过度计划的共同属性是“什么也没做。”"
+}, {
+  "tag": "H1",
+  "text": "Although That Way May Not Be Obvious at First Unless You’re Dutch",
+  "translation": "尽管除非您是荷兰人，否则这种方式乍一看可能并不明显"
+}, {
+  "tag": "P",
+  "text": "The creator of Python, Guido van Rossum, is a Dutch programmer who makes this aphorism unarguable. You won’t claim that you know Python better than he does… at least I won’t.",
+  "translation": "Python的创建者Guido van Rossum是一位荷兰程序员，他使这种格言不容置疑。 您不会声称自己比他更了解Python……至少我不会。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*oXj3QFJt4zcs1mTncC4VDw.jpeg?q=20",
+  "caption": "Photo courtesy of Guido van Rossum on GitHub.",
+  "type": "image",
+  "file": "1!oXj3QFJt4zcs1mTncC4VDw.jpeg"
+}, {
+  "tag": "H1",
+  "text": "There Should Be One — and Preferably Only One — Obvious Way to Do It",
+  "translation": "应该有一个-最好只有一个-显而易见的方法"
+}, {
+  "tag": "P",
+  "text": "Think of why Python is described as an easy-to-learn programming language. With marvelous built-in functions/libraries and high expansibility, Python encourages programmers to write gracefully. Though there are more solutions to provide flexibility, it could spend too much time digging into the same problem.",
+  "translation": "想一想为什么Python被描述为一种易于学习的编程语言。 凭借出色的内置函数/库和高度可扩展性，Python鼓励程序员优雅地编写代码。 尽管有更多解决方案可提供灵活性，但它可能花费太多时间来研究相同的问题。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/52/1*TmwjhHeBOr1TNde_UbVMFQ.png?q=20",
+  "caption": "Type import antigravity and execute.",
+  "type": "image",
+  "file": "1!TmwjhHeBOr1TNde_UbVMFQ.png"
+}, {
+  "tag": "H1",
+  "text": "In the Face of Ambiguity, Refuse the Temptation to Guess",
+  "translation": "面对歧义，拒绝诱惑猜测"
+}, {
+  "tag": "P",
+  "text": "“What is important is to keep learning, to enjoy challenge, and to tolerate ambiguity. In the end there are no certain answers.” ― Matina Horner",
+  "translation": "“重要的是继续学习，享受挑战并容忍歧义。 最后，没有确定的答案。” ―玛蒂娜·霍纳（Matina Horner）"
+}, {
+  "tag": "P",
+  "text": "This quote is elegant and lyrical but not a good metaphor in programming. Ambiguity may refer to unclear syntax, complicated program structure, or mistakes that trigger an error message. For example, a simple mistake when using the numpy module for the first time:",
+  "translation": "这句话优雅而抒情，但在编程中不是一个很好的隐喻。 歧义可能是指语法不清楚，程序结构复杂或触发错误消息的错误。 例如，首次使用numpy模块时，一个简单的错误："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/Hannibal0420/b14a4e3d38f9ea33038619eaf51064cb/raw/64d6b7ccad44df89e174071e1e2862932e25e31f/ambiguity_mistake.py",
+  "code": "import numpy as np\n\na = np.arange(5)\nprint(a < 3)\nif a < 3:\n    print('smaller than 3')"
+}, {
+  "tag": "PRE",
+  "text": "ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",
+  "translation": "ValueError：具有多个元素的数组的真值不明确。 使用a.any（）或a.all（）"
+}, {
+  "tag": "P",
+  "text": "If you execute the code above, you’ll find an array of five bools in the output indicating the values under 3. Thus it’s impossible for the if statement to determine the state. The built-in .all() and .any() functions showed in the message are used for successive And/Or.",
+  "translation": "如果您执行上述代码，则会在输出中找到一个包含五个布尔值的数组，表示值在3以下。因此，if语句无法确定状态。 消息中显示的内置.all（）和.any（）函数用于连续的And / Or。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/Hannibal0420/ccdc1e662cae8d57a3a8930440b41be8/raw/f11dd18a4386b826d3757d06cb24aa23a6636f65/all_any_demo.py",
+  "code": "import numpy as np\n\na = np.array([True, True, True])\nb = np.array([False, True, True])\nc = np.array([False, False, False])\n\nprint(a.all())\nprint(a.any())\n\nprint(b.all())\nprint(b.any())\n\nprint(c.all())\nprint(c.any())\n"
+}, {
+  "tag": "P",
+  "text": "The output shows that .all() returns True only if all of the items are True, while .any() returns True if any of the items are True.",
+  "translation": "输出显示，仅当所有项目均为True时.all（）返回True，而如果任何项目为True则.any（）返回True。"
+}, {
+  "tag": "H1",
+  "text": "Unless Explicitly Silenced",
+  "translation": "除非明确沉默"
+}, {
+  "tag": "P",
+  "text": "In some situations, small bugs would not bother you. Maybe you want to catch the specific error, though. To get more details on specific error messages, I recommend reading the official Built-in Exceptions document and finding out your target.",
+  "translation": "在某些情况下，小错误不会打扰您。 不过，也许您想捕获特定的错误。 要获取有关特定错误消息的更多详细信息，我建议阅读官方的“内置异常”文档并找出目标。"
+}, {
+  "tag": "H2",
+  "text": "Built-in Exceptions — Python 3.8.2 documentation",
+  "translation": "内置异常-Python 3.8.2文档"
+}, {
+  "tag": "H3",
+  "text": "In Python, all exceptions must be instances of a class that derives from. In a statement with an clause that mentions…",
+  "translation": "在Python中，所有异常都必须是派生自的类的实例。 在带有子句的陈述中提到…"
+}, {
+  "tag": "H1",
+  "text": "Errors Should Never Pass Silently",
+  "translation": "错误绝不能无声地传递"
+}, {
+  "tag": "P",
+  "text": "Passing errors would eventually leave implicit bugs that are even harder to figure out. Thanks to the robust error handling in Python, it is not difficult for programmers to use the tool compared with other languages.",
+  "translation": "传递错误最终将导致隐式错误，这些错误甚至更难找出。 得益于Python中强大的错误处理功能，与其他语言相比，程序员使用该工具并不困难。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/Hannibal0420/6bce7d0f48598aac77c4bec183ec2347/raw/5d197ee7bda019fa5099ec89520faf489d8fc0ad/exception_handling.py",
+  "code": "\ntry:\n    x = int(input(\"Please enter an Integer: \"))\nexcept ValueError:\n    print(\"Oops! This is not an Integer.\")   \nexcept Exception as err:\n    print(err)\nelse:\n    print('You did it! Great job!')\nfinally:\n    print('ヽ(✿ﾟ▽ﾟ)ノ')\n \n# 1.The code that potentially break down.\n# 2.Triggered if the value error occur.\n# 3.Handling error other than value error.\n# 4.Execute if no error triggered.\n# 5.Execute no matter the error triggered or not."
+}, {
+  "tag": "P",
+  "text": "According to Python’s documentation: “Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it.”",
+  "translation": "根据Python的文档，“即使语句或表达式在语法上是正确的，但尝试执行它也可能导致错误。”"
+}, {
+  "tag": "P",
+  "text": "Especially for a big project, we don’t want our code crashing after a time-consuming computation. This is why exception management is charming.",
+  "translation": "特别是对于大型项目，我们不希望我们的代码在耗时的计算之后崩溃。 这就是异常管理如此迷人的原因。"
+}, {
+  "tag": "H1",
+  "text": "Although Practicality Beats Purity",
+  "translation": "尽管实用性胜过纯度"
+}, {
+  "tag": "P",
+  "text": "This aphorism is contradictory to the last one and reminds us of the balance between them.",
+  "translation": "这种格言与上一个格格不入，使我们想起了两者之间的平衡。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*Rx2PRVm0e0NEqEqmHN9SAw.jpeg?q=20",
+  "caption": "Photo by Scott Webb on Unsplash.",
+  "type": "image",
+  "file": "1!Rx2PRVm0e0NEqEqmHN9SAw.jpeg"
+}, {
+  "tag": "H1",
+  "text": "Special Cases Aren’t Special Enough to Break the Rules",
+  "translation": "特殊情况不足以打破规则"
+}, {
+  "tag": "P",
+  "text": "The consistency of supporting general cases is the key, so try to reorganize a cumbersome project into a simple form. For example, structure the code in classes or sort it into different files according to its functionality, even though Python doesn’t force you to do so. Since Python is a multi-paradigm programming language, a powerful approach to problem-solving is to create objects, which is known as object-oriented programming.",
+  "translation": "支持一般案例的一致性是关键，因此请尝试将繁琐的项目重组为简单形式。 例如，即使Python不会强迫您这样做，也可以按类构造代码或根据其功能将其分类到不同的文件中。 由于Python是一种多范式编程语言，因此解决问题的一种有效方法是创建对象，这被称为面向对象编程。"
+}, {
+  "tag": "P",
+  "text": "Object-oriented programming is a programming paradigm that organizes program structure so that attributes and behaviors can be viewed as individual objects. The benefit of it is intuitive and easy to manipulate, and many tutorials have splendidly explained the concepts. This one is my favorite:",
+  "translation": "面向对象的编程是一种组织程序结构的编程范例，因此可以将属性和行为视为单个对象。 它的好处是直观且易于操作，许多教程出色地解释了这些概念。 这个是我的最爱："
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "H1",
+  "text": "Readability Counts",
+  "translation": "可读性计数"
+}, {
+  "tag": "P",
+  "text": "Code is read more often than it’s written. Think about indentation and how much easier it is to read code, and compare the codes below:",
+  "translation": "读取代码的次数要多于编写代码的次数。 考虑缩进以及读取代码有多容易，并比较以下代码："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/Hannibal0420/2f14de26b8f89ed40142c0d70c9827ef/raw/ab56a69469753cf84df97dd2208d0df86243ef02/readability.py",
+  "code": "money = 10000000\nprint(\"I earn\", money, \"dollars by writing on medium.\")\n\nmoney = 10_000_000\nprint(f\"I earn {money} dollars by writing on medium.\")"
+}, {
+  "tag": "P",
+  "text": "In this case, the codes share the same result, but the last one provides more readability by using underscore placeholders and f-string. After Python 3.6 was announced, f-string started to make formatting easier and it’s more powerful when dealing with longer sentences with more variables inside.",
+  "translation": "在这种情况下，这些代码共享相同的结果，但是最后一个通过使用下划线占位符和f字符串提供了更高的可读性。 在发布Python 3.6之后，f字符串开始使格式化变得更容易，并且在处理带有更多变量的较长句子时，f字符串更加强大。"
+}, {
+  "tag": "P",
+  "text": "A writer’s style should not place obstacles between his ideas and the minds of his readers.",
+  "translation": "作家的风格不应在思想和读者的思想之间造成障碍。"
+}, {
+  "tag": "H1",
+  "text": "Sparse Is Better Than Dense",
+  "translation": "稀疏胜于密"
+}, {
+  "tag": "P",
+  "text": "Don’t stress the reader by sticking too much code in one line. A recommended maximum line length is 79 characters. The limitation of the editor window width works well when using code review tools.",
+  "translation": "不要在一行中粘贴太多代码，以免给读者带来压力。 建议的最大行长为79个字符。 使用代码查看工具时，编辑器窗口宽度的限制非常有效。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*OzBi54bE7BRLlyxsw9roRQ.png?q=20",
+  "caption": "Download images agiler from Unsplash using Python.",
+  "type": "image",
+  "file": "1!OzBi54bE7BRLlyxsw9roRQ.png"
+}, {
+  "tag": "H1",
+  "text": "Flat Is Better Than Nested",
+  "translation": "扁平比嵌套更好"
+}, {
+  "tag": "P",
+  "text": "Nested modules are not common in Python—at least I haven’t seen anything like module.class.subclass.function before—and not easy to read. Though building a submodule in another submodule may reduce lines of code, we don't want users to get troubled with unintuitive syntax.",
+  "translation": "嵌套模块在Python中并不常见（至少我以前从未见过类似module.class.subclass.function之类的东西），而且不容易阅读。 尽管在另一个子模块中构建一个子模块可能会减少代码行，但是我们不希望用户为不直观的语法所困扰。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*SalNYPiv5RIfTEld?q=20",
+  "caption": "Keep it shallow.",
+  "type": "image",
+  "file": "0!SalNYPiv5RIfTEld"
+}, {
+  "tag": "H1",
+  "text": "Complex Is Better Than Complicated",
+  "translation": "复杂胜于复杂"
+}, {
+  "tag": "P",
+  "text": "The difference between complex and complicated is that complex is used to refer to the system level of components, while complicated refers to a high level of difficulty.",
+  "translation": "复杂和复杂之间的区别在于，复杂是指组件的系统级别，而复杂是指较高的难度。"
+}, {
+  "tag": "P",
+  "text": "Sometimes, although we try to keep tasks simple and stupid, the result could still be nasty. In this case, optimization in programming becomes necessary, and my favorite option of learning it is working on coding challenge websites. You can view others’ solutions and even be inspired by better algorithms.",
+  "translation": "有时，尽管我们试图使任务简单而愚蠢，但结果仍然令人讨厌。 在这种情况下，有必要对编程进行优化，而我最喜欢的学习方法是在挑战性网站上进行编码。 您可以查看其他人的解决方案，甚至可以从更好的算法中获得启发。"
+}, {
+  "tag": "P",
+  "text": "HackerRank provides a variety of levels fitting new programmers, which is outstanding for getting started. After that, try websites that are more professional, like:",
+  "translation": "HackerRank提供了适合新程序员的各种级别，对于入门而言非常出色。 之后，请尝试更专业的网站，例如："
+}, {
+  "tag": "H2",
+  "text": "Coderbyte | The #1 Coding Assessment Platform",
+  "translation": "Coderbyte | ＃1编码评估平台"
+}, {
+  "tag": "H3",
+  "text": "Improve your coding skills with our library of 300+ challenges and prepare for coding interviews with content from…",
+  "translation": "通过我们包含300多个挑战的库，提高您的编码技能，并准备对来自...的内容进行采访采访。"
+}, {
+  "tag": "H2",
+  "text": "Topcoder",
+  "translation": "顶级编码器"
+}, {
+  "tag": "H3",
+  "text": "Topcoder is a crowdsourcing marketplace that connects businesses with hard-to-find expertise. The Topcoder Community…",
+  "translation": "Topcoder是一个众包市场，它将具有难以找到的专业知识的企业联系在一起。 Topcoder社区…"
+}, {
+  "tag": "H1",
+  "text": "Simple Is Better Than Complex",
+  "translation": "简单胜于复杂"
+}, {
+  "tag": "P",
+  "text": "“Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.” ― Steve Jobs",
+  "translation": "“简单比复杂难得多：您必须努力工作以使思路清晰，使其变得简单。 但最终还是值得的，因为一旦到达那里，您就可以搬山。” ―史蒂夫·乔布斯"
+}, {
+  "tag": "P",
+  "text": "A lot of times when dealing with iterators, we also need to keep a count of iterations. Python eases the task by providing a built-in function called enumerate(). Here is the immature way followed by the recommended one:",
+  "translation": "很多时候，在处理迭代器时，我们还需要保留迭代次数。 Python通过提供一个称为enumerate（）的内置函数来简化任务。 这是不成熟的方法，后面是推荐的方法："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/Hannibal0420/cf861d8fac814edcef515db77c14b52d/raw/8fa8ec0e4a6e0c51803a26f042676c86f440dc1c/enumerate.py",
+  "code": "words = ['Hannibal', 'Hanny', 'Steeve']\n\n# Novice\nindex = 0\nfor word in words:\n    print(index, word)\n    index += 1\n    \n# Pro\nfor index, word in enumerate(words):\n    print(index, word)"
+}, {
+  "tag": "P",
+  "text": "Another example is using the built-in zip() function, which creates an iterator that would pair elements from two or more iterables. You can use it to solve common programming problems fast and efficiently, like creating dictionaries.",
+  "translation": "另一个示例是使用内置的zip（）函数，该函数创建一个迭代器，该迭代器将对来自两个或多个可迭代对象的元素进行配对。 您可以使用它来快速有效地解决常见的编程问题，例如创建词典。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/Hannibal0420/044fecff1eff39bd65859fa2610ebeda/raw/206dca825299d3b65c81152f487f4c7255a2071d/zip_app.py",
+  "code": "subjects = ['math', 'chemistry', 'biology', 'pyhsics']\ngrades = ['100', '83', '90', '92']\n\ngrades_dict = dict(zip(subjects, grades))\nprint(grades_dict)"
+}, {
+  "tag": "P",
+  "text": "The ability to simplify is to eliminate the unnecessary so that the necessary may speak.",
+  "translation": "简化的能力是消除不必要的东西，使必要的东西说话。"
+}, {
+  "tag": "H1",
+  "text": "Explicit Is Better Than Implicit",
+  "translation": "明确胜于隐含"
+}, {
+  "tag": "P",
+  "text": "In Python, a good naming convention not only prevents you from getting bad grades in classes but also makes your code explicit. Fortunately, there are some guidelines you can find in PEP8, and I would like to highlight some points below.",
+  "translation": "在Python中，良好的命名约定不仅可以防止您在类中获得不好的成绩，还可以使代码明确。 幸运的是，您可以在PEP8中找到一些准则，我想在下面重点介绍一些要点。"
+}, {
+  "tag": "UL",
+  "texts": ["In general, avoid using names that are 1. Too general, like my_list.2. Too wordy, like list_of_machine_learning_data_set.3. Too ambiguous, like \"l\", \"I\", \"o\", \"O.\"", "Package/Module names should be all lowercase.- One-word names are preferred.- When multiple words are needed, add underscores to separate them.", "Class names should follow the UpperCaseCamelCase convention.", "Variables\\Methods\\Functions should follow the lowercase convention (add underscores to separate words if needed).", "Constant names must be fully capitalized (add underscores to separate words if needed)."],
+  "translations": ["通常，避免使用太过通用的名称1，例如my_list.2.。 太冗长，例如list_of_machine_learning_data_set.3。 太含糊，例如“ l”，“ I”，“ o”，“ O”。", "程序包/模块名称应全部小写。-首选单词名称。-如果需要多个单词，请添加下划线以将其分开。", "类名应遵循UpperCase CamelCase约定。", "Variables \\ Methods \\ Functions应该遵循小写约定（如果需要，请在下划线处添加下划线）。", "常量名称必须全大写（如果需要，请在下划线处添加下划线）。"]
+}, {
+  "tag": "P",
+  "text": "Everything has to be lucid and understandable.",
+  "translation": "一切都必须是清楚易懂的。"
+}, {
+  "tag": "H1",
+  "text": "Beautiful Is Better Than Ugly",
+  "translation": "美丽胜过丑陋"
+}, {
+  "tag": "P",
+  "text": "Python features simple syntax, code readability, and English-like commands that make coding a lot easier and more efficient than with other programming languages. For example, using or and vs. || && to construct the same expressions in semantic perspective:",
+  "translation": "Python具有简单的语法，代码易读性以及类似英语的命令，与其他编程语言相比，它们使编码更容易，更高效。 例如，使用or和vs。 &&从语义角度构造相同的表达式："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/Hannibal0420/90fa26f4b8eb755eed0105bc12a384d3/raw/41aee6b016bb55bc3ebed9b28d5b775dcbf11381/alternative_operator.py",
+  "code": "# &&, ||\nif a == 0 && b == 1 || c == True:\n  \n# and, or\nif a == 0 and b == 1 or c == True:\n  \n# These are the same logical expression in Python\n# The alternative operators can be used to construct the exact same expressions from a semantic perspective."
+}, {
+  "tag": "P",
+  "text": "Furthermore, the layout and composition of the code are crucial, and there are plenty of resources that exist covering this topic. Here is the most popular and my favorite one:",
+  "translation": "此外，代码的布局和组成至关重要，并且存在大量涉及该主题的资源。 这是最受欢迎和我最喜欢的一个："
+}, {
+  "tag": "H2",
+  "text": "PEP 8 — Style Guide for Python Code",
+  "translation": "PEP 8 — Python代码样式指南"
+}, {
+  "tag": "H3",
+  "text": "The official home of the Python Programming Language",
+  "translation": "Python编程语言的官方主页"
+}, {
+  "tag": "P",
+  "text": "After looking through PEP8, take a look at these articles showing some highlights and applications:",
+  "translation": "看完PEP8之后，请看一下这些文章，这些文章显示了一些要点和应用程序："
+}, {
+  "tag": "UL",
+  "texts": ["How to Write Beautiful Python Code With PEP 8", "Stylish Python with PEP8", "The Pitfalls of PEP-8"],
+  "translations": ["如何使用PEP 8编写漂亮的Python代码", "带有PEP8的时尚Python", "PEP-8的陷阱"]
+}, {
+  "tag": "P",
+  "text": "Never mess up your code. Be elegant and make it beautiful.",
+  "translation": "永远不要弄乱您的代码。 优雅并使其美丽。"
+}, {
+  "tag": "H1",
+  "text": "The Zen of Python?",
+  "translation": "Python的禅宗？"
+}, {
+  "tag": "P",
+  "text": "For those who haven’t seen it before, type and execute import this in your Python interpreter, and 19 guiding principles penned by Tim Peters will show up:",
+  "translation": "对于那些以前从未看过的人，请在您的Python解释器中键入并执行import this，这将显示Tim Peters提出的19条指导原则："
+}, {
+  "tag": "OL",
+  "texts": ["Beautiful is better than ugly.", "Explicit is better than implicit.", "Simple is better than complex.", "Complex is better than complicated.", "Flat is better than nested.", "Sparse is better than dense.", "Readability counts.", "Special cases aren’t special enough to break the rules.", "Although practicality beats purity.", "Errors should never pass silently.", "Unless explicitly silenced.", "In the face of ambiguity, refuse the temptation to guess.", "There should be one — and preferably only one — obvious way to do it.", "Although that way may not be obvious at first unless you’re Dutch.", "Now is better than never.", "Although never is often better than *right* now.", "If the implementation is hard to explain, it’s a bad idea.", "If the implementation is easy to explain, it may be a good idea.", "Namespaces are one honking great idea — let’s do more of those!"],
+  "translations": ["美丽胜于丑陋。", "显式胜于隐式。", "简单胜于复杂。", "复杂胜于复杂。", "扁平比嵌套更好。", "稀疏胜于密集。", "可读性很重要。", "特殊情况不足以违反规则。", "尽管实用性胜过纯度。", "错误绝不能默默传递。", "除非明确地保持沉默。", "面对模棱两可的想法，拒绝猜测的诱惑。", "应该有一种（最好只有一种）明显的方式来做到这一点。", "尽管除非您是荷兰人，否则一开始这种方式可能并不明显。", "现在总比没有好。", "尽管从来没有比现在“正确”好。", "如果实施过程难以解释，那是个坏主意。", "如果实现易于解释，则可能是个好主意。", "命名空间是一个很棒的主意-让我们做更多吧！"]
+}, {
+  "tag": "P",
+  "text": "In this piece, I’m going to share my interpretation of these aphorisms and some useful Python tips I’ve learned.",
+  "translation": "在本文中，我将分享我对这些格言的解释以及一些我学到的有用的Python技巧。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*-Tmxhg3FE1hQ6ZYe?q=20",
+  "caption": "Photo by June Wong on Unsplash.",
+  "type": "image",
+  "file": "0!-Tmxhg3FE1hQ6ZYe"
+}, {
+  "tag": "H1",
+  "text": "How to Make Your Python Code More Elegant",
+  "translation": "如何使您的Python代码更加优雅"
+}, {
+  "tag": "H2",
+  "text": "My interpretation of the Zen of Python and more tips to make code nice and tidy",
+  "translation": "我对Python Zen的解释以及使代码更简洁整洁的更多技巧"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*vjsb728-cYOg5E8N?q=20",
+  "caption": "Photo by Scott Webb on Unsplash.",
+  "type": "image",
+  "file": "0!vjsb728-cYOg5E8N"
+}, {
+  "tag": "P",
+  "text": "According to Clean Code: A Handbook of Agile Software Craftsmanship, “The ratio of time spent reading vs. writing is well over 10:1.”",
+  "translation": "根据Clean Code：《敏捷软件技巧手册》，“阅读与写作所花费的时间比例远超过10：1。”"
+}, {
+  "tag": "P",
+  "text": "Typically, aesthetic programming was not a critical issue when we were studying in school. Individuals then follow their style when writing in Python. However, the work may be quite undesirable whenever we have to spend most of the time understanding one’s implicit code, which could also happen to others when reading our code. Therefore, let’s focus on the Zen of Python and some improvement tips to solve the problem.",
+  "translation": "通常，当我们在学校学习时，审美编程并不是关键问题。 然后，个人在使用Python写作时会遵循自己的风格。 但是，每当我们不得不花费大部分时间来理解一个人的隐式代码时，这项工作就可能是非常不可取的，其他人在阅读我们的代码时也会发生这种情况。 因此，让我们专注于Python的Zen和一些解决问题的改进技巧。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Hannibal Liang的文章《How to Make Your Python Code More Elegant》，参考：https://medium.com/better-programming/how-to-make-python-programming-more-elegant-and-decent-4b5962695aa9)",
+  "translation": "（本文翻译自Hannibal Liang的文章《如何使Python代码更优雅》，参考：https：//medium.com/better-programming/how-to-make-python-programming-more-elegant-and-decent -4b5962695aa9）"
+}]

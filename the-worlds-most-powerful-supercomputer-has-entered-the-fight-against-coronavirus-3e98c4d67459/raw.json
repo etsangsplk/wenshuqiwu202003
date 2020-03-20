@@ -1,0 +1,83 @@
+[{
+  "tag": "H1",
+  "text": "The World’s Most Powerful Supercomputer Has Entered the Fight Against Coronavirus",
+  "translation": "世界上功能最强大的超级计算机已开始抗击冠状病毒"
+}, {
+  "tag": "H2",
+  "text": "The IBM-built Summit has found a list of promising drugs for Covid-19",
+  "translation": "IBM建造的Summit找出了Covid-19的有希望的药物清单"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*ZhNlUyY3w8QIZ42b0X31BA.jpeg?q=20",
+  "caption": "Photos: Oak Ridge National Lab",
+  "type": "image",
+  "file": "1!ZhNlUyY3w8QIZ42b0X31BA.jpeg"
+}, {
+  "tag": "P",
+  "text": "As Covid-19 sickens people around the globe, scientists are rushing to find drugs that could help patients recover sooner. The never-before-seen pathogen can cause severe respiratory symptoms, including difficulty breathing and chest pain.",
+  "translation": "随着Covid-19使世界各地的人患病，科学家们急于寻找可以帮助患者早日康复的药物。 从未见过的病原体会导致严重的呼吸道症状，包括呼吸困难和胸痛。"
+}, {
+  "tag": "P",
+  "text": "To aid in the search, scientists have enlisted the world’s most powerful supercomputer, the IBM-built Summit. Occupying the floor space of two tennis courts at the U.S Department of Energy’s Oak Ridge National Laboratory in Tennessee, the Summit can perform 200 quadrillion calculations each second — roughly a million times more computing power than the average laptop.",
+  "translation": "为了帮助进行搜索，科学家们邀请了世界上功能最强大的超级计算机，即IBM制造的Summit。 此次峰会占用了田纳西州美国能源部橡树岭国家实验室两个网球场的占地面积，每秒可进行200次四千万次计算，这比普通笔记本电脑的计算能力高出一百万倍。"
+}, {
+  "tag": "P",
+  "text": "Last month, researchers used it to screen through a library of 8,000 known drug compounds to find those most likely to be effective against the coronavirus. The compounds included chemicals, herbal medicines, and natural products that have either been studied in humans or are already approved drugs — and, importantly, are already considered safe for humans. Summit narrowed down the dataset to a short list of 77 in just two days. Using regular computers, the process would have taken months.",
+  "translation": "上个月，研究人员使用它筛选了8,000种已知药物化合物的库，以发现最有可能有效对抗冠状病毒的化合物。 这些化合物包括化学物质，草药和天然产物，这些物质或者已经在人体中进行了研究，或者已经被批准为药物，而且重要的是，已经被认为对人体安全。 Summit在短短两天内将数据集缩小到77个简短列表。 使用常规计算机，该过程将花费数月。"
+}, {
+  "tag": "P",
+  "text": "“The logic is if any of those compounds works, it should be much quicker than the typical drug development process to get approval and widespread use,” Jeremy Smith, a molecular biophysicist at the University of Tennessee who ran the simulations, tells OneZero. He and his colleague posted their findings to the preprint server ChemRxiv in February and are updating the paper as they run more calculations.",
+  "translation": "田纳西大学的分子生物物理学家杰里米·史密斯（Jeremy Smith）对OneZero表示：“逻辑上，如果这些化合物中的任何一种起作用，它应该比典型的药物开发过程要快得多，才能获得批准和广泛使用。” 他和他的同事在2月份将他们的发现发布到了预印本服务器ChemRxiv，并且随着他们进行更多的计算而对论文进行了更新。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*T-wvXZKVJaVqh6BELPHXGw.jpeg?q=20",
+  "type": "image",
+  "file": "1!T-wvXZKVJaVqh6BELPHXGw.jpeg"
+}, {
+  "tag": "P",
+  "text": "If any of the compounds work in animals, scientists could skip the initial safety trial in people and go straight to testing drugs for their effectiveness in those who are sick.",
+  "translation": "如果这些化合物中的任何一种对动物有效，那么科学家可以跳过对人的最初安全性试验，而直接对患者的病情进行药物测试。"
+}, {
+  "tag": "P",
+  "text": "Developing drugs is a notoriously lengthy process — it can take 10 years for a new medicine to reach the market from the time it’s discovered, and many fail because they’re not safe or just aren’t effective. That’s why supercomputers like the Summit are especially useful during a global outbreak of an infectious disease that has no known treatments.",
+  "translation": "开发药物是一个众所周知的漫长的过程-从发现新药到上市，可能需要10年的时间，而且许多药物由于不安全或无效而失败。 这就是为什么像Summit之类的超级计算机在全球范围内没有已知治疗方法的传染病爆发时特别有用的原因。"
+}, {
+  "tag": "P",
+  "text": "To do the simulations, Smith used the virus’ genome, which Chinese researchers published to the web in January. The data revealed that the virus, now known as SARS-CoV-2, was similar to the coronavirus that causes severe acute respiratory syndrome, or SARS, and infects the body in a similar way. With this knowledge, they programmed the Summit to search for a very specific type of compound.",
+  "translation": "为了进行模拟，史密斯使用了该病毒的基因组，该基因组是中国研究人员在一月份发布到网络上的。 数据显示，该病毒现称为SARS-CoV-2，与冠状病毒相似，后者可导致严重的急性呼吸道综合症或SARS，并以类似的方式感染人体。 利用这些知识，他们对Summit进行了编程，以搜索非常特定类型的化合物。"
+}, {
+  "tag": "P",
+  "text": "Coronaviruses get their name from the crownlike proteins on their surface, which allow the virus to bind to and infect human cells. The researchers used the Summit to pinpoint drugs capable of binding to these protein spikes in order to thwart the virus’ ability to get inside the body’s cells.",
+  "translation": "冠状病毒的名字源于其表面上的冠状蛋白，它使病毒结合并感染人细胞。 研究人员利用Summit查明了能够与这些蛋白质峰结合的药物，以阻止病毒进入人体细胞的能力。"
+}, {
+  "tag": "P",
+  "text": "“I don’t know if any of them will work. Maybe no compounds in the database will work, or maybe several will.”",
+  "translation": "“我不知道它们中的任何一个是否会起作用。 也许数据库中没有任何化合物会起作用，或者可能会有几种化合物。”"
+}, {
+  "tag": "P",
+  "text": "Complicating the process is the fact that these spikes constantly make lots of tiny movements. Researchers have to figure out how to model those movements to help find drugs that can work against them. “It’s a complicated mathematical problem,” David Turek, vice president of exascale systems for IBM, tells OneZero. (Exascale computing refers to the ability to make a billion billion calculations per second.)",
+  "translation": "这些尖峰不断地产生许多微小的变化，这使过程变得复杂。 研究人员必须弄清楚如何为这些运动建模，以帮助找到可以对抗它们的药物。 IBM Exascale系统副总裁David Turek告诉OneZero：“这是一个复杂的数学问题。” （百亿计算是指每秒进行十亿亿次计算的能力。）"
+}, {
+  "tag": "P",
+  "text": "A supercomputer can do this very quickly with machine learning algorithms. Using 4,608 nodes — the equivalent computing power of the same number of laptops — it takes a problem, chops it into pieces, assigns them to all of the individual nodes or computers, and then brings all those pieces back together to reconstitute the solution to the problem. It’s similar to a beehive, where a hundred or so different drones are working together for a common goal, but each one has its own mission. This capability allows researchers to perform incredibly complex tasks like drug discovery.",
+  "translation": "超级计算机可以使用机器学习算法非常快速地完成此任务。 使用4,608个节点（相当于相同数量的笔记本电脑的等效计算能力）会遇到问题，将其切成碎片，将它们分配给所有单独的节点或计算机，然后将所有这些碎片重新组合在一起，以构成解决方案。 问题。 它类似于蜂箱，其中约有一百种不同的无人机为了一个共同的目标而协同工作，但每个人都有自己的任务。 此功能使研究人员能够执行难以置信的复杂任务，例如药物发现。"
+}, {
+  "tag": "P",
+  "text": "The results don’t mean the team has found a treatment or cure for SARS-CoV-2. The 77 compounds they identified still need to be tested in animals and human cells in a lab. Virologists at the University of Tennessee Health Center are beginning experiments now, but determining if any of the compounds are effective against the coronavirus could take months. That might not be soon enough to help patients right now, but an effective drug would be useful if the spread of the coronavirus lasts through next year or the virus becomes endemic, meaning it becomes a regularly occurring pathogen like the flu."
+}, {
+  "tag": "P",
+  "text": "“I don’t know if any of them will work,” Smith says. “Maybe no compounds in the database will work, or maybe several will.”",
+  "translation": "史密斯说：“我不知道它们是否会起作用。” “也许数据库中没有化合物会起作用，或者可能会有几种化合物。”"
+}, {
+  "tag": "P",
+  "text": "In future outbreaks of new and untreatable diseases, Smith thinks these types of drug discovery simulations could be coordinated using the 500 or so supercomputers around the world so that scientists could jump-start drug testing. “We could have the scientific tools ready to go so that we could respond with the right science as quickly as possible,” he says.",
+  "translation": "史密斯认为，在未来爆发新的和无法治愈的疾病时，史密斯认为可以使用世界各地的500台左右的超级计算机来协调这些类型的药物发现模拟，以便科学家可以迅速开始药物测试。 他说：“我们可以准备使用科学工具，以便我们可以尽快以正确的科学做出回应。”"
+}, {
+  "tag": "P",
+  "text": "For more information on the novel coronavirus and Covid-19, visit cdc.gov",
+  "translation": "有关新型冠状病毒和Covid-19的更多信息，请访问cdc.gov。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Emily Mullin的文章《The World’s Most Powerful Supercomputer Has Entered the Fight Against Coronavirus》，参考：https://onezero.medium.com/the-worlds-most-powerful-supercomputer-has-entered-the-fight-against-coronavirus-3e98c4d67459)",
+  "translation": "（本文翻译自“ Emily Mullin的文章《世界上最强大的超级计算机已进入抗击冠状病毒的斗争”，参考：https：//onezero.medium.com/the-worlds-most-powerful-supercomputer-has-entered-the- 对抗冠状病毒3e98c4d67459）"
+}]

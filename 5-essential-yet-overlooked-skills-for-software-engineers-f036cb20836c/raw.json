@@ -1,0 +1,147 @@
+[{
+  "tag": "P",
+  "text": "That’s it for now, thanks for reading!",
+  "translation": "就是这样，感谢您的阅读！"
+}, {
+  "tag": "H1",
+  "text": "5. Tooling",
+  "translation": "5.工具"
+}, {
+  "tag": "P",
+  "text": "Being able to create tools for yourself is one of the things that separates the truly great software engineers from the mediocre ones. And it’s something that the best software engineers do.",
+  "translation": "能够为自己创建工具是将真正优秀的软件工程师与平庸的软件工程师区分开来的一件事。 而这是最好的软件工程师所做的事情。"
+}, {
+  "tag": "P",
+  "text": "Writing your own tools is what makes you highly productive. The best part of using your own tools is that you can speed up your process and workflow without being limited to the tooling that’s already available.",
+  "translation": "编写自己的工具可以提高您的生产力。 使用自己的工具最好的部分是，您可以加快流程和工作流程，而不必局限于现有的工具。"
+}, {
+  "tag": "P",
+  "text": "Tooling is probably the biggest difference between a software engineer who does x amount of coding versus 2x. Or maybe even 3x. The tools that you could be making can vary from doing simple to more advanced tasks. For example, you could write a script that automatically lints your code before each commit. This way, you don’t have to make a new commit every time you misplace a comma.",
+  "translation": "工具可能是完成x编码量与2x编码量的软件工程师之间最大的不同。 甚至3倍。 您可能制作的工具可能从执行简单的任务到更高级的任务不等。 例如，您可以编写一个脚本，该脚本在每次提交之前自动删除代码。 这样，您每次放错逗号时都不必重新提交。"
+}, {
+  "tag": "P",
+  "text": "Usually, these tools can be made in a script with languages like Python, Bash, or PHP. There are other options available as well, but it has to be some kind of scripting language that can be used well on the command line.",
+  "translation": "通常，这些工具可以在脚本中使用Python，Bash或PHP等语言制作。 也有其他选项可用，但是它必须是某种可以在命令行上很好地使用的脚本语言。"
+}, {
+  "tag": "P",
+  "text": "These scripts can be used to expedite your overall workflow, which will result in you getting more things done!",
+  "translation": "这些脚本可用于加快整体工作流程，从而使您完成更多工作！"
+}, {
+  "tag": "H1",
+  "text": "4. Debugging",
+  "translation": "4.调试"
+}, {
+  "tag": "P",
+  "text": "Any change to code can be disruptive. And as a software engineer whose job it is to write code, you can probably see that these things don’t always go well together. It’s inevitable that bugs sneak into the codebase at some point in time.",
+  "translation": "对代码的任何更改都可能造成破坏。 作为一名负责编写代码的软件工程师，您可能会发现这些东西并不总是能很好地融合在一起。 错误不可避免地会在某个时间点潜入代码库。"
+}, {
+  "tag": "P",
+  "text": "The average software engineer spends a great amount of time on debugging, which means it’s a great skill to master. Especially because debugging can really turn into a time-consuming process if you don’t know how to do it properly.",
+  "translation": "一般的软件工程师会花费大量时间进行调试，这意味着掌握它是一项很棒的技能。 特别是因为如果您不知道如何正确地进行调试，调试实际上会变成一个耗时的过程。"
+}, {
+  "tag": "P",
+  "text": "What debugging really comes down to is the art of problem-solving. For the majority of software engineers, a large part of their work is going to be fixing small bugs. Many of these bugs can be obscure and hard to track.",
+  "translation": "调试真正归结为解决问题的技巧。 对于大多数软件工程师来说，他们的大部分工作将是修复小错误。 这些错误中有许多可能是晦涩难懂且难以跟踪的。"
+}, {
+  "tag": "P",
+  "text": "When you’re debugging, you don’t want to start by looking at the code and stepping through it with a debugger immediately. Before you start, you’re going to need some sort of a plan. If you dive straight into the debugger you’re basically Easter egging.",
+  "translation": "调试时，您不想先查看代码并立即与调试器一起逐步调试。 在开始之前，您将需要某种计划。 如果您直接进入调试器，则基本上就是复活节彩蛋。"
+}, {
+  "tag": "P",
+  "text": "Being able to quickly identify where a bug might be in the code is a powerful skill. The better your analytical and problem-solving skills, the more accurately and precisely you can solve these bugs.",
+  "translation": "能够快速确定代码中可能存在错误的位置是一项强大的技能。 您的分析和解决问题的能力越强，您可以更准确，更准确地解决这些错误。"
+}, {
+  "tag": "H1",
+  "text": "3. Regular Expressions",
+  "translation": "3.正则表达式"
+}, {
+  "tag": "P",
+  "text": "Surprisingly, a lot of software engineers aren’t really knowledgable about regular expressions. Regular expressions are a way to do pattern matching on text. They’re often overlooked and most software engineers think about regular expressions as something that’s hard to learn.",
+  "translation": "令人惊讶的是，很多软件工程师对正则表达式并不了解。 正则表达式是对文本进行模式匹配的一种方法。 它们经常被忽略，大多数软件工程师将正则表达式视为难以学习的东西。"
+}, {
+  "tag": "P",
+  "text": "Regular expressions can get quite hard and it definitely has a learning curve. Still, though, regular expressions can accomplish quite a lot. The most obvious use case is to search large codebases for certain pieces of text.",
+  "translation": "正则表达式可能会变得非常困难，并且肯定具有学习曲线。 尽管如此，正则表达式仍然可以完成很多工作。 最明显的用例是在大型代码库中搜索某些文本。"
+}, {
+  "tag": "P",
+  "text": "Another use case for regular expressions is doing search and replaces within your favorite code editor. You could even use regular expressions to prohibit committing certain strings. If you’re a web developer. you’ve probably used regular expressions at some point in your career to validate user data.",
+  "translation": "正则表达式的另一个用例是在您喜欢的代码编辑器中进行搜索和替换。 您甚至可以使用正则表达式来禁止提交某些字符串。 如果您是网络开发人员。 您可能在职业生涯的某个时候使用了正则表达式来验证用户数据。"
+}, {
+  "tag": "P",
+  "text": "As you can see, there are a lot of use cases for regular expressions. Since they’re so versatile you can’t simply ignore them. Getting more familiar with regular expressions is essential if you want to become a better software engineer.",
+  "translation": "如您所见，正则表达式有很多用例。 由于它们用途广泛，因此您不能简单地忽略它们。 如果您想成为一名更好的软件工程师，则必须更熟悉正则表达式。"
+}, {
+  "tag": "H1",
+  "text": "2. Asking the Right Questions",
+  "translation": "2.提出正确的问题"
+}, {
+  "tag": "P",
+  "text": "Knowing what questions to ask is a skill that’s essential if you want to build the right things. Asking the right questions is part of being a software engineer. Before you start building, it’s important to get down to the essence of what it is that you want to achieve.",
+  "translation": "知道要问什么问题是一项技巧，如果您想构建正确的事物，这是必不可少的。 提出正确的问题是成为软件工程师的一部分。 在开始构建之前，重要的是要深入了解要实现的目标。"
+}, {
+  "tag": "P",
+  "text": "Do you want to build things right or do you want to build the right things?",
+  "translation": "您是要构建正确的事物还是要构建正确的事物？"
+}, {
+  "tag": "P",
+  "text": "Don’t get me wrong — building things right is important, but most software engineers focus way too much on this. Before we start building, you should ask the question, are we building the right thing?",
+  "translation": "不要误会我的意思-正确地构建事情很重要，但是大多数软件工程师对此都过于关注。 在开始构建之前，您应该提出一个问题，我们正在构建正确的东西吗？"
+}, {
+  "tag": "P",
+  "text": "Know what questions to ask so you can be sure that what you’re about to build is the right thing to build. Once you start building the wrong thing, all effort is wasted. Understand why you’re implementing a certain feature so you can better foresee future problems.",
+  "translation": "知道要问什么问题，这样就可以确保要构建的东西正确。 一旦开始构建错误的东西，所有的精力都将浪费掉。 了解为什么要实施某个功能，以便更好地预见未来的问题。"
+}, {
+  "tag": "H1",
+  "text": "1. Reading Code",
+  "translation": "1.阅读代码"
+}, {
+  "tag": "P",
+  "text": "One of the most truly underrated skills for any software engineer is the ability to read code. Code lasts a lot longer than you probably anticipate at the time of writing it. That's why there's still a decent demand for COBOL developers, which has been around for 60 years.",
+  "translation": "对于任何软件工程师来说，最被低估的技能之一就是读取代码的能力。 代码的持续时间比编写代码时预期的要长得多。 这就是为什么对COBOL开发人员的需求仍然很高的原因，这种需求已经存在了60年。"
+}, {
+  "tag": "P",
+  "text": "We live in a world where developers come and go, but the code never moves. This leads to the fact that software engineers have to spend way too much time on reading code and trying to understand codebases.",
+  "translation": "我们生活在一个开发人员来来往往的世界中，但是代码永不动摇。 这导致了这样一个事实，即软件工程师不得不花太多时间在阅读代码和尝试理解代码库上。"
+}, {
+  "tag": "P",
+  "text": "This quote from Robert C. Martin sums it up pretty well: “The ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code.”",
+  "translation": "罗伯特·C·马丁（Robert C. Martin）的话很好地概括了这一点：“阅读与写作所花费的时间之比超过10：1。我们不断阅读旧代码，这是编写新代码的一部分。”"
+}, {
+  "tag": "P",
+  "text": "So as a software engineer you’ll spend the majority of your time reading and trying to understand pieces of code — which most of the time is not even your own code. This is incredibly hard to do since more often than not you don’t know the intent of the creator of that piece of code.",
+  "translation": "因此，作为软件工程师，您将花费大部分时间阅读和尝试理解代码片段，而大多数时间甚至都不是您自己的代码。 很难做到这一点，因为您经常不知道该代码创建者的意图。"
+}, {
+  "tag": "P",
+  "text": "In the most ideal situation, you would land in a codebase where all code is well-written, structured, properly documented and tested. In reality, this is almost never the case.",
+  "translation": "在最理想的情况下，您将进入一个代码库，其中所有代码都编写正确，结构合理，文档正确并经过测试。 实际上，几乎从来没有这样。"
+}, {
+  "tag": "H1",
+  "text": "5 Essential, Yet Overlooked Skills for Software Engineers",
+  "translation": "软件工程师必不可少的5种基本技能"
+}, {
+  "tag": "H2",
+  "text": "Make sure to add these skills to your arsenal",
+  "translation": "确保将这些技能添加到您的武器库中"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*m9qKQTTBybsXStrr?q=20",
+  "caption": "Photo by Rich Tervet on Unsplash",
+  "type": "image",
+  "file": "0!m9qKQTTBybsXStrr"
+}, {
+  "tag": "P",
+  "text": "Software engineers need quite a wide array of skills under their belt nowadays. We all know the obvious ones. At the top of that list, you’ll find something like you need to know how to program, and therefore you need to know a programming language. Other items on that same list are that you need to be good at problem-solving and know your stuff when it comes to algorithms and data structures. And we probably all agree that you need some communication skills as well.",
+  "translation": "如今，软件工程师需要掌握多种技能。 我们都知道明显的那些。 在该列表的顶部，您会发现需要了解如何编程的知识，因此需要了解一种编程语言。 同一列表上的其他项目是您需要善于解决问题，并且需要掌握有关算法和数据结构的知识。 我们可能都同意您也需要一些沟通技巧。"
+}, {
+  "tag": "P",
+  "text": "But there are more essential, yet often overlooked skills that you could add to this list. This includes skills that people aren’t necessarily aware of or fail to recognize as required or needed for the field. They’re not super obvious, but over time you’ll realize that all great software engineers took the time to learn these things.",
+  "translation": "但是，您可以将更多必不可少的但经常被忽视的技能添加到此列表中。 这包括人们不一定认识或未能认识到该领域所需或需要的技能。 它们并不是很明显，但是随着时间的流逝，您会意识到所有出色的软件工程师都花时间学习这些知识。"
+}, {
+  "tag": "P",
+  "text": "Check and see if you have the skills in this list in your arsenal already. If you lack a certain skill on this list, it might be a great time to add that skill to your skillset.",
+  "translation": "检查并查看您的武器库中是否已具备此列表中的技能。 如果您在此列表上缺少某种技能，那么可能是将这种技能添加到技能组的好时机。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Daan的文章《5 Essential, Yet Overlooked Skills for Software Engineers》，参考：https://medium.com/better-programming/5-essential-yet-overlooked-skills-for-software-engineers-f036cb20836c)",
+  "translation": "（本文翻译自DaDa的文章《软件工程师必不可少的5个技巧》，参考：https：//medium.com/better-programming/5-essential-yet-overlooked-skills-for-software-engineers-f036cb20836c ）"
+}]

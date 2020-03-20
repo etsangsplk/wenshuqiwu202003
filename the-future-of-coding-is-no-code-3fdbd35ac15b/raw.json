@@ -1,0 +1,79 @@
+[{
+  "tag": "H2",
+  "text": "Debugger",
+  "translation": "调试器"
+}, {
+  "tag": "H1",
+  "text": "The Future of Coding Is ‘No Code’",
+  "translation": "编码的未来是“无代码”"
+}, {
+  "tag": "H2",
+  "text": "Drag-and-drop tools make anyone a maker",
+  "translation": "拖放工具可以使任何人成为制造者"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*4TrNhOHEG_nvv9OsbDO-3g.jpeg?q=20",
+  "caption": "Students of a fifth grade of a grammar school use a laptop in class. Photo: Daniel Reinhardt/picture alliance/Getty Images",
+  "type": "image",
+  "file": "1!4TrNhOHEG_nvv9OsbDO-3g.jpeg"
+}, {
+  "tag": "P",
+  "text": "Twenty years ago, learning how a website worked was as simple as clicking “view source” in a web browser — which is how many of today’s developers learned to write code. It was easy to start by hacking together custom MySpace or Tumblr themes, which eventually led to building a website or app, and ultimately a career.",
+  "translation": "二十年前，了解网站的工作原理就像在网络浏览器中单击“查看源代码”一样简单，这是当今许多开发人员学会编写代码的方式。 通过将自定义的MySpace或Tumblr主题结合在一起很容易开始，最终导致建立网站或应用程序，并最终发展职业。"
+}, {
+  "tag": "P",
+  "text": "These days, things are a little different: While the “view source” option is still ubiquitous in modern browsers, sites use code libraries like Facebook’s React that make it easier for programmers to add complex features, but also make that public code undecipherable. The “view source” option no longer reveals exactly how something is put together.",
+  "translation": "如今，情况有所不同：尽管在现代浏览器中“查看源代码”选项仍然无处不在，但网站使用的代码库如Facebook的React，使程序员更容易添加复杂的功能，但也使公共代码难以理解。 “查看源代码”选项不再确切地显示如何组合在一起。"
+}, {
+  "tag": "P",
+  "text": "That means getting into development is harder than ever — it’s not as simple as peeking under the hood anymore. The modern “no-code” movement hopes to reverse that trend with tools for digital design that don’t require custom code. Some, like Webflow, allow anyone to create a website with a drag and drop interface, as if it were being arranged in Photoshop. Others, like Zapier, help nontechnical people make multiple services talk to each other. For instance, even someone who has never heard of an API could use the tool to automatically post to a Slack group every time something is added to a Google Sheet. By combining Google Sheet with a service called Sheet2Site, someone with no coding capability can create an entire website, backed by a spreadsheet.",
+  "translation": "这意味着进入开发比以往任何时候都更加困难-它不再像在幕后偷窥一样简单。 现代的“无代码”运动希望通过不需要自定义代码的数字设计工具扭转这种趋势。 有些工具（例如Webflow）允许任何人使用拖放界面创建网站，就像在Photoshop中进行排列一样。 Zapier之类的其他公司则帮助非技术人员使多种服务相互通信。 例如，即使从未听说过API的人也可以使用该工具在每次向Google表格添加内容时自动将其发布到Slack组。 通过将Google表格与名为Sheet2Site的服务结合使用，没有编码能力的人可以创建一个由电子表格支持的完整网站。"
+}, {
+  "tag": "H2",
+  "text": "Ctrl-Alt-Delete: The Planned Obsolescence of Old Coders",
+  "translation": "Ctrl-Alt-Delete：旧编码器的计划淘汰"
+}, {
+  "tag": "H3",
+  "text": "Old coders never die, they just become middle managers.",
+  "translation": "老程序员永远不会死，他们只是成为中层管理人员。"
+}, {
+  "tag": "P",
+  "text": "Tools for making web products without code have been around in one shape or form for awhile. When I was growing up, apps like Macromedia Dreamweaver (now owned by Adobe) and Microsoft FrontPage provided rudimentary ways to visually build websites without needing to know how to code. But while these early tools provided drag-and-drop editors, they were often simple, static affairs that couldn’t do much at all. Sure, you could build a swishy ’90s website with FrontPage, but with no content management system on the backend, it would be difficult to update. Giving users an option to login or submit a form would require custom coding.",
+  "translation": "无需代码即可制作Web产品的工具已经出现了一段时间。 当我长大时，Macromedia Dreamweaver（现在由Adobe拥有）和Microsoft FrontPage等应用程序提供了基本的方式来可视化地构建网站，而无需知道如何编码。 但是，尽管这些早期工具提供了拖放式编辑器，但它们通常是简单的静态事务，根本无法完成任何事情。 当然，您可以使用FrontPage建立一个肮脏的90年代网站，但是后端没有内容管理系统，将很难更新。 为用户提供登录或提交表单的选项将需要自定义编码。"
+}, {
+  "tag": "P",
+  "text": "This new generation of tools is much more capable. It spans multiple services and avoids code altogether. That’s important because rather than learning complex apps like Photoshop, an entire generation has grown up creating things on the web using intuitive tools like Instagram and TikTok, which allow editing images and videos on the fly. These tools bring that same sensibility to projects that previously required learning to code.",
+  "translation": "新一代工具功能更强大。 它涵盖多个服务，并且完全避免使用代码。 这很重要，因为整整一代人都没有使用像Photoshop这样的复杂应用程序，而是使用Instagram和TikTok等直观工具在网络上创建事物，这些工具可以即时编辑图像和视频。 这些工具为以前需要学习编码的项目带来了相同的敏感性。"
+}, {
+  "tag": "P",
+  "text": "Communities have sprouted up to support these no-code builders. Sites like Makerpad provide tutorials that show off what’s possible by combining these tools, like how to create a paid membership site using Webflow. Others provide courses that show it’s possible to build an entire startup from scratch without writing a line of code, using off-the-shelf tools, demonstrating how to wire it all up.",
+  "translation": "社区蓬勃发展，以支持这些无代码的构建者。 诸如Makerpad之类的网站提供了一些教程，展示了结合这些工具的可能性，例如如何使用Webflow创建付费会员网站。 其他人提供的课程表明，可以使用现成的工具从头开始构建整个启动过程，而无需编写代码，演示了如何将所有过程连接起来。"
+}, {
+  "tag": "P",
+  "text": "Some developers are quick to write off no-code tools for being too simple or not up to the task of real work, but that’s precisely the point: Integrating an API or automating a basic task shouldn’t require custom code every time.",
+  "translation": "一些开发人员会因为过于简单或无法胜任实际工作而迅速注销无代码工具，但这正是要点：集成API或自动化基本任务不需要每次都需要自定义代码。"
+}, {
+  "tag": "P",
+  "text": "The shift to no-code building mirrors another big shift in building websites. Just over a decade ago, if you wanted to host a website or create a web app, you’d have to buy a physical server from a company like Dell or HP, install it somewhere, get it set up and connected to the internet, and then think about building a site. Today, most developers never see a physical server at all.",
+  "translation": "向无代码构建的转变反映了构建网站的另一大转变。 就在十年前，如果您想托管一个网站或创建一个Web应用程序，则必须从Dell或HP这样的公司购买物理服务器，将其安装在某个地方，进行设置并连接到Internet， 然后考虑建立一个网站。 如今，大多数开发人员根本看不到物理服务器。"
+}, {
+  "tag": "P",
+  "text": "Instead, they sign up for Google Cloud, Amazon Web Services, or Microsoft Azure, which, with a few clicks, provides a virtual server instead. I’m happy to avoid dealing with a server. Similarly, as someone who has integrated APIs—a process that involves hours of work and learning new techniques—many times in the past, I’m happy to reduce the amount of code I write and ultimately maintain by using no-code services.",
+  "translation": "相反，他们注册了Google Cloud，Amazon Web Services或Microsoft Azure，只需单击几下即可提供虚拟服务器。 很高兴避免与服务器打交道。 同样，作为一个集成了API（这个过程需要花费大量时间并学习新技术的人）的过去，我很高兴能减少编写的代码量并最终通过使用无代码服务来维护。"
+}, {
+  "tag": "P",
+  "text": "Ultimately, the advent of simpler tools doesn’t preclude writing code entirely; it just provides more people with a starting point—they can dip their toes in the water. It also means less work for even experienced developers. Why code a custom Slack bot when it can be wired together with a few clicks?",
+  "translation": "最终，更简单的工具的出现并不排除完全编写代码的可能性； 它只是为更多的人提供了一个起点-他们可以将脚趾浸入水中。 对于经验丰富的开发人员来说，这也意味着更少的工作。 只需单击几下即可将自定义Slack机器人连接在一起，为什么还要编写代码？"
+}, {
+  "tag": "P",
+  "text": "Once they’ve experimented with making something, no-code creators graduate to tools like Glitch, which provides a platform and community for getting started with code, allowing users to remix other people’s apps and build on them.",
+  "translation": "一旦尝试了制作某些东西后，没有代码的创建者就会毕业于Glitch之类的工具，该工具为代码入门提供了一个平台和社区，允许用户重新混合其他人的应用程序并在其上进行构建。"
+}, {
+  "tag": "P",
+  "text": "And that’s a skill they can use both to automate work and create real products—all without going to a coding bootcamp.",
+  "translation": "他们可以使用这项技能来自动化工作和创建真实的产品，而无需参加编码训练营。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Owen Williams的文章《The Future of Coding Is ‘No Code’》，参考：https://onezero.medium.com/the-future-of-coding-is-no-code-3fdbd35ac15b)",
+  "translation": "（本文翻译自Owen Williams的文章，《编码的未来就是'无代码'》，参考：https：//onezero.medium.com/the-future-of-coding-is-no-code-3fdbd35ac15b）"
+}]

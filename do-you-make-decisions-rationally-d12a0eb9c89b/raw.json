@@ -1,0 +1,122 @@
+[{
+  "tag": "H1",
+  "text": "Do you make decisions rationally?",
+  "translation": "您是否理性地做出决定？"
+}, {
+  "tag": "H2",
+  "text": "Part 1 of 2 —Two scenarios from behavioral economics to test yourself"
+}, {
+  "tag": "P",
+  "text": "Curious to know whether you’re a rational decision-maker well on your way to data-driven decisions? Imagine the scene below and answer the multiple choice question to find out!"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*bTxPr3MpIfCMosbr.jpg?q=20",
+  "caption": "Image: SOURCE.",
+  "type": "image",
+  "file": "0!bTxPr3MpIfCMosbr.jpg"
+}, {
+  "tag": "H1",
+  "text": "Two little gambling games",
+  "translation": "两个小赌博游戏"
+}, {
+  "tag": "P",
+  "text": "Let’s pretend that I have a bucket filled with 90 golf balls in my living room and that we’re going to play two rounds of gambling games with it. (Whoa, you’re thinking, that’s a big bucket. Yup, we’re practicing using our imagination for this one.)",
+  "translation": "假设我的客厅里有一个装有90个高尔夫球的水桶，我们将用它玩两轮赌博游戏。 （哇，您在想，那真是个大问题。是的，我们正在为此而发挥想象力。）"
+}, {
+  "tag": "P",
+  "text": "Your job will be to pick the conditions of both gambles up front (before any balls are drawn).",
+  "translation": "您的工作将是预先选择两种赌博的条件（在抽出任何球之前）。"
+}, {
+  "tag": "P",
+  "text": "Then I’ll close my eyes, scramble the balls thoroughly, pull out a ball, show it to you, put it back, repeat. (You’ll be watching me live through your screen so I can’t cheat). Got it? Okay, here comes the most important thing — what info do you have about the bucket?",
+  "translation": "然后我会闭上眼睛，将球彻底打乱，拔出一个球，向您展示，放回去，然后重复。 （您将通过屏幕实时观看我，因此我不会作弊）。 得到它了？ 好的，这是最重要的事情-您对水桶有什么了解？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/proxy/0*2-GoZWj_aR52QqOj.jpeg",
+  "caption": "Image: SOURCE.",
+  "type": "image",
+  "file": "0a7ed24f-5efe-4cb0-a6aa-30d2d2e9395c"
+}, {
+  "tag": "H1",
+  "text": "Contents of the bucket",
+  "translation": "铲斗的内容"
+}, {
+  "tag": "P",
+  "text": "The bucket has 30 white balls and 60 other balls that are either yellow or pink (you don’t know how many of each kind).",
+  "translation": "桶中有30个白色球和60个其他黄色或粉红色的球（您不知道每种球有多少个）。"
+}, {
+  "tag": "P",
+  "text": "Now for your choices.",
+  "translation": "现在供您选择。"
+}, {
+  "tag": "H1",
+  "text": "Game 1",
+  "translation": "游戏1"
+}, {
+  "tag": "P",
+  "text": "You have the choice between Gamble A or Gamble B:",
+  "translation": "您可以选择“赌博A”或“赌博B”："
+}, {
+  "tag": "P",
+  "text": "Gamble A: You receive $100 if I draw a white ball, $0 otherwise."
+}, {
+  "tag": "P",
+  "text": "Gamble B: You receive $100 if I draw a yellow ball, $0 otherwise."
+}, {
+  "tag": "P",
+  "text": "Choose wisely and make a note of your choice (A or B) before scrolling down to Game 2. If you are so strongly indifferent that you’ll gladly let a coin decide for you, then do that."
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*loqtan-V-07VMGjO?q=20",
+  "caption": "Image: SOURCE.",
+  "type": "image",
+  "file": "0!loqtan-V-07VMGjO"
+}, {
+  "tag": "P",
+  "text": "Reminder: The bucket still has 30 white balls and 60 other balls that are eitherpink or yellow.",
+  "translation": "提醒：桶中仍然有30个白色球和60个其他粉红色或黄色的球。"
+}, {
+  "tag": "H1",
+  "text": "Game 2",
+  "translation": "游戏2"
+}, {
+  "tag": "P",
+  "text": "You have the choice between Gamble C or Gamble D:",
+  "translation": "您可以在C赌博或D赌博之间进行选择："
+}, {
+  "tag": "P",
+  "text": "Gamble C: You receive $100 if I draw a white or pink ball, $0 if the ball is yellow.",
+  "translation": "赌博C：如果我画一个白色或粉红色的球，您将获得$ 100；如果球是黄色，您将获得$ 0。"
+}, {
+  "tag": "P",
+  "text": "Gamble D: You receive $100 if I draw a pink or yellow ball, $0 if the ball is white.",
+  "translation": "赌博D：如果我画一个粉红色或黄色的球，您将获得$ 100；如果球是白色，您将获得$ 0。"
+}, {
+  "tag": "P",
+  "text": "Jot down your choice (C or D) so we can get this party started. As before, if you really don’t have a preference, toss a coin.",
+  "translation": "记下您的选择（C或D），以便我们开始这个聚会。 和以前一样，如果您真的没有偏好，可以扔硬币。"
+}, {
+  "tag": "H1",
+  "text": "Did you chose rationally?",
+  "translation": "您选择合理吗？"
+}, {
+  "tag": "P",
+  "text": "We’ll find out soon, but first why don’t you take a look at how your choices compare with what other people picked by clicking here. The options were:"
+}, {
+  "tag": "UL",
+  "texts": ["A&C", "A&D", "B&C", "B&D"],
+  "translations": ["A＆C", "广告", "公元前", "B＆D"]
+}, {
+  "tag": "P",
+  "text": "Go ahead, see what other people picked, and then check this space (or my Twitter) tomorrow morning for your diagnosis and an explanation…",
+  "translation": "继续，看看其他人选择了什么，然后明天早晨检查此空间（或我的Twitter），以获取您的诊断和解释..."
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*ZQJYTiSWLJAdpXEP.jpg?q=20",
+  "caption": "Image: SOURCE.",
+  "type": "image",
+  "file": "0!ZQJYTiSWLJAdpXEP.jpg"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Cassie Kozyrkov的文章《Do you make decisions rationally?》，参考：https://towardsdatascience.com/do-you-make-decisions-rationally-d12a0eb9c89b)"
+}]

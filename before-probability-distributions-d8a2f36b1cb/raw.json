@@ -1,0 +1,240 @@
+[{
+  "tag": "P",
+  "text": "Interested in these topics? Follow me on Linkedin or Twitter",
+  "translation": "对这些主题感兴趣？ 在Linkedin或Twitter上关注我"
+}, {
+  "tag": "H1",
+  "text": "Before Probability Distributions",
+  "translation": "概率分布之前"
+}, {
+  "tag": "H2",
+  "text": "Why do we use probability distributions, and why do they matter?",
+  "translation": "为什么我们使用概率分布，为什么它们如此重要？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*gPgKfPA0biL_iiWo?q=20",
+  "caption": "Photo by Mel Poole on Unsplash",
+  "type": "image",
+  "file": "0!gPgKfPA0biL_iiWo"
+}, {
+  "tag": "P",
+  "text": "I decided to write this introduction to probability distributions with one clear purpose in mind: explain why do we use them, and apply real-life examples. When learning probability, I got tired of hearing about coins tosses, card games and numbered balls. Unless you only love to gamble (which is not my case), you need to get really pragmatic to apply concepts about probability to solve other problems rather than what are the odds of winning the lottery. But before diving into pragmatism (and this will be our first conflict), we need to go through some conceptual matters. This article describes why do we care about probability, and will help you develop some key terminology that we’ll need to understand how to apply it to our real-life problems.",
+  "translation": "我决定写这篇关于概率分布的介绍时，要牢记一个明确的目的：解释为什么要使用它们，并应用现实生活中的例子。 在学习概率时，我厌倦了听到抛硬币，玩纸牌游戏和编号球的知识。 除非您只喜欢赌博（这不是我的情况），否则您需要变得非常务实，应用有关概率的概念来解决其他问题，而不是中奖的几率。 但是，在进入实用主义之前（这将是我们的第一个冲突），我们需要研究一些概念性问题。 本文介绍了我们为什么关心概率，并将帮助您开发一些关键术语，我们将需要了解这些术语才能将其应用于现实生活中的问题。"
+}, {
+  "tag": "P",
+  "text": "What is probability, and why do we even care?",
+  "translation": "什么是概率，为什么我们还要关心？"
+}, {
+  "tag": "P",
+  "text": "Probability is about interpreting and understanding the random events of life, and since we live in absolute randomness (even if we try to believe we don’t), its usefulness becomes quite clear. Probability is the long-term chance that a certain outcome will occur from some random process. It basically tells you how often different kinds of events will happen.",
+  "translation": "概率是关于解释和理解生活中的随机事件，并且由于我们生活在绝对随机性中（即使我们试图相信自己没有），所以它的用途变得非常明显。 概率是从某种随机过程中产生某种结果的长期机会。 它基本上告诉您不同类型事件的发生频率。"
+}, {
+  "tag": "P",
+  "text": "Some real life examples of the use of probabilities are:",
+  "translation": "现实生活中使用概率的一些示例是："
+}, {
+  "tag": "UL",
+  "texts": ["Finance: By estimating the chance that a given financial asset will fall between or within a specific range, it’s possible to develop trading strategies to capture that predicted outcome.", "Weather forecast: Meteorologists can’t predict exactly what the weather will be, so they use tools and instruments to determine the likelihood that it will rain, snow or hail. They also examine historical data bases to estimate high and low temperatures and probable weather patterns for that day or week.", "Insurance: Probability plays an important role in analyzing insurance policies to determine which plans are best for customers and what deductible amounts they need.", "Sports: Athletes and coaches use probability to determine the best sports strategies for games and competitions. Companies like BWin have made a business out of this and you can even bet using different strategies.", "Advertisement: Probability is used to estimate potential customers that will be more likely to react positively to specific campaigns, based on their consumption patterns."],
+  "translations": ["财务：通过估算给定金融资产落入或落在特定范围内的可能性，可以制定交易策略以捕获预期的结果。", "天气预报：气象学家无法确切预测天气会怎样，因此他们使用工具和仪器来确定下雨，下雪或冰雹的可能性。 他们还检查历史数据库，以估计当天或一周中的高温和低温以及可能的天气模式。", "保险：概率在分析保险政策以确定最适合客户的计划以及他们需要的可扣除金额方面起着重要作用。", "体育：运动员和教练使用概率来确定比赛和比赛的最佳体育策略。 像BWin这样的公司已经利用这个优势开展业务，您甚至可以使用不同的策略下注。", "广告：概率用于根据潜在客户估算其消费模式，从而更可能对特定活动做出积极反应。"]
+}, {
+  "tag": "P",
+  "text": "Numerically speaking, a probability is a number that ranges from 0 (meaning there is no way an event is going to happen) to 1 (which means the event will happen for sure), and if you take all the possible outcomes and add them up, you sum to 1. The bigger the value of the probability, the more likely the event is to occur.",
+  "translation": "从数字上讲，概率是一个数字，范围是0（表示事件不会发生）到1（表示事件肯定会发生），如果您采用所有可能的结果并将它们加起来 ，您的总和为1。概率值越大，事件发生的可能性就越大。"
+}, {
+  "tag": "P",
+  "text": "So for example, you’d say that the probability of rain tomorrow is 40% (stated as “P(rain)=0,4”), or the probability of a car theft in a particular region is 2% (defined as “P(car theft)=0,02”). In the first case you’re interested in the variable “rain”, and in the second in the variable “car theft”. These variables, as well as any other that is a result of a random process, are referred to as “random variables”.",
+  "translation": "因此，举例来说，您说明天下雨的概率是40％（表示为“ P（rain）= 0,4”），或者在特定区域内发生盗车的概率是2％（定义为“ P（盗车）= 0,02”）。 在第一种情况下，您对变量“ rain”感兴趣，而在第二种情况下，您对变量“ car盗窃”感兴趣。 这些变量以及由随机过程导致的其他任何变量都称为“随机变量”。"
+}, {
+  "tag": "P",
+  "text": "A random variable is a variable that is subject to random variations so that it can take on multiple different values, each with an associated probability.",
+  "translation": "随机变量是易于随机变化的变量，因此它可以具有多个不同的值，每个值都有关联的概率。"
+}, {
+  "tag": "P",
+  "text": "It doesn’t have a specific value, but rather a collection of potential values. After a measurement is taken and the specific value is revealed, then the random variable ceases to be a random variable and becomes data.",
+  "translation": "它没有特定的值，而是潜在值的集合。 在进行测量并显示了特定值之后，随机变量不再是随机变量，而是成为数据。"
+}, {
+  "tag": "P",
+  "text": "Different probabilities present different complexities when trying to estimate them. Usually, past data is used as a proxy of what’s likely to happen, but this is not always applicable (e.g. for new events with no history), or can be misleading when extreme events occur: think about the Fukushima accident in 2011, where the height of the tsunami was underestimated because probability calculations resulted in a considerably smaller earthquake than the one that actually struck. There are also different approaches to calculate probabilities (e.g. using computer simulations, or collecting data and calculating the percentage of time that an event occurred), but all of them are as good as the data you use to feed them.",
+  "translation": "当尝试估计它们时，不同的概率呈现出不同的复杂性。 通常，将过去的数据用作可能发生的情况的替代方法，但这并不总是适用（例如，对于没有历史记录的新事件），或者在极端事件发生时可能会产生误导：考虑一下2011年的福岛事故， 海啸的高度被低估了，因为概率计算得出的地震比实际发生的地震小得多。 还有多种计算概率的方法（例如，使用计算机模拟或收集数据并计算事件发生的时间百分比），但是所有这些方法都与用于馈送它们的数据一样好。"
+}, {
+  "tag": "H1",
+  "text": "Probability Distributions",
+  "translation": "概率分布"
+}, {
+  "tag": "P",
+  "text": "A probability distribution is a list of all of the possible outcomes of a random variable, along with its corresponding probability values. A probability distribution links each outcome of a random variable or process with its probability of occurrence. For example, if you take blood samples from different individuals in a given place, you can calculate the probability distribution of their blood types:",
+  "translation": "概率分布是一个随机变量的所有可能结果及其对应的概率值的列表。 概率分布将随机变量或过程的每个结果与其出现的概率联系起来。 例如，如果您在给定位置采集来自不同个体的血液样本，则可以计算其血液类型的概率分布："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*Ep6dboa6WotFqZpU11r9XA.png?q=20",
+  "type": "image",
+  "file": "1!Ep6dboa6WotFqZpU11r9XA.png"
+}, {
+  "tag": "P",
+  "text": "What you are doing here is counting the number of individuals with different blood types, and then divide each blood type group by the total amount of individuals. That way you get the probability of each blood type.",
+  "translation": "您在这里所做的是计算具有不同血型的个体数，然后将每个血型组除以个体总数。 这样，您就可以得出每种血型的概率。"
+}, {
+  "tag": "P",
+  "text": "In this case, blood type is the random variable. The probability distribution shows that individuals with blood type “A” have the highest probability of occurrence, as opposed to people with blood type “AB”, that have the lowest one. Also, if you sum up the different probabilities, you get 1. How do you do this? Simple: you define the random variable you want to analyze (in this example is “blood type”), you set the categories you want to count (“O”, “A”, “B” and “AB”), and you count the number of occurrences in each category. Then you either work with that absolute number (e.g. 150 cases of blood type “A”), or you divide it by the total number of cases (making it a percentage of total, like in our example).",
+  "translation": "在这种情况下，血型是随机变量。 概率分布显示，与“ AB”血型的人相比，血型“ A”的人的发生概率最高。 同样，如果您总结不同的概率，则得到1。如何做到这一点？ 简单：定义要分析的随机变量（在此示例中为“血液类型”），设置要计数的类别（“ O”，“ A”，“ B”和“ AB”），然后 计算每个类别中的出现次数。 然后，您可以使用该绝对数（例如150例血液类型为“ A”的病例），或者将其除以病例总数（如我们的示例一样，将其占总数的百分比）。"
+}, {
+  "tag": "P",
+  "text": "But there is a trick here. When you estimate the probability distribution of a random variable (like blood type, or any other), what you’re actually doing is using data that represents only a part of the real behavior of that random variable you’re analyzing. You are not looking at all the possible data values (which in probabilistic terms is defined as “population”), since you only obtained data from a subset of it (which is referred to as “sample”) in a given point in time and space.",
+  "translation": "但是这里有一个窍门。 当您估算随机变量（例如血液类型或其他类型）的概率分布时，实际上您正在使用的数据仅代表您正在分析的随机变量的实际行为的一部分。 您没有查看所有可能的数据值（以概率术语定义为“人口”），因为您只是在给定的时间点和时间范围内从其中的一个子集（称为“样本”）获取了数据。 空间。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*amsPk5P7z1jbcSC_lHLrrQ.png?q=20",
+  "caption": "A sample is a subset of a population",
+  "type": "image",
+  "file": "1!amsPk5P7z1jbcSC_lHLrrQ.png"
+}, {
+  "tag": "P",
+  "text": "Since the value of a random variable changes within the context in which they are analyzed, each time you calculate the probability of that outcome you need to take a subset of data (sampling), and since you’re doing this in particular conditions, it means that if you repeat your analysis again in the future you might get different results (due to the variable randomness). Some values will result more likely than others today, but others may be more likely in another time. This way, the sample is a representation of the population we want to analyze, but it will never be 100% identical to it.",
+  "translation": "由于随机变量的值在被分析的上下文中发生变化，因此，每次计算结果的概率时，都需要获取一部分数据（抽样），并且由于您是在特定条件下执行此操作的，因此 这意味着，如果将来再次重复分析，您可能会得到不同的结果（由于可变的随机性）。 今天，某些价值观会比其他价值观更有可能，但另一些价值观可能会在另一个时代出现。 这样，样本就代表了我们要分析的总体，但绝不会与之完全相同。"
+}, {
+  "tag": "P",
+  "text": "What if we measure all possible outcomes of the random variable we’re interested in, everywhere and all the time, and capture the real behavior of it?",
+  "translation": "如果我们可以随时随地测量我们感兴趣的随机变量的所有可能结果并捕获其真实行为该怎么办？"
+}, {
+  "tag": "P",
+  "text": "My answer is that, if you can do that, then your problem is solved: you can calculate the probability distribution of all outcomes with absolute certainty, understand how the random variable you’re interested in behaves and even predict it with better accuracy. Nevertheless, most of the times (if not always) it would extremely expensive (and sometimes impossible) to reach the whole population of data that you’re interested in.",
+  "translation": "我的回答是，如果您能做到，那么您的问题就解决了：您可以绝对确定地计算所有结果的概率分布，了解您感兴趣的随机变量的行为，甚至可以更好地预测它。 不过，在大多数情况下（如果不是始终如此），要获取您感兴趣的全部数据将非常昂贵（有时甚至是不可能）。"
+}, {
+  "tag": "P",
+  "text": "Take an example: suppose we perform a survey on 2.000 adults to estimate the percentage of adults who favor death penalty in Germany (+80 million habitats). If we get that 60% (1.200) of the surveyed people are in favor, can we conclude that 60% of Germans think the same way? Obviously not. We need to either build a conclusion from our sample using probability (and statistical) tools, or reach the whole population of data and forget about those annoying probability concepts. Well, can you imagine surveying 80 million people?",
+  "translation": "举个例子：假设我们对2.000名成年人进行了一项调查，以估算在德国（+8000万个栖息地）赞成死刑的成年人所占的百分比。 如果我们得到60％（1.200）的受访者的青睐，我们是否可以得出结论，即60％的德国人的想法相同？ 明显不是。 我们需要使用概率（和统计）工具从我们的样本中得出结论，或者获取全部数据，而忽略那些烦人的概率概念。 好吧，您能想象调查8000万人吗？"
+}, {
+  "tag": "P",
+  "text": "How can you describe the real behavior of the random variables you’re analyzing if you have limited results and also their behavior is random?",
+  "translation": "如果结果有限且随机行为是随机的，如何描述正在分析的随机变量的真实行为？"
+}, {
+  "tag": "P",
+  "text": "OK, now we know that we want to draw reliable conclusions about the “real behavior” of a random variable (not just in our sample, but also outside of it) on the basis of what we’ve discovered in our analysis (which is limited to the sample we could get). Is there a way to generalize those results in a way that they are representative?",
+  "translation": "好的，现在我们知道我们要根据分析中发现的结果得出关于随机变量（不仅在样本中，而且在样本外）的“真实行为”的可靠结论。 限于我们可以得到的样本）。 有没有办法以具有代表性的方式概括这些结果？"
+}, {
+  "tag": "P",
+  "text": "The answer is yes, and this generalization holds the secret to prediction. If you can generalize to the population the results from your sample on specific random variables, then you can predict how those random variables will behave.",
+  "translation": "答案是肯定的，这种概括是预测的秘密。 如果您可以将样本中特定随机变量的结果推广到总体，那么您可以预测这些随机变量的行为。"
+}, {
+  "tag": "H1",
+  "text": "The power of Prediction",
+  "translation": "预测的力量"
+}, {
+  "tag": "P",
+  "text": "There are probability distributions models that help you predict outcomes in specific situations. When certain conditions are met, these probability distributions models assist you to calculate each outcome probability, the long-term average outcomes, and estimate the variability in the results of random variables, without the need to have all the actual outcomes of the random variables you’re interested in.",
+  "translation": "有概率分布模型可以帮助您预测特定情况下的结果。 当满足某些条件时，这些概率分布模型可以帮助您计算每个结果概率，长期平均结果并估计随机变量结果的变异性，而无需获得您的所有随机变量的实际结果 有兴趣。"
+}, {
+  "tag": "P",
+  "text": "This means that there is a way of generalizing the results of your limited analysis on random variables to broader behaviors, which will help you to save time, money and reach more confident results. Lots of probability distributions models exist for different situations, and the key point is that you have to select the right one that fits your data and helps you explain what you’re trying to understand.",
+  "translation": "这意味着有一种方法可以将对随机变量的有限分析的结果推广到更广泛的行为，这将帮助您节省时间，金钱并获得更加自信的结果。 针对不同情况存在大量的概率分布模型，关键是您必须选择适合数据的正确模型，并帮助您解释要理解的内容。"
+}, {
+  "tag": "P",
+  "text": "In simple terms, a probability distribution model is a guide you use to fit a random variable in order to generalize its behavior. These models have a mathematical background, and can be very picky. For them to work properly, the random variable you are trying to fit in must meet different assumptions so that the outcomes of the model have the correct probabilities, and also so that you can test and validate the model against real data from the random variable.",
+  "translation": "简而言之，概率分布模型是用于拟合随机变量以概括其行为的指南。 这些模型具有数学背景，并且可能非常挑剔。 为了使它们正常工作，您要适应的随机变量必须满足不同的假设，以使模型的结果具有正确的概率，并且还可以针对随机变量中的真实数据测试和验证模型。"
+}, {
+  "tag": "H2",
+  "text": "Types of Random Variables",
+  "translation": "随机变量的类型"
+}, {
+  "tag": "P",
+  "text": "So far we’ve been talking about random variables, but there are different types of random variables. Hmm…interesting, but why do we care about it? Because the type of random variable is a key parameter when defining which probability distribution model you should choose.",
+  "translation": "到目前为止，我们一直在谈论随机变量，但是随机变量的类型有所不同。 嗯……有趣，但是我们为什么要关心它？ 由于在定义应选择哪种概率分布模型时，随机变量的类型是关键参数。"
+}, {
+  "tag": "P",
+  "text": "There are 2 major types of random variables:",
+  "translation": "随机变量有2种主要类型："
+}, {
+  "tag": "UL",
+  "texts": ["Discrete random variables: are the ones that have either a finite or countably number of possible outcomes. You calculate its value by counting."],
+  "translations": ["离散随机变量：具有有限或可能数量的可能结果的变量。 您可以通过计数来计算其值。"]
+}, {
+  "tag": "P",
+  "text": "For example, think about the “number of births in a place in a given year”. This is a discrete random variable, since the outcome might be 0,1,2…999, or any other. You get the value of the variable by counting. In a discrete random variable, if you pick any two consecutive outcomes you can’t get an outcome that’s in between.",
+  "translation": "例如，考虑“给定年份某地方的出生人数”。 这是一个离散的随机变量，因为结果可能是0,1,2…999或任何其他值。 您可以通过计数获得变量的值。 在离散随机变量中，如果您选择任意两个连续的结果，那么您将不会获得介于两者之间的结果。"
+}, {
+  "tag": "UL",
+  "texts": ["Continuous random variables: has an uncountable infinite number of possible values. You calculate its value by measuring."],
+  "translations": ["连续随机变量：具有无法计数的无限数量的可能值。 您可以通过测量来计算其值。"]
+}, {
+  "tag": "P",
+  "text": "Consider the “time it takes an algorithm to run a task”. Time is often rounded up to convenient intervals, like seconds or milliseconds, but the truth is it’s actually a continuum: it could take 1.6666666… seconds to run. Weights, temperatures, prices, they are all continuous random variables.",
+  "translation": "考虑“算法运行任务所花费的时间”。 时间通常会四舍五入为方便的时间间隔，例如秒或毫秒，但事实是，这实际上是一个连续的过程：可能需要1.6666666秒才能运行。 重量，温度，价格都是连续的随机变量。"
+}, {
+  "tag": "P",
+  "text": "In probabilistic terms, discrete and continuous random variables are 2 different creatures that should be treated completely separate, and there are different probability distributions model for each one of them. This means that if you’re dealing with a discrete random variable (e.g. number of cell phones by house owner in a given area), you need to select a probability distribution model that handles discrete random variables (you can’t choose one that deals only with continuous random variables).",
+  "translation": "用概率术语来说，离散和连续随机变量是应该完全分开对待的2个不同的生物，并且每个生物都有不同的概率分布模型。 这意味着，如果您要处理离散随机变量（例如，给定区域中房主的手机数量），则需要选择一种处理离散随机变量的概率分布模型（不能选择处理随机变量的概率分布模型）。 仅具有连续随机变量）。"
+}, {
+  "tag": "H1",
+  "text": "Dancing with Statistics",
+  "translation": "统计跳舞"
+}, {
+  "tag": "P",
+  "text": "Probability has a close relationship with statistics. In fact, they are so intimately linked that is almost impossible to talk about one without mentioning the other. Statistics are applied to sets of data to determine factors or attributes that characterize them, in order to gain information about them: it is a discipline concerned with the collection and interpretation of quantitative data, which blended with probability gives us the possibility to make predictions about outcomes.",
+  "translation": "概率与统计密切相关。 实际上，它们是如此紧密地联系在一起，以至于几乎不可能在不提及另一个的情况下谈论它们。 将统计应用于数据集以确定表征它们的因素或属性，以便获取有关它们的信息：这是一门与定量数据的收集和解释有关的学科，它与概率混合在一起，使我们有可能对 结果。"
+}, {
+  "tag": "P",
+  "text": "A statistic is a numerical measure that describes some property of the data, and believe it or not, we use them every day. For example, when you check the average scoring rate of a soccer player (in statistical terms called “the mean”), or the most popular newborn boy name in your country in a given period (in statistical terms called “the mode”), you are using statistics.",
+  "translation": "统计是一种数字量度，用于描述数据的某些属性，无论您相信与否，我们每天都在使用它们。 例如，当您检查足球运动员的平均得分率（以统计术语称为“均值”）或给定时期内您国家/地区最受欢迎的新生男孩名字（以统计术语称为“众数”）时， 您正在使用统计信息。"
+}, {
+  "tag": "P",
+  "text": "The part of statistics that only describes data is called “descriptive statistics”, while the part of statistics that allows you to make predictions is called “inferential statistics”.",
+  "translation": "仅描述数据的统计信息部分称为“描述性统计信息”，而允许您进行预测的统计信息部分称为“推论统计信息”。"
+}, {
+  "tag": "P",
+  "text": "Means, modes, medians, variances, standard deviations, these are some of the statistics you can use to describe your data, and just like in probability, unless you have access to all available data (the population), a “statistic” is always obtained from a sample: if you could get it from the population, you’d call it a “parameter”. From this information it’s possible to build predictive models and determine the probability of certain outcomes before the outcome is actually realized. This way, you can use statistics to work out the probability that a certain event will occur.",
+  "translation": "均值，众数，中位数，方差，标准差，这些是可以用来描述数据的一些统计信息，就像概率一样，除非您可以访问所有可用数据（总体），否则“统计信息”始终是 从样本中获得：如果可以从总体中获得，则将其称为“参数”。 根据这些信息，可以建立预测模型并确定在实际实现结果之前确定某些结果的可能性。 这样，您可以使用统计信息来计算出特定事件发生的可能性。"
+}, {
+  "tag": "P",
+  "text": "For instance, if you want to know the chance that your holiday plane will crash (sorry for the dark example), you can think of how many planes usually crash within a year, and since that number is very small, you deduce that the probability of your plane crashing is small too. Here, you’re actually applying statistics by calculating certain parameter like the number of crushed planes divided by the total number of flights. Or you can use statistics for example with a sample of data from woman in a given town to make inferences about a larger population of women (with a similar age range), that are living in larger areas like a city.",
+  "translation": "例如，如果您想知道假日飞机坠毁的几率（以黑色为例，很抱歉），您可以考虑一下一年内通常有几架飞机坠毁，并且由于该数目很小，您可以推断出该概率 飞机坠毁的事故也很小。 在这里，您实际上是通过计算某些参数来应用统计信息，例如被压碎的飞机数除以飞行总数。 或者，您可以使用统计数据（例如，从给定城镇中的女性数据样本中得出）来推断出生活在较大城市（如城市）中的更大数量的女性（年龄范围相似）。"
+}, {
+  "tag": "P",
+  "text": "Once again, we do this because estimating or inferring parameters is easier than dealing with real life. We need statistics to describe our available data, understand it, and then blend it with probability to guess how the “real” (non-available) data behaves.",
+  "translation": "再次，我们这样做是因为估计或推断参数比处理现实生活更容易。 我们需要统计数据来描述我们的可用数据，理解它，然后将其与概率混合在一起，以猜测“真实”（不可用）数据的行为。"
+}, {
+  "tag": "P",
+  "text": "That is because a statistic is observable, being computed from the observations, while a population parameter, being an abstraction, is not observable and must be estimated (unless you have complete access to it).",
+  "translation": "这是因为从观察值计算得出的统计数据是可观察的，而作为抽象的总体参数则不可观察，必须进行估计（除非您可以完全访问它）。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*NHOQis0jT2Vn5VHQt8iSmw.png?q=20",
+  "caption": "A population parameter can be estimated from a sample (inference)",
+  "type": "image",
+  "file": "1!NHOQis0jT2Vn5VHQt8iSmw.png"
+}, {
+  "tag": "P",
+  "text": "So, how do we infer?",
+  "translation": "那么，我们如何推断呢？"
+}, {
+  "tag": "P",
+  "text": "The possible outcomes of a random variable can be estimated using statistics and probability in different ways:",
+  "translation": "可以使用统计信息和概率以不同方式估算随机变量的可能结果："
+}, {
+  "tag": "OL",
+  "texts": ["Calculating the value of a single outcome of a random variable (like the exact value of a stock price mean), called point estimation.", "Estimating an interval or range of possible outcomes of a random variable (e.g. the different values of the stock price mean), called interval estimation.", "Testing the validity of a statement (that is relative to a population parameter), by using statistical methods to confirm or reject that statement. This statement is called a hypothesis and the statistical tests used for this purpose are called statistical hypothesis tests."],
+  "translations": ["计算一个随机变量的单个结果的值（如股票价格均值的精确值），称为点估计。", "估计一个随机变量的可能结果的间隔或范围（例如股票价格均值的不同值），称为间隔估计。", "通过使用统计方法确认或拒绝该语句来测试语句（相对于总体参数）的有效性。 该陈述称为假设，为此目的使用的统计检验称为统计假设检验。"]
+}, {
+  "tag": "P",
+  "text": "These methods lean on the concept of probability distributions, since you need to use probability distribution models to make inferences and generalize your conclusions.",
+  "translation": "这些方法依赖于概率分布的概念，因为您需要使用概率分布模型进行推断并归纳结论。"
+}, {
+  "tag": "H1",
+  "text": "Final thoughts",
+  "translation": "最后的想法"
+}, {
+  "tag": "P",
+  "text": "Probability distributions help to model our world, enabling us to obtain estimates of the probability that a certain event may occur, or estimate the variability of occurrence. They are a common way to describe, and possibly predict, the probability of an event.",
+  "translation": "概率分布有助于对我们的世界进行建模，使我们能够获得对特定事件可能发生的概率的估计，或估计事件的可变性。 它们是描述并可能预测事件概率的常用方法。"
+}, {
+  "tag": "P",
+  "text": "The main challenge is to define the characteristics of the variables whose behaviour we are trying to describe, since it’s necessary to identify what distribution should be applied to a model a particular process.",
+  "translation": "主要挑战是定义我们要描述其行为的变量的特征，因为有必要确定应将哪种分布应用于特定过程的模型。"
+}, {
+  "tag": "P",
+  "text": "The identification of the right distribution will allow a proper application of a model (for instance, the standardized normal distribution) that would easily predict the probability of a given event.",
+  "translation": "正确分布的标识将允许正确应用模型（例如，标准化正态分布），该模型可以轻松预测给定事件的概率。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Diego Lopez Yse的文章《Before Probability Distributions》，参考：https://towardsdatascience.com/before-probability-distributions-d8a2f36b1cb)",
+  "translation": "（本文翻译自Diego Lopez Yse的文章，《概率分布之前》，参考：https：//towardsdatascience.com/before-probability-distributions-d8a2f36b1cb）"
+}]

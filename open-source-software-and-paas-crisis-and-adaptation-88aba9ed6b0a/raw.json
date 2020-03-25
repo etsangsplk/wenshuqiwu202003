@@ -1,0 +1,107 @@
+[{
+  "tag": "H1",
+  "text": "Open Source Software and PaaS: Crisis and Adaptation",
+  "translation": "开源软件和PaaS：危机与适应"
+}, {
+  "tag": "P",
+  "text": "Structural changes in the open-source ecosystem are occurring as a result of the rise of cloud computing Platforms as a Service (PaaS) that are disrupting the cycle of investment that sustains the ecosystem. The shift to cloud computing reduces the number of companies making direct investments in open source by several orders of magnitude and concentrates control of companies’ indirect investments in the hands of a few intermediaries that lack the same incentives as individual companies which ensured their ethical participation.",
+  "translation": "开源生态系统的结构性变化是由于云计算平台即服务（PaaS）的兴起而引起的，该平台正在中断维持生态系统的投资周期。 向云计算的转变使直接在开源上进行直接投资的公司数量减少了几个数量级，并将对公司间接投资的控制集中在一些中介机构的手中，这些中介机构缺乏与确保公司道德参与的单个公司相同的动机。"
+}, {
+  "tag": "P",
+  "text": "This constitutes a full-blown crisis for the pay-it-forward soft economy of free and open-source software. As a result, dramatic change is coming to the ecosystem, which is adapting in multiple ways that we’ll be exploring in upcoming posts.",
+  "translation": "对于免费和开源软件的按需付款的软经济而言，这构成了全面的危机。 结果，生态系统将发生巨大变化，该生态系统将以多种方式进行适应，我们将在以后的文章中进行探讨。"
+}, {
+  "tag": "P",
+  "text": "I see many people complaining about the symptoms of these changes, about bad actors in the ecosystem. I see virtually no one talking about the structural reasons for these symptoms and what they mean for the future, let alone outlining potential scenarios, what they might mean and how we might affect those outcomes. This is the first in a series of posts that will attempt to do those things.",
+  "translation": "我看到许多人抱怨这些变化的症状，生态系统中的不良行为者。 我几乎没有人在谈论这些症状的结构性原因以及它们对未来的意义，更不用说概述潜在的情况，它们可能意味着什么以及我们如何影响这些结果了。 这是一系列尝试做这些事情的文章中的第一篇。"
+}, {
+  "tag": "H1",
+  "text": "Run Your Own Open Source",
+  "translation": "运行自己的开源"
+}, {
+  "tag": "P",
+  "text": "Don’t kid yourself: companies, not volunteers, fund most open-source software. Companies like Company A pay workers like Worker B to solve its problems using Open Source Project C. In a cycle of reciprocity, Company A allows Worker B to contribute improvements back to Open Source Project C where other companies can use them and in turn contribute their own improvements. Everyone benefits.",
+  "translation": "不要自欺欺人：公司（不是志愿者）为大多数开源软件提供资金。 像公司A这样的公司向像工人B这样的工人付钱，以使用开源项目C解决问题。在互惠的循环中，公司A允许工人B将改进归还给开源项目C，其他公司可以在其中使用它们并反过来贡献他们的精力。 自己的改进。 每个人都受益。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*DNjKqvYE5lNiShPX.png?q=20",
+  "caption": "The cycle of reciprocity under the traditional model of run your own open source",
+  "type": "image",
+  "file": "0!DNjKqvYE5lNiShPX.png"
+}, {
+  "tag": "P",
+  "text": "This is the fundamental cycle that makes open source work. This cycle has operated without interruption from the dawn of open source in the 1970s, starting with research institutions and BSD *nix and expanding into the enterprise with Linux and Apache. Until recently it has fueled the growth of open source software until the systems operating the global economy are completely dependent upon it.",
+  "translation": "这是使开源工作的基本周期。 从1970年代开放源代码开始，这个周期就一直没有中断，从研究机构和BSD * nix开始，到使用Linux和Apache扩展到企业。 直到最近，它推动了开源软件的发展，直到运行全球经济的系统完全依赖它。"
+}, {
+  "tag": "H1",
+  "text": "Open Source Platforms as a Service",
+  "translation": "开源平台即服务"
+}, {
+  "tag": "P",
+  "text": "Cloud computing fundamentally changes the open source cycle of reciprocity. Under the Platform as a Service (PaaS) model, Company A pays Cloud PaaS Provider D to run open source software for them. This presents a potential problem — if you don’t run your own software, you don’t improve it and you don’t contribute those improvements back to the project. The cycle of reciprocity is broken and the economics of open source no longer work.",
+  "translation": "云计算从根本上改变了互惠的开源周期。 在平台即服务（PaaS）模式下，公司A向Cloud PaaS提供商D付费以为其运行开源软件。 这就带来了潜在的问题-如果您不运行自己的软件，就不会对其进行改进，也不会将这些改进归还给项目。 互惠的循环被打破了，开源的经济不再起作用。"
+}, {
+  "tag": "P",
+  "text": "In a cloud based model Cloud Paas Provider D pays Worker E to improve Open Source Project C and they allow Worker E to contribute those improvements back to Open Source Project C where other cloud providers can use them and in turn contribute their own improvements.",
+  "translation": "在基于云的模型中，Cloud Paas提供者D向工作者E支付了改善开放源代码项目C的费用，并且他们允许工作者E将这些改进贡献回开放源代码项目C，其他云提供者可以在其中使用它们并反过来贡献自己的改进。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*syCFkyHTV4-A5tpQ.png?q=20",
+  "caption": "The cycle of reciprocity under the cloud computing platform as a service model of open source",
+  "type": "image",
+  "file": "0!syCFkyHTV4-A5tpQ.png"
+}, {
+  "tag": "P",
+  "text": "Note that the contributor to open source software is now the cloud provider, not the original company and the cycle of reciprocity now operates among cloud providers and not individual companies across the many industries of the global economy. Cloud providers have as many as 1,000,000 customers which means that the scale of reduction in the number of companies directly funding open-source software is enormous. I’m not saying it is 1,000,000:1 but it is certainly several orders of magnitude. Several zeros at minimum.",
+  "translation": "请注意，开源软件的贡献者现在是云提供商，而不是原始公司，而互惠循环现在在云提供商之间而不是全球经济众多行业中的单个公司中进行。 云提供商拥有多达1,000,000个客户，这意味着直接资助开源软件的公司数量的减少规模是巨大的。 我并不是说这是1,000,000：1，但肯定是几个数量级。 至少几个零。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*sdLyvMVnkfy3-XiY.png?q=20",
+  "caption": "The reduction in the number of direct investors to open source",
+  "type": "image",
+  "file": "0!sdLyvMVnkfy3-XiY.png"
+}, {
+  "tag": "P",
+  "text": "Note that because they are few in number, cloud providers have different relationships between one another than two companies that contributed to an open-source project under the traditional model. An increased level of competition among direct contributors to open source may tend to decrease their allocation of investment to the overall ecosystem and instead lead them to try to undermine, fragment and own the ecosystem itself. To make what is open transparent — but closed once again. Free as in beer but not free as in freedom. This the dystopian scenario we must try to avoid, which I’ll talk about in a future post.",
+  "translation": "请注意，由于数量很少，因此云提供商之间的关系要比在传统模式下为开源项目做出贡献的两家公司之间的关系不同。 开放源代码的直接贡献者之间竞争的加剧可能会减少他们对整个生态系统的投资分配，而是导致他们试图破坏，分散和拥有生态系统本身。 使透明的内容透明-但再次封闭。 像啤酒一样自由，但不像自由一样自由。 我们必须设法避免这种反乌托邦的情况，我将在以后的文章中讨论。"
+}, {
+  "tag": "P",
+  "text": "For now, the most important thing to note is that for open source in the PaaS model, for each cloud provider there are still as many as one million companies indirectly funding open source software, but now the cloud provider manages the allocation of those funds. Cloud computing providers have become open source investment managers, whether they like it or not.",
+  "translation": "目前，要注意的最重要的一点是，对于PaaS模型中的开源而言，每个云提供商仍然有多达一百万家间接资助开源软件的公司，但是现在，云提供商可以管理这些资金的分配。 无论是否喜欢，云计算提供商都已成为开源投资经理。"
+}, {
+  "tag": "H1",
+  "text": "Cloud Monitoring Agency",
+  "translation": "云监控机构"
+}, {
+  "tag": "P",
+  "text": "This raises a number of important questions: are cloud providers stepping up and taking on this new responsibility as the de facto financial managers of open source investment? Does their investment in open source projects reflect their customers’ investment in those projects’ continued existence? Are they doing their fiduciary duty? How can we be sure cloud providers keep the cycle of reciprocal investment in open source going? These are the questions this series will explore.",
+  "translation": "这就提出了许多重要的问题：云提供商是否已作为开源投资的事实上的财务经理加紧承担起这一新的责任？ 他们对开源项目的投资是否反映了客户对这些项目的持续存在的投资？ 他们在履行受托责任吗？ 我们如何确保云提供商保持开源互惠投资的周期？ 这些是本系列将探讨的问题。"
+}, {
+  "tag": "P",
+  "text": "Once we decide we are looking for answers, how do we go about it? How do we evaluate the free and open-source software ecosystem and the citizenship of the cloud providers? Who do we listen to? The cloud providers themselves? Open source enthusiasts? Project founders? Entrepreneurs? FOSS prophets? Analysts (what analysts)? Journalists?",
+  "translation": "一旦确定要寻找答案，我们将如何解决？ 我们如何评估自由和开源软件生态系统以及云提供商的公民身份？ 我们听谁的话？ 云提供商本身？ 开源爱好者？ 项目创始人？ 企业家？ FOSS先知？ 分析师（分析师）？ 记者？"
+}, {
+  "tag": "P",
+  "text": "Over the course of the last six months, I’ve spoken to or conducted interviews with all of the above parties. Each has a different perspective, each cites different examples to justify their opinion. Some see the crisis I do, others do not see it at all. Most evidence I was presented with was anecdotal. The only statistics cited by anyone come from cloud providers, and as we’ll see there is reason to be skeptical of their claims.",
+  "translation": "在过去的六个月中，我已经与上述所有各方进行了交谈或进行了采访。 每个人都有不同的观点，每个人都引用不同的例子来证明自己的观点。 有些人看到了我的危机，其他人则完全看不到它。 我得到的大多数证据都是轶事。 任何人引用的唯一统计数据都来自云提供商，我们将看到有理由怀疑他们的主张。"
+}, {
+  "tag": "H1",
+  "text": "In God We Trust; All Others Bring Data",
+  "translation": "我们相信上帝； 所有其他带来数据"
+}, {
+  "tag": "P",
+  "text": "In the end, I found the only reliable way to understand the changing situation was to look at hard data. This is why I adopted Github and Stack Overflow data as the datasets used in my forthcoming book, Weakly Supervised Learning (O’Reilly, 2020). In this series of posts, I will combine hard data with insights from the interviews I’ve conducted to investigate what open source might look like in the future and what any of us can do to effect change to create the kind of future everyone involved wants: a vibrant open source ecosystem far into the future.",
+  "translation": "最后，我发现了解不断变化的情况的唯一可靠方法是查看硬数据。 这就是为什么我将Github和Stack Overflow数据用作我即将出版的书《弱监督学习》（O'Reilly，2020年）中使用的数据集的原因。 在本系列文章中，我将结合硬数据和我进行的访谈中的见解，以调查未来的开源可能会是什么样子，以及我们中的任何人都可以做些什么来实现改变，从而创造每个参与者想要的未来 ：一个充满活力的开源生态系统，将在未来发展。"
+}, {
+  "tag": "P",
+  "text": "Fear not, there is hope! But we had better get moving…",
+  "translation": "不要害怕，有希望！ 但是我们最好动起来..."
+}, {
+  "tag": "P",
+  "text": "Russell Jurney is an AI product consultant specializing in natural language processing, data labeling, Snorkel and weakly supervised learning. He is the author of four books on data science. His fifth book, Weakly Supervised Learning (O’Reilly, 2020) is out later this year.",
+  "translation": "Russell Jurney是一位AI产品顾问，专门从事自然语言处理，数据标记，呼吸管和弱监督学习。 他是有关数据科学的四本书的作者。 他的第五本书《弱监督学习》（O’Reilly，2020年）将于今年晚些时候出版。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Russell Jurney的文章《Open Source Software and PaaS: Crisis and Adaptation》，参考：https://towardsdatascience.com/open-source-software-and-paas-crisis-and-adaptation-88aba9ed6b0a)",
+  "translation": "（本文翻译自Russell Jurney的文章，《开源软件和PaaS：危机与适应》，参考：https：//towardsdatascience.com/open-source-software-and-paas-crisis-and-adaptation-88aba9ed6b0a）"
+}]

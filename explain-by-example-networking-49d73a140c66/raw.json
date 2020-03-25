@@ -1,0 +1,353 @@
+[{
+  "tag": "P",
+  "text": "Originally published at https://www.linkedin.com.",
+  "translation": "最初发布在https://www.linkedin.com。"
+}, {
+  "tag": "P",
+  "text": "Author: Michelle Xie",
+  "translation": "作者：谢雪儿"
+}, {
+  "tag": "H1",
+  "text": "Explain By Example: Networking",
+  "translation": "举例说明：网络"
+}, {
+  "tag": "P",
+  "text": "So I met up with a friend recently and like all friends do, we caught up on our dating lives. She brought forth an interesting concept whereby she used, ‘ The Market for Lemons’, an economics theory which proposed the idea that when we have asymmetric information in a market between buyers and sellers, the good quality “peaches” become undervalued and the bad quality “lemons” become overvalued and in the end, we end up with too many lemons in life. Then we had a good laugh about how asymmetric information doesn’t just distort markets but it can also distort other things in life, like relationships.",
+  "translation": "所以我最近遇到了一个朋友，就像所有朋友一样，我们赶上了约会生活。 她提出了一个有趣的概念，她使用了“柠檬市场”这一经济学理论，提出了这样的观念：当我们在买卖双方之间的市场中获得不对称信息时，优质的“桃子”就会被低估而不良的质量 “柠檬”被高估了，最终，我们生活中的柠檬过多。 然后，我们对不对称信息不仅会扭曲市场，而且还会扭曲生活中的其他事物（例如人际关系）大加欢笑。"
+}, {
+  "tag": "P",
+  "text": "And then I thought to myself, wouldn’t it be great if we could set up Firewalls to protect ourselves from bad relationships?",
+  "translation": "然后我心想，如果我们可以设置防火墙来保护自己免受不良关系的影响，那岂不是很好吗？"
+}, {
+  "tag": "P",
+  "text": "So then, I started thinking about what kind of Firewalls I would need. But first, let’s talk about the OSI model and the TCP/IP model.",
+  "translation": "因此，我开始考虑要使用哪种防火墙。 但首先，让我们谈谈OSI模型和TCP / IP模型。"
+}, {
+  "tag": "P",
+  "text": "The OSI Model?",
+  "translation": "OSI模型？"
+}, {
+  "tag": "P",
+  "text": "Yes, the Open Systems Interconnection Model or the OSI model. I’m not going to lie, networking brings me more pain than joy but it’s important to understand how to do networking properly because if done incorrectly, it will bring even more pain just like bad relationships. I’ve always had trouble remembering the 7 layers of the OSI model so today, I will create the OSI (Relationship) model which looks at how a couple interacts with one another:",
+  "translation": "是的，开放系统互连模型或OSI模型。 我不会说谎，网络给我带来的痛苦多于喜悦，但重要的是要了解如何正确地进行网络连接，因为如果处理不当，将给人带来更痛苦的感觉，就像不良的人际关系一样。 我一直很难记住OSI模型的7层，所以今天，我将创建OSI（关系）模型，该模型研究一对夫妇如何进行交互："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*gxx9bWG7bTYwZqljbZgtnA.png?q=20",
+  "type": "image",
+  "file": "1!gxx9bWG7bTYwZqljbZgtnA.png"
+}, {
+  "tag": "P",
+  "text": "We will start with Layer 7, the Application layer. Linda sends Collin a message asking if he is available for dinner that evening. This is known as the Application layer because the user (Linda) directly interacts with the app to send the message.",
+  "translation": "我们将从应用程序层第7层开始。 琳达（Linda）向科林（Collin）发送消息，询问他那天晚上是否有空吃晚饭。 这被称为应用程序层，因为用户（Linda）直接与应用程序交互以发送消息。"
+}, {
+  "tag": "P",
+  "text": "Now, how does this message actually get to Collin’s phone app?",
+  "translation": "现在，此消息实际上如何发送到Collin的电话应用程序？"
+}, {
+  "tag": "P",
+  "text": "We move down a layer to Layer 6, the Presentation layer. It’s called the presentation layer because the message has to be “presented” into a format that the network would understand. Humans may understand text language but computers understand a different kind of language, the binary language of 1s and 0s. But before we get down to the binary stuff, there is a whole heap of other steps we need to go through first.",
+  "translation": "我们向下移动到第6层，即Presentation层。 之所以称为表示层，是因为必须将消息“呈现”为网络可以理解的格式。 人类可能会理解文本语言，但是计算机会理解另一种语言，即1s和0s的二进制语言。 但是在深入了解二进制内容之前，我们需要首先完成其他所有步骤。"
+}, {
+  "tag": "P",
+  "text": "Why?",
+  "translation": "为什么？"
+}, {
+  "tag": "P",
+  "text": "Well, for starters, it’s actually pretty easy to translate “Let’s get dinner tonight!” into binary:",
+  "translation": "好吧，对于初学者来说，翻译“今晚吃饭吧！”实际上很容易。 转换成二进制："
+}, {
+  "tag": "PRE",
+  "text": "01001100 01100101 01110100 00100111 01110011 00100000 01100111 01100101 01110100 00100000 01100100 01101001 01101110 01101110 01100101 01110010 00100000 01110100 01101111 01101110 01101001 01100111 01101000 01110100 00100001",
+  "translation": "01001100 01100101 01110100 00100111 01110011 00100000 01100111 01100101 01110100 00100000 01100100 01101001 01101110 01101110 01100101 01110010 00100000 01110100 01101111 01101110 01101001 01100111 01101000 01110100 00100001"
+}, {
+  "tag": "P",
+  "text": "But if we translated this straight away, how will Linda’s phone message app know that this message needs to be delivered to Collin’s phone message app?",
+  "translation": "但是，如果我们立即对此进行翻译，琳达的电话消息应用程序将如何知道此消息需要传递到柯林的电话消息应用程序？"
+}, {
+  "tag": "P",
+  "text": "Things like encryption is usually done at this layer too particularly if this message is sensitive information. For instance, Linda might have sent: “Let’s get dinner tonight! Also, can you pick me up at 55 Broadway Street, New York City at 5pm. We are going to this really fancy place so if you are on time, then dinner is on me.”",
+  "translation": "诸如加密之类的事情通常也在这一层上完成，特别是如果此消息是敏感信息的话。 例如，琳达可能发送了：“今晚我们吃饭吧！ 另外，您可以在下午5点在纽约市百老汇街55号接我。 我们要去这个很特别的地方，所以如果您准时，那晚饭就在我这里。”"
+}, {
+  "tag": "P",
+  "text": "Now, let’s say I’m the evil (hungry) hacker that has been going around trying to intercept people’s messages to see how many free dinners I can get. Assuming Linda is blind, if this message was sent unencrypted then I could intercept this message, transform it from binary back to human text and read the message. Then I’ll show up at 4:59pm, pick up Linda and pretend to be Collin for the rest of the night to get a free dinner.",
+  "translation": "现在，假设我是一个邪恶的（渴望的）黑客，他一直在努力拦截人们的信息，以查看我可以得到多少免费晚餐。 假设Linda是盲人，如果此消息未加密发送，那么我可以截取此消息，将其从二进制转换回人工文本，然后读取消息。 然后，我将在下午4:59出现，接琳达，并假装在剩下的晚上成为柯林，以获得免费晚餐。"
+}, {
+  "tag": "P",
+  "text": "Now, if this message was encrypted, without the right key, I won’t be able to decipher the meaning because it will probably look something like this:",
+  "translation": "现在，如果此消息是加密的，没有正确的密钥，我将无法解释其含义，因为它可能看起来像这样："
+}, {
+  "tag": "PRE",
+  "text": "ETSL TGE ERNIDN TOINTGH SOLA CAN UYO KPCI EM PU AT DYBARAOW ESERTT NEW YROK CTYI TA PM EW AER GGION TO IHST RYELAL CNAFY ELCAP OS UYO ARE NO EIMT TNHE ENIRDN IS NO EM",
+  "translation": "ETSL TGE ERNIDN TOINTGH SOLA能否在DYBARAOW ESERTT的YYOK CTYI TA PM EW GGION向IHST RYELAL CNAFY ELCAP OS UYO推销KPCI EM PU，这不是EMMT"
+}, {
+  "tag": "P",
+  "text": "Ok, so encryption is important but we still haven’t figured out how to send it to Collin’s phone.",
+  "translation": "好的，因此加密很重要，但我们仍未弄清楚如何将其发送到Collin的电话。"
+}, {
+  "tag": "P",
+  "text": "Well, then let’s move one layer down to Layer 5, the Session layer. The data (message) is now encrypted and translated into a format the network can understand so now we just need to establish how this data (message) is delivered (or transmitted) across the network so that it will end up in Collin’s phone and not Craig’s phone or Cherry’s phone. The session layer is pretty important because what it does is that it opens up a session for two devices to communicate with one another.",
+  "translation": "好吧，接下来我们将其下一层移到第5层（会话层）。 现在，数据（消息）已加密并转换为网络可以理解的格式，因此现在我们只需要确定如何通过网络传送（或传输）此数据（消息），以便最终将其保存在Collin的电话中， Craig的电话或Cherry的电话。 会话层非常重要，因为它的作用是打开一个会话，使两个设备相互通信。"
+}, {
+  "tag": "P",
+  "text": "Wait, why do we need to maintain sessions?",
+  "translation": "等等，为什么我们需要维护会话？"
+}, {
+  "tag": "P",
+  "text": "Well, if we go back to our, “Let’s get dinner tonight!” message. The binary representation of that message is already pretty long and we can both agree that the text representation of that message is not as long. So you can imagine how long the binary representation for an even longer text message or other types of messages like images could be. When we send data (messages) across the network, we usually have to break things up because otherwise it is just too much to deal with at once. So what might actually happen is, “Let’s get din” and “ner tonight!” might get broken up and sent as two separate data loads and then reassembled into “Let’s get dinner tonight!” when it reaches Collin’s phone. So we need to maintain a session to make sure all the broken up pieces of the same message is sent through kind of like all Jigsaw pieces need to be present to accurately reassemble a Jigsaw puzzle.",
+  "translation": "好吧，如果我们回到“今天晚上吃晚饭！” 信息。 该消息的二进制表示形式已经很长了，我们都可以认为该消息的文本表示形式不是那么长。 因此，您可以想象甚至更长的文本消息或其他类型的消息（如图像）的二进制表示形式可以达到多长时间。 当我们通过网络发送数据（消息）时，我们通常必须将其拆散，因为否则将无法立即处理。 因此，实际可能发生的是“让我们一起吃饭”和“今晚的狂欢！” 可能会分解并作为两个单独的数据加载发送，然后重新组合为“今晚我们共进晚餐！” 当它到达Collin的电话时。 因此，我们需要维护一个会话，以确保同一条消息的所有分解片段都通过某种形式发送，就像需要正确呈现所有拼图碎片一样，需要呈现所有拼图碎片。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*leP3sQH8QtUBB8vGZzZhNA.png?q=20",
+  "type": "image",
+  "file": "1!leP3sQH8QtUBB8vGZzZhNA.png"
+}, {
+  "tag": "P",
+  "text": "Now, let’s move down one layer to Layer 4, the Transport Layer. At this layer, the data (message) is divided into Segments. This layer pretty much dictates how much data should be sent through, who should receive it, and how fast the data should be sent at. For instance, Collin’s phone may be older or more outdated than Linda’s brand new phone and so naturally, the data it can receive and the rate that it can receive it at would be a lot less than Linda’s phone. At this layer, the protocol (usually TCP or UDP) will make the decision on how to segment the data based on how much data Collin’s phone can receive at a time, label the segments so they know that all segments are successfully received and if not, resend only the segment that is missing.",
+  "translation": "现在，让我们向下移动一层到第四层，即传输层。 在这一层，数据（消息）被划分为段。 该层几乎决定了应发送多少数据，应由谁接收数据以及应以多快的速度发送数据。 例如，Collin的电话可能比Linda的新电话更旧或更旧，因此自然而然地，它可以接收的数据和接收的速率将比Linda的电话低很多。 在此层，协议（通常为TCP或UDP）将根据Collin的电话一次可以接收的数据量来决定如何对数据进行分段，对分段进行标记，以便他们知道所有分段均已成功接收，如果未成功 ，仅重新发送缺少的细分。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/58/1*z36DgBOypiXtMTU_SOA7tw.png?q=20",
+  "type": "image",
+  "file": "1!z36DgBOypiXtMTU_SOA7tw.png"
+}, {
+  "tag": "P",
+  "text": "These segments then get passed down to Layer 3, the Network Layer. At the network layer, the segments turn into little packets each of which has a source (sender) IP address and a (recipient) destination IP address attached to it. The IP address tells the network where to send the message to and where it came from.",
+  "translation": "然后，将这些段传递到第3层（网络层）。 在网络层，这些段变成很少的数据包，每个数据包都有一个附加的源（发送者）IP地址和一个（收件人）目标IP地址。 IP地址告诉网络将消息发送到哪里以及消息来自何处。"
+}, {
+  "tag": "P",
+  "text": "Why are the IP addresses in a numeric format?",
+  "translation": "为什么IP地址采用数字格式？"
+}, {
+  "tag": "P",
+  "text": "Well, remember when I said computers and networks only deal with 1s and 0s? So the 150.16.315.54 and 148.11.229.69 are actually just numeric representations of the 32 bits of 1s and 0s that tell the routers in the network where this packet should be delivered to. This type of IP address is also known as IPv4 addresses. Now, 148.11.229.69 doesn’t represent Collin’s phone. It just means if you send it to 148.11.229.69 then Collin’s phone will receive it…somehow.",
+  "translation": "好吧，还记得我说过计算机和网络只处理1和0的问题吗？ 因此，150.16.315.54和148.11.229.69实际上只是32位1和0的数字表示，它们告诉网络中的路由器该数据包应发送到的位置。 这种IP地址也称为IPv4地址。 现在，148.11.229.69并不代表Collin的电话。 这只是意味着，如果您将其发送到148.11.229.69，则Collin的电话会以某种方式接收它。"
+}, {
+  "tag": "P",
+  "text": "Uh, how?",
+  "translation": "嗯，怎么样？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*1ONqMWvAgJ_O1qKOOyyGcw.png?q=20",
+  "type": "image",
+  "file": "1!1ONqMWvAgJ_O1qKOOyyGcw.png"
+}, {
+  "tag": "P",
+  "text": "So basically, you can think of it as the device that we need to send it to lies on the same network as 148.11.229.69 but to figure out that this device is Collin’s phone, we need to move one layer down to Layer 2, the Data Link Layer. At this layer, the packets turn into data frames where physical device addresses are assigned. And these physical device addresses are called MAC addresses. So for example, Collin’s phone might have the MAC address: 1A-2B-3C-4D-5E-6F.",
+  "translation": "因此，基本上，您可以将其视为我们需要将其发送到与148.11.229.69处于同一网络上的设备，但是要弄清楚该设备是Collin的电话，我们需要将其向下移动一层到第二层， 数据链路层。 在这一层，数据包变成分配了物理设备地址的数据帧。 这些物理设备地址称为MAC地址。 因此，例如，Collin的电话可能具有MAC地址：1A-2B-3C-4D-5E-6F。"
+}, {
+  "tag": "P",
+  "text": "What are MAC Addresses?",
+  "translation": "什么是MAC地址？"
+}, {
+  "tag": "P",
+  "text": "While IP addresses are used to go through the network (of routers) which you can basically think of as the internet or the intranet to try and get messages delivered from one network to another, MAC or Media Access Control Addresses are essentially an identity that each device has assigned to them which tells the network, “Hey, this is my identity. If anyone sends a message to this network addressed to Collin’s phone then please send it to me. Thanks!”.",
+  "translation": "IP地址通常用于（路由器的）网络，您可以将其视为互联网或企业内部网，以尝试将消息从一个网络传递到另一个网络，而MAC或媒体访问控制地址本质上是一个标识， 分配给他们的设备会告诉网络：“嘿，这是我的身份。 如果有人通过该网络向Collin的手机发送了一条消息，请发送给我。 谢谢！”。"
+}, {
+  "tag": "P",
+  "text": "Why do we have to use segments, packets, and data frames?",
+  "translation": "为什么我们必须使用段，数据包和数据帧？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*0WfMIGABuFwnBXcfghULlg.png?q=20",
+  "type": "image",
+  "file": "1!0WfMIGABuFwnBXcfghULlg.png"
+}, {
+  "tag": "P",
+  "text": "I used a post shop analogy in my last post to explain this. So think about delivering a parcel. The segment basically tells the delivery guy, “Hey, this parcel weights 4.5kgs.” The packets tells the delivery guy, “Please send it to this country, this city, this region, and this flat at this street address.” Then finally, the data frame tells the delivery guy, “Once you get to that address, find Collin because he needs to sign and verify he received the parcel.”",
+  "translation": "我在上一篇文章中使用了邮购类比来解释这一点。 因此，请考虑运送包裹。 该细分市场基本上告诉送货员，“嘿，这个包裹重4.5公斤。” 包裹告诉送货员，“请把它寄到这个国家，这个城市，这个地区和这个街道地址的公寓。” 最后，数据框告诉送货员：“一旦到达该地址，请找到Collin，因为他需要签名并确认他已收到包裹。”"
+}, {
+  "tag": "P",
+  "text": "Ok, so then what is Layer 1? Well, Layer 1 is the Physical Layer. It’s all about the 1s and 0s now. So once all that information is packaged up, we have everything we need to transform it into binary 1s and 0s and deliver the message from Linda’s phone app across the network so that it can end up on Collin’s phone app.",
+  "translation": "好的，那第一层是什么？ 好吧，第1层是物理层。 现在都是1和0。 因此，将所有信息打包后，我们便拥有将其转换为二进制1和0并通过网络从Linda的电话应用程序传递消息的一切所需，以便最终可以在Collin的电话应用程序中使用。"
+}, {
+  "tag": "P",
+  "text": "That means once all those bits move all the way across the network to land on Collin’s phone, it has to go back up all those 7 layers of the OSI model from physical to application layer before Collin sees the message in human readable text language. It’s just like packaging up an item before it can be delivered and then having to unwrap all the packaging to retrieve the item once the delivery is complete.",
+  "translation": "这意味着一旦所有这些位在整个网络上移动到了Collin的电话上，它就必须从物理层备份到应用层的OSI模型的所有7层，再到应用层，才能让Collin看到人类可读的文本语言的消息。 就像将物品包装好后才能交付一样，然后在交付完成后必须拆开所有包装才能取回该物品。"
+}, {
+  "tag": "P",
+  "text": "While the OSI model is important to learn about, what is actually in use today is the TCP/IP model which was developed before the OSI model.",
+  "translation": "尽管要学习OSI模型很重要，但是今天实际使用的是在OSI模型之前开发的TCP / IP模型。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*b4DTTAlgtmlnmoW_Ef5VbA.png?q=20",
+  "type": "image",
+  "file": "1!b4DTTAlgtmlnmoW_Ef5VbA.png"
+}, {
+  "tag": "P",
+  "text": "Unlike the OSI model, the TCP/IP model (or the Internet Protocol Suite) is only made up of 4 layers. If we mapped the 7 layers of the OSI model across to the TCP/IP model.",
+  "translation": "与OSI模型不同，TCP / IP模型（或Internet协议套件）仅由4层组成。 如果我们将OSI模型的7层映射到TCP / IP模型。"
+}, {
+  "tag": "P",
+  "text": "We can think of the mapping as:",
+  "translation": "我们可以认为映射为："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*YkbLfG73CiB4QviVTM6POg.png?q=20",
+  "type": "image",
+  "file": "1!YkbLfG73CiB4QviVTM6POg.png"
+}, {
+  "tag": "P",
+  "text": "Wait, protocol?",
+  "translation": "等等，协议？"
+}, {
+  "tag": "P",
+  "text": "There is less separation and distinction between the layers. The Application Layer of the TCP/IP model is where the protocol is defined.",
+  "translation": "各层之间的分离和区分较少。 TCP / IP模型的应用层是定义协议的地方。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*6H67r0o-ctzqQLADa5Wnlg.png?q=20",
+  "type": "image",
+  "file": "1!6H67r0o-ctzqQLADa5Wnlg.png"
+}, {
+  "tag": "P",
+  "text": "So, you can think of a protocol like choosing a language when you first set up your computer and it gives you options to set it up in English, German, Chinese, etc. Then the rest of the set up instructions will be given in the language you picked. But unlike actual human languages, let’s say the language you choose to communicate in dictates what you can do. If I picked HTTP (Hypertext Transfer Protocol) as my protocol, then the things I can do is limited to GET some stuff, PUT some stuff somewhere, DELETE some stuff, POST some stuff somewhere, etc. HTTP or more commonly HTTPS (which is secure HTTP) is typically used when you are browsing the web. If I picked FTP (File Transfer Protocol) as my protocol then I am telling the network, “I want to send and receive files so give me the instructions that would allow me to do that.” If I picked SMTP (Simple Mail Transfer Protocol) then I am telling the network, “I am about to send and receive emails, please give me the instructions to do that.” There are many more protocols that TCP/IP supports including DNS, SSH, RTP, MQTT, etc.",
+  "translation": "因此，您可以想到一种协议，例如在初次设置计算机时选择一种语言，它为您提供了以英语，德语，中文等进行设置的选项。然后，其余的设置说明将在您选择的语言。但是，与实际的人类语言不同，假设您选择交流的语言决定了您可以做什么。如果我选择HTTP（超文本传输​​协议）作为协议，那么我只能做的事情是获取一些东西，在某些地方放置一些东西，删除一些东西，在某些地方张贴一些东西，等等。HTTP或更常见的是HTTPS（这是安全HTTP）通常在您浏览网络时使用。如果我选择FTP（文件传输协议）作为协议，那么我告诉网络：“我想发送和接收文件，所以请给我说明，以使我能够执行此操作。”如果我选择了SMTP（简单邮件传输协议），那么我告诉网络：“我即将发送和接收电子邮件，请给我说明。 TCP / IP支持更多协议，包括DNS，SSH，RTP，MQTT等。"
+}, {
+  "tag": "P",
+  "text": "The Transport Layer in the TCP/IP model is similar to the Transport Layer in the OSI model. At this layer, the data is split into segments and this layer also decides how these segments should be transported across the network. I mentioned earlier that the two protocols used at this layer are TCP or UDP.",
+  "translation": "TCP / IP模型中的传输层类似于OSI模型中的传输层。 在这一层，数据被分成多个部分，并且该层还决定了如何在网络上传输这些部分。 前面我提到过，在此层使用的两个协议是TCP或UDP。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*sZnHs40fgojBfxibI7NXNQ.png?q=20",
+  "type": "image",
+  "file": "1!sZnHs40fgojBfxibI7NXNQ.png"
+}, {
+  "tag": "P",
+  "text": "I won’t go into too much details about how TCP or UDP works because we have been told to avoid handshakes right now due to the COVID-19 crisis. But you can think of the packets that get sent via TCP like dispatching emergency services. Because of the importance of the packet, you want to make sure that the receiver actually receives the packet even if it means re-sending the packet until you can get a confirmation that they have received it. Similar to an emergency service dispatcher, they would need to make sure the emergency service vehicle they send out actually reaches the caller before ending the call. Now, sending packets via UDP is like calling for a taxi service. Best case scenario is the person calling for the taxi service receives the taxi service. Worst case scenario is that they don’t receive the taxi service but even so, no one would die. Because of this, the operator that dispatches the taxi service does not need to hang onto the phone to make sure the taxi arrives to pick up the caller. So TCP is more reliable than UDP.",
+  "translation": "我不会详细介绍TCP或UDP的工作原理，因为有人告诉我们避免因COVID-19危机而立即握手。但是您可以想到通过TCP发送的数据包，例如调度紧急服务。由于数据包的重要性，即使您要重新发送数据包，直到您确认他们已接收到该数据包，也要确保接收方实际上已收到该数据包。与紧急服务调度员类似，他们需要确保发出的紧急服务车辆在结束呼叫之前确实到达了呼叫者。现在，通过UDP发送数据包就像呼叫出租车服务。最好的情况是要求出租车服务的人收到出租车服务。最坏的情况是他们没有得到出租车服务，但是即使如此，也没有人会死。因此，派遣出租车服务的操作员无需挂在电话上即可确保出租车到达接听呼叫者。因此，TCP比UDP更可靠。"
+}, {
+  "tag": "P",
+  "text": "Now, the Internet Layer of the TCP/IP model is essentially the Network Layer of the OSI model. Again, this is where IP addresses come in so that the packets can hop from router to router over the Internet (or the Network) to get from the router it was sent out from (the source e.g. Linda’s phone) to the router that is directly connected to the receiver’s network (the destination e.g. Collin’s phone).",
+  "translation": "现在，TCP / IP模型的Internet层实质上是OSI模型的网络层。 同样，这里是IP地址的输入，以便数据包可以在Internet（或网络）上从路由器跳到另一路由器，以从发送它的路由器（从源，例如Linda的电话）发送到直接到达路由器的路由器。 连接到接收者的网络（目的地，例如Collin的电话）。"
+}, {
+  "tag": "P",
+  "text": "And at the bottom of the TCP/IP stack is the Network Interface which corresponds to the Data Link Layer and Physical Layer of the OSI model. Remember how I said sending data across the network is like sending a parcel to someone using the post shop analogy?",
+  "translation": "TCP / IP堆栈的底部是网络接口，它对应于OSI模型的数据链路层和物理层。 还记得我曾说过通过网络发送数据就像使用邮购类比向某人发送包裹吗？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*UfNBt9tJSd-w8XPojGFHgA.png?q=20",
+  "type": "image",
+  "file": "1!UfNBt9tJSd-w8XPojGFHgA.png"
+}, {
+  "tag": "P",
+  "text": "Delivering data through the network is in a way very similar to delivering a letter or a parcel to someone. Whether it is the OSI model or the TCP/IP model, when you go down the stack, each layer wraps that data with metadata.You can think of metadata as information that tells the network where the letter or the parcel should be going to e.g. “To: Collin, From: Linda”. At each layer, some of the metadata from the previous layer may be “replaced” with different metadata for example, let’s say once the delivery guy finds Collin’s (IP) address, he applies a new label over the top of the (IP) address label because when Collin picks up the letter from his letterbox, he no longer needs to know which address that particular letter is addressed to but he does need to know if that letter is addressed to him or someone else in his household.",
+  "translation": "通过网络传递数据的方式与将信件或包裹传递给某人的方式非常相似。 无论是OSI模型还是TCP / IP模型，当您向下浏览堆栈时，每一层都会使用元数据包装该数据。您可以将元数据视为告知网络的信息，以告知网络信件或包裹应去往何处。 “致：科林，致：琳达”。 在每一层，例如，上一层的一些元数据可能会用不同的元数据“替换”，例如，送货员找到Collin的（IP）地址后，他会在（IP）地址的顶部加上新标签 标签，因为当Collin从信箱中拿起信件时，他不再需要知道特定信件的发往哪个地址，而是需要知道该信件是否发给他或他的家人。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*yV7MQY30OAAWHQaRyB-zNg.png?q=20",
+  "type": "image",
+  "file": "1!yV7MQY30OAAWHQaRyB-zNg.png"
+}, {
+  "tag": "P",
+  "text": "When we talk about nodes or routers in the network, you can think of it like all the physical post offices around the world. Before your parcel or letter actually gets delivered to your address, it has to land in your local post shop first. Now you may have heard of the terminology LAN and WAN being thrown around when people talk about networking. LAN (or Local Area Network) is essentially your local post shop. To get anything sent to you, it must first go to your local post shop (or your local area network) first. WAN (or Wide Area Network) on the other hand is like your local post shop having contacts with other post shops around the world. This means if you want to send or receive anything from around the world, you don’t have to know about all the other post offices around the world, you just have to know about your local post office and your local post office will then use their network to send your parcels or have them delivered to your door.",
+  "translation": "当我们谈论网络中的节点或路由器时，您可以将其像世界各地的所有物理邮局一样。 在您的包裹或信件实际送达您的地址之前，必须先在您当地的邮局购物。 现在您可能已经听说过当人们谈论网络时会用到术语LAN和WAN。 LAN（或局域网）本质上是您的本地邮局。 为了将任何东西发送给您，它必须首先去您当地的邮局（或您的局域网）。 另一方面，WAN（或广域网）就像您的本地邮局与世界各地的其他邮局有联系。 这意味着，如果您想发送或接收来自世界各地的任何东西，则不必了解世界各地的所有其他邮局，而只需了解您当地的邮局，然后您的当地邮局就会使用 他们的网络来发送您的包裹或将它们运送到您家。"
+}, {
+  "tag": "P",
+  "text": "What is a Firewall?",
+  "translation": "什么是防火墙？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*oMRGK9ddKH1UeHQfnjwhMg.png?q=20",
+  "type": "image",
+  "file": "1!oMRGK9ddKH1UeHQfnjwhMg.png"
+}, {
+  "tag": "P",
+  "text": "So, exchanging information through the internet is just like delivering stuff with post offices but with a lot more technical terminology, cables, wires, and 1s and 0s involved.",
+  "translation": "因此，通过Internet交换信息就像在邮局传递东西一样，但是具有更多的技术术语，电缆，电线以及1和0。"
+}, {
+  "tag": "P",
+  "text": "I started writing this blog post with the idea of using Firewalls to block off bad relationships in mind but then went down this huge rabbit hole of explaining how networking works so I decided to change the topic from “Firewall” to “Networking” but let’s get back to what I really wanted to talk about: Firewalls.",
+  "translation": "我开始写这篇博客文章时就想到了使用防火墙阻止不良关系的想法，但是后来在解释网络工作原理的过程中费尽心思，所以我决定将主题从“防火墙”更改为“网络”，但让我们开始吧 回到我真正想谈论的内容：防火墙。"
+}, {
+  "tag": "P",
+  "text": "A Firewall is essentially a barrier or a filter that allows you to decide whether certain traffic should be let in and out of your systems. Let’s think how people normally interact with each other. A person with strong social intelligence probably has a very good (human) Firewall installed inside them. They know what should be said to others and how to react to what is being said to them because they are able to filter out anything that is deemed as “bad” words or “harmful” words before saying them as well as filter any bad or harmful words that is being said to them by ignoring it. They only let out words they trust are “good” and “positive” words and similarly only accept words they trust are good and positive words. So a person with high social intelligence will probably establish many good relationships with others. This is why Firewalls are important.",
+  "translation": "防火墙本质上是一个屏障或过滤器，它使您可以决定是否应允许某些流量进出系统。 让我们考虑一下人们通常如何互动。 具有较强社会智慧的人可能在其中安装了非常好的（人类）防火墙。 他们知道应该对别人说些什么，以及如何对别人说的话做出反应，因为他们能够在说出“坏”或“有害”字之前过滤掉任何东西，并过滤掉任何坏或坏的东西。 被忽略而对他们说的有害的话。 他们只说出他们信任的单词是“好”和“肯定”单词，同样只接受他们相信的单词是好和积极的单词。 因此，具有较高社会智慧的人可能会与他人建立许多良好的关系。 这就是为什么防火墙很重要。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*GqvD9ep7_fHdRtr-LYAKgQ.png?q=20",
+  "type": "image",
+  "file": "1!GqvD9ep7_fHdRtr-LYAKgQ.png"
+}, {
+  "tag": "P",
+  "text": "In the networking world, a Firewall acts as a gate or a barrier between your computer or your systems and the outside world i.e. the internet. Not all traffic sent to your computer or system is good traffic. Sometimes it could be bad traffic from malicious attackers who wants to compromise your systems. So how do we distinguish the good traffic from the bad traffic? Well, just like a highly social intelligent person who probably has a set of rules of which words are classified as “good” words and which words are classified as “bad” words, a (network) Firewall also has a set of (network traffic) rules which determines which traffic are deemed as “good” traffic and which traffic are deemed as “bad” traffic based on a model of trust. Now, malicious activities work both ways, just like a person can choose to say or accept “bad” words. You may have an internal user who decides to send out the company’s sensitive or highly confidential information out to the world. You can’t choose whether a person will be a good person or a bad person, the choice is theirs but what you can do is use a Firewall to protect yourself (or the company) but placing restrictions on how a person using your systems can interact with the outside world and how the outside world interacts with your internal systems.",
+  "translation": "在网络世界中，防火墙充当计算机或系统与外部世界（即Internet）之间的网关或屏障。并非所有发送到您的计算机或系统的流量都是良好的流量。有时，来自想要破坏您的系统的恶意攻击者的流量可能很大。那么，如何区分好流量和差流量呢？好吧，就像一个高度社交化的人，他可能有一套规则将单词分类为“好”单词，将哪些单词分类为“不良”单词一样，（网络）防火墙也有一套（网络流量） ）基于信任模型确定哪些流量被视为“好”流量以及哪些流量被视为“坏”流量的规则。现在，恶意活动可以双向进行，就像一个人可以选择说或接受“坏”字一样。您可能有一个内部用户，决定将公司的敏感或高度机密信息发送给全世界。您无法选择一个人是好人还是坏人，选择是他们的，但是您可以使用防火墙来保护自己（或公司），但对使用系统的人进行限制与外界互动以及外界如何与您的内部系统互动。"
+}, {
+  "tag": "P",
+  "text": "There are different types of Firewalls that you can use:",
+  "translation": "您可以使用不同类型的防火墙："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*g9c-K9esyG9NK0X7Grk6DQ.png?q=20",
+  "type": "image",
+  "file": "1!g9c-K9esyG9NK0X7Grk6DQ.png"
+}, {
+  "tag": "P",
+  "text": "Azure Firewall is a cloud-based Firewall that filters traffic to and from Azure based on IP address, port, and protocols.",
+  "translation": "Azure防火墙是基于云的防火墙，可根据IP地址，端口和协议过滤往返于Azure的流量。"
+}, {
+  "tag": "P",
+  "text": "Let’s say Collin received the following in his letterbox:",
+  "translation": "假设Collin在信箱中收到以下信息："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*KVMv49QUm1LkYyJuWVyssQ.png?q=20",
+  "type": "image",
+  "file": "1!KVMv49QUm1LkYyJuWVyssQ.png"
+}, {
+  "tag": "P",
+  "text": "First of all, the (IP) address is wrong, Collin lives on 29 New Yorker Street not 29 New York Street. The port is also wrong, the letter is addressed to Josh Ashburn. Collin doesn’t know any Josh Ashburns. Based on that, Azure Firewall knows that is letter was either accidentally sent to Collin’s letterbox or maliciously sent to Collin so before it even reaches Collin’s letterbox, Azure Firewall will deny the letter (deny the traffic) from reaching Collin.",
+  "translation": "首先，（IP）地址错误，Collin住在纽约街29号，而不是纽约街29号。 港口也错了，这封信是写给乔什·阿什伯恩的。 Collin不认识Josh Ashburns。 基于此，Azure防火墙知道这封信是意外发送到Collin的信箱还是恶意发送到Collin的，因此在甚至到达Collin的信箱之前，Azure防火墙都会拒绝该信件（拒绝流量）到达Collin。"
+}, {
+  "tag": "P",
+  "text": "In Azure Application Gateway, there is another type of Firewall called the Web Application Firewall (or WAF). The Web Application Firewall works on the Application Layer.",
+  "translation": "在Azure应用程序网关中，还有另一种类型的防火墙，称为Web应用程序防火墙（或WAF）。 Web应用程序防火墙在应用程序层上工作。"
+}, {
+  "tag": "P",
+  "text": "Hang on, what’s Azure Application Gateway?",
+  "translation": "等等，什么是Azure应用网关？"
+}, {
+  "tag": "P",
+  "text": "Also known as App Gateway, Azure Application Gateway is a load balancer. A load balancer distributes traffic to multiple identical servers in the backend. If I asked you to print a copy of this blog post for me, you would probably only need 1 printer to do that. But what if I told you to print 1000 copies and I need it done within 10 minutes? Rather than building a big bulky printer to meet my demands, you can simply find another 9 printers (assuming the print velocity is 10 copies/minute). If you were a load balancer, you would probably monitor which printer is not printing and then send any remaining prints to that printer until the job is done. Because load balancers like App Gaterway routes traffic to backend servers for you, it means you can set up routing rules.",
+  "translation": "Azure应用程序网关也称为App Gateway，它是负载平衡器。 负载平衡器将流量分配到后端中的多个相同服务器。 如果我要您为我打印此博客文章的副本，则可能只需要一台打印机即可。 但是，如果我告诉您打印1000份并且需要在10分钟之内完成怎么办？ 无需建造大型打印机来满足我的需求，您只需找到另外9台打印机（假设打印速度为10份/分钟）即可。 如果您是负载平衡器，则可能会监视哪个打印机不在打印，然后将所有剩余的打印发送到该打印机，直到完成作业。 由于诸如App Gaterway之类的负载平衡器会为您将流量路由到后端服务器，这意味着您可以设置路由规则。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*eCU8VrZ6erqC1_pFB_qL0A.png?q=20",
+  "type": "image",
+  "file": "1!eCU8VrZ6erqC1_pFB_qL0A.png"
+}, {
+  "tag": "P",
+  "text": "So basically at the front (the frontend), there is a URL that translates to a particular public IP address that is set to hit your Web Application Firewall every time you call it. Behind the WAF (the backend), it knows about 3 backend pools (in this particular example). These backend pools can be virtual machines (servers) or web apps ( Azure App Service). Then what you do is set up routing rules (based on protocol and port) to route web traffic to a particular backend.",
+  "translation": "因此，基本上在前端（前端）有一个URL，该URL转换为特定的公共IP地址，该地址设置为每次调用时都会攻击您的Web应用程序防火墙。 在WAF（后端）的后面，它知道约3个后端池（在此特定示例中）。 这些后端池可以是虚拟机（服务器）或Web应用程序（Azure App Service）。 然后，您要做的是设置路由规则（基于协议和端口）以将Web流量路由到特定的后端。"
+}, {
+  "tag": "P",
+  "text": "For example, Backend 3 might only accept web traffic that specifies:",
+  "translation": "例如，后端3可能仅接受指定以下内容的网络流量："
+}, {
+  "tag": "UL",
+  "texts": ["Protocol: HTTPS", "Port: 443"],
+  "translations": ["通讯协定：HTTPS", "端口：443"]
+}, {
+  "tag": "P",
+  "text": "Whilst both Backend 1 and Backend 2 would accept web traffic that uses:",
+  "translation": "后端1和后端2都接受使用以下内容的网络流量："
+}, {
+  "tag": "UL",
+  "texts": ["Protocol: HTTP", "Port: 80"],
+  "translations": ["通讯协定：HTTP", "端口：80"]
+}, {
+  "tag": "P",
+  "text": "So if traffic came in using HTTP and directing it to port 80, the WAF would route that traffic to either Backend 1 or Backend 2.",
+  "translation": "因此，如果使用HTTP传入流量并将其定向到端口80，则WAF会将流量路由到后端1或后端2。"
+}, {
+  "tag": "P",
+  "text": "There are other load balancers as well that supports WAF such as Azure Front Door which is a global load balancer compared to App Gateway which is more of a local load balancer.",
+  "translation": "还有其他支持WAF的负载平衡器，例如Azure前门（它是全局负载平衡器），而App Gateway则更多是本地负载平衡器。"
+}, {
+  "tag": "P",
+  "text": "Annnnnnd, I’ve gone off topic again so let me stop here before the printers actually has a break down from my dreadfully long blog posts. I’ll park load balancers for now and come back to it another day.",
+  "translation": "Annnnnnd，我又不再讨论话题了，所以让我在打印机真正摆脱冗长的博客帖子之前，在这里停止。 我现在暂时停放负载平衡器，然后再改一天。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Michelle Xie的文章《Explain By Example: Networking》，参考：https://medium.com/swlh/explain-by-example-networking-49d73a140c66)",
+  "translation": "（本文翻译自Michelle Xie的文章《示例解释：网络》，参考：https：//medium.com/swlh/explain-by-example-networking-49d73a140c66）"
+}]

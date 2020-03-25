@@ -1,0 +1,223 @@
+[{
+  "tag": "H1",
+  "text": "Why and When to Avoid S3 as a Data Platform for Data Lakes",
+  "translation": "为什么和何时避免将S3用作Data Lakes的数据平台"
+}, {
+  "tag": "P",
+  "text": "Data lakes are all the rage these days in large enterprises. A data lake is a single store for both raw copies of source system data and transformed data for use in tasks like reporting, visualization, advanced analytics, and machine learning.",
+  "translation": "如今，数据湖在大型企业中风靡一时。 数据湖是单个存储，用于存储源系统数据的原始副本和转换后的数据，以用于报告，可视化，高级分析和机器学习等任务。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*W0tiY_P8UcsMquoHcjBRVg.png?q=20",
+  "caption": "Figure 1: Data lake ecosystem",
+  "type": "image",
+  "file": "1!W0tiY_P8UcsMquoHcjBRVg.png"
+}, {
+  "tag": "P",
+  "text": "Object stores (like S3) are becoming the platform of choice for data lakes because of two main reasons:",
+  "translation": "对象存储（如S3）正成为数据湖的首选平台，原因有两个："
+}, {
+  "tag": "UL",
+  "texts": ["They provide cheap, durable and virtually unlimited storage in the cloud", "They enable separation of compute and storage, allowing either one to be scaled independently"],
+  "translations": ["它们在云中提供廉价，持久且几乎无限的存储", "它们实现了计算和存储的分离，从而可以独立扩展任何一个"]
+}, {
+  "tag": "P",
+  "text": "In this blog post, I will dig deeper into some of the advantages of object-stores that are responsible for their popularity as a platform for data lakes. I will also examine some of the often-underestimated challenges that plague the use of object stores for many data lake use cases.",
+  "translation": "在这篇博客文章中，我将更深入地探讨对象存储的一些优点，这些对象存储成为数据湖平台的流行。 我还将研究一些经常被低估的难题，这些难题困扰着许多数据湖用例的对象存储。"
+}, {
+  "tag": "H1",
+  "text": "Object store benefit: durable, cheap, and virtually unlimited storage",
+  "translation": "对象存储的好处：持久，便宜且几乎不受限制的存储"
+}, {
+  "tag": "P",
+  "text": "Object stores like S3 provide eleven 9’s of durability (99.999999999%) and four 9’s of availability (99.99%), and they manage to do it on a virtually unlimited scale, at the unbelievably low price of around $23/TB/month. Contrast this with on-prem data warehouse appliances (DWA) that were quite popular just a few years back. DWA cost tens of thousands of dollars per terabyte, excluding enterprise support. Multi-million-dollar contracts for DWAs which supported only a few hundred terabytes were quite common.",
+  "translation": "像S3这样的对象存储提供11个9的耐用性（99.999999999％）和四个9的可用性（99.99％），并且他们设法以几乎无限的规模做到了这一点，其价格低得令人难以置信，约为$ 23 / TB / TB。 与此形成鲜明对比的是，几年前流行的本地数据仓库设备（DWA）。 不包括企业支持，DWA每TB的成本为数万美元。 仅支持数百TB的数百万美元的DWA合同是很常见的。"
+}, {
+  "tag": "P",
+  "text": "When IT leaders mull over data platform choices for their data lakes, object stores’ $23/TB/month price tag is just too good to resist. It makes sense to use the cheapest storage available for the large volumes of data (from hundreds of terabytes to petabytes) that data lakes are expected to hold. Object stores like S3 seem (incorrectly, as we’ll see later in this post) to represent a thousand-fold pricing advantage over the DWA still in use at many large enterprises.",
+  "translation": "当IT领导者考虑为其数据湖选择数据平台时，对象存储的$ 23 / TB /月的价格标签实在令人无法抗拒。 使用最便宜的存储空间来存储预期将要容纳的数据湖的大量数据（从数百TB到PB）是有意义的。 像S3这样的对象存储（不正确，我们将在本文后面看到）似乎比许多大型企业仍在使用的DWA具有千倍的定价优势。"
+}, {
+  "tag": "H1",
+  "text": "Object store benefit: separation of storage and compute",
+  "translation": "对象存储的好处：存储和计算的分离"
+}, {
+  "tag": "P",
+  "text": "The scale of storage required for a data lake makes it prohibitively expensive to use architectures like DWA in which storage and compute are coupled together in a single package. Decoupling storage and compute allows us to bring the right amount of on-demand compute to bear on the data that needs to be analyzed, at any given time. This significantly reduces the overall cost of data analytics solutions.",
+  "translation": "数据湖所需的存储规模使使用DWA之类的架构（将存储和计算耦合到单个程序包中）的成本过高。 通过解耦存储和计算，我们可以在任何给定时间携带适当数量的按需计算，以承载需要分析的数据。 这大大降低了数据分析解决方案的总体成本。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*W47utNgyziGwYYqFPyHYrA.png?q=20",
+  "caption": "Figure 2: Separation of storage and compute",
+  "type": "image",
+  "file": "1!W47utNgyziGwYYqFPyHYrA.png"
+}, {
+  "tag": "P",
+  "text": "All of these advantages are understandably crucial to fueling the popularity of S3 and other object stores as a platform for data lakes. But object stores come with many challenges that don’t get enough attention. This is especially true for RDBMS-sourced and frequently-refreshed (daily/hourly) data, which forms the bulk of high-quality data in an enterprise.",
+  "translation": "可以理解，所有这些优势对于推动S3和其他对象存储作为数据湖平台的普及至关重要。 但是对象存储面临很多挑战，没有引起足够的重视。 对于源于RDBMS且经常刷新（每天/每小时）的数据尤其如此，后者构成了企业中大量的高质量数据。"
+}, {
+  "tag": "H1",
+  "text": "Object store drawback: immutability",
+  "translation": "对象存储的缺点：不变性"
+}, {
+  "tag": "P",
+  "text": "All object stores, including S3, GCS, and Azure Blob Storage, are immutable. This means that files, once written to the object store, can never be edited. Users can only hard delete the old file and create a new one, or logically delete the old file and create a new one (versioning).",
+  "translation": "所有对象存储，包括S3，GCS和Azure Blob存储，都是不可变的。 这意味着，一旦将文件写入对象存储，就无法对其进行编辑。 用户只能硬删除旧文件并创建一个新文件，或者在逻辑上删除该旧文件并创建一个新文件（版本控制）。"
+}, {
+  "tag": "P",
+  "text": "When using S3 as a data platform for RDBMS-sourced, frequently-refreshed data, this leads to the creation of an unwieldy number of small files for each table.",
+  "translation": "当使用S3作为源于RDBMS且经常刷新的数据的数据平台时，这将导致为每个表创建大量的小文件。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*yMVqhdoNrX6Ys49Qg7gHXw.png?q=20",
+  "caption": "Figure 3: The problem of many small files for RDBMS-sourced data",
+  "type": "image",
+  "file": "1!yMVqhdoNrX6Ys49Qg7gHXw.png"
+}, {
+  "tag": "P",
+  "text": "As inserts, updates, and deletes pile up over time, trying to derive the current state of the table becomes exponentially more time- and compute-intensive. Most data scientists balk at this complex undertaking and instead request direct access to source systems, defeating the purpose of using a data lake in the first place.",
+  "translation": "随着插入，更新和删除随着时间的推移而堆积，尝试导出表的当前状态将成倍增加时间和计算量。 大多数数据科学家都对这项复杂的工作不屑一顾，而是要求直接访问源系统，从而一开始就破坏了使用数据湖的目的。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*UzELGwoVlOT7SH0pkJmm_w.png?q=20",
+  "caption": "Figure 4: Problems with using raw changesets on S3",
+  "type": "image",
+  "file": "1!UzELGwoVlOT7SH0pkJmm_w.png"
+}, {
+  "tag": "P",
+  "text": "U = Update, I = Insert, D = Delete",
+  "translation": "U =更新，I =插入，D =删除"
+}, {
+  "tag": "H1",
+  "text": "Solution, part 1: partition the data",
+  "translation": "解决方案，第1部分：对数据进行分区"
+}, {
+  "tag": "P",
+  "text": "One solution to lift the responsibility of merging changes from end-users is to partition the data and then re-write the partition(s) that were targeted by the latest inserts, updates, and deletes. This eases the burden on end-users somewhat. However, performance problems remain, especially if the table has a large number of columns and only a subset of those columns are needed for the analysis.",
+  "translation": "解除最终用户合并变更责任的一种解决方案是对数据进行分区，然后重新写入最新插入，更新和删除所针对的分区。 这在一定程度上减轻了最终用户的负担。 但是，仍然存在性能问题，特别是如果表中包含大量列并且仅需要这些列的子集进行分析时。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*7GXmymdp2YLpSkcx01yQ-w.png?q=20",
+  "caption": "Figure 5: Using partitions to merge changesets",
+  "type": "image",
+  "file": "1!7GXmymdp2YLpSkcx01yQ-w.png"
+}, {
+  "tag": "H1",
+  "text": "Solution, part 2: use columnar storage",
+  "translation": "解决方案，第2部分：使用列式存储"
+}, {
+  "tag": "P",
+  "text": "The above solution can be improved by using a columnar format like Apache Parquet or Apache ORC. Columnar formats improve performance significantly through better compression of data and limiting I/O to only the columns needed for the analysis. However, reading Parquet files from languages and tools (like Python, R, or Tableau) remains challenging.",
+  "translation": "通过使用诸如Apache Parquet或Apache ORC之类的列格式，可以改进上述解决方案。 列格式通过更好地压缩数据并将I / O限制为仅用于分析所需的列，从而显着提高了性能。 但是，从语言和工具（如Python，R或Tableau）读取Parquet文件仍然很困难。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*jHF110nVmvZHpgtHDU0SpQ.png?q=20",
+  "caption": "Figure 6: Columnar storage helps with performance",
+  "type": "image",
+  "file": "1!jHF110nVmvZHpgtHDU0SpQ.png"
+}, {
+  "tag": "H1",
+  "text": "Solution, part 3: simplify access with SQL interfaces",
+  "translation": "解决方案，第3部分：使用SQL接口简化访问"
+}, {
+  "tag": "P",
+  "text": "To further build on this solution, many engineers add a SQL interface (like AWS Athena, Presto, or Spark SQL) over raw Parquet files. This makes data access much more streamlined for end-users, who can now issue SQL queries across their favorite programming languages and tools (like Python, R, or Tableau).",
+  "translation": "为了进一步构建此解决方案，许多工程师在原始Parquet文件上添加了SQL接口（例如AWS Athena，Presto或Spark SQL）。 这使最终用户的数据访问变得更加简化，最终用户现在可以跨自己喜欢的编程语言和工具（例如Python，R或Tableau）发出SQL查询。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*kmh-cK7SKmUJDUjtfmVnGg.png?q=20",
+  "caption": "Figure 7: SQL interfaces simplify access to data in a data lake",
+  "type": "image",
+  "file": "1!kmh-cK7SKmUJDUjtfmVnGg.png"
+}, {
+  "tag": "H1",
+  "text": "Solution, part 4: add capabilities with Delta Lake",
+  "translation": "解决方案，第4部分：使用Delta Lake添加功能"
+}, {
+  "tag": "P",
+  "text": "The above solution can be improved once more by using an open-source storage layer like Delta Lake. Delta Lake further improves on the Parquet format by adding support for ACID (atomicity, consistency, isolation, durability) transactions, lambda architecture to support both streaming and batch use cases, and the ability to access data as it was on a prior refresh date/time (time travel).",
+  "translation": "通过使用像Delta Lake这样的开源存储层，可以再次改进上述解决方案。 Delta Lake通过增加对ACID（原子性，一致性，隔离性，持久性）交易的支持，支持流和批处理用例的lambda架构以及访问先前刷新日期/之前的数据的能力，进一步改进了Parquet格式。 时间（时间旅行）。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*7rBtX_29XCEVLoDOdhYJNw.png?q=20",
+  "caption": "Figure 8: Delta Lake adds transactions, simultaneous batch and streaming use cases, and time travel",
+  "type": "image",
+  "file": "1!7rBtX_29XCEVLoDOdhYJNw.png"
+}, {
+  "tag": "H1",
+  "text": "Problem solved?",
+  "translation": "问题解决了？"
+}, {
+  "tag": "P",
+  "text": "Not so fast! The above architecture does represent a workable solution, and many enterprises pat themselves on the back for being able to engineer and operationalize such a solution. To be fair, it is quite an accomplishment to be able to pull this off at scale. However, this architecture is still plagued by many problems and has a lot of room left for improvement. Key issues with Delta Lake on top of S3 as the platform for a data lake include:",
+  "translation": "没那么快！ 上面的架构确实代表了可行的解决方案，并且许多企业为能够设计和实施这种解决方案而自以为是。 公平地说，能够大规模实现这一目标是相当可观的。 但是，该体系结构仍然困扰着许多问题，并且还有很多改进的余地。 作为数据湖平台的S3上的Delta Lake的关键问题包括："
+}, {
+  "tag": "UL",
+  "texts": ["The architecture does not address the creation of changesets, which can be quite challenging to create", "It is quite complex to implement and support enterprise-grade, resilient Extract, transform and Load (ETL) solutions", "Writing Parquet and Delta files requires additional compute, as well as technical know-how, to configure and operationalize, at scale, cluster compute platforms like Apache Spark", "SQL interface access (via technologies like AWS Athena, Presto, or Spark SQL) requires additional compute infrastructure thereby adding to overall complexity and cost of the solution", "The complexity of the solution makes it expensive to support", "S3 provides limited metadata and tagging capabilities", "Integrating table- or row-level security on objects in S3, especially for large and complex enterprises, can be quite challenging", "Last but not least, the performance of such a platform falls far behind the performance of the data warehouse appliances it set out to replace"],
+  "translations": ["该体系结构无法解决变更集的创建问题，因此创建变更集可能会遇到很大的挑战", "实施和支持企业级的弹性提取，转换和加载（ETL）解决方案非常复杂", "编写Parquet和Delta文件需要额外的计算以及技术知识，才能大规模配置和运行集群计算平台（例如Apache Spark）", "SQL接口访问（通过AWS Athena，Presto或Spark SQL等技术）需要附加的计算基础架构，从而增加了解决方案的整体复杂性和成本", "解决方案的复杂性使其支持成本高昂", "S3提供有限的元数据和标记功能", "在S3中的对象上集成表级或行级安全性，尤其是对于大型和复杂的企业，可能会非常具有挑战性", "最后但并非最不重要的一点是，这种平台的性能远远落后于它打算取代的数据仓库设备的性能"]
+}, {
+  "tag": "P",
+  "text": "Given the hidden compute and support costs, security integration, and performance issues, S3 as a data platform for RDBMS-sourced, frequently-refreshed data is a far cry from its $23/TB/month promise. Once we add up all the costs, it starts to creep into the range of thousands of dollars per TB per month. For that kind of money, there are much better alternatives available.",
+  "translation": "考虑到隐藏的计算和支持成本，安全性集成和性能问题，S3作为用于RDBMS的，经常刷新的数据的数据平台，与其每月每TB 23美元的承诺相去甚远。 一旦我们将所有成本加起来，它便开始攀升至每月每TB数千美元的范围。 对于那种钱，有很多更好的选择。"
+}, {
+  "tag": "P",
+  "text": "Cloud-scale managed analytics databases such as Snowflake, Google BigQuery or Azure Synapse Analytics offer the best of both worlds. By separating storage and compute, they provide S3-comparable storage costs along with a managed data platform that abstracts away the complexity of implementing cloud-scale analytics solutions. They offer a similar TCO to S3-based Parquet/ORC/Delta Lake with an AWS Athena/Presto/Spark SQL interface, while boasting better performance, security integration and schema support. They also reduce operational overhead while transferring technical & talent risk to third party vendor.",
+  "translation": "诸如Snowflake，Google BigQuery或Azure Synapse Analytics之类的云级托管分析数据库提供了两全其美的优势。 通过将存储和计算分开，它们提供了S3可比的存储成本以及可管理的数据平台，该平台抽象了实现云规模分析解决方案的复杂性。 它们具有AWS Athena / Presto / Spark SQL界面，提供了与基于S3的Parquet / ORC / Delta Lake类似的TCO，同时拥有更好的性能，安全性集成和架构支持。 它们还减少了运营开销，同时将技术和人才风险转移给了第三方供应商。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*XSQ-jy6xqcUz2QZJ7xm_QQ.png?q=20",
+  "caption": "Figure 9: Advantages of a managed analytics DBs over the “object-store + Delta Lake + SQL interfaces” solution",
+  "type": "image",
+  "file": "1!XSQ-jy6xqcUz2QZJ7xm_QQ.png"
+}, {
+  "tag": "H1",
+  "text": "What about RDBMS-sourced, mostly static data?",
+  "translation": "源自RDBMS的大部分为静态数据呢？"
+}, {
+  "tag": "P",
+  "text": "RDBMS-sourced, mostly static data (i.e., it does not change for weeks or months) does not incur as much ETL compute and support overhead as RDBMS-sourced, frequently-refreshed data. However, my recommendation would be to prefer cloud-scale managed analytics databases over S3-based Parquet/ORC/Delta Lake storage for such use cases, since all the challenges and costs surrounding metadata management, security integration and performance still remain.",
+  "translation": "基于RDBMS的，大多数为静态数据（即数周或数月不变）不会像基于RDBMS的，经常刷新的数据那样产生大量的ETL计算和支持开销。 但是，对于此类用例，我的建议是首选基于云规模的托管分析数据库，而不是基于S3的Parquet / ORC / Delta Lake存储，因为围绕元数据管理，安全集成和性能的所有挑战和成本仍然存在。"
+}, {
+  "tag": "H1",
+  "text": "What about semi-structured data?",
+  "translation": "那半结构化数据呢？"
+}, {
+  "tag": "P",
+  "text": "Most semi-structured data coming into the enterprise (via formats like XML, JSON, and CSV) have a reasonably stable schema and can be ingested into relational tables. Most such data in large enterprises are frequently ingested in analytics databases like AWS Redshift or accessed via SQL interfaces like AWS Athena, Presto, or Spark SQL over S3-based Parquet/ORC/Delta Lake storage. For this type of use case, my recommendation would be to consider managed analytics databases that separate storage and compute.",
+  "translation": "进入企业的大多数半结构化数据（通过XML，JSON和CSV等格式）都具有相当稳定的架构，可以将其吸收到关系表中。 大型企业中的大多数此类数据经常被吸收到AWS Redshift等分析数据库中，或通过基于S3的Parquet / ORC / Delta Lake存储通过SQL接口（如AWS Athena，Presto或Spark SQL）进行访问。 对于这种类型的用例，我的建议是考虑将存储和计算分开的托管分析数据库。"
+}, {
+  "tag": "H1",
+  "text": "TCO should be your north star",
+  "translation": "TCO应该是您的北极星"
+}, {
+  "tag": "P",
+  "text": "In the end, solutions should be judged based on the total cost of ownership (TCO), considering the capabilities they bring to the table and risks inherent in the solution. If two solutions have similar TCO, but one of them provides better capabilities, it should be a no-brainer to align with that solution. Moreover, careful consideration should be given to technical and talent risks associated with solutions developed in-house. Generally, for large enterprises, it makes more sense to offload technology and talent risks to reputable vendor products, where reasonable.",
+  "translation": "最后，应根据总拥有成本（TCO）来考虑解决方案，并要考虑它们带来的功能和解决方案固有的风险。 如果两种解决方案的总拥有成本相似，但是其中一种提供了更好的功能，那么与该解决方案保持一致就很容易了。 此外，应仔细考虑与内部开发的解决方案相关的技术和人才风险。 通常，对于大型企业，在合理的情况下，将技术和人才风险转移到信誉良好的供应商产品上更为合理。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*wc2ARN8ZKwFQF5xjxKgX7g.png?q=20",
+  "caption": "Figure 10: Balancing TCO, performance, features, and risk",
+  "type": "image",
+  "file": "1!wc2ARN8ZKwFQF5xjxKgX7g.png"
+}, {
+  "tag": "H1",
+  "text": "So when are object stores useful as data lake platforms?",
+  "translation": "那么什么时候对象存储可用作数据湖平台？"
+}, {
+  "tag": "P",
+  "text": "Object stores (like S3) remain an excellent data platform for other use cases like semi-structured and unstructured data that cannot or should not (for cost or utility reasons) be ingested into cloud-scale analytics databases. For example, it wouldn’t make sense to ingest images, audio files, videos, emails, PowerPoint presentations, Word documents, or PDFs into managed analytics databases. Additionally, many of these cloud-scale distributed databases use object stores (like S3) as their data ingestion interface, and some even use object stores as internally-managed storage platforms behind the scene.",
+  "translation": "对于其他用例，例如半结构化和非结构化数据，由于（出于成本或实用性的原因）不能或不应该将其吸收到云规模分析数据库中，对象存储（如S3）仍然是一个极好的数据平台。 例如，将图像，音频文件，视频，电子邮件，PowerPoint演示文稿，Word文档或PDF提取到托管分析数据库中是没有意义的。 此外，许多这些云规模的分布式数据库都使用对象存储（如S3）作为它们的数据摄取接口，甚至有一些甚至使用对象存储作为幕后的内部管理存储平台。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*0RrUzMvYnrwHcmi4gaYwEw.png?q=20",
+  "caption": "Table 1: Recommendations",
+  "type": "image",
+  "file": "1!0RrUzMvYnrwHcmi4gaYwEw.png"
+}, {
+  "tag": "P",
+  "text": "In a future post, we will discuss in-depth why cloud-scale managed analytics databases that separate storage and compute (like Snowflake, Google BigQuery or Azure Synapse Analytics), coupled with purpose-built CDC tools (like Qlik Replicate, Oracle GoldenGate or HVR CDC), are a better fit for RDBMS-sourced, frequently-refreshed data in enterprise data lakes.",
+  "translation": "在以后的文章中，我们将深入讨论为什么将存储和计算分开的云级托管分析数据库（例如Snowflake，Google BigQuery或Azure Synapse Analytics），以及专门构建的CDC工具（例如Qlik Replicate，Oracle GoldenGate或 HVR CDC）更适合企业数据湖中源自RDBMS的，经常刷新的数据。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Farhan Siddiqui的文章《Why and When to Avoid S3 as a Data Platform for Data Lakes》，参考：https://medium.com/swlh/why-and-when-to-avoid-s3-as-a-data-platform-for-data-lakes-c802947664e4)",
+  "translation": "（本文翻译自Farhan Siddiqui的文章，《为什么以及何时避免将S3作为Data Lakes的数据平台》，参考：https：//medium.com/swlh/why-and-when-to-avoid-s3-as- 用于数据湖的数据平台c802947664e4）"
+}]

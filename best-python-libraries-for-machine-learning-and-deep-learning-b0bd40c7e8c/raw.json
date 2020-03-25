@@ -1,0 +1,642 @@
+[{
+  "tag": "P",
+  "text": "About Author",
+  "translation": "关于作者"
+}, {
+  "tag": "P",
+  "text": "Claire D. is a Content Crafter and Marketer at Digitalogy — a tech sourcing and custom matchmaking marketplace that connects people with pre-screened & top-notch developers and designers based on their specific needs across the globe. Connect with Digitalogy on Linkedin, Twitter, Instagram.",
+  "translation": "Claire D.是Digitalogy的内容策划和营销人员，Digitalogy是一个技术采购和定制配对市场，可根据人们在全球的特定需求，将人们与预先筛选和顶尖的开发商和设计师联系起来。 在Linkedin，Twitter，Instagram上与Digitalogy联系。"
+}, {
+  "tag": "H1",
+  "text": "More Interesting Readings —",
+  "translation": "更有趣的读物—"
+}, {
+  "tag": "P",
+  "text": "I hope you’ve found this article useful! Below are some interesting readings hope you like them too —",
+  "translation": "希望本文对您有所帮助！ 以下是一些有趣的读物，希望您也喜欢它们-"
+}, {
+  "tag": "H2",
+  "text": "Top Google AI Tools for Everyone",
+  "translation": "适用于所有人的顶级Google AI工具"
+}, {
+  "tag": "H3",
+  "text": "Turn ideas into reality with Google AI Hub",
+  "translation": "借助Google AI Hub将创意变为现实"
+}, {
+  "tag": "H2",
+  "text": "Top Programming Languages for AI Engineers in 2020",
+  "translation": "2020年AI工程师的顶级编程语言"
+}, {
+  "tag": "H3",
+  "text": "From several programming languages, AI engineers and scientists can pick the right one that suits the needs of their…",
+  "translation": "AI工程师和科学家可以从多种编程语言中选择适合其需求的语言。"
+}, {
+  "tag": "H2",
+  "text": "Python Libraries for Interpretable Machine Learning",
+  "translation": "可解释机器学习的Python库"
+}, {
+  "tag": "H3",
+  "text": "4 libraries for better visualisation, explanation and interpretation of models",
+  "translation": "4个库，可以更好地可视化，解释和解释模型"
+}, {
+  "tag": "H2",
+  "text": "Top 10 Python Libraries for Data Science",
+  "translation": "数据科学十大Python库"
+}, {
+  "tag": "H3",
+  "text": "Some cool help for your Data Science explorations!",
+  "translation": "为您的数据科学探索提供一些很棒的帮助！"
+}, {
+  "tag": "H1",
+  "text": "Best Python Libraries for Machine Learning and Deep Learning",
+  "translation": "机器学习和深度学习的最佳Python库"
+}, {
+  "tag": "P",
+  "text": "While there are a lot of languages to pick from, Python is among the most developer-friendly Machine Learning and Deep Learning programming language, and it comes with the support of a broad set of libraries catering to your every use-case and project.",
+  "translation": "尽管有很多语言可供选择，但是Python是对开发人员最友好的机器学习和深度学习编程语言之一，并且它具有广泛的库支持，可满足您的每个用例和项目。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*V96gtGWzVNhQaQCDJEWd1g.jpeg?q=20",
+  "caption": "Best Python Libraries for Machine Learning (source)",
+  "type": "image",
+  "file": "1!V96gtGWzVNhQaQCDJEWd1g.jpeg"
+}, {
+  "tag": "H1",
+  "text": "● TensorFlow",
+  "translation": "●TensorFlow"
+}, {
+  "tag": "P",
+  "text": "The revolution is here! Welcome to TensorFlow 2.0.",
+  "translation": "革命就在这里！ 欢迎使用TensorFlow 2.0。"
+}, {
+  "tag": "P",
+  "text": "TensorFlow is a fast, flexible, and scalable open-source machine learning library for research and production.",
+  "translation": "TensorFlow是一个用于研究和生产的快速，灵活，可扩展的开源机器学习库。"
+}, {
+  "tag": "P",
+  "text": "TensorFlow is one of the best library available for working with Machine Learning on Python. Offered by Google, TensorFlow makes ML model building easy for beginners and professionals alike.",
+  "translation": "TensorFlow是可用于在Python上进行机器学习的最佳库之一。 由Google提供的TensorFlow使初学者和专业人士都可以轻松构建ML模型。"
+}, {
+  "tag": "P",
+  "text": "Using TensorFlow, you can create and train ML models on not just computers but also mobile devices and servers by using TensorFlow Lite and TensorFlow Serving that offers the same benefits but for mobile platforms and high-performance servers.",
+  "translation": "使用TensorFlow，您可以使用TensorFlow Lite和TensorFlow Serving在移动平台和高性能服务器上提供相同的好处，不仅可以在计算机上，而且可以在移动设备和服务器上创建和训练ML模型。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*e9sg7-4A6rCAsUek_VAgSA.gif?q=20",
+  "caption": "TensorBoard(source)",
+  "type": "image",
+  "file": "1!e9sg7-4A6rCAsUek_VAgSA.gif"
+}, {
+  "tag": "P",
+  "text": "Some of the essential areas in ML and DL where TensorFlow shines are:",
+  "translation": "TensorFlow引人注目的ML和DL中的一些重要领域是："
+}, {
+  "tag": "P",
+  "text": "● Handling deep neural networks",
+  "translation": "●处理深度神经网络"
+}, {
+  "tag": "P",
+  "text": "● Natural Language Processing",
+  "translation": "●自然语言处理"
+}, {
+  "tag": "P",
+  "text": "● Partial Differential Equation",
+  "translation": "●偏微分方程"
+}, {
+  "tag": "P",
+  "text": "● Abstraction capabilities",
+  "translation": "●抽象能力"
+}, {
+  "tag": "P",
+  "text": "● Image, Text, and Speech recognition",
+  "translation": "●图像，文本和语音识别"
+}, {
+  "tag": "P",
+  "text": "● Effortless collaboration of ideas and code",
+  "translation": "●轻松协作的想法和代码"
+}, {
+  "tag": "P",
+  "text": "Core Task: Build Deep Learning models",
+  "translation": "核心任务：构建深度学习模型"
+}, {
+  "tag": "P",
+  "text": "To understand how to accomplish a specific task in TensorFlow, you can refer to the TensorFlow tutorials.",
+  "translation": "要了解如何在TensorFlow中完成特定任务，可以参考TensorFlow教程。"
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "H1",
+  "text": "● Keras",
+  "translation": "●凯拉斯"
+}, {
+  "tag": "P",
+  "text": "Keras is one of the most popular and open-source neural network libraries for Python. Initially designed by a Google engineer for ONEIROS, short for Open-Ended Neuro Electronic Intelligent Robot Operating System, Keras was soon supported in TensorFlow’s core library making it accessible on top of TensorFlow. Keras features several of the building blocks and tools necessary for creating a neural network such as:",
+  "translation": "Keras是Python最受欢迎的开源神经网络库之一。 Keras最初由Google工程师为ONEIROS设计，是开放式神经电子智能机器人操作系统的缩写，很快就在TensorFlow的核心库中得到支持，从而使其可在TensorFlow上访问。 Keras具有创建神经网络所需的一些构造块和工具，例如："
+}, {
+  "tag": "P",
+  "text": "● Neural layers",
+  "translation": "●神经层"
+}, {
+  "tag": "P",
+  "text": "● Activation and cost functions",
+  "translation": "●激活和费用功能"
+}, {
+  "tag": "P",
+  "text": "● Objectives",
+  "translation": "●目标"
+}, {
+  "tag": "P",
+  "text": "● Batch normalization",
+  "translation": "●批量归一化"
+}, {
+  "tag": "P",
+  "text": "● Dropout",
+  "translation": "●辍学"
+}, {
+  "tag": "P",
+  "text": "● Pooling",
+  "translation": "●合并"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*40nN4M61Uiserwzm7Fxmyg.jpeg?q=20",
+  "caption": "Keras Snippet(source)",
+  "type": "image",
+  "file": "1!40nN4M61Uiserwzm7Fxmyg.jpeg"
+}, {
+  "tag": "P",
+  "text": "Keras extends the usability of TensorFlow with these additional features for ML and DL programming. With a helpful community and a dedicated Slack channel, getting support is easy. Support for the convolutional and recurrent neural network also exists along with standard neural networks. You can also refer to other example models in Keras and Computer Vision class from Stanford.",
+  "translation": "Keras通过ML和DL编程的这些附加功能扩展了TensorFlow的可用性。 借助有用的社区和专用的Slack渠道，轻松获得支持。 对卷积神经网络和递归神经网络的支持也与标准神经网络一起存在。 您还可以参考斯坦福大学Keras和Computer Vision类中的其他示例模型。"
+}, {
+  "tag": "P",
+  "text": "Keras Cheat Sheet : https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Keras_Cheat_Sheet_Python.pdf",
+  "translation": "Keras备忘单：https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Keras_Cheat_Sheet_Python.pdf"
+}, {
+  "tag": "P",
+  "text": "Core Task: Build Deep Learning models",
+  "translation": "核心任务：构建深度学习模型"
+}, {
+  "tag": "P",
+  "text": "Getting Started with Keras —",
+  "translation": "Keras入门-"
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "H1",
+  "text": "● PyTorch",
+  "translation": "●PyTorch"
+}, {
+  "tag": "P",
+  "text": "Developed by Facebook, PyTorch is one of the few machine learning libraries for Python. Apart from Python, PyTorch also has support for C++ with its C++ interface if you’re into that. Considered among the top contenders in the race of being the best Machine Learning and Deep Learning framework, PyTorch faces touch competition from TensorFlow. You can refer to the PyTorch tutorials for other details.",
+  "translation": "由Facebook开发的PyTorch是为数不多的Python机器学习库之一。 除了Python之外，PyTorch还通过其C ++接口支持C ++。 作为最佳的机器学习和深度学习框架，PyTorch被认为是最佳竞争者之一，它面临着TensorFlow的竞争。 您可以参考PyTorch教程以了解其他详细信息。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*K8hFwtUAPVKMNPlvgS7_MA.png?q=20",
+  "caption": "Basic PyTorch Workflow(source)",
+  "type": "image",
+  "file": "1!K8hFwtUAPVKMNPlvgS7_MA.png"
+}, {
+  "tag": "P",
+  "text": "Some of the vital features that set PyTorch apart from TensorFlow are:",
+  "translation": "使PyTorch与TensorFlow脱颖而出的一些重要功能包括："
+}, {
+  "tag": "P",
+  "text": "● Tensor computing with the ability for accelerated processing via Graphics Processing Units",
+  "translation": "●具有通过图形处理单元加速处理能力的张量计算"
+}, {
+  "tag": "P",
+  "text": "● Easy to learn, use and integrate with the rest of the Python ecosystem",
+  "translation": "●易于学习，使用并与Python生态系统的其余部分集成"
+}, {
+  "tag": "P",
+  "text": "● Support for neural networks built on a tape-based auto diff system",
+  "translation": "●支持在基于磁带的自动差异系统上构建的神经网络"
+}, {
+  "tag": "P",
+  "text": "The various modules PyTorch comes with, that help create and train neural networks:",
+  "translation": "PyTorch随附的各种模块可帮助创建和训练神经网络："
+}, {
+  "tag": "P",
+  "text": "● Tensors — torch.Tensor",
+  "translation": "●张量—火炬。张量"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*kBJ75ThRcE7xP7ewb_RZxA.jpeg?q=20",
+  "caption": "Introduction to Pytorch Tensor(source)",
+  "type": "image",
+  "file": "1!kBJ75ThRcE7xP7ewb_RZxA.jpeg"
+}, {
+  "tag": "P",
+  "text": "● Optimizers — torch.optim module",
+  "translation": "●优化器— torch.optim模块"
+}, {
+  "tag": "P",
+  "text": "● Neural Networks — nn module",
+  "translation": "●神经网络— nn模块"
+}, {
+  "tag": "P",
+  "text": "● Autograd",
+  "translation": "●Autograd"
+}, {
+  "tag": "P",
+  "text": "Pros: very customizable, widely used in deep learning research",
+  "translation": "优点：非常可定制，广泛用于深度学习研究"
+}, {
+  "tag": "P",
+  "text": "Cons: fewer NLP abstractions, not optimized for speed",
+  "translation": "缺点：较少的NLP抽象，未针对速度进行优化"
+}, {
+  "tag": "P",
+  "text": "Core task: Developing and training deep learning models",
+  "translation": "核心任务：开发和训练深度学习模型"
+}, {
+  "tag": "H2",
+  "text": "Keras vs Tensorflow vs PyTorch | Deep Learning Frameworks Comparison",
+  "translation": "Keras对Tensorflow对PyTorch | 深度学习框架比较"
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "H1",
+  "text": "● Scikit-learn",
+  "translation": "●Scikit学习"
+}, {
+  "tag": "P",
+  "text": "Scikit-learn is another actively used machine learning library for Python. It includes easy integration with different ML programming libraries like NumPy and Pandas. Scikit-learn comes with the support of various algorithms such as:",
+  "translation": "Scikit-learn是另一个活跃使用的Python机器学习库。 它包括与不同的ML编程库（如NumPy和Pandas）的轻松集成。 Scikit-learn附带各种算法的支持，例如："
+}, {
+  "tag": "P",
+  "text": "● Classification",
+  "translation": "●分类"
+}, {
+  "tag": "P",
+  "text": "● Regression",
+  "translation": "●回归"
+}, {
+  "tag": "P",
+  "text": "● Clustering",
+  "translation": "●聚类"
+}, {
+  "tag": "P",
+  "text": "● Dimensionality Reduction",
+  "translation": "●降维"
+}, {
+  "tag": "P",
+  "text": "● Model Selection",
+  "translation": "●选型"
+}, {
+  "tag": "P",
+  "text": "● Preprocessing",
+  "translation": "●预处理"
+}, {
+  "tag": "P",
+  "text": "Built around the idea of being easy to use but still be flexible, Scikit-learn is focussed on data modelling and not on other tasks such as loading, handling, manipulation and visualization of data. It is considered sufficient enough to be used as an end-to-end ML, from the research phase to the deployment. For a deeper understanding of scikit-learn, you can check out the Scikit-learn tutorials.",
+  "translation": "Scikit-learn围绕易于使用但仍具有灵活性的思想而构建，它专注于数据建模，而不关注其他任务，例如数据的加载，处理，操纵和可视化。 从研究阶段到部署，它足以用作端到端ML。 为了更深入地了解scikit-learn，可以查看Scikit-learn教程。"
+}, {
+  "tag": "P",
+  "text": "Core Task: Modelling",
+  "translation": "核心任务：建模"
+}, {
+  "tag": "P",
+  "text": "Learn Scikit-Learn-",
+  "translation": "学习Scikit-学习-"
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "H1",
+  "text": "● Pandas",
+  "translation": "●熊猫"
+}, {
+  "tag": "P",
+  "text": "Pandas is a Python data analysis library and is used primarily for data manipulation and analysis. It comes into play before the dataset is prepared for training. Pandas make working with time series and structured multidimensional data effortless for machine-learning programmers. Some of the great features of Pandas when it comes to handling data are:",
+  "translation": "Pandas是一个Python数据分析库，主要用于数据处理和分析。 它在数据集准备训练之前就起作用了。 熊猫使机器学习程序员无需费时地处理时间序列和结构化的多维数据。 熊猫在处理数据方面的一些出色功能包括："
+}, {
+  "tag": "P",
+  "text": "● Dataset reshaping and pivoting",
+  "translation": "●数据集的重塑和透视"
+}, {
+  "tag": "P",
+  "text": "● Merging and joining of datasets",
+  "translation": "●合并和合并数据集"
+}, {
+  "tag": "P",
+  "text": "● Handling of missing data and data alignment",
+  "translation": "●处理缺失数据和数据对齐"
+}, {
+  "tag": "P",
+  "text": "● Various indexing options such as Hierarchical axis indexing, Fancy indexing",
+  "translation": "●各种索引选项，例如分层轴索引，花式索引"
+}, {
+  "tag": "P",
+  "text": "● Data filtration options",
+  "translation": "●数据过滤选项"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*SGwHTCuL0tS7cscfbZrg1w.jpeg?q=20",
+  "caption": "Pandas snippet(source)",
+  "type": "image",
+  "file": "1!SGwHTCuL0tS7cscfbZrg1w.jpeg"
+}, {
+  "tag": "P",
+  "text": "Pandas make use of DataFrames, which is just a technical term for a two-dimensional representation of data by offering programmers with DataFrame objects.",
+  "translation": "熊猫使用DataFrames，这只是通过向程序员提供DataFrame对象来表示数据的二维表示的技术术语。"
+}, {
+  "tag": "P",
+  "text": "Core task: Data manipulation and analysis",
+  "translation": "核心任务：数据处理和分析"
+}, {
+  "tag": "P",
+  "text": "Google Trends — Pandas Interest Over Time",
+  "translation": "Google趋势-随时间变化的熊猫兴趣"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*zFfEeG-cWgg-C9r4xVw9Dw.png?q=20",
+  "caption": "Google trends pandas(source)",
+  "type": "image",
+  "file": "1!zFfEeG-cWgg-C9r4xVw9Dw.png"
+}, {
+  "tag": "H1",
+  "text": "● NLTK",
+  "translation": "●NLTK"
+}, {
+  "tag": "P",
+  "text": "NLTK stands for Natural Language Toolkit and is a Python library for working with natural language processing. It is considered as one of the most popular libraries to work with human language data. NLTK offers simple interfaces along with a wide array of lexical resources such as FrameNet, WordNet, Word2Vec and several others to programmers. Some of the highlights of NLTK are:",
+  "translation": "NLTK代表自然语言工具包，是用于自然语言处理的Python库。 它被认为是使用人类语言数据的最受欢迎的图书馆之一。 NLTK为程序员提供了简单的接口以及大量的词汇资源，例如FrameNet，WordNet，Word2Vec和其他几种。 NLTK的一些亮点是："
+}, {
+  "tag": "P",
+  "text": "● Searching keywords in documents",
+  "translation": "●搜索文档中的关键字"
+}, {
+  "tag": "P",
+  "text": "● Tokenization and classification of texts",
+  "translation": "●文本的标记化和分类"
+}, {
+  "tag": "P",
+  "text": "● Recognition on voice and handwriting",
+  "translation": "●语音和手写识别"
+}, {
+  "tag": "P",
+  "text": "● Lemmatizing and Stemming of words",
+  "translation": "●单词的去词和词干"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*gedcQQ8coZlyWwidGImAAQ.jpeg?q=20",
+  "caption": "NLTK snippet(source)",
+  "type": "image",
+  "file": "1!gedcQQ8coZlyWwidGImAAQ.jpeg"
+}, {
+  "tag": "P",
+  "text": "NLTK and its suite of packages are considered a reliable choice for students, engineers, researchers, linguists and industries that work with language.",
+  "translation": "对于学生，工程师，研究人员，语言学家和使用语言的行业，NLTK及其软件包套件被认为是可靠的选择。"
+}, {
+  "tag": "P",
+  "text": "Core Task: Text processing",
+  "translation": "核心任务：文本处理"
+}, {
+  "tag": "H1",
+  "text": "● Spark MLlib",
+  "translation": "●Spark MLlib"
+}, {
+  "tag": "P",
+  "text": "MLlib is Apache Spark’s scalable machine learning library",
+  "translation": "MLlib是Apache Spark的可扩展机器学习库"
+}, {
+  "tag": "P",
+  "text": "Developed by Apache, Spark MLlib is a machine learning library that enables easy scaling of your computations. It is simple to use, quick, easy to set up and offers smooth integration with other tools. Spark MLlib instantly became a convenient tool for developing machine learning algorithms and applications.",
+  "translation": "Spark MLlib由Apache开发，是一个机器学习库，可轻松缩放计算。 它易于使用，快速，易于设置，并且可以与其他工具顺利集成。 Spark MLlib立即成为开发机器学习算法和应用程序的便捷工具。"
+}, {
+  "tag": "P",
+  "text": "The tools that Spark MLlib brings to the table are:",
+  "translation": "Spark MLlib带到表中的工具是："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*ELLlzrQaWI6mXDXSEESQQg.png?q=20",
+  "caption": "Spark Mllib Machine Learning Tools",
+  "type": "image",
+  "file": "1!ELLlzrQaWI6mXDXSEESQQg.png"
+}, {
+  "tag": "P",
+  "text": "Some of the popular algorithms and APIs that programmers working on Machine Learning using Spark MLlib can utilize are:",
+  "translation": "使用Spark MLlib进行机器学习的程序员可以利用的一些流行算法和API是："
+}, {
+  "tag": "P",
+  "text": "● Regression",
+  "translation": "●回归"
+}, {
+  "tag": "P",
+  "text": "● Clustering",
+  "translation": "●聚类"
+}, {
+  "tag": "P",
+  "text": "● Optimization",
+  "translation": "●优化"
+}, {
+  "tag": "P",
+  "text": "● Dimensional Reduction",
+  "translation": "●尺寸缩减"
+}, {
+  "tag": "P",
+  "text": "● Classification",
+  "translation": "●分类"
+}, {
+  "tag": "P",
+  "text": "● Basic Statistics",
+  "translation": "●基本统计"
+}, {
+  "tag": "P",
+  "text": "● Feature Extraction",
+  "translation": "●特征提取"
+}, {
+  "tag": "H1",
+  "text": "● Theano",
+  "translation": "●Theano"
+}, {
+  "tag": "P",
+  "text": "Theano is a powerful Python library enabling easy defining, optimizing and evaluation of powerful mathematical expressions. Some of the features that make Theano a robust library for carrying out scientific calculations on a large-scale are:",
+  "translation": "Theano是一个功能强大的Python库，可轻松定义，优化和评估功能强大的数学表达式。 使Theano成为进行大规模科学计算的强大库的一些功能包括："
+}, {
+  "tag": "P",
+  "text": "● Support for GPUs to perform better in heavy-duty computations compared to CPUs",
+  "translation": "●与GPU相比，支持GPU在重型计算中表现更好"
+}, {
+  "tag": "P",
+  "text": "● Strong integration support with NumPy",
+  "translation": "●与NumPy的强大集成支持"
+}, {
+  "tag": "P",
+  "text": "● Faster and stable evaluations of even the trickiest of variables",
+  "translation": "●对最棘手的变量进行更快，更稳定的评估"
+}, {
+  "tag": "P",
+  "text": "● Ability to create custom C code for your mathematical operations",
+  "translation": "●能够为您的数学运算创建自定义C代码"
+}, {
+  "tag": "P",
+  "text": "With Theano, you can achieve the rapid development of some of the most efficient machine learning algorithms. Built on top of Theano are some of the well known deep learning libraries such as Keras, Blocks and Lasagne. For more advanced concepts in Theano, you can refer to the Theano tutorial.",
+  "translation": "使用Theano，您可以快速开发一些最高效的机器学习算法。 在Theano之上构建的是一些著名的深度学习库，例如Keras，Blocks和Lasagne。 有关Theano中更高级的概念，您可以参考Theano教程。"
+}, {
+  "tag": "H1",
+  "text": "● MXNet",
+  "translation": "●MXNet"
+}, {
+  "tag": "P",
+  "text": "A flexible and efficient library for deep learning",
+  "translation": "灵活高效的深度学习库"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*o1yh85DvJkFc-Fr1nRxeTQ.png?q=20",
+  "caption": "MXnet — A flexible and efficient library for deep learning",
+  "type": "image",
+  "file": "1!o1yh85DvJkFc-Fr1nRxeTQ.png"
+}, {
+  "tag": "P",
+  "text": "If your field of expertise includes Deep Learning, you will find MXNet to be the perfect fit. Used to train and deploy deep neural networks, MXNet is highly scalable and supports quick model training. Apache’s MXNet not only works with Python but also with a host of other languages including C++, Perl, Julia, R, Scala, Go and a few more.",
+  "translation": "如果您的专业领域包括深度学习，那么您将发现MXNet非常适合。 MXNet用于训练和部署深度神经网络，具有高度可扩展性，并支持快速模型训练。 Apache的MXNet不仅可以使用Python，而且还可以使用其他多种语言，包括C ++，Perl，Julia，R，Scala，Go等。"
+}, {
+  "tag": "P",
+  "text": "MXNet’s portability and scalability let you take from one platform to another and scale it to the demanding needs of your project. Some of the biggest names in tech and education such as Intel, Microsoft, MIT and more currently support MXNet. Amazon’s AWS prefers MXNet as its choice of preferred deep learning framework.",
+  "translation": "MXNet的可移植性和可伸缩性使您可以从一个平台迁移到另一个平台，并根据项目的苛刻需求进行扩展。 科技和教育领域的一些知名企业，例如英特尔，微软，麻省理工学院等，目前都支持MXNet。 亚马逊的AWS首选MXNet作为首选的深度学习框架。"
+}, {
+  "tag": "H1",
+  "text": "● Numpy",
+  "translation": "●脾气暴躁"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*h6opcGwD6Ui_kud0gJxVjQ.png?q=20",
+  "caption": "The Numpy library",
+  "type": "image",
+  "file": "1!h6opcGwD6Ui_kud0gJxVjQ.png"
+}, {
+  "tag": "P",
+  "text": "The NumPy library for Python concentrates on handling extensive multi-dimensional data and the intricate mathematical functions operating on the data. NumPy offers speedy computation and execution of complicated functions working on arrays. Few of the points in favor of NumPy are:",
+  "translation": "适用于Python的NumPy库专注于处理大量的多维数据以及对数据进行操作的复杂数学函数。 NumPy可以快速计算和执行处理数组上的复杂函数。 支持NumPy的观点很少："
+}, {
+  "tag": "P",
+  "text": "● Support for mathematical and logical operations",
+  "translation": "●支持数学和逻辑运算"
+}, {
+  "tag": "P",
+  "text": "● Shape manipulation",
+  "translation": "●形状处理"
+}, {
+  "tag": "P",
+  "text": "● Sorting and Selecting capabilities",
+  "translation": "●排序和选择功能"
+}, {
+  "tag": "P",
+  "text": "● Discrete Fourier transformations",
+  "translation": "●离散傅立叶变换"
+}, {
+  "tag": "P",
+  "text": "● Basic linear algebra and statistical operations",
+  "translation": "●基本的线性代数和统计运算"
+}, {
+  "tag": "P",
+  "text": "● Random simulations",
+  "translation": "●随机模拟"
+}, {
+  "tag": "P",
+  "text": "● Support for n-dimensional arrays",
+  "translation": "●支持n维数组"
+}, {
+  "tag": "P",
+  "text": "NumPy works on an object-oriented approach and has tools for integrating C, C++ and Fortran code, and this makes NumPy highly popular amongst the scientific community.",
+  "translation": "NumPy致力于一种面向对象的方法，并且具有用于集成C，C ++和Fortran代码的工具，这使NumPy在科学界中非常受欢迎。"
+}, {
+  "tag": "P",
+  "text": "Core task: Data cleaning and manipulation",
+  "translation": "核心任务：数据清理和处理"
+}, {
+  "tag": "P",
+  "text": "Google Trends — Numpy Interest Over Time",
+  "translation": "Google趋势-随着时间的流逝，人们兴趣浓厚"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*bHTOMJnAs47zl4wtGQwvxA.png?q=20",
+  "caption": "Google trends Numpy(source)",
+  "type": "image",
+  "file": "1!bHTOMJnAs47zl4wtGQwvxA.png"
+}, {
+  "tag": "H1",
+  "text": "Conclusion",
+  "translation": "结论"
+}, {
+  "tag": "P",
+  "text": "Python is a truly marvelous tool of development that not only serves as a general-purpose programming language but also caters to specific niches of your project or workflows. With loads of libraries and packages that expand the capabilities of Python and make it an all-rounder and a perfect fit for anyone looking to get into developing programs and algorithms. With some of the modern machine learning and deep learning libraries for Python discussed briefly above, you can get an idea about what each of these libraries has to offer and make your pick.",
+  "translation": "Python是真正出色的开发工具，它不仅可以用作通用编程语言，还可以满足项目或工作流的特定需求。 大量的库和程序包扩展了Python的功能，使其全面发展，非常适合希望开发程序和算法的任何人。 上面已简要讨论了一些适用于Python的现代机器学习和深度学习库，您可以对这些库各自提供的内容有所了解。"
+}, {
+  "tag": "H1",
+  "text": "Why is Python Preferred for Machine Learning and AI?",
+  "translation": "为什么Python是机器学习和AI的首选？"
+}, {
+  "tag": "P",
+  "text": "Python seems to be winning battle as preferred language of MachineLearning. The availability of libraries and open source tools make it ideal choice for developing ML models.",
+  "translation": "作为机器学习的首选语言，Python似乎正在赢得一场战斗。 库和开放源代码工具的可用性使其成为开发ML模型的理想选择。"
+}, {
+  "tag": "P",
+  "text": "Python has been the go-to choice for Machine Learning and Artificial Intelligence developers for a long time. Python offers some of the best flexibilities and features to developers that not only increase their productivity but the quality of the code as well, not to mention the extensive libraries helping ease the workload. Various features that put Python among the top programming languages for Machine Learning, Deep Learning and Artificial Intelligence are listed below:",
+  "translation": "长期以来，Python一直是机器学习和人工智能开发人员的首选。 Python为开发人员提供了一些最佳的灵活性和功能，这些功能不仅提高了生产力，而且还提高了代码质量，更不用说广泛的库有助于减轻工作量。 下面列出了将Python列为机器学习，深度学习和人工智能的顶级编程语言的各种功能："
+}, {
+  "tag": "P",
+  "text": "● Free and open-source nature makes it community friendly and guarantees improvements in the long run",
+  "translation": "●自由和开放源代码的性质使其对社区友好，并保证长期改进"
+}, {
+  "tag": "P",
+  "text": "● Exhaustive libraries ensure there’s a solution for every existing problem",
+  "translation": "●详尽的资料库可确保为每个现有问题提供解决方案"
+}, {
+  "tag": "P",
+  "text": "● Smooth implementation and integration make it accessible for people with the varying skill level to adapt it",
+  "translation": "●流畅的实施和集成，使技能水平各异的人都可以轻松地适应它"
+}, {
+  "tag": "P",
+  "text": "● Increased productivity by reducing the time to code and debug",
+  "translation": "●通过减少编码和调试时间来提高生产率"
+}, {
+  "tag": "P",
+  "text": "● Can be used for Soft Computing, Natural Language Processing as well",
+  "translation": "●还可用于软计算，自然语言处理"
+}, {
+  "tag": "P",
+  "text": "● Works seamlessly with C and C++ code modules",
+  "translation": "●与C和C ++代码模块无缝协作"
+}, {
+  "tag": "P",
+  "text": "Python is the most powerful language you can still read.- Pau Dubois",
+  "translation": "Python是您仍然可以阅读的最强大的语言。-Pau Dubois"
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "H1",
+  "text": "Best Python Libraries for Machine Learning and Deep Learning",
+  "translation": "机器学习和深度学习的最佳Python库"
+}, {
+  "tag": "H2",
+  "text": "Python libraries for modern machine learning models & projects",
+  "translation": "适用于现代机器学习模型和项目的Python库"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*RIrPOCyMFwFC-XULbja3rw.png?q=20",
+  "caption": "Best Python Libraries for Machine Learning and Deep Learning",
+  "type": "image",
+  "file": "1!RIrPOCyMFwFC-XULbja3rw.png"
+}, {
+  "tag": "P",
+  "text": "“A breakthrough in Machine learning would be worth ten Microsofts.”- Bill Gates",
+  "translation": "“机器学习的突破将使十个微软值得。”-比尔·盖茨"
+}, {
+  "tag": "P",
+  "text": "Machine Learning and Deep Learning have been on the rise recently with the push in the AI industry and the early adopters of this technology are beginning to see it bear its fruits. As more and more businesses jump into the bandwagon and start investing their time and efforts into realizing the potential of this untapped domain, the better this is going to get for the developers working in the area.",
+  "translation": "随着AI行业的发展，机器学习和深度学习近来一直在增长，并且这项技术的早期采用者开始看到它硕果累累。 随着越来越多的企业加入潮流，并开始投入时间和精力来发掘这个尚未开发的领域的潜力，这对于在该地区工作的开发人员来说将是更好的选择。"
+}, {
+  "tag": "P",
+  "text": "Several programming languages can get you started with AI, ML and DL with each language offering stronghold on a specific concept. Some of the popular programming languages for ML and DL are Python, Julia, R, Java along with a few more. As for now, we’ll be focussing more on Python.",
+  "translation": "几种编程语言可以帮助您从AI，ML和DL入手，每种语言都提供了特定概念的据点。 用于ML和DL的一些流行编程语言是Python，Julia，R，Java以及其他一些语言。 到目前为止，我们将重点放在Python上。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Claire D.的文章《Best Python Libraries for Machine Learning and Deep Learning》，参考：https://towardsdatascience.com/best-python-libraries-for-machine-learning-and-deep-learning-b0bd40c7e8c)",
+  "translation": "（本文翻译自Claire D. ）"
+}]

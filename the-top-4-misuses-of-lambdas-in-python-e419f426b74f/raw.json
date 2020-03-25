@@ -1,0 +1,253 @@
+[{
+  "tag": "H1",
+  "text": "Takeaways",
+  "translation": "外卖"
+}, {
+  "tag": "P",
+  "text": "Lambdas have always been one of the hard topics for Python beginners, and they avoid using them at all costs initially.",
+  "translation": "Lambda一直是Python初学者的硬主题之一，他们一开始就不惜一切代价避免使用它们。"
+}, {
+  "tag": "P",
+  "text": "After a while, when their fear is gone, they start to learn lambdas and find out that they’re not really hard at all. They then start to use lambdas, but unfortunately, some may use them way too much, leading to various misuses as discussed above.",
+  "translation": "一段时间后，当恐惧消失时，他们开始学习lambda，并发现自己一点也不难。 然后，它们开始使用lambda，但不幸的是，有些人可能过多地使用了lambda，导致如上所述的各种滥用。"
+}, {
+  "tag": "P",
+  "text": "I hope that this article can help address some of these issues.",
+  "translation": "我希望本文可以帮助解决其中一些问题。"
+}, {
+  "tag": "P",
+  "text": "By avoiding these misuses and following the best practice tips, I bet that your Python code with correct usage of lambdas will have better readability and maintainability.",
+  "translation": "通过避免这些误用并遵循最佳实践技巧，我敢打赌，正确使用lambda的Python代码将具有更好的可读性和可维护性。"
+}, {
+  "tag": "H1",
+  "text": "4. Expression Is Too Cumbersome",
+  "translation": "4.表情太笨拙"
+}, {
+  "tag": "P",
+  "text": "This is less common than the previous ones. But some programmers are just trying their best to write the most Pythonic code by using lambdas whenever possible. It sometimes has a cost — readability.",
+  "translation": "这比以前的方法少见。 但是一些程序员只是尽可能地使用lambda来努力编写最多的Python代码。 有时需要付出一定的代价-可读性。"
+}, {
+  "tag": "P",
+  "text": "Suppose that we have a list of strings and we need to sort them using a weird requirement: the number of distinct vowels in the word. Using a lambda in the sorted() function will look like below.",
+  "translation": "假设我们有一个字符串列表，我们需要使用一个奇怪的要求对它们进行排序：单词中不同元音的数量。 在sorted（）函数中使用lambda如下所示。"
+}, {
+  "tag": "PRE",
+  "text": ">>> texts = ['iiiii', 'bag', 'beto', 'blackboard', 'sequoia']>>> sorted(texts, key=lambda x: len(set([l for l in list(x) if l in ['a','e','i','o','u']])))['iiiii', 'bag', 'beto', 'blackboard', 'sequoia']",
+  "translation": ">>> texts = ['iiiii'，'bag'，'beto'，'blackboard'，'sequoia'] >>> sorted（texts，key = lambda x：len（set（[l for list in l（x ）如果在['a'，'e'，'i'，'o'，'u']]）中添加l））））['iiiii'，'bag'，'beto'，'blackboard'，'sequoia']"
+}, {
+  "tag": "P",
+  "text": "It works as expected, but it’s definitely not the most readable code. How about the code below?",
+  "translation": "它可以按预期工作，但绝对不是最易读的代码。 下面的代码怎么样？"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/BetterProgramming/ee0ad335247bbad0c9b976d0c3d31b10/raw/904e3fe9563a7feff7c820d84fcbfc83a7ae7cde/texts.py",
+  "code": ">>> texts = ['iiiii', 'bag', 'beto', 'blackboard', 'sequoia']\n>>> def number_distinct_vowels(x):\n...     vowels = ['a', 'e', 'i', 'o', 'u']\n...     vowels_only = [l for l in list(x) if l in vowels]\n...     distinct_vowels = set(all_vowels)\n...     return len(distinct_vowels)\n... \n>>> sorted(texts, key=number_distinct_vowels)\n['iiiii', 'bag', 'beto', 'blackboard', 'sequoia']"
+}, {
+  "tag": "P",
+  "text": "Certainly, we need to write a few more lines of code but doesn’t the new code have better readability?",
+  "translation": "当然，我们需要再写几行代码，但是新代码难道不具有更好的可读性吗？"
+}, {
+  "tag": "P",
+  "text": "Best practice #4: Write a regular function if the expression of a lambda is too cumbersome.",
+  "translation": "最佳实践4：如果lambda的表达式过于繁琐，则编写一个正则函数。"
+}, {
+  "tag": "H1",
+  "text": "3. Improper Overuse With Higher-Order Functions",
+  "translation": "3.高阶函数使用不当"
+}, {
+  "tag": "P",
+  "text": "When we say higher-order functions, we mean functions that operate on other functions either by taking functions as arguments or by returning functions.",
+  "translation": "当我们说高阶函数时，是指可以通过将函数作为参数或通过返回函数来对其他函数进行操作的函数。"
+}, {
+  "tag": "P",
+  "text": "Relevant functions to the current topic are map(), filter(), and reduce(), all of which have been used more or less in many tutorials on lambdas. But this has led to a certain misuse of lambdas together with higher-order functions.",
+  "translation": "与当前主题相关的函数是map（），filter（）和reduce（），它们在lambda的许多教程中都已或多或少地被使用。 但是，这导致对lambda以及更高阶函数的某种滥用。"
+}, {
+  "tag": "P",
+  "text": "For demonstration purposes, I’ll just use the map() function in this tutorial, but the same philosophy applies to other higher-order functions too.",
+  "translation": "出于演示目的，我将在本教程中仅使用map（）函数，但相同的原理也适用于其他高阶函数。"
+}, {
+  "tag": "P",
+  "text": "Suppose that we have a list of integers and we want to have a list that consists of their squares. Using a lambda with the map() function will be like below.",
+  "translation": "假设我们有一个整数列表，并且希望有一个包含它们的平方的列表。 下面将lambda与map（）函数一起使用。"
+}, {
+  "tag": "P",
+  "text": "We’ll get an iterator — the map object from the map() function, and then, to convert it to a list, we need to call the list() function on this iterator.",
+  "translation": "我们将获得一个迭代器-map（）函数中的map对象，然后将其转换为列表，我们需要在此迭代器上调用list（）函数。"
+}, {
+  "tag": "PRE",
+  "text": ">>> numbers = [1, 2, 3, 5, 8]>>> squares = list(map(lambda x: x * x, numbers))>>> squares[1, 4, 9, 25, 64]",
+  "translation": ">>>数字= [1、2、3、5、8] >>>正方形= list（map（lambda x：x * x，数字））>>>正方形[1、4、9、25、64]"
+}, {
+  "tag": "P",
+  "text": "Actually, the same functionality can be achieved conveniently with list comprehensions — no higher-order functions or lambdas needed. Much more concise and readable, isn’t it?",
+  "translation": "实际上，可以通过列表理解方便地实现相同的功能-不需要高阶函数或lambda。 更加简洁易读，不是吗？"
+}, {
+  "tag": "P",
+  "text": "Certainly, mastering list comprehensions is another “Pythonic feature” topic that requires another tutorial.",
+  "translation": "当然，掌握列表理解能力是另一个“ Pythonic功能”主题，需要另一个教程。"
+}, {
+  "tag": "PRE",
+  "text": ">>> numbers = [1, 2, 3, 5, 8]>>> squares = [x * x for x in numbers]>>> squares[1, 4, 9, 25, 64]",
+  "translation": ">>>数字= [1、2、3、5、8] >>>正方形= [x * x用于x表示数字] >>>正方形[1、4、9、25、64]"
+}, {
+  "tag": "P",
+  "text": "Best practice #3: Consider replacing higher-order functions using lambdas with list comprehensions.",
+  "translation": "最佳实践3：考虑使用带列表推导的lambda替换高阶函数。"
+}, {
+  "tag": "H1",
+  "text": "2. Assign It to a Variable",
+  "translation": "2.将其分配给变量"
+}, {
+  "tag": "P",
+  "text": "I have seen the assignment of lambdas to variables in some tutorials, including some of mine, but it is mostly intended to show beginners that lambdas essentially are functions.",
+  "translation": "在一些教程（包括我的一些教程）中，我已经看到了将lambdas分配给变量的方法，但是它主要是向初学者展示lambdas本质上是函数。"
+}, {
+  "tag": "P",
+  "text": "However, some beginners may have taken it as good practice and think that lambdas are just a convenient way to declare a short function. The following code snippet shows you this misuse.",
+  "translation": "但是，某些初学者可能已将其作为一种好习惯，并认为lambda只是声明短函数的便捷方式。 以下代码片段向您展示了这种滥用。"
+}, {
+  "tag": "PRE",
+  "text": ">>> divide_two_numbers = lambda x, y: x / y>>> divide_two_numbers(4, 5)0.8",
+  "translation": ">>> divid_two_numbers = lambda x，y：x / y >>> divid_two_numbers（4,5）0.8"
+}, {
+  "tag": "P",
+  "text": "Why should this be avoided? If you recall what’s mentioned above, lambdas are supposed to be used for just once and thus there is no reason to assign a lambda to a variable.",
+  "translation": "为什么要避免这种情况？ 如果您还记得上面提到的内容，那么lambda应该只使用一次，因此没有理由将lambda分配给变量。"
+}, {
+  "tag": "P",
+  "text": "If we do need to use the related functionality, we should use the def keyword to declare a regular function like below.",
+  "translation": "如果确实需要使用相关功能，则应使用def关键字来声明一个常规函数，如下所示。"
+}, {
+  "tag": "P",
+  "text": "If you think that it’s not cool to have two lines of code for this simple function, we can rewrite it in one line: def divide_two_numbers_fun(x,y): return x / y, which works the same way.",
+  "translation": "如果您认为使用此简单功能的两行代码并不酷，我们可以将其重写为一行：defdivid_two_numbers_fun（x，y）：返回x / y，其工作方式相同。"
+}, {
+  "tag": "PRE",
+  "text": ">>> def divide_two_numbers_fun(x,y): ...     return x / y... >>> divide_two_numbers_fun(7, 8)0.875",
+  "translation": ">>> def split_two_numbers_fun（x，y）：...返回x / y ... >>> divid_two_numbers_fun（7，8）0.875"
+}, {
+  "tag": "P",
+  "text": "The major reason for avoiding assigning a lambda to a variable is for debugging/maintainability purposes, especially in a production/teamwork environment.",
+  "translation": "避免为变量分配lambda的主要原因是出于调试/维护的目的，尤其是在生产/团队合作环境中。"
+}, {
+  "tag": "P",
+  "text": "Let’s see what can potentially happen using a simplified example. In a real situation, things can go a lot more complex.",
+  "translation": "让我们看一个简单的例子，可能发生的事情。 在实际情况下，事情可能会变得复杂得多。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/BetterProgramming/cd91b36e8648313fbdf1c59074293d20/raw/79e51b3c8700d1370b1cfb8e253eb1e0f7b8943a/divide_two_numbers.py",
+  "code": ">>> divide_two_numbers(3, 0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<stdin>\", line 1, in <lambda>\nZeroDivisionError: division by zero\n>>> divide_two_numbers_fun(3, 0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<stdin>\", line 1, in divide_two_numbers_fun\nZeroDivisionError: division by zero"
+}, {
+  "tag": "P",
+  "text": "As you can see above, with the declaration of the regular function, we know exactly which function has caused the error. By contrast, using the lambdas, it only tells us that there is a lambda causing the error.",
+  "translation": "如您在上面看到的，通过常规函数的声明，我们确切地知道哪个函数导致了错误。 相比之下，使用lambda只能告诉我们存在一个lambda导致错误。"
+}, {
+  "tag": "P",
+  "text": "Why is no function name shown?",
+  "translation": "为什么没有显示功能名称？"
+}, {
+  "tag": "P",
+  "text": "It’s because lambdas are anonymous functions, all of which share the same name — <lambda>. Can you imagine how frustrating it can be if your co-workers find that tens of <lambda>s have errors?",
+  "translation": "这是因为lambda是匿名函数，所有这些函数都具有相同的名称-<lambda>。 您能想象如果您的同事发现数十个<lambda>存在错误会多么令人沮丧？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*DhWGGV529d1o0PL8Vw5MAQ.jpeg?q=20",
+  "caption": "Image by Gerd Altmann from Pixabay",
+  "type": "image",
+  "file": "1!DhWGGV529d1o0PL8Vw5MAQ.jpeg"
+}, {
+  "tag": "P",
+  "text": "Best practice #2: Write a regular function instead of a lambda when the function is to be used multiple times.",
+  "translation": "最佳实践2：要多次使用常规函数而不是lambda。"
+}, {
+  "tag": "H1",
+  "text": "1. Reinvent the Wheel",
+  "translation": "1.重新发明轮子"
+}, {
+  "tag": "P",
+  "text": "The first misuse of lambdas is ignoring the existing built-in functions.",
+  "translation": "lambdas的第一个误用是忽略了现有的内置函数。"
+}, {
+  "tag": "P",
+  "text": "Let’s still use the sorted() function as an example. Suppose that we have a list of strings, and we want to sort them using their length.",
+  "translation": "让我们仍然以sorted（）函数为例。 假设我们有一个字符串列表，我们想使用它们的长度对它们进行排序。"
+}, {
+  "tag": "P",
+  "text": "Certainly, the lambda function lambda x: len(x) works, but how about just using the built-in len() function directly?",
+  "translation": "当然，lambda函数lambda x：len（x）可以工作，但是直接使用内置的len（）函数怎么样？"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/BetterProgramming/02cd45417713174d6c2c430c0c0b4207/raw/ab69f2eb957bd7720f84e63abc9a5b9a32011422/pets.py",
+  "code": ">>> pets = ['dog', 'turtle', 'bird', 'fish', 'kitty']\n>>> sorted(pets, key=lambda x: len(x))\n['dog', 'bird', 'fish', 'kitty', 'turtle']\n# The built-in len() function\n>>> sorted(pets, key=len)\n['dog', 'bird', 'fish', 'kitty', 'turtle']"
+}, {
+  "tag": "P",
+  "text": "Here’s another example involving the use of the max() function instead.",
+  "translation": "这是另一个涉及使用max（）函数的示例。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/BetterProgramming/b513e482e95c46c2ce371e4a441a357d/raw/d3224453392d0329904f1d1fb10b6df5129c63ff/number_tuples.py",
+  "code": ">>> number_tuples = [(4, 5, 7), (3, 1, 2), (9, 4, 1)]\n>>> sorted(number_tuples, key=lambda x: max(x))\n[(3, 1, 2), (4, 5, 7), (9, 4, 1)]\n# The built-in max() function\n>>> sorted(number_tuples, key=max)\n[(3, 1, 2), (4, 5, 7), (9, 4, 1)]"
+}, {
+  "tag": "P",
+  "text": "Best practice #1: Think about built-in functions first before writing your own lambdas.",
+  "translation": "最佳实践1：在编写自己的Lambda之前先考虑一下内置函数。"
+}, {
+  "tag": "H1",
+  "text": "The Top 4 Misuses of Lambdas in Python",
+  "translation": "Python中Lambda的前4个错误"
+}, {
+  "tag": "H2",
+  "text": "Best practices for using Python lambdas",
+  "translation": "使用Python Lambda的最佳做法"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*0DZieY6EVfk1bej_ohZ7Lw.jpeg?q=20",
+  "caption": "Photo by John Schnobrich on Unsplash",
+  "type": "image",
+  "file": "1!0DZieY6EVfk1bej_ohZ7Lw.jpeg"
+}, {
+  "tag": "P",
+  "text": "Perceived as very Pythonic, lambdas are one of the favorite features in Python programming. So much so, that many Python programmers are tempted to use them whenever possible.",
+  "translation": "lambda被认为是非常Python的语言，是Python编程中最受欢迎的功能之一。 如此之多，以至于许多Python程序员都想尽可能地使用它们。"
+}, {
+  "tag": "P",
+  "text": "Certainly, lambdas have the advantage of making our code concise, but their overuse in our projects can lead to misuses that reduce our code’s readability and maintainability.",
+  "translation": "当然，lambda具有使我们的代码简洁的优势，但是在项目中过度使用它们会导致滥用，从而降低我们代码的可读性和可维护性。"
+}, {
+  "tag": "P",
+  "text": "Before we start to explore what these misuses are, let’s first quickly review what lambdas are. If you know them pretty well, you can skip to the next section.",
+  "translation": "在开始研究这些误用是什么之前，让我们先快速回顾一下lambda。 如果您对它们非常了解，则可以跳到下一部分。"
+}, {
+  "tag": "P",
+  "text": "Lambdas, also known as lambda functions, are anonymous functions that take any number of arguments, while only having a single expression. Their declarations are signaled by the lambda keyword. The basic syntax is below.",
+  "translation": "Lambda，也称为lambda函数，是匿名函数，可以接受任意数量的参数，而只有一个表达式。 它们的声明由lambda关键字表示。 基本语法如下。"
+}, {
+  "tag": "PRE",
+  "text": "lambda arguments: expression",
+  "translation": "lambda参数：表达式"
+}, {
+  "tag": "P",
+  "text": "Lambdas are best suitable for places where small functions are needed and they are used just one time. One common usage of lambdas is to set it as the key argument in the built-in sorted() function. Here’s an example.",
+  "translation": "Lambda最适合需要小的功能且仅使用一次的地方。 lambda的一种常见用法是将其设置为内置sorted（）函数中的关键参数。 这是一个例子。"
+}, {
+  "tag": "PRE",
+  "text": ">>> students = [('Mike', 'M', 15), ('Mary', 'F', 14), ('David', 'M', 16)]>>> sorted(students, key=lambda x: x[2])[('Mary', 'F', 14), ('Mike', 'M', 15), ('David', 'M', 16)]# The students are sorted by age",
+  "translation": ">>>学生= [（'Mike'，'M'，15），（'Mary'，'F'，14），（'David'，'M'，16）] >>>已排序（学生，密钥 = lambda x：x [2]）[（'Mary'，'F'，14），（'Mike'，'M'，15），（'David'，'M'，16）]＃学生们是 按年龄排序"
+}, {
+  "tag": "P",
+  "text": "Many tutorials have done a good job explaining what lambdas are and where lambdas can be used, and thus, there are no good reasons to repeat them extensively here.",
+  "translation": "许多教程在解释lambda是什么以及可以在哪里使用lambda方面做得很好，因此，没有充分的理由在这里重复大量的讲解。"
+}, {
+  "tag": "P",
+  "text": "Instead, the purpose of this article is to show you the most common misuses of lambdas so that when you use them in other scenarios other than those listed below, you’re probably using them properly.",
+  "translation": "相反，本文的目的是向您展示最常见的lambda误用，以便在以下所列情况以外的其他情况下使用lambda时，您可能会正确使用它们。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Yong Cui, Ph.D.的文章《The Top 4 Misuses of Lambdas in Python》，参考：https://medium.com/better-programming/the-top-4-misuses-of-lambdas-in-python-e419f426b74f)",
+  "translation": "（本文译自崔永勇，博士。《 Python中Lambda的前4个误用》，参考：https：//medium.com/better-programming/the-top-4-misuses-of-lambdas- 在python-e419f426b74f中）"
+}]

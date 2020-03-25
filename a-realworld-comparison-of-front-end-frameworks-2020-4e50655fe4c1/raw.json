@@ -1,0 +1,283 @@
+[{
+  "tag": "P",
+  "text": "🎉 Learn ClojureScript and re-farme — video tutorial 🎉",
+  "translation": "🎉学习ClojureScript和重新种植-视频教程🎉"
+}, {
+  "tag": "H2",
+  "text": "Learn ClojureScript and re-frame",
+  "translation": "学习ClojureScript并重新构图"
+}, {
+  "tag": "H3",
+  "text": "What will I learn? The focus is on ClojureScript and re-frame. We'll not touch any CSS; even thought we'll use styled…",
+  "translation": "我会学到什么？ 重点是ClojureScript和重新框架。 我们不会碰任何CSS。 甚至以为我们会使用样式..."
+}, {
+  "tag": "H1",
+  "text": "FAQ",
+  "translation": "常问问题"
+}, {
+  "tag": "H2",
+  "text": "#1 Why were framework X, Y, and Z not included in this comparison?",
+  "translation": "＃1为什么此比较中不包含框架X，Y和Z？"
+}, {
+  "tag": "P",
+  "text": "Because the implementation is not completed at RealWorld repo. Consider contributing! Implement the solution in your favorite library/framework of choice and we will include it next time!",
+  "translation": "因为在RealWorld仓库中尚未完成实施。 考虑做出贡献！ 在您喜欢的选择的库/框架中实施该解决方案，我们下次将包括它！"
+}, {
+  "tag": "H2",
+  "text": "#2 Why do you call it the real world?",
+  "translation": "＃2您为什么称其为现实世界？"
+}, {
+  "tag": "P",
+  "text": "Because it’s a bit more than a To-Do app. By RealWorld we don’t mean that we’ll compare salaries, maintenance, productivity, learning curves, etc. There are other surveys that answer some of these questions. What we mean by RealWorld is an application that connects to a server, authenticates, and allows users to CRUD — just as a real-world app would do.",
+  "translation": "因为它不只是一个待办事项应用程序。 在RealWorld中，我们并不是要比较薪水，维护，生产力，学习曲线等。还有其他一些调查可以回答其中的一些问题。 我们所说的RealWorld是一个连接到服务器，进行身份验证并允许用户CRUD的应用程序，就像真实世界中的应用程序一样。"
+}, {
+  "tag": "H2",
+  "text": "#3 Why didn’t you include my favorite framework?",
+  "translation": "＃3您为什么不包括我最喜欢的框架？"
+}, {
+  "tag": "P",
+  "text": "Please see #1 above, but just in case, here it comes again: because the implementation is not completed at RealWorld repo. I don’t do all of the implementations — it’s a community effort. Consider contributing if you want to see your framework in the comparison.",
+  "translation": "请参见上面的＃1，但以防万一，这里又来了：因为在RealWorld存储库中该实现尚未完成。 我并没有完成所有的实现-这是社区的努力。 如果您想在比较中看到您的框架，请考虑做出贡献。"
+}, {
+  "tag": "H2",
+  "text": "#4 Which version of the library/framework did you include?",
+  "translation": "＃4您包括哪个版本的库/框架？"
+}, {
+  "tag": "P",
+  "text": "The one that is available at the time of writing (Mar 2020). The information comes from RealWorld repo. I’m sure you can find this out from the GitHub repo.",
+  "translation": "在撰写本文时（2020年3月）可用。 该信息来自RealWorld回购。 我确定您可以在GitHub存储库中找到此内容。"
+}, {
+  "tag": "H2",
+  "text": "#5 Why did you forget to include a framework that is more popular than the one in the comparison?",
+  "translation": "＃5为什么您忘了包含一个比比较流行的框架？"
+}, {
+  "tag": "P",
+  "text": "Again, see #1 and #3. The implementation is not complete at RealWorld repo; it’s that simple.",
+  "translation": "同样，请参阅＃1和＃3。 在RealWorld存储库中，该实现尚未完成； 就这么简单。"
+}, {
+  "tag": "P",
+  "text": "If you like this article you should follow me on Twitter. I only write/tweet about programming and technology.",
+  "translation": "如果您喜欢这篇文章，应该在Twitter上关注我。 我只写/推特有关编程和技术。"
+}, {
+  "tag": "H1",
+  "text": "Summary",
+  "translation": "摘要"
+}, {
+  "tag": "P",
+  "text": "Keep in mind that this is not exactly an apples-to-apples comparison. Some implementations use code splitting and some don’t. Some of them are hosted at GitHub, some at Now and some at Netlify. Do you still want to know which one is the best? I leave it up to you.",
+  "translation": "请记住，这并不是苹果之间的比较。 有些实现使用代码拆分，有些则没有。 其中有些托管在GitHub上，有些托管在Now上，有些托管在Netlify上。 您是否仍然想知道哪一个最好？ 我把它留给你。"
+}, {
+  "tag": "H1",
+  "text": "Metric #3: Lines of Code",
+  "translation": "指标3：代码行"
+}, {
+  "tag": "P",
+  "text": "Using cloc we count the lines of code in each repo’s src folder. Blank and comment lines are not part of this calculation. Why is this meaningful?",
+  "translation": "使用cloc，我们可以计算每个存储库的src文件夹中的代码行数。 空白行和注释行不是此计算的一部分。 为什么这有意义？"
+}, {
+  "tag": "P",
+  "text": "If debugging is the process of removing software bugs, then programming must be the process of putting them in — Edsger Dijkstra",
+  "translation": "如果调试是消除软件错误的过程，则编程必须是将其放入其中的过程— Edsger Dijkstra"
+}, {
+  "tag": "H2",
+  "text": "Rationale",
+  "translation": "基本原理"
+}, {
+  "tag": "P",
+  "text": "This shows how succinct given library/framework/language is. How many lines of code do you need to implement almost the same app (some of them have a bit more belts and whistles) accordingly to the specification.",
+  "translation": "这说明给定库/框架/语言的简洁程度。 根据规范，您需要多少行代码才能实现几乎相同的应用程序（其中一些具有更多的功能）。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*RLnW6UBEFki9D_AjpDqb6g.png?q=20",
+  "caption": "# lines of code — fewer is better",
+  "type": "image",
+  "file": "1!RLnW6UBEFki9D_AjpDqb6g.png"
+}, {
+  "tag": "H2",
+  "text": "Remarks",
+  "translation": "备注"
+}, {
+  "tag": "P",
+  "text": "Svelte was skipped due to cloc not being able to process .svelte files.",
+  "translation": "由于cloc无法处理.svelte文件，因此Svelte被跳过。"
+}, {
+  "tag": "P",
+  "text": "riotjs-effector-universal-hot was skipped due to cloc not being able to process .riot files.",
+  "translation": "由于cloc无法处理.riot文件，因此跳过了riotjs-effector-universal-hot。"
+}, {
+  "tag": "P",
+  "text": "Angular+ngrx: LoC calculation done with /libs folder only including .ts and .html files. If you believe this is wrong, please let me know what is the correct number and how did you calculate it.",
+  "translation": "Angular + ngrx：使用/ libs文件夹完成的LoC计算仅包括.ts和.html文件。 如果您认为这是错误的，请告诉我什么是正确的数字以及如何计算。"
+}, {
+  "tag": "H2",
+  "text": "Conclusion",
+  "translation": "结论"
+}, {
+  "tag": "P",
+  "text": "Only Imba and ClojureScript with re-frame can implement the app under 1000LoC. Clojure is known for being unusually expressive. Imba is here for the first time (last year cloc, didn’t know the .imba file format) and it looks like it’s here to stay. If you care about you LoC you know what to go for.",
+  "translation": "只有具有重新构架的Imba和ClojureScript才能在1000LoC下实施该应用程序。 Clojure以异常表达而著称。 Imba第一次出现在这里（去年是cloc，不知道.imba文件格式），看起来好像会保留下来。 如果您关心自己的LoC，那么您就会知道该怎么做。"
+}, {
+  "tag": "H1",
+  "text": "Metric #2: Size",
+  "translation": "指标2：大小"
+}, {
+  "tag": "P",
+  "text": "Transfer size is from the Chrome network tab. GZIPed response headers plus the response body, as delivered by the server.",
+  "translation": "传输大小来自Chrome网络标签。 服务器提供的GZIPped响应标头以及响应正文。"
+}, {
+  "tag": "P",
+  "text": "This depends on the size of a framework as well as on any extra dependencies added. Also how well a build build tool can eliminate the unused code from a bundle.",
+  "translation": "这取决于框架的大小以及所添加的任何其他依赖项。 同样，构建构建工具可以很好地消除捆绑软件中未使用的代码。"
+}, {
+  "tag": "H2",
+  "text": "Rationale",
+  "translation": "基本原理"
+}, {
+  "tag": "P",
+  "text": "The smaller the file, the faster the download, and less to parse.",
+  "translation": "文件越小，下载速度越快，并且解析的次数也更少。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*6HK361f-UDqNpWuTA68jHw.png?q=20",
+  "caption": "Transfer size in KB — fewer is better",
+  "type": "image",
+  "file": "1!6HK361f-UDqNpWuTA68jHw.png"
+}, {
+  "tag": "H2",
+  "text": "Remarks",
+  "translation": "备注"
+}, {
+  "tag": "P",
+  "text": "PureScript was skipped due to a lack of Demo application.",
+  "translation": "由于缺少演示应用程序，因此跳过了PureScript。"
+}, {
+  "tag": "P",
+  "text": "Angular +ngrx +nx please don’t blame me for Angular + ngrx + nx — check Chrome Dev Tools Network Tab, and if I counted wrong — let me know.",
+  "translation": "Angular + ngrx + nx，请不要怪我Angular + ngrx + nx-检查Chrome开发工具网络标签，如果我算错了，请告诉我。"
+}, {
+  "tag": "P",
+  "text": "Rust + Yew + WebAssembly includes also .wasm file(s)",
+  "translation": "Rust + Yew + WebAssembly还包括.wasm文件"
+}, {
+  "tag": "H2",
+  "text": "Conclusion",
+  "translation": "结论"
+}, {
+  "tag": "P",
+  "text": "Amazing work by Svelte and Stencil community, getting it under 20KB, is really an achievement.",
+  "translation": "Svelte和Stencil社区所做的惊人工作将其压缩到20KB以下，确实是一项成就。"
+}, {
+  "tag": "H1",
+  "text": "Metric #1: Performance",
+  "translation": "指标1：效果"
+}, {
+  "tag": "P",
+  "text": "We’ll check the Performance score from Lighthouse Audit that ships with Chrome. Lighthouse returns a Performance score between 0 and 100. 0 is the lowest possible score. For more details check Lighthouse Scoring Guide.",
+  "translation": "我们将检查Chrome随附的Lighthouse Audit的性能得分。 Lighthouse返回的性能得分在0到100之间。0是最低的得分。 有关更多详细信息，请参阅《灯塔计分指南》。"
+}, {
+  "tag": "H2",
+  "text": "Audit Settings",
+  "translation": "审核设置"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*0B_8wqM-vS597MOtGaDWvQ.png?q=20",
+  "caption": "Lighthouse Audit Settings for all tested apps",
+  "type": "image",
+  "file": "1!0B_8wqM-vS597MOtGaDWvQ.png"
+}, {
+  "tag": "H2",
+  "text": "Rationale",
+  "translation": "基本原理"
+}, {
+  "tag": "P",
+  "text": "The sooner you paint and the sooner someone can do something, the better the experience for the person who is using the App.",
+  "translation": "绘画得越早，某人可以做某事的越早，使用该应用程序的人的体验就越好。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*-adYkKBH0YgvRYPp2gbs5Q.png?q=20",
+  "caption": "Performance (points 0–100) — higher is better.",
+  "type": "image",
+  "file": "1!-adYkKBH0YgvRYPp2gbs5Q.png"
+}, {
+  "tag": "H2",
+  "text": "Remarks",
+  "translation": "备注"
+}, {
+  "tag": "P",
+  "text": "Note: PureScript was skipped due to a lack of Demo application.",
+  "translation": "注意：由于缺少演示应用程序，因此跳过了PureScript。"
+}, {
+  "tag": "H2",
+  "text": "Conclusion",
+  "translation": "结论"
+}, {
+  "tag": "P",
+  "text": "Lighthouse Audit doesn’t sleep. You can see this year that apps that are not maintained/updated are falling off the 90 cliff. If your app scores >90 it will probably not make a tons of difference. That said AppRun, Elm, and Svelte are really impressive.",
+  "translation": "Lighthouse Audit没睡。 您可以在今年看到未维护/未更新的应用程序跌破90悬崖。 如果您的应用程序得分> 90，则可能不会有很大的不同。 也就是说，AppRun，Elm和Svelte确实令人印象深刻。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*EM48X61Wygrlqq1BR0kU6Q.png?q=20",
+  "type": "image",
+  "file": "1!EM48X61Wygrlqq1BR0kU6Q.png"
+}, {
+  "tag": "H1",
+  "text": "A RealWorld Comparison of Front-End Frameworks 2020",
+  "translation": "2020年前端框架的真实世界比较"
+}, {
+  "tag": "P",
+  "text": "We are doing it again. This is 2020, there is also 2019, 2018, and 2017.",
+  "translation": "我们再做一次。 这是2020年，还有2019年，2018年和2017年。"
+}, {
+  "tag": "P",
+  "text": "Let me start with this — this is by all means not a comparison of what should be your next choice for Front-End. It’s a small, relatively unsophisticated, comparison of three things: Performance, Size, and Lines of Code of pretty similar application.",
+  "translation": "首先让我开始-绝对不是您应该为前端选择的比较。 它是对三个方面的比较小而相对简单的：性能，大小和非常相似的应用程序的代码行。"
+}, {
+  "tag": "P",
+  "text": "With that in mind here is how it works:",
+  "translation": "考虑到这一点，它是如何工作的："
+}, {
+  "tag": "P",
+  "text": "We are comparing RealWorld App — something more than a “to do” app. Usually “to-dos” don’t convey enough knowledge and perspective to actually build real applications.",
+  "translation": "我们正在比较RealWorld应用程序-不仅仅是“要做”的应用程序。 通常，“待办事项”没有传达足够的知识和观点来实际构建实际的应用程序。"
+}, {
+  "tag": "P",
+  "text": "It is somehow standardized — A project that conforms to certain rules — there is a spec. Provides a back-end API, static markup, and styles.",
+  "translation": "它以某种方式标准化-一个符合某些规则的项目-有一个规范。 提供后端API，静态标记和样式。"
+}, {
+  "tag": "P",
+  "text": "Written or reviewed by an expert — A consistent, real-world project that, ideally, an expert in that technology would have built or reviewed.",
+  "translation": "由专家撰写或审查-一个一致的，真实世界的项目，理想情况下，该技术的专家应建立或审查。"
+}, {
+  "tag": "H1",
+  "text": "Which libraries/frameworks are we comparing?",
+  "translation": "我们正在比较哪些库/框架？"
+}, {
+  "tag": "P",
+  "text": "As of the writing, there are 24 implementations of Conduit at the RealWorld repo. It doesn’t matter if it has a big following or not. The only qualification is — it appears on the RealWorld repo page.",
+  "translation": "在撰写本文时，在RealWorld存储库中有24种Conduit实现。 是否有大量的追随者都没有关系。 唯一的条件是-它显示在RealWorld回购页面上。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/58/1*hztR7Zs5pFMvAaaqnGGBAA.png?q=20",
+  "type": "image",
+  "file": "1!hztR7Zs5pFMvAaaqnGGBAA.png"
+}, {
+  "tag": "H1",
+  "text": "What metrics do we look at?",
+  "translation": "我们看什么指标？"
+}, {
+  "tag": "P",
+  "text": "Performance — how long does this App take to show content and become usable?",
+  "translation": "性能-此应用需要多长时间才能显示内容并变得可用？"
+}, {
+  "tag": "P",
+  "text": "Size —how big is the App? We will only compare the size of the compiled JavaScript file(s). HTML and CSS are common to all variants and are downloaded from a CDN (Content Delivery Network). All technologies compile or transpile to JavaScript, thus we only size this file(s).",
+  "translation": "大小-该应用程序有多大？ 我们将只比较已编译的JavaScript文件的大小。 HTML和CSS对所有变体都是通用的，并且是从CDN（内容交付网络）下载的。 所有技术都可以编译或转换为JavaScript，因此我们仅调整该文件的大小。"
+}, {
+  "tag": "P",
+  "text": "Lines of Code — how many lines of code did the author need to create the RealWorld app based on spec? To be fair some apps have a bit more bells and whistles, but it should not have a significant impact. The only folder we quantify is src/ in each app. Doesn’t matter if it was auto generated or not — you still need to maintain it.",
+  "translation": "代码行-作者需要多少行代码才能基于规范创建RealWorld应用程序？ 公平地讲，某些应用程序有很多麻烦，但应该不会产生重大影响。 我们量化的唯一文件夹是每个应用程序中的src /。 无论它是自动生成的，都没关系-您仍然需要对其进行维护。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Jacek Schae的文章《A RealWorld Comparison of Front-End Frameworks 2020》，参考：https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)",
+  "translation": "（本文翻译自Jacek Schae的文章，《 2020年前端框架的现实世界比较》，参考：https：//medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1）"
+}]

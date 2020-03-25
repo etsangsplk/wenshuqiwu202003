@@ -1,0 +1,27 @@
+[{
+  "tag": "H1",
+  "text": "Should You Learn VIM as a Developer in 2020?",
+  "translation": "您是否应该在2020年学习VIM作为开发人员？"
+}, {
+  "tag": "H2",
+  "text": "Diving into what VIM did and did not solve for me",
+  "translation": "深入了解VIM为我解决的问题"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*6RF4SWv3nDsFlX1vDzc8Nw.jpeg?q=20",
+  "caption": "Photo by Helloquence on Unsplash",
+  "type": "image",
+  "file": "1!6RF4SWv3nDsFlX1vDzc8Nw.jpeg"
+}, {
+  "tag": "H1",
+  "text": "Introduction",
+  "translation": "介绍"
+}, {
+  "tag": "P",
+  "text": "The discussion of which text editor, which shell, or which OS you use has always been a hot topic for developers to chime in on. I’m sure we all know that one person who is crazy over VIM. I’m sorry to disappoint you, but this post will not be glorifying VIM…",
+  "translation": "关于使用哪种文本编辑器，使用哪种外壳或使用哪种操作系统的讨论一直是开发人员的热门话题。 我敢肯定，我们都知道有一个对VIM感到疯狂的人。 很抱歉让您失望，但是这篇文章不会美化VIM ..."
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Joey Colon的文章《Should You Learn VIM as a Developer in 2020?》，参考：https://medium.com/better-programming/should-you-learn-vim-as-a-developer-in-2020-75fde02c5443)",
+  "translation": "（本文翻译自乔伊·科隆的文章《您应该在2020年学习VIM作为开发人员吗？》，参考：https：//medium.com/better-programming/should-you-learn-vim-as-a-developer-in -2020-75fde02c5443）"
+}]

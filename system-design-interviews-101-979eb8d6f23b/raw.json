@@ -1,0 +1,238 @@
+[{
+  "tag": "P",
+  "text": "Building expertise in system design takes a lot of time, experience and effort. You can refer to interesting Tech Blogs where Companies have nicely articulated the manner in which they solved challenging problems.",
+  "translation": "建立系统设计方面的专业知识需要大量时间，经验和精力。 您可以参考有趣的Tech Blog，其中公司很好地阐明了他们解决难题的方式。"
+}, {
+  "tag": "P",
+  "text": "Additionally, you can try solving as many design problems as you can. Forums like LeetCode, & Carrer cup will help you connect with like-minded Engineers & you might even come across a different thought process.",
+  "translation": "此外，您可以尝试解决尽可能多的设计问题。 LeetCode和Carrer cup等论坛将帮助您与志趣相投的工程师建立联系，甚至可能遇到不同的思考过程。"
+}, {
+  "tag": "P",
+  "text": "To summarize, with a structured approach and clarity of fundamentals of distributed systems & enough practice, one can easily ace the System Design Interview at any Tech Company.",
+  "translation": "综上所述，通过结构化的方法和对分布式系统基础知识的清晰了解以及足够的实践，人们可以轻松地在任何技术公司进行系统设计面试。"
+}, {
+  "tag": "H1",
+  "text": "References",
+  "translation": "参考文献"
+}, {
+  "tag": "OL",
+  "texts": ["System Design Primer", "Educative.io — Grokking the System Design Interview", "Interview bit — System Design Course", "Swagger Image", "API gateway & Load Balancers"],
+  "translations": ["系统设计入门", "Educative.io —进行系统设计面试", "面试位-系统设计课程", "昂首阔步的形象", "API网关和负载平衡器"]
+}, {
+  "tag": "H1",
+  "text": "System Design Interviews 101",
+  "translation": "系统设计访谈101"
+}, {
+  "tag": "H2",
+  "text": "Tips to crack the system design interview at a Tech Company.",
+  "translation": "在Tech Company进行系统设计面试的技巧。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*nQ8Ga1WGIHUHBtnCLTdKHg.jpeg?q=20",
+  "caption": "What whiteboard interviews look like?",
+  "type": "image",
+  "file": "1!nQ8Ga1WGIHUHBtnCLTdKHg.jpeg"
+}, {
+  "tag": "P",
+  "text": "Most of the Tech Companies have a system design round as a part of their interview process. Candidates are generally asked to design a scalable system such as Facebook NewsFeed, Instagram stories, WhatsApp chat, CI/CD system, etc.",
+  "translation": "大多数科技公司在其面试过程中都会进行系统设计。 通常要求候选人设计一个可扩展的系统，例如Facebook NewsFeed，Instagram故事，WhatsApp聊天，CI / CD系统等。"
+}, {
+  "tag": "P",
+  "text": "There are a lot of resources on the Internet to prepare for System Design interviews. The plethora of resources can become overwhelming for any developer to digest. However, there are common patterns observed across the questions asked by Tech Companies. Having crystal clear idea of System Design Concepts & fundamentals helps any candidate in coming out with flying colours.",
+  "translation": "Internet上有很多资源可供系统设计采访准备。 任何开发人员都无法消化过多的资源。 但是，在技术公司提出的问题中观察到了常见的模式。 对系统设计概念和基本原理具有清晰的想法，可以帮助任何候选人创造出鲜艳的色彩。"
+}, {
+  "tag": "P",
+  "text": "In this article, I am going to elaborate on a systematic and organized strategy to help anyone clear the interviews. Along the way, I’ll also illustrate various questions asked and approaches to tackle them.",
+  "translation": "在本文中，我将详细阐述一种系统和有组织的策略，以帮助任何人清除采访。 在此过程中，我还将说明所提出的各种问题以及解决这些问题的方法。"
+}, {
+  "tag": "H1",
+  "text": "Why System Design Interviews?",
+  "translation": "为什么进行系统设计面试？"
+}, {
+  "tag": "P",
+  "text": "Today, most of the Tech Companies invest in building scalable high performant systems. Hence, it's essential for an Engineer to have amazing design skills.",
+  "translation": "如今，大多数科技公司都投资建设可扩展的高性能系统。 因此，工程师必须具备出色的设计技能。"
+}, {
+  "tag": "P",
+  "text": "System Design Interviews are intentionally open-ended and ambiguous. It gives an Interviewer a chance to evaluate a candidate along different dimensions. In addition to design skills, it also helps to interviewer judge a candidate’s overall thought process, thinking, algorithms knowledge and communication skills.",
+  "translation": "系统设计面试刻意是开放性的并且模棱两可。 它使面试官有机会评估不同维度的候选人。 除了设计技巧，它还有助于面试官判断候选人的整体思维过程，思维，算法知识和沟通技巧。"
+}, {
+  "tag": "H1",
+  "text": "High-Level Strategy",
+  "translation": "高层次策略"
+}, {
+  "tag": "P",
+  "text": "I follow the following five-step approach in a System Design Interview:-",
+  "translation": "我在系统设计面试中遵循以下五步方法：-"
+}, {
+  "tag": "UL",
+  "texts": ["Requirements & Clarifying questions", "Capacity Estimation", "Design Objectives", "API Design & Algorithms", "Database, Cache Design & Sharding"],
+  "translations": ["要求和澄清问题", "容量估算", "设计目标", "API设计与算法", "数据库，缓存设计和分片"]
+}, {
+  "tag": "P",
+  "text": "We will walk through each of the above steps in detail.",
+  "translation": "我们将详细介绍上述每个步骤。"
+}, {
+  "tag": "H1",
+  "text": "Requirements & Clarifying questions",
+  "translation": "要求和澄清问题"
+}, {
+  "tag": "P",
+  "text": "When a problem such as Design a backend system for Uber is thrown at us, thousands of features cross our mind. In fact systems like Uber, Facebook etc evolved over years of Engineering effort & rigour. Designing a large-scale system in 45–60 mins isn’t straight forward.",
+  "translation": "当出现诸如为Uber设计后端系统之类的问题时，我们想到了成千上万的功能。 实际上，诸如Uber，Facebook等系统是经过多年的工程努力和严格发展而成的。 在45至60分钟内设计大型系统并不是一件容易的事。"
+}, {
+  "tag": "P",
+  "text": "Since we can’t design all features of a large scale system as time is limited, it’s essential to narrow down the scope of the problem. Requirements can be classified into functional & non-functional requirements. You can think of all the simple features that can be designed on a whiteboard or a piece of paper in the interview duration.",
+  "translation": "由于时间有限，我们无法设计大型系统的所有功能，因此缩小问题范围至关重要。 需求可以分为功能需求和非功能需求。 您可以想到在采访期间可以在白板或一张纸上设计的所有简单功能。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*Af-ESGGwtUtOEoaX6PoZcA.jpeg?q=20",
+  "caption": "Uber",
+  "type": "image",
+  "file": "1!Af-ESGGwtUtOEoaX6PoZcA.jpeg"
+}, {
+  "tag": "P",
+  "text": "For eg: In the case of the Designing backend for Uber, you can list down the following requirements in scope:-",
+  "translation": "例如：对于Uber的设计后端，您可以在范围内列出以下要求："
+}, {
+  "tag": "OL",
+  "texts": ["Riders must be able to book & cancel a ride", "The system must match a Rider with a driver", "Drivers can cancel an assigned ride", "Drivers & Riders can both rate each other after the ride", "Riders can pay the driver using multiple payment modes"],
+  "translations": ["车手必须能够预订和取消乘车", "系统必须将Rider与驾驶员匹配", "驾驶员可以取消指定的乘车", "乘车后驾驶员和乘员都可以互相评价", "车手可以使用多种付款方式向驾驶员付款"]
+}, {
+  "tag": "P",
+  "text": "Furthermore, asking clarifying questions is a must. You need to understand who are the users of the system, how they are going to interact with it, what are the usage patterns going to be like. These questions will help you in identifying the bottlenecks, removing redundancies & scaling the overall system.",
+  "translation": "此外，必须提出明确的问题。 您需要了解谁是系统的用户，他们将如何与系统交互，使用模式将是什么样。 这些问题将帮助您确定瓶颈，消除冗余并扩展整个系统。"
+}, {
+  "tag": "H1",
+  "text": "Capacity Estimation",
+  "translation": "容量估算"
+}, {
+  "tag": "P",
+  "text": "On clarifying the requirements of the system, the next question that must be asked is how many users are going to leverage our system? This is a significant question as it will help answer many design bottlenecks later.",
+  "translation": "在阐明系统要求时，必须问的下一个问题是多少用户将使用我们的系统？ 这是一个重要的问题，因为它将在以后帮助解决许多设计瓶颈。"
+}, {
+  "tag": "P",
+  "text": "A rough idea of active users helps you estimate how many requests your system will receive and you can compute the data storage required as well. Furthermore, you can get an idea of whether a system is a read-heavy or a write-heavy one. This will influence your choice of data store (SQL Vs NoSQL) and the need for a caching layer in your application.",
+  "translation": "活跃用户的粗略想法可以帮助您估计系统将收到多少个请求，还可以计算所需的数据存储量。 此外，您可以了解系统是重读系统还是写重系统。 这将影响您对数据存储的选择（SQL Vs NoSQL）以及应用程序中对缓存层的需求。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*U23WrGFr1Pr_2X0b4Mb8Fw.jpeg?q=20",
+  "caption": "Twitter",
+  "type": "image",
+  "file": "1!U23WrGFr1Pr_2X0b4Mb8Fw.jpeg"
+}, {
+  "tag": "P",
+  "text": "Let’s say you are designing a system like Twitter. In this case, you can make the following estimates:-",
+  "translation": "假设您正在设计类似Twitter的系统。 在这种情况下，您可以进行以下估算："
+}, {
+  "tag": "UL",
+  "texts": ["200 Mn active users with 600 Mn daily tweets", "Every user having on an average of 100 followers", "A tweet retweeted at least 10 times on an average", "A person sharing 1 media file in every 10 tweets"],
+  "translations": ["2亿活跃用户每天600百万条推文", "每个用户平均拥有100位关注者", "一条推文平均转发了至少10次", "每10条推文分享1个媒体文件的人"]
+}, {
+  "tag": "P",
+  "text": "On computing the estimates, you will get clarity on the extent of horizontal scaling or number of servers needed in the system. Moreover, using the rough estimate for the amount of data that needs to be stored, will help you plan your database servers accordingly.",
+  "translation": "在计算估算值时，您将清楚了解水平扩展的程度或系统所需的服务器数量。 此外，对需要存储的数据量进行粗略估计将有助于您相应地计划数据库服务器。"
+}, {
+  "tag": "H1",
+  "text": "Design Objectives",
+  "translation": "设计目标"
+}, {
+  "tag": "P",
+  "text": "One of the primary requirement for any system is Latency & Throughput. Latency is the amount of time it takes to process a given request from the client. Whereas Throughput refers to the number of requests that can be processed within a given time interval.",
+  "translation": "任何系统的主要要求之一是延迟和吞吐量。 延迟是处理客户端给定请求所花费的时间。 吞吐量是指在给定时间间隔内可以处理的请求数。"
+}, {
+  "tag": "P",
+  "text": "For a high-performant system, it's essential to have minimum latency with maximum throughput. If you are designing a Shopping website which takes a long time to load, then it results in poor user experience. Further, on a black Friday sale day, your system’s performance mustn’t degrade due to increased load.",
+  "translation": "对于高性能系统，至关重要的是最小延迟和最大吞吐量。 如果您要设计一个购物网站，而该网站的加载时间很长，则会导致糟糕的用户体验。 此外，在黑色星期五的销售日，系统性能不会因负载增加而降低。"
+}, {
+  "tag": "P",
+  "text": "The second design goal is to choose between Availability & Consistency. As per the CAP theorem, you can either have a CP or an AP system to tolerate failures in networks. The choice between Availability & Consistency is influenced by what type of system is being designed.",
+  "translation": "第二个设计目标是在可用性和一致性之间进行选择。 根据CAP定理，您可以使用CP或AP系统来容忍网络故障。 可用性和一致性之间的选择受设计的系统类型影响。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*K0lU5fiAKKIsNt1i9IUIMg.jpeg?q=20",
+  "caption": "CAP theorem",
+  "type": "image",
+  "file": "1!K0lU5fiAKKIsNt1i9IUIMg.jpeg"
+}, {
+  "tag": "P",
+  "text": "If you have a Banking system which directly deals with user’s money, Consistency becomes of prime importance. Whereas, if you are designing a Facebook feed, it’s okay to miss out a status update from a page or a friend.",
+  "translation": "如果您拥有直接处理用户资金的银行系统，则一致性至关重要。 而如果您正在设计Facebook Feed，则可以错过页面或朋友的状态更新。"
+}, {
+  "tag": "H1",
+  "text": "API Design & Algorithms",
+  "translation": "API设计与算法"
+}, {
+  "tag": "P",
+  "text": "For each of the requirements that are in the scope of the problem, it’s necessary to sketch the basic APIs that the backend system would be exposing. A candidate can mention the requests, responses, status codes, HTTP Method to use, etc. Depending upon the problem, once can discuss whether to use REST, GraphQL or GRPC for API design.",
+  "translation": "对于问题范围内的每一项要求，有必要草拟后端系统将要公开的基本API。 候选人可以提及请求，响应，状态代码，要使用的HTTP方法等。根据问题，可以讨论是否使用REST，GraphQL或GRPC进行API设计。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*sPstaEIcnL-7gUCv2ObY3g.png?q=20",
+  "caption": "API Design",
+  "type": "image",
+  "file": "1!sPstaEIcnL-7gUCv2ObY3g.png"
+}, {
+  "tag": "P",
+  "text": "You can further move to draw the high-level components that will be used in the system. It’s good to start with client-facing components i.e API gateway, Load Balancers. You can talk about what kind of strategies can be used in Load Balancers to distribute the load evenly among the Application servers.",
+  "translation": "您可以进一步移动以绘制将在系统中使用的高级组件。 最好从面向客户端的组件开始，例如API网关，负载均衡器。 您可以讨论在负载均衡器中可以使用哪种策略在应用程序服务器之间平均分配负载。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*_BS8uI00VXI48vYP2DFk1Q.png?q=20",
+  "caption": "API Gateway & Load Balancer",
+  "type": "image",
+  "file": "1!_BS8uI00VXI48vYP2DFk1Q.png"
+}, {
+  "tag": "P",
+  "text": "If you are asked to design a system like Youtube, Netflix, or Instagram, you can also talk about CDN (Content Delivery Network) which facilitate the serving of static image or video files.",
+  "translation": "如果要求您设计诸如Youtube，Netflix或Instagram之类的系统，那么您也可以谈论CDN（内容交付网络），它有助于提供静态图像或视频文件。"
+}, {
+  "tag": "P",
+  "text": "For every API, you’ll need to see if an algorithm needs to be implemented on the Server side or whether it's a plain CRUD API. For instance:- While designing twitter, to get news-feed you’ll need to come up with a news feed algorithm. In case a user follows another user, it will be a plain CRUD API.",
+  "translation": "对于每个API，您都需要查看是否需要在服务器端实施一种算法，或者它是否是普通的CRUD API。 例如：-设计Twitter时，要获取新闻提要，您需要提出一个新闻提要算法。 如果一个用户关注另一个用户，它将是普通的CRUD API。"
+}, {
+  "tag": "H1",
+  "text": "Database, Cache Design & Sharding",
+  "translation": "数据库，缓存设计和分片"
+}, {
+  "tag": "P",
+  "text": "The capacity estimation will give you an idea of how much data your system needs to handle. Moreover, you should have a clear idea of the entities involved in data modelling & relationship between them. You need to figure out whether your data is structured or unstructured and whether it needs schema flexibility or not. The answers to the above question will influence your choice of using either a SQL or a NoSQL database.",
+  "translation": "容量估算将使您了解系统需要处理多少数据。 此外，您应该对参与数据建模的实体及其之间的关系有一个清晰的了解。 您需要确定数据是结构化的还是非结构化的，以及是否需要架构灵活性。 上述问题的答案将影响您选择使用SQL还是NoSQL数据库。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*6esF5vf8NfE1tEi5IecrKw.png?q=20",
+  "type": "image",
+  "file": "1!6esF5vf8NfE1tEi5IecrKw.png"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*X8LrgE8bE2TV5VSeB4GeCQ.jpeg?q=20",
+  "caption": "Cassandra / MySQL",
+  "type": "image",
+  "file": "1!X8LrgE8bE2TV5VSeB4GeCQ.jpeg"
+}, {
+  "tag": "P",
+  "text": "Most of the systems are read-heavy systems. Hence, you can speed up all your database read queries by creating an index on a column or a set of columns depending upon the access patterns. You can have a master-slave architecture where writes are performed on the master while reads are done from the slave. This will isolate reads from the writes and thereby improve the performance of the system.",
+  "translation": "大多数系统是重载系统。 因此，您可以根据访问模式在一个列或一组列上创建索引，从而加快所有数据库读取查询的速度。 您可以具有主从结构，在主从结构上执行写操作，而从从属结构执行读操作。 这样可以将读操作与写操作隔离开，从而提高系统性能。"
+}, {
+  "tag": "P",
+  "text": "Reads from a database result in IO operation which is computationally expensive to perform. You can add a caching layer between the application and the database to minimize the disk IO. This will further boost the performance of the system.",
+  "translation": "从数据库中读取会导致IO操作，这在执行时会消耗大量计算资源。 您可以在应用程序和数据库之间添加缓存层，以最小化磁盘IO。 这将进一步提高系统的性能。"
+}, {
+  "tag": "P",
+  "text": "While adding a Cache, you will need to choose between the Cache eviction strategies and also on the Caching patterns such as Write through, Write back, Cache aside, etc",
+  "translation": "添加高速缓存时，您将需要在高速缓存逐出策略之间以及高速缓存模式（如直写，回写，预留高速缓存等）之间进行选择。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*aUOF_ZfOfz9QWcdP_w1-GQ.jpeg?q=20",
+  "caption": "Redis",
+  "type": "image",
+  "file": "1!aUOF_ZfOfz9QWcdP_w1-GQ.jpeg"
+}, {
+  "tag": "P",
+  "text": "If you are designing a system for millions of users, data will not fit on a single database server. Hence, it’s important to distribute the data among multiple database servers. This is known as data partitioning. The Interviewer might question you about different data partitioning strategies that you can use to distribute the data and discuss the trade-offs of using each.",
+  "translation": "如果要为数百万个用户设计系统，则数据将无法容纳在单个数据库服务器上。 因此，在多个数据库服务器之间分配数据非常重要。 这称为数据分区。 采访者可能会问您有关可用于分发数据的不同数据分区策略的问题，并讨论了使用每种策略的取舍。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Animesh Gaitonde的文章《System Design Interviews 101》，参考：https://medium.com/@animeshgaitonde/system-design-interviews-101-979eb8d6f23b)",
+  "translation": "（本文翻译自Animesh Gaitonde的文章，《系统设计访谈101》，参考：https：//medium.com/@animeshgaitonde/system-design-interviews-101-979eb8d6f23b）"
+}]

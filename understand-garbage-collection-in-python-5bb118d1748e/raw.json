@@ -1,0 +1,23 @@
+[{
+  "tag": "H1",
+  "text": "Understand Garbage Collection in Python",
+  "translation": "了解Python中的垃圾回收"
+}, {
+  "tag": "H2",
+  "text": "Understand how memory management works, even though you don’t have to do it yourself",
+  "translation": "了解内存管理的工作原理，即使您不必自己做"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*wW78UQQc85T5zlZFvK0tpA.jpeg?q=20",
+  "caption": "Photo by Markus Spiske on Unsplash",
+  "type": "image",
+  "file": "1!wW78UQQc85T5zlZFvK0tpA.jpeg"
+}, {
+  "tag": "P",
+  "text": "In languages like C or C++, the programmer is responsible for the dynamic allocation and deallocation of memory on the heap. But in Python, programmers don’t have to preallocate or deallocate memory.",
+  "translation": "在像C或C ++这样的语言中，程序员负责堆上内存的动态分配和释放。 但是在Python中，程序员不必预先分配或取消分配内存。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Prashant Sharma的文章《Understand Garbage Collection in Python》，参考：https://medium.com/better-programming/understand-garbage-collection-in-python-5bb118d1748e)",
+  "translation": "（本文翻译自Prashant Sharma的文章，《了解Python中的垃圾收集》，参考：https：//medium.com/better-programming/understand-garbage-collection-in-python-5bb118d1748e）"
+}]

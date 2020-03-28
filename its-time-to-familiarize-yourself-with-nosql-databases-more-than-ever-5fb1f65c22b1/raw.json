@@ -1,0 +1,525 @@
+[{
+  "tag": "P",
+  "text": "Congratulations if you managed to get here. Thanks for reading, I hope you’ve liked it. For personal contact or discussion, feel free to reach out to me on LinkedIn.",
+  "translation": "恭喜您成功到达这里。 感谢您的阅读，希望您喜欢它。 如需个人联系或讨论，请随时通过LinkedIn与我联系。"
+}, {
+  "tag": "H1",
+  "text": "References :",
+  "translation": "参考文献："
+}, {
+  "tag": "UL",
+  "texts": ["SQL vs. NoSQL: How Are They Different and What Are the Best SQL and NoSQL Database Systems?", "Migrating from a relational to a NoSQL cloud database", "SQL vs NoSQL or MySQL vs MongoDB"],
+  "translations": ["SQL与NoSQL：它们有何不同？最佳的SQL和NoSQL数据库系统是什么？", "从关系云数据库迁移到NoSQL云数据库", "SQL vs NoSQL或MySQL vs MongoDB"]
+}, {
+  "tag": "H1",
+  "text": "6. Conclusion",
+  "translation": "六，结论"
+}, {
+  "tag": "P",
+  "text": "The objective of this article was therefore to present the main differences that exist to help you make the right decision and shape the future of your information system (or your simple application).",
+  "translation": "因此，本文的目的是介绍存在的主要差异，以帮助您做出正确的决定并塑造信息系统（或简单应用程序）的未来。"
+}, {
+  "tag": "P",
+  "text": "We have seen that SQL and NoSQL databases ultimately do almost the same thing (store data) but in different ways. The choice of a database management system (DBMS) is therefore an important and structuring moment for any data project. Of course, it is always possible to choose an option and then switch to another later. But a little bit of conceptual analysis and thinking at the start of a project will make you save time and money.",
+  "translation": "我们已经看到，SQL和NoSQL数据库最终执行几乎相同的操作（存储数据），但是方式不同。 因此，对于任何数据项目而言，数据库管理系统（DBMS）的选择都是重要且结构化的时刻。 当然，总是可以选择一个选项，然后稍后再切换到另一个。 但是在项目开始时进行一些概念分析和思考将使您节省时间和金钱。"
+}, {
+  "tag": "P",
+  "text": "The market today is full of NoSQL databases — I think we are faced with two or three of them every day, because there are a lot of advantages for a developer to switch to NoSQL. A more flexible data model and freedom from rigid schemas is a big advantage. You can also see significantly improved performance and the ability to scale horizontally.",
+  "translation": "当今市场上到处都是NoSQL数据库-我认为我们每天都面临着其中的两个或三个数据库，因为开发人员改用NoSQL具有很多优势。 更加灵活的数据模型和不受刚性模式的限制是一个很大的优势。 您还可以看到性能显着提高，并且可以水平缩放。"
+}, {
+  "tag": "P",
+  "text": "But most NoSQL products are still in the early stages of the product cycle. For features such as complex joins, developers may prefer using a traditional RDBMS. And for some projects, a hybrid approach might be the best choice.",
+  "translation": "但是，大多数NoSQL产品仍处于产品周期的早期阶段。 对于复杂连接等功能，开发人员可能更喜欢使用传统的RDBMS。 对于某些项目，混合方法可能是最佳选择。"
+}, {
+  "tag": "P",
+  "text": "To conclude, each company will have its own preferences depending on the requirements of the project. So determine your needs and the database that judiciously provides integrated support for the development of your project.",
+  "translation": "总而言之，每个公司都会根据项目的要求有自己的偏好。 因此，确定您的需求和明智地为项目开发提供集成支持的数据库。"
+}, {
+  "tag": "H1",
+  "text": "5. Switch from RDBMS to NoSQL",
+  "translation": "5.从RDBMS切换到NoSQL"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*lfZml0LL5CS3r0ny5iPqjQ.jpeg?q=20",
+  "caption": "Photo by Science in HD on Unsplash",
+  "type": "image",
+  "file": "1!lfZml0LL5CS3r0ny5iPqjQ.jpeg"
+}, {
+  "tag": "P",
+  "text": "No matter which NoSQL database design you choose, migrating your data into it can present some serious challenges. The design of a data model in NoSQL has additional complexity because it requires knowing the end use of the data. Knowing that your application will handle Bills and Customers is no longer sufficient. You must now know how this data will be displayed to the end user. Therefore, data modeling in a NoSQL database requires real technical expertise in addition to in-depth knowledge of the end-customer use.",
+  "translation": "无论您选择哪种NoSQL数据库设计，将数据迁移到其中都会带来一些严峻的挑战。 在NoSQL中设计数据模型具有额外的复杂性，因为它需要了解数据的最终用途。 仅仅知道您的应用程序可以处理账单和客户就足够了。 现在，您必须知道如何将这些数据显示给最终用户。 因此，NoSQL数据库中的数据建模除了需要对最终客户的使用有深入了解之外，还需要真正的技术专长。"
+}, {
+  "tag": "H2",
+  "text": "Is it time to replace SQL with a NoSQL solution ?",
+  "translation": "是时候用NoSQL解决方案替换SQL吗？"
+}, {
+  "tag": "P",
+  "text": "In my opinion, this is a hard question! Because in most cases, it’s not about replacing SQL with a NoSQL solution, but rather, making a transition from one to the other, if the application and the use case reveal the need for change. In general, this transition will be driven by the need for flexibility and scalability when it comes to building modern web and mobile applications.",
+  "translation": "我认为，这是一个很难的问题！ 因为在大多数情况下，这不是用NoSQL解决方案代替SQL，而是在应用程序和用例表明需要更改的情况下，从一种过渡到另一种。 通常，在构建现代Web和移动应用程序时，对灵活性和可伸缩性的需求将推动这种转变。"
+}, {
+  "tag": "P",
+  "text": "Typically, many companies try to support the load in their web applications, so they choose to simply add web servers behind a load balancer to support more users. Undoubtedly, the ability to scale up is a fundamental competitive advantage in the increasingly important world of cloud computing, in which instances of virtual machines can be easily added or removed so as to meet the fluctuating demands.",
+  "translation": "通常，许多公司尝试在其Web应用程序中支持负载，因此他们选择仅在负载均衡器后面添加Web服务器以支持更多用户。 毫无疑问，在日益重要的云计算世界中，扩展能力是一项根本的竞争优势，在云计算世界中，可以轻松添加或删除虚拟机实例以满足不断变化的需求。"
+}, {
+  "tag": "P",
+  "text": "Relational databases (RDBMS) do not allow simple scaling and do not provide a flexible data model. Managing more users means adding a larger server and large servers are very complex and expensive, unlike low-cost hardware, “commodity hardware” and cloud architectures. Organizations are starting to see performance issues with their relational databases for existing or new applications. Especially as the number of users increases daily, they realize that the need for a faster and more flexible database has become very important. It’s time to move to NoSQL!",
+  "translation": "关系数据库（RDBMS）不允许简单缩放，也不能提供灵活的数据模型。 管理更多的用户意味着添加更大的服务器和大型服务器非常复杂且昂贵，这与低成本硬件，“商品硬件”和云架构不同。 组织已经开始看到其关系数据库对现有或新应用程序的性能问题。 尤其是随着用户数量的每天增加，他们意识到对更快，更灵活的数据库的需求变得非常重要。 现在该迁移到NoSQL了！"
+}, {
+  "tag": "H2",
+  "text": "What would be the main steps required for the transition from SQL to NoSQL?",
+  "translation": "从SQL过渡到NoSQL所需的主要步骤是什么？"
+}, {
+  "tag": "P",
+  "text": "Applications / Projects can vary greatly depending on each organization, so the transition will depend on your use case. Here are some general guidelines for the transition:",
+  "translation": "应用程序/项目可能会因每个组织而有很大差异，因此过渡将取决于您的用例。 以下是有关过渡的一些一般准则："
+}, {
+  "tag": "P",
+  "text": "1- Understand the key requirements for your application:",
+  "translation": "1-了解您的应用程序的关键要求："
+}, {
+  "tag": "P",
+  "text": "Here are some requirements corresponding to the need to have a NoSQL database:",
+  "translation": "以下是与NoSQL数据库需求相对应的一些要求："
+}, {
+  "tag": "UL",
+  "texts": ["Rapid application development: Changing market needs & Continuing modification of data", "Scalability", "Constant performance: Low response time for a better user experience", "Operating reliability: High availability to manage errors with minimal impact on the application & Integrated monitoring APIs for better maintenance"],
+  "translations": ["快速的应用开发：不断变化的市场需求和持续的数据修改", "可扩展性", "性能稳定：响应时间短，可带来更好的用户体验", "操作可靠性：高可用性来管理错误，对应用程序的影响最小，并且集成了监视API，以实现更好的维护"]
+}, {
+  "tag": "P",
+  "text": "2- Understand the different types of NoSQL offers:",
+  "translation": "2-了解NoSQL提供的不同类型："
+}, {
+  "tag": "P",
+  "text": "As I’ve said above, there are different types of NoSQL database management systems.",
+  "translation": "如上所述，NoSQL数据库管理系统有多种类型。"
+}, {
+  "tag": "P",
+  "text": "For instance, the document-oriented NoSQL databases — with Couchbase and MongoDB which are the two best known and most widely adopted examples.",
+  "translation": "例如，面向文档的NoSQL数据库-带有Couchbase和MongoDB，这是两个最著名且使用最广泛的示例。"
+}, {
+  "tag": "P",
+  "text": "Also, Cassandra, for example, may be a solution that you can use for data analysis given its columnar model. Neo4j, a graph database, can be the perfect database for applications that need to store relationships between entities.",
+  "translation": "同样，例如，鉴于Cassandra的柱状模型，它可能是可用于数据分析的解决方案。 图形数据库Neo4j可能是需要存储实体之间关系的应用程序的理想数据库。"
+}, {
+  "tag": "P",
+  "text": "3- Build a prototype:",
+  "translation": "3-建立原型："
+}, {
+  "tag": "P",
+  "text": "Once you have narrowed down the possible choices for the type of database, try to develop a prototype integrating the main characteristics of your application. This prototype will help you evaluate the response times, the performance in terms of throughput and the capacity to scale up easily.",
+  "translation": "缩小数据库类型的可能选择范围后，尝试开发一个集成了应用程序主要特征的原型。 该原型将帮助您评估响应时间，吞吐量方面的性能以及轻松扩展的能力。"
+}, {
+  "tag": "P",
+  "text": "4- Document modeling and development:",
+  "translation": "4-文档建模和开发："
+}, {
+  "tag": "P",
+  "text": "For document-oriented databases, spend a few days on modeling your data starting from fixed tabular diagrams to arrive at flexible document models.",
+  "translation": "对于面向文档的数据库，请花几天时间从固定的表格图开始对数据建模，以获取灵活的文档模型。"
+}, {
+  "tag": "P",
+  "text": "5- Deployment then production:",
+  "translation": "5-部署然后生产："
+}, {
+  "tag": "P",
+  "text": "Operational stability is a very important aspect for interactive web applications. Test and re-test your deployment as you would for applications that normally use traditional RDBMS systems.",
+  "translation": "对于交互式Web应用程序，操作稳定性是非常重要的方面。 与通常使用传统RDBMS系统的应用程序一样，对您的部署进行测试和重新测试。"
+}, {
+  "tag": "P",
+  "text": "6- Keep up with the latest trends:",
+  "translation": "6-跟上最新趋势："
+}, {
+  "tag": "P",
+  "text": "Today, there is a plethora of quality training that offers hands-on courses for training on NoSQL. The best way to ensure a successful implementation of NoSQL is to be up to date on the latest versions.",
+  "translation": "今天，有大量的质量培训，提供有关NoSQL培训的动手课程。 确保NoSQL成功实施的最佳方法是使用最新版本。"
+}, {
+  "tag": "P",
+  "text": "Don’t worry, you will find it easy to adopt certain NoSQL technologies, especially if you are familiar with JSON for document format. Developers who use SQL extensively may need to adapt and learn document modeling approaches. Rethinking how data can be structured logically using documents rather than normalizing data into a fixed database schema becomes an important aspect.",
+  "translation": "不用担心，您会发现采用某些NoSQL技术很容易，尤其是如果您熟悉JSON的文档格式。 广泛使用SQL的开发人员可能需要适应和学习文档建模方法。 重新思考如何使用文档在逻辑上构造数据，而不是将数据规范化为固定的数据库模式成为重要的方面。"
+}, {
+  "tag": "P",
+  "text": "Here are links to some interesting courses:",
+  "translation": "以下是一些有趣课程的链接："
+}, {
+  "tag": "UL",
+  "texts": ["NoSQL Courses & Tutorials (Udemy)", "NoSQL Systems (Coursera)"],
+  "translations": ["NoSQL课程和教程（Udemy）", "NoSQL系统（Coursera）"]
+}, {
+  "tag": "H1",
+  "text": "4. 5 Criteria for choosing the adequate type of database for your application",
+  "translation": "4. 5为您的应用程序选择适当的数据库类型的条件"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*eBrz6NVuA6eUE6Kk.png?q=20",
+  "type": "image",
+  "file": "0!eBrz6NVuA6eUE6Kk.png"
+}, {
+  "tag": "P",
+  "text": "How do we decide which type of Database is the best fit for a project ? Here is a checklist that you can use :",
+  "translation": "我们如何确定最适合项目的数据库类型？ 这是您可以使用的清单："
+}, {
+  "tag": "UL",
+  "texts": ["The type of data to be stored : SQL databases are not suitable for hierarchical data storage. However, the NoSQL database is better suited for hierarchical data storage because it follows the key-value pair method or graph method. NoSQL databases are highly preferred for large data sets.", "Complex queries : SQL databases are perfectly suited to the environment requiring many queries, while NoSQL databases are not suitable for complex queries. So the queries in NoSQL are not as powerful as the SQL query language.", "Scalability : In most situations, SQL databases are vertically scalable. You can manage the increased load by increasing the processor, RAM, SSD, etc. on a single server. On the other hand, NoSQL databases are scalable horizontally. You can simply add a few additional servers easily to your NoSQL database infrastructure to handle heavy traffic. So you can choose the type of database that will suits you depending on your equipments.", "Highly transactional applications : SQL databases are better suited to transactional type applications for intensive use, because they are more stable and promise atomicity as well as data integrity. Although you can use NoSQL for transactional purposes, it is still not comparable but can be used for complex transactional applications.", "Properties : SQL databases emphasize ACID properties (Atomicity, Consistency, Isolation, Durability), while the NoSQL database follows the Brewers CAP theorem (Consistency, Availability and Partition Tolerance)."],
+  "translations": ["要存储的数据类型：SQL数据库不适用于分层数据存储。 但是，NoSQL数据库更适合分层数据存储，因为它遵循键值对方法或图方法。 NoSQL数据库是大型数据集的高度首选。", "复杂查询：SQL数据库非常适合需要许多查询的环境，而NoSQL数据库不适合复杂查询。 因此，NoSQL中的查询不如SQL查询语言强大。", "可伸缩性：在大多数情况下，SQL数据库是垂直可伸缩的。 您可以通过增加单个服务器上的处理器，RAM，SSD等来管理增加的负载。 另一方面，NoSQL数据库可水平扩展。 您可以轻松地向NoSQL数据库基础架构中添加一些其他服务器来处理大量流量。 因此，您可以根据设备选择适合您的数据库类型。", "高度事务性的应用程序：SQL数据库更稳定，并具有原子性和数据完整性，因此更适合密集使用的事务性类型的应用程序。 尽管您可以将NoSQL用于事务目的，但是它仍然不可比，但是可以用于复杂的事务应用程序。", "属性：SQL数据库强调ACID属性（原子性，一致性，隔离性，耐久性），而NoSQL数据库遵循Brewers CAP定理（一致性，可用性和分区容限）。"]
+}, {
+  "tag": "H1",
+  "text": "4. NoSQL Database Designs",
+  "translation": "4. NoSQL数据库设计"
+}, {
+  "tag": "P",
+  "text": "The main characteristics of NoSQL DBMS are to allow the manipulation of large volumes of data and to allow horizontal scalability. However, the difficulty, which most of the companies face today, is to target the most adequate technology in order to respond to their problems and their application.",
+  "translation": "NoSQL DBMS的主要特征是允许处理大量数据并允许水平扩展。 但是，大多数公司今天面临的困难是针对最合适的技术，以应对他们的问题和应用。"
+}, {
+  "tag": "P",
+  "text": "Addressing this difficulty begins with a good understanding of the different types of NoSQL databases. There is a common myth that all NoSQL databases are created equal — this is not true! In fact, these databases can be classified into four categories: document-oriented databases, key/value databases, column databases and graph-oriented databases. They all have one thing in common: the support of more flexible and dynamic models than those produced with traditional relational databases.",
+  "translation": "解决这一难题始于对NoSQL数据库的不同类型的深入了解。 有一个普遍的神话，就是所有NoSQL数据库的创建都是一样的-这是不正确的！ 实际上，这些数据库可以分为四类：面向文档的数据库，键/值数据库，列数据库和面向图形的数据库。 它们都有一个共同点：比传统关系数据库生成的模型更灵活，动态的支持。"
+}, {
+  "tag": "P",
+  "text": "In fact, each of these categories has its own attributes and limitations. There is no preferable database for solving all problems. You must select a database according to the needs of your project.",
+  "translation": "实际上，每个类别都有其自身的属性和局限性。 没有解决所有问题的首选数据库。 您必须根据项目的需要选择一个数据库。"
+}, {
+  "tag": "P",
+  "text": "You have to wonder what kind of data will be manipulated and how the applications will ultimately use it.",
+  "translation": "您必须想知道将要处理哪种数据，以及应用程序最终将如何使用它们。"
+}, {
+  "tag": "H2",
+  "text": "- Document-oriented databases: Mixed Structure",
+  "translation": "-面向文档的数据库：混合结构"
+}, {
+  "tag": "P",
+  "text": "A document-oriented NoSQL database stores and extracts data as a key/value pair, but the value part is stored as a document. The document is stored in JSON or XML formats.",
+  "translation": "面向文档的NoSQL数据库以键/值对的形式存储和提取数据，但值部分存储为文档。 该文档以JSON或XML格式存储。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*Zu7WL6AonSg_Ap5dYcABXw.png?q=20",
+  "type": "image",
+  "file": "1!Zu7WL6AonSg_Ap5dYcABXw.png"
+}, {
+  "tag": "P",
+  "text": "MongoDB, Apache CouchDB, MarkLogic are document-oriented databases.",
+  "translation": "MongoDB，Apache CouchDB，MarkLogic是面向文档的数据库。"
+}, {
+  "tag": "H2",
+  "text": "- Key / value databases:",
+  "translation": "-键/值数据库："
+}, {
+  "tag": "P",
+  "text": "A key-value oriented database has a large hash of keys and values. It represents the simplest form of NoSQL databases. They associate unique keys with values ​​in data, with the objective of greatly enhancing the performance of applications based on relatively simple datasets.",
+  "translation": "面向键值的数据库具有大量的键和值哈希。 它代表NoSQL数据库的最简单形式。 他们将唯一键与数据中的值相关联，目的是基于相对简单的数据集大大提高应用程序的性能。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*jqaGa_wm33d5d4PCUDXIIg.png?q=20",
+  "type": "image",
+  "file": "1!jqaGa_wm33d5d4PCUDXIIg.png"
+}, {
+  "tag": "P",
+  "text": "Redis, Riak, Memcached and Aerospike are examples of key-value databases.",
+  "translation": "Redis，Riak，Memcached和Aerospike是键值数据库的示例。"
+}, {
+  "tag": "H2",
+  "text": "- Column databases:",
+  "translation": "-列数据库："
+}, {
+  "tag": "P",
+  "text": "Column databases hold data in tables that have a very large number of columns. Each storage block contains data from a single column and each column is treated separately. They provide high performance on aggregate queries such as COUNT, SUM, AVG, MAX, etc., because the data is readily available in a column.",
+  "translation": "列数据库将数据保存在具有大量列的表中。 每个存储块都包含来自单个列的数据，并且将每个列分别处理。 它们在诸如COUNT，SUM，AVG，MAX等汇总查询上提供了高性能，因为数据很容易在列中使用。"
+}, {
+  "tag": "P",
+  "text": "HBase, Cassandra and Accumulo are examples of column-based databases.",
+  "translation": "HBase，Cassandra和Accumulo是基于列的数据库的示例。"
+}, {
+  "tag": "H2",
+  "text": "- Graph-oriented databases:",
+  "translation": "-面向图的数据库："
+}, {
+  "tag": "P",
+  "text": "A graph-based database is a network database that stores data elements in “graph” structures and make it possible to create associations between the nodes, ultimately serving as a basis for recommendation engines or social networks.",
+  "translation": "基于图的数据库是一种网络数据库，它以“图”结构存储数据元素，并有可能在节点之间创建关联，最终用作推荐引擎或社交网络的基础。"
+}, {
+  "tag": "P",
+  "text": "We can get a lot of information from a graph database. For example, graph technology can be used to identify relationships between different people through their interests.",
+  "translation": "我们可以从图形数据库中获得很多信息。 例如，图形技术可用于通过他们的兴趣来识别不同人之间的关系。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*pTNeaEcncpeUa_8n.png?q=20",
+  "caption": "Twitter Graph | Source : https://neo4j.com/blog/oscon-twitter-graph/",
+  "type": "image",
+  "file": "0!pTNeaEcncpeUa_8n.png"
+}, {
+  "tag": "P",
+  "text": "Neo4J, Infinite Graph and FlockDB are examples of graph-oriented databases.",
+  "translation": "Neo4J，无限图和FlockDB是面向图的数据库的示例。"
+}, {
+  "tag": "H1",
+  "text": "3. Popular Databases",
+  "translation": "3.流行的数据库"
+}, {
+  "tag": "P",
+  "text": "There are several popular databases systems available; both paid and free. In order to choose the right management system for you or your organization, it is important to have an idea about what exists in the market. Check out the list below of 5 popular SQL & NoSQL databases.",
+  "translation": "有几种流行的数据库系统可用。 既免费又免费。 为了为您或您的组织选择正确的管理系统，重要的是要了解市场上存在的内容。 查看下面5个流行的SQL和NoSQL数据库列表。"
+}, {
+  "tag": "H2",
+  "text": "- SQL Databases Products:",
+  "translation": "-SQL数据库产品："
+}, {
+  "tag": "P",
+  "text": "1- MySql:",
+  "translation": "1- MySql："
+}, {
+  "tag": "P",
+  "text": "It’s available for free and it offers a lot of functionality even for a free database engine.",
+  "translation": "它是免费提供的，甚至为免费的数据库引擎提供了很多功能。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*Hh48VuINJuvG5I5T.png?q=20",
+  "caption": "Source : https://www.mysql.com/",
+  "type": "image",
+  "file": "0!Hh48VuINJuvG5I5T.png"
+}, {
+  "tag": "P",
+  "text": "2- Oracle:",
+  "translation": "2-Oracle："
+}, {
+  "tag": "P",
+  "text": "Oracle database management tools are incredibly robust with the latest innovations and features.",
+  "translation": "Oracle数据库管理工具具有最新的创新和功能，非常强大。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*guEsd8l2BJxilogU.png?q=20",
+  "caption": "Source : https://www.oracle.com/database/",
+  "type": "image",
+  "file": "0!guEsd8l2BJxilogU.png"
+}, {
+  "tag": "P",
+  "text": "3- Postgres:",
+  "translation": "3- Postgres："
+}, {
+  "tag": "P",
+  "text": "This database management engine is scalable and can handle terabytes of data, with a variety of predefined functions.",
+  "translation": "该数据库管理引擎具有可扩展性，并可以通过各种预定义功能处理TB级数据。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*X4qVi5a3jKhPi733.jpeg?q=20",
+  "caption": "Source : https://www.postgresql.org/",
+  "type": "image",
+  "file": "0!X4qVi5a3jKhPi733.jpeg"
+}, {
+  "tag": "P",
+  "text": "4- SQL Server:",
+  "translation": "4- SQL Server："
+}, {
+  "tag": "P",
+  "text": "It is very fast and stable. It works very well with other Microsoft products.",
+  "translation": "它非常快速且稳定。 它与其他Microsoft产品非常兼容。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*18d2lYUTJ0rMtgNG.png?q=20",
+  "caption": "Source : https://www.microsoft.com/en-us/sql-server/sql-server-2019",
+  "type": "image",
+  "file": "0!18d2lYUTJ0rMtgNG.png"
+}, {
+  "tag": "P",
+  "text": "5- SQLite:",
+  "translation": "5- SQLite："
+}, {
+  "tag": "P",
+  "text": "A SQLite database is very light and quick to set up, it can also be used to store data in a real database on a smartphone application (iPhone or Android).",
+  "translation": "SQLite数据库非常轻便，并且设置迅速，还可以用于将数据存储在智能手机应用程序（iPhone或Android）上的真实数据库中。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*qdJk6XrIsYPjkN5-.png?q=20",
+  "caption": "Source : https://www.sqlite.org/index.html",
+  "type": "image",
+  "file": "0!qdJk6XrIsYPjkN5-.png"
+}, {
+  "tag": "H2",
+  "text": "- NoSQL Databases Products:",
+  "translation": "-NoSQL数据库产品："
+}, {
+  "tag": "P",
+  "text": "1- MongoDB:",
+  "translation": "1- MongoDB："
+}, {
+  "tag": "P",
+  "text": "MongoDB is a flexible/reliable database that will draw you to the NoSQL world. Its management and maintenance are very easy and fast.",
+  "translation": "MongoDB是一个灵活/可靠的数据库，它将带您进入NoSQL世界。 它的管理和维护非常简单快捷。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*c19ArFDcdzw23Xvh.png?q=20",
+  "caption": "Source : https://www.mongodb.com/",
+  "type": "image",
+  "file": "0!c19ArFDcdzw23Xvh.png"
+}, {
+  "tag": "P",
+  "text": "2- Redis:",
+  "translation": "2- Redis："
+}, {
+  "tag": "P",
+  "text": "It is incredibly simple and straightforward to use. You can download Redis and start using it during the next five minutes.",
+  "translation": "它非常简单易用。 您可以下载Redis并在接下来的五分钟内开始使用它。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*kOIfmYy3KceiE0Tl.png?q=20",
+  "caption": "Source : https://redis.io/",
+  "type": "image",
+  "file": "0!kOIfmYy3KceiE0Tl.png"
+}, {
+  "tag": "P",
+  "text": "3- Cassandra:",
+  "translation": "3-卡桑德拉："
+}, {
+  "tag": "P",
+  "text": "The linear scalability provided by Cassandra, allowing to easily scale up/down the cluster by simply adding/removing the servers.",
+  "translation": "Cassandra提供的线性可扩展性，允许通过简单地添加/删除服务器来轻松扩展/缩小集群。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*JSttB9h6BR2s7Vlv.png?q=20",
+  "caption": "Source : http://cassandra.apache.org/",
+  "type": "image",
+  "file": "0!JSttB9h6BR2s7Vlv.png"
+}, {
+  "tag": "P",
+  "text": "4- Hbase:",
+  "translation": "4- Hbase："
+}, {
+  "tag": "P",
+  "text": "It is a column oriented database that helps improve the query performance and aggregations.",
+  "translation": "它是面向列的数据库，可帮助提高查询性能和聚合。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*DLmbrVepo9SnXds7.png?q=20",
+  "caption": "Source: https://hbase.apache.org/",
+  "type": "image",
+  "file": "0!DLmbrVepo9SnXds7.png"
+}, {
+  "tag": "P",
+  "text": "5- CouchDb:",
+  "translation": "5-CouchDb："
+}, {
+  "tag": "P",
+  "text": "Thanks to its ability to store serialized (JSON formatted) unstructured data and its Restful HTTP API, CouchDB is highly desirable for Web and Mobile Applications.",
+  "translation": "凭借其存储序列化（JSON格式）非结构化数据的能力及其Restful HTTP API，CouchDB非常适合Web和移动应用程序。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*41thIfJNXrOwuHX4.png?q=20",
+  "caption": "Source : https://couchdb.apache.org/",
+  "type": "image",
+  "file": "0!41thIfJNXrOwuHX4.png"
+}, {
+  "tag": "H1",
+  "text": "2. HISTORICAL ELEMENTS",
+  "translation": "2.历史要素"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*KR6YEm2yVPMqqIasHVPxuQ.jpeg?q=20",
+  "caption": "Source : Photo by National Cancer Institute on Unsplash",
+  "type": "image",
+  "file": "1!KR6YEm2yVPMqqIasHVPxuQ.jpeg"
+}, {
+  "tag": "H2",
+  "text": "Historical domination of relational DBMS",
+  "translation": "关系DBMS的历史统治"
+}, {
+  "tag": "UL",
+  "texts": ["The relational DBMS created in the 1970s has gradually imposed itself until it became the very widely dominant database paradigm in the early 1990s.", "During the 1990s, many salespeople in logistics companies started using it to store their business data. Actually, they had neither a mouse nor a user interface to search for certain information stored on servers often distant and connected by specialized lines: they were used to enter SQL commands with the keyboard and were able to retrieve relevant information about the availability of a particular product or raw material in seconds.", "Several other database models have emerged, like the DBMS Object-oriented , Hierarchical DBMS , Object-relational DBMS , but their use has been very limited.", "Starting from the 2000s, with the development of large internet companies (Amazon, eBay, Google …), huge amounts of unstructured data appeared and was growing far more rapidly than structured data that it did not fit the relational schemas of the RDBMS anymore. There was also a development of clustered computing, thus the domination of the relational model was questioned because it had some prohibitive limits for these new practices."],
+  "translations": ["1970年代创建的关系DBMS逐渐强加于人，直到它在1990年代初成为广泛使用的数据库范例。", "在1990年代，物流公司的许多销售人员开始使用它来存储他们的业务数据。 实际上，它们既没有鼠标也没有用户界面来搜索存储在服务器上的某些信息，这些服务器通常通过专用线路相距很远且相互连接：它们用于通过键盘输入SQL命令，并且能够检索有关特定服务器可用性的相关信息。 产品或原材料在几秒钟内。", "出现了其他几种数据库模型，例如面向对象的DBMS，分层的DBMS，对象关系的DBMS，但是它们的使用受到很大限制。", "从2000年代开始，随着大型互联网公司（Amazon，eBay，Google…）的发展，出现了大量的非结构化数据，并且其增长速度远远超过结构化数据，因为它不再适合RDBMS的关系模式。 集群计算也得到了发展，因此关系模型的统治地位受到质疑，因为它对这些新实践有一些禁止性的限制。"]
+}, {
+  "tag": "H2",
+  "text": "Pioneers of the NoSQL model",
+  "translation": "NoSQL模型的先驱"
+}, {
+  "tag": "P",
+  "text": "The large web companies had to process very large volumes of data, that is why they were the first to face the intrinsic limitations of traditional relational DBMS. These systems, based on a strict application of ACID properties (atomicity, consistency, isolation, durability) and generally designed to run on single computers, quickly posed problems of scalability.",
+  "translation": "大型Web公司必须处理大量数据，这就是为什么它们首先面对传统关系DBMS的固有局限性。 这些系统基于对ACID属性（原子性，一致性，隔离性，耐用性）的严格应用，并且通常设计为在单台计算机上运行，因此很快就带来了可伸缩性问题。"
+}, {
+  "tag": "P",
+  "text": "In order to meet these limits, these companies have started to develop their own database management systems which can operate on distributed hardware architectures and which can process a large volume of data :",
+  "translation": "为了满足这些限制，这些公司已经开始开发自己的数据库管理系统，该系统可以在分布式硬件体系结构上运行并且可以处理大量数据："
+}, {
+  "tag": "UL",
+  "texts": ["Google ( BigTable ),", "Amazon ( DynamoDB ),", "LinkedIn ( Voldemort ),", "Facebook ( Cassandra then HBase ),", "Baidu ( Hypertable )"],
+  "translations": ["Google（BigTable），", "亚马逊（DynamoDB），", "领英（Voldemort），", "Facebook（先是Cassandra，然后是HBase），", "百度（Hypertable）"]
+}, {
+  "tag": "P",
+  "text": "Performance remains good with the ramp-up by simply multiplying the number of servers, a reasonable solution with the drop in costs, in particular, if revenues grow with the development of the activity.",
+  "translation": "通过简单地增加服务器数量就可以保持良好的性能，这是一个合理的解决方案，可以降低成本，尤其是当收入随着活动的发展而增长时。"
+}, {
+  "tag": "H1",
+  "text": "1. INTRODUCTION",
+  "translation": "1.引言"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*73e3UUYS_SsBYZfLvdOcfQ.png?q=20",
+  "type": "image",
+  "file": "1!73e3UUYS_SsBYZfLvdOcfQ.png"
+}, {
+  "tag": "H2",
+  "text": "- SQL :",
+  "translation": "-SQL："
+}, {
+  "tag": "P",
+  "text": "SQL is the acronym for Structured Query Language. It has been known for a long time to all IT engineers who have had to quickly search for information in large relational databases (DBMS). SQL is widely used today because it is one of the most structured and fastest database organization and querying devices; it comes in different names which show that there are various adaptations, such as Oracle’s MySQL and Microsoft’s SQL Server. In addition, SQL is the most recommended option by many companies due to its predefined structure and schemas.",
+  "translation": "SQL是结构化查询语言的缩写。 所有必须在大型关系数据库（DBMS）中快速搜索信息的IT工程师早就知道了。 由于SQL是结构化程度最高，最快的数据库组织和查询设备之一，因此如今已被广泛使用。 它有不同的名称，表明存在各种改编，例如Oracle的MySQL和Microsoft的SQL Server。 另外，由于SQL的预定义结构和架构，SQL是许多公司最推荐的选择。"
+}, {
+  "tag": "H2",
+  "text": "- NoSQL :",
+  "translation": "-NoSQL："
+}, {
+  "tag": "P",
+  "text": "The acronym “NoSQL” has two interpretations which are not clear-cut today:",
+  "translation": "首字母缩写词“ NoSQL”具有两种目前尚不明确的解释："
+}, {
+  "tag": "UL",
+  "texts": ["For some it is “No SQL”, that is to say, the use of another query language different from SQL.", "For the others, it is “Not Only SQL”, but that is also to say, the combined use of SQL with other information retrieval tools."],
+  "translations": ["对某些人来说是“ No SQL”，也就是说，使用了另一种不同于SQL的查询语言。", "在其他情况下，它不仅是“ SQL”，也就是将SQL与其他信息检索工具结合使用。"]
+}, {
+  "tag": "P",
+  "text": "So the term relates as much to technical characteristics as to a historic generation of DBMS that emerged around the 2010s. The main problem that led to inventing NoSQL was to solve the fact that the same database on a website could be used at the same time worldwide by millions of users; the typical problem of a company like Amazon…",
+  "translation": "因此，该术语与技术特性以及在2010年代左右出现的具有历史意义的DBMS一样重要。 导致发明NoSQL的主要问题是解决以下事实：网站上的同一数据库可以在全球范围内同时被数百万的用户使用。 像亚马逊这样的公司的典型问题..."
+}, {
+  "tag": "P",
+  "text": "What we are therefore trying to achieve with NoSQL is to reduce the complexity of the query language and to simplify the architecture of the database. These databases consist of column-oriented, document-oriented, graph-oriented and key / value-oriented data. The NoSQL family is made up of various products, each product has a unique set of functionalities.",
+  "translation": "因此，我们试图用NoSQL来实现的是降低查询语言的复杂性并简化数据库的体系结构。 这些数据库由面向列，面向文档，面向图和键/值的数据组成。 NoSQL系列由各种产品组成，每个产品都有一套独特的功能。"
+}, {
+  "tag": "H2",
+  "text": "- Main Differences :",
+  "translation": "-主要区别："
+}, {
+  "tag": "UL",
+  "texts": ["SQL databases have a predefined schema while NoSQL databases have a dynamic schema for unstructured data.", "SQL databases are scalable vertically, while NoSQL databases are scalable horizontally. SQL databases are scaled by increasing the power of the hardware like CPU, RAM or SSD. The databases NoSQL are scaled by increasing the number of data servers to reduce the load. It’s like adding more floors to the same building versus adding more buildings to the neighborhood.", "SQL databases are table-based databases while NoSQL databases are databases based on key-value pairs. This means that SQL databases represent data in the form of tables composed of a certain number of rows that represents the data, while NoSQL databases are the collection of key-value pairs, of documents, of graphical databases, etc.", "SQL databases use SQL (structured query language) to define and manipulate data, which is very powerful. In the NoSQL database, queries focus on document collection. Sometimes it is also called UnQL (Unstructured Query Language). The syntax for using UnQL varies greatly between the different existing NoSQL databases."],
+  "translations": ["SQL数据库具有预定义的架构，而NoSQL数据库具有用于非结构化数据的动态架构。", "SQL数据库可垂直扩展，而NoSQL数据库可水平扩展。 通过增加CPU，RAM或SSD等硬件的功能来扩展SQL数据库。 通过增加数据服务器的数量以减少负载来扩展NoSQL数据库。 这就像在同一栋建筑物中添加更多楼层，而不是在附近添加更多建筑物。", "SQL数据库是基于表的数据库，而NoSQL数据库是基于键值对的数据库。 这意味着SQL数据库以表的形式表示数据，该表由表示数据的一定数量的行组成，而NoSQL数据库是键值对，文档，图形数据库等的集合。", "SQL数据库使用SQL（结构化查询语言）来定义和操作数据，这非常强大。 在NoSQL数据库中，查询集中于文档收集。 有时也称为UnQL（非结构化查询语言）。 在不同的现有NoSQL数据库之间，使用UnQL的语法差异很大。"]
+}, {
+  "tag": "H1",
+  "text": "It’s Time to Familiarize Yourself With NoSQL Databases More Than Ever",
+  "translation": "现在是时候让您比以往更熟悉NoSQL数据库了"
+}, {
+  "tag": "H2",
+  "text": "SQL vs NoSQL: the difficult choice of the right database (and how to do it right)",
+  "translation": "SQL vs NoSQL：正确数据库的艰难选择（以及正确的方法）"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*y6ANwgV_R6OUzN7DnxVwxg.jpeg?q=20",
+  "caption": "Photo by Kaleidico on Unsplash",
+  "type": "image",
+  "file": "1!y6ANwgV_R6OUzN7DnxVwxg.jpeg"
+}, {
+  "tag": "P",
+  "text": "Data is at the heart of the information system. The efficiency of its organization and its operation is a major concern for any company. At the time of Big Data, the business expertise and understanding the existing technical solutions is very essential. The technological landscape is evolving very quickly and companies must at the same time continue to assess and choose the databases that will meet their future needs and support their growth.",
+  "translation": "数据是信息系统的核心。 组织的效率和运营是任何公司的主要关注点。 在大数据时代，业务专业知识和对现有技术解决方案的理解至关重要。 技术领域正在迅速发展，公司必须同时继续评估和选择能够满足其未来需求并支持其增长的数据库。"
+}, {
+  "tag": "P",
+  "text": "Relational databases have been used for decades to store data, and they still represent a viable solution for many use cases. NoSQL databases were created in response to the limitations of relational database technology. Compared to relational databases, NoSQL databases are more scalable and offer higher performance, and their data model corrects several weaknesses of the relational model. In this article, I will try to throw light on the challenges, benefits and process of migrating from a RDBMS to NoSQL.",
+  "translation": "关系数据库已经用于存储数据数十年了，它们仍然是许多用例的可行解决方案。 为了响应关系数据库技术的局限性，创建了NoSQL数据库。 与关系数据库相比，NoSQL数据库具有更高的可伸缩性和更高的性能，并且它们的数据模型纠正了关系模型的一些弱点。 在本文中，我将尝试阐明从RDBMS迁移到NoSQL的挑战，好处和过程。"
+}, {
+  "tag": "P",
+  "text": "In general, NoSQL databases were designed to solve the problems of data processing in volume, multi-sources and multi-formats, in Big Data environments. They offer a new approach to meet volume requirementsand new types of data.",
+  "translation": "通常，NoSQL数据库旨在解决大数据环境中批量，多源和多格式的数据处理问题。 他们提供了一种新方法来满足容量要求和新型数据。"
+}, {
+  "tag": "P",
+  "text": "Nowadays, the number of NoSQL databases has become more and more important. It is imperative to know their differences to adopt the right technology for the right application.",
+  "translation": "如今，NoSQL数据库的数量变得越来越重要。 必须了解它们之间的差异，以便为正确的应用采用正确的技术。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Kamal Chouhbi的文章《It’s Time to Familiarize Yourself With NoSQL Databases More Than Ever》，参考：https://towardsdatascience.com/its-time-to-familiarize-yourself-with-nosql-databases-more-than-ever-5fb1f65c22b1)",
+  "translation": "（本文翻译自Kamal Chouhbi的文章，《现在比以往任何时候都更熟悉NoSQL数据库》，参考：https：//towardsdatascience.com/its-time-to-familiarize-yourself-with-nosql-databases-more- 比以往5fb1f65c22b1）"
+}]

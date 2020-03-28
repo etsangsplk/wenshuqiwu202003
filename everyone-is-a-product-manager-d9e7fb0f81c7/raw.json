@@ -1,0 +1,135 @@
+[{
+  "tag": "H1",
+  "text": "Everyone is a Product Manager",
+  "translation": "每个人都是产品经理"
+}, {
+  "tag": "H2",
+  "text": "From the perspective of a software engineer",
+  "translation": "从软件工程师的角度"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/40/1*cyB9X7xKOQlp-nl9CzgxSw.jpeg?q=20",
+  "caption": "Photo by Shane Rounce on Unsplash",
+  "type": "image",
+  "file": "1!cyB9X7xKOQlp-nl9CzgxSw.jpeg"
+}, {
+  "tag": "P",
+  "text": "I think one of (I mean, one of) the biggest problems with college is they don’t teach you when you’re learning engineering that your job as an engineer isn’t to solve technical problems, resolve type issues, or architect systems.",
+  "translation": "我认为大学中最大的问题之一（是我的意思之一）是，当您学习工程学时，他们不会教您作为工程师的工作不是解决技术问题，解决类型问题或架构师系统 。"
+}, {
+  "tag": "P",
+  "text": "Your job as an engineer is to deliver value to stakeholders — which is a very jargony way to say you build things that people want and will pay to use.",
+  "translation": "作为工程师，您的工作是为利益相关者创造价值-这是一种非常粗俗的方式，可以说您构建了人们想要并愿意付费使用的东西。"
+}, {
+  "tag": "P",
+  "text": "But you and I didn’t get into this field because we love products. We love to write code. I mean, we like it when people use our stuff. Praise is nice and so is customer appreciation. But at the end of the day, most of our time is spent writing code, and we like that.",
+  "translation": "但是您和我没有进入这个领域，因为我们喜欢产品。 我们喜欢编写代码。 我的意思是，当人们使用我们的东西时，我们会喜欢它。 赞美是很好的，客户赞赏也是。 但是，归根结底，我们大部分时间都花在编写代码上，我们喜欢这样。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*Cn_l6JjQXhpYzZTMA4sGjQ.jpeg?q=20",
+  "caption": "A chill PM telling you what to do. Photo by Austin Distel on Unsplash.",
+  "type": "image",
+  "file": "1!Cn_l6JjQXhpYzZTMA4sGjQ.jpeg"
+}, {
+  "tag": "P",
+  "text": "So when a product manager (PM) comes in and tells you that you need to drop the project you’ve been working on and pivot to something else, it can be extremely frustrating.",
+  "translation": "因此，当产品经理（PM）出现并告诉您需要删除您正在从事的项目并转到其他项目时，这可能会非常令人沮丧。"
+}, {
+  "tag": "P",
+  "text": "A young, confident programmer like myself might push back: “This feature is almost done. We need no more than a week!” knowing damn well it’ll take longer than that.",
+  "translation": "像我这样的年轻，自信的程序员可能会后悔：“此功能几乎完成了。 我们只需要一个星期！” 知道该死的时间会更长。"
+}, {
+  "tag": "P",
+  "text": "But your PM (or whoever decides what you build) is stern. “This is the feature you need to build,” they say.",
+  "translation": "但是您的项目经理（或决定您建造项目的人）是严厉的。 他们说：“这是您需要构建的功能。”"
+}, {
+  "tag": "P",
+  "text": "“Ugh! I was in a good spot with that feature. I was developing things quickly, and now I have rebuild my whole context and basically start over.”",
+  "translation": "“啊！ 我在使用该功能方面表现不错。 我当时正在快速开发事物，现在我已经重建了整个环境并从头开始。”"
+}, {
+  "tag": "P",
+  "text": "— Me, a disgruntled programmer (a programmer who’s lost the bigger picture)",
+  "translation": "-我，一个心怀不满的程序员（一个失去了更大视野的程序员）"
+}, {
+  "tag": "P",
+  "text": "Now, I want to keep my job, so I pivot and do the work I’m supposed to do. But I’m not really happy with my PM.",
+  "translation": "现在，我想保留我的工作，所以我要努力去做我应该做的工作。 但是我对我的PM并不是很满意。"
+}, {
+  "tag": "H2",
+  "text": "This is wrong. This is how teams fall apart. This is how bad products get built.",
+  "translation": "错了 这就是团队崩溃的方式。 这就是不良产品的制造方式。"
+}, {
+  "tag": "P",
+  "text": "Remember when I said a developer's job is to build products people want to use? Good products? Well, you won’t build a good product if you aren’t happy and you feel pushed around by the product team.",
+  "translation": "还记得我说过开发人员的工作是开发人们想要使用的产品吗？ 好产品？ 好吧，如果您不满意并且感到被产品团队推销，那么您就不会生产出优质的产品。"
+}, {
+  "tag": "P",
+  "text": "Uncle Bob has a great quote about this:",
+  "translation": "鲍伯叔叔对此有很好的报价："
+}, {
+  "tag": "P",
+  "text": "“It is easy for developers to identify with each other. It’s easy to fall into an us versus them attitude with your employer. Professionals avoid this at all costs.”",
+  "translation": "“开发人员很容易彼此识别。 与您的雇主形成一种与我们和他们相对的态度很容易。 专业人士不惜一切代价避免这种情况。”"
+}, {
+  "tag": "P",
+  "text": "— Robert C. Martin, “The Clean Coder”",
+  "translation": "-罗伯特·马丁（Robert C. Martin），“清洁编码员”"
+}, {
+  "tag": "P",
+  "text": "A real professional doesn’t hold a grudge against their employer.",
+  "translation": "真正的专业人士不会对雇主怀恨在心。"
+}, {
+  "tag": "P",
+  "text": "You must remember your PM is asking you to switch what you’re working on because they believe that’s the most important thing to build at that time.",
+  "translation": "您必须记住，您的PM要求您切换工作范围，因为他们认为这是当时最重要的事情。"
+}, {
+  "tag": "P",
+  "text": "They have pressure — from customers, finance people, other managers, higher-ups, etc. — all pushing them to these decisions. It’s your job. Furthermore, here’s another quote from Uncle Bob:",
+  "translation": "他们承受着来自客户，财务人员，其他经理，高层人士等的压力，所有这些都迫使他们做出这些决定。 这是你的工作。 此外，这是鲍伯叔叔的另一句名言："
+}, {
+  "tag": "P",
+  "text": "“Your employer’s problems are your problems. You need to understand what those problems are and work toward the best solutions. As you develop a system you need to put yourself in your employer’s shoes and make sure that the features you are developing are really going to address your employer’s needs.”",
+  "translation": "“您的雇主的问题就是您的问题。 您需要了解这些问题是什么，并努力寻求最佳解决方案。 在开发系统时，您需要置身于雇主的立场，并确保所开发的功能确实能够满足您雇主的需求。”"
+}, {
+  "tag": "P",
+  "text": "— Robert C. Martin, “The Clean Coder”",
+  "translation": "-罗伯特·马丁（Robert C. Martin），“清洁编码员”"
+}, {
+  "tag": "P",
+  "text": "When you address your employer’s needs — i.e., your product manager’s needs — you address everyone’s needs.",
+  "translation": "当您满足雇主的需求（即产品经理的需求）时，您就会满足每个人的需求。"
+}, {
+  "tag": "P",
+  "text": "Remember, if there’s no product, you have nothing to work on in the first place. If your product is bad, no one will use it, no one will pay to develop it, and you’re out of a job.",
+  "translation": "请记住，如果没有产品，那么您一开始就不需要任何工作。 如果您的产品很差，没有人会使用它，没有人会付费以开发它，那么您就失业了。"
+}, {
+  "tag": "P",
+  "text": "But that doesn’t mean you have to lie down like a dog or take orders blindly. Again, your job is to build a great product, and if you don’t believe what you are building is great, it’s your job to push back.",
+  "translation": "但这并不意味着您必须像狗一样躺下或盲目下订单。 再说一次，您的工作就是打造出色的产品，如果您不相信自己所打造的产品是很棒的，那么您的工作就是退后一步。"
+}, {
+  "tag": "P",
+  "text": "When I say push back, I mean, approach your PM in a manner that’s objective and reasonable. Come to the table with an attitude of understanding so you both can get on the same page about what the most important thing to build is. Once you have a conversation about where everyone is coming from, you can easily hop on board to build a great product.",
+  "translation": "当我说后退时，我的意思是，以客观和合理的方式接近您的PM。 带着理解的态度来到桌子上，这样你们就可以在同一页上了解最重要的内容是什么。 在就每个人的来历进行了交谈之后，您就可以轻松跳上脚步，打造出出色的产品。"
+}, {
+  "tag": "P",
+  "text": "And sometimes you might be right. You, as a developer, have insight into the product that’s different than others. You might have a use case in your brain no one has thought of. Bring it up! Get stakeholders on the same page as you. Bring facts to the table, and argue your side rationally.",
+  "translation": "有时您可能是对的。 作为开发人员，您对与其他产品不同的产品有深刻的了解。 您可能没有人想到过大脑中的用例。 提出来！ 在与您相同的页面上找到利益相关者。 提出事实，并合理地辩护你。"
+}, {
+  "tag": "P",
+  "text": "This is how you foster a culture where ideas win, not egos. This is how we forego politics in software as much as possible.",
+  "translation": "通过这种方式，您可以培养一种文化，在这种文化中，创意会赢得胜利，而不是自负。 这就是我们尽可能地放弃软件政治的方式。"
+}, {
+  "tag": "P",
+  "text": "This is how you build the best product. This is what I mean when I say everyone is a product manager. We, even as developers, who focus heavily on minute technical details and have to learn a new language every year, also have to focus on building great products. With no product, we have nothing.",
+  "translation": "这就是您打造最佳产品的方式。 这就是我说每个人都是产品经理时的意思。 即使是作为开发人员，我们也非常关注微小的技术细节，并且每年都必须学习一种新的语言，我们也必须专注于打造出色的产品。 没有产品，我们什么都没有。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*SJxk7znLy-oUOvFqsLPgtg.jpeg?q=20",
+  "caption": "Corny but nice picture. We have to be a team. Photo by Perry Grone on Unsplash.",
+  "type": "image",
+  "file": "1!SJxk7znLy-oUOvFqsLPgtg.jpeg"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Steven Popovich的文章《Everyone is a Product Manager》，参考：https://medium.com/better-programming/everyone-is-a-product-manager-d9e7fb0f81c7)",
+  "translation": "（本文翻译自史蒂文·波波维奇的文章《每个人都是产品经理》，参考：https：//medium.com/better-programming/everyone-is-a-product-manager-d9e7fb0f81c7）"
+}]

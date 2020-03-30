@@ -1,0 +1,421 @@
+[{
+  "tag": "H1",
+  "text": "Fourier Transformation for a Data Scientist",
+  "translation": "数据科学家的傅立叶变换"
+}, {
+  "tag": "H2",
+  "text": "The article contains a brief intro into Fourier transformation mathematically and its applications in AI.",
+  "translation": "本文简要介绍了数学上的傅立叶变换及其在AI中的应用。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*T4SFTnoto7DnShDzdvyRbw.png?q=20",
+  "caption": "Pic Credit: Shutterstock",
+  "type": "image",
+  "file": "1!T4SFTnoto7DnShDzdvyRbw.png"
+}, {
+  "tag": "H1",
+  "text": "Introduction",
+  "translation": "介绍"
+}, {
+  "tag": "P",
+  "text": "The Fourier Transform is one of the deepest insights ever made in mathematics but unfortunately, the meaning is buried deep inside some ridiculous equations.",
+  "translation": "傅里叶变换是有史以来最深刻的数学见解之一，但不幸的是，其含义已深深地埋在一些荒谬的方程式中。"
+}, {
+  "tag": "P",
+  "text": "The Fourier transform is a way of splitting something up into a bunch of sine waves. As usual, the name comes from some person who lived a long time ago called Fourier.",
+  "translation": "傅立叶变换是一种将某些东西分解为一堆正弦波的方法。 像往常一样，这个名字来自一个很久以前住的人，叫做傅里叶。"
+}, {
+  "tag": "P",
+  "text": "In mathematical terms, The Fourier Transform is a technique that transforms a signal into its constituent components and frequencies.",
+  "translation": "用数学术语来说，傅里叶变换是一种将信号转换为其组成成分和频率的技术。"
+}, {
+  "tag": "P",
+  "text": "Fourier transform is widely used not only in signal (radio, acoustic, etc.) processing but also in image analysis eg. edge detection, image filtering, image reconstruction, and image compression. One example: Fourier transform of transmission electron microscopy images helps to check the periodicity of the samples. periodicity — means pattern. Fourier transform of your data can expand accessible information about the analyzed sample.",
+  "translation": "傅里叶变换不仅广泛用于信号（无线电，声音等）处理，而且还广泛用于图像分析（例如，傅里叶变换）。 边缘检测，图像过滤，图像重建和图像压缩。 一个例子：透射电子显微镜图像的傅立叶变换有助于检查样品的周期性。 周期性-表示模式。 数据的傅立叶变换可以扩展有关分析样品的可访问信息。"
+}, {
+  "tag": "P",
+  "text": "To understand it better consider a signal x(t):",
+  "translation": "为了更好地理解它，请考虑信号x（t）："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*IoaHbmZrXK9mEEPtcqUieg.png?q=20",
+  "type": "image",
+  "file": "1!IoaHbmZrXK9mEEPtcqUieg.png"
+}, {
+  "tag": "P",
+  "text": "If we do the same for another signal and select the same moment in time and we measure its amplitude.",
+  "translation": "如果我们对另一个信号执行相同操作，并选择相同的时间点，我们将测量其幅度。"
+}, {
+  "tag": "P",
+  "text": "Consider another signal y(t):",
+  "translation": "考虑另一个信号y（t）："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*rrKgEBW0oorNJ9FDrgVIOg.png?q=20",
+  "type": "image",
+  "file": "1!rrKgEBW0oorNJ9FDrgVIOg.png"
+}, {
+  "tag": "P",
+  "text": "What happens when we emit these two signals at the same time or if we add them together?",
+  "translation": "当我们同时发出这两个信号或将它们加在一起时会发生什么？"
+}, {
+  "tag": "P",
+  "text": "When we emit these two signals at the same moment of time, we get a new signal which is the sum of the amplitude of these two signals. This is so because these two signals are being added together.",
+  "translation": "当我们在同一时间发射这两个信号时，我们得到一个新信号，它是这两个信号的振幅之和。 之所以如此，是因为这两个信号被加在一起。"
+}, {
+  "tag": "P",
+  "text": "Sum both the signals: z(t) = x(t) + y(t)",
+  "translation": "将两个信号相加：z（t）= x（t）+ y（t）"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*PjrDlJLH13lodaI3jY0Axw.png?q=20",
+  "type": "image",
+  "file": "1!PjrDlJLH13lodaI3jY0Axw.png"
+}, {
+  "tag": "P",
+  "text": "If we are given only one signal(which is the sum of signals x(t) and y(t)).Can we recover the original signals x(t) and y(t)?",
+  "translation": "如果只给出一个信号（x（t）和y（t）之和），我们能否恢复原始信号x（t）和y（t）？"
+}, {
+  "tag": "P",
+  "text": "Yes. That’s what a Fourier transform does. It takes up a signal and decomposes it to the frequencies that made it up.",
+  "translation": "是。 这就是傅里叶变换的作用。 它吸收信号并将其分解为组成它的频率。"
+}, {
+  "tag": "P",
+  "text": "In our example, a Fourier transform would decompose the signal z(t) into its constituent frequencies like signals x(t) and y(t).",
+  "translation": "在我们的示例中，傅立叶变换会将信号z（t）分解成其组成频率，如信号x（t）和y（t）。"
+}, {
+  "tag": "P",
+  "text": "What Fourier transform does is It kind of moves us from the time domain to the frequency domain.",
+  "translation": "傅里叶变换的作用是将我们从时域移到频域。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*TRy4p92YQRwHMxKamo4dsA.png?q=20",
+  "caption": "Source",
+  "type": "image",
+  "file": "1!TRy4p92YQRwHMxKamo4dsA.png"
+}, {
+  "tag": "P",
+  "text": "In case, If anyone is wondering, What if we want to go back from the frequency domain to the time domain?",
+  "translation": "如果有人怀疑，我们是否要从频域回到时域呢？"
+}, {
+  "tag": "P",
+  "text": "We can do so by using the Inverse Fourier transform(IFT).",
+  "translation": "我们可以使用傅立叶逆变换（IFT）来实现。"
+}, {
+  "tag": "H1",
+  "text": "Maths you need to know.",
+  "translation": "您需要知道的数学。"
+}, {
+  "tag": "P",
+  "text": "“Any continuous signal in the time domain can be represented uniquely and unambiguously by an infinite series of sinusoids.”",
+  "translation": "“时域中的任何连续信号都可以由无穷多个正弦波来唯一唯一地表示。”"
+}, {
+  "tag": "P",
+  "text": "What does this mean?",
+  "translation": "这是什么意思？"
+}, {
+  "tag": "P",
+  "text": "It means that, If we have a signal which is generated by some function x(t) then we can come up with another function f(t) such that :",
+  "translation": "这意味着，如果我们有一个由某个函数x（t）生成的信号，那么我们可以提出另一个函数f（t）："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*L2JqyYvSZI44c_Gk4NotQg.gif?q=20",
+  "type": "image",
+  "file": "1!L2JqyYvSZI44c_Gk4NotQg.gif"
+}, {
+  "tag": "P",
+  "text": "So, It doesn’t matter how strong the signal is, we can find a function like f(t) which is a sum of an infinite series of sinusoids that will actually represent the signal perfectly.",
+  "translation": "因此，无论信号有多强，我们都可以找到f（t）之类的函数，它是无穷多个正弦曲线之和，实际上可以完美地表示信号。"
+}, {
+  "tag": "P",
+  "text": "Now, the question that arises now is, How do we find the coefficients here in the above equation because these are the values that would determine the shape of the output and thus the signal.",
+  "translation": "现在，现在出现的问题是，如何在上式中找到系数，因为这些值将决定输出的形状，从而决定信号的形状。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*WGcrNuQ3ZlQrQrYI.png?q=20",
+  "type": "image",
+  "file": "0!WGcrNuQ3ZlQrQrYI.png"
+}, {
+  "tag": "P",
+  "text": "So, to get these coefficients we use Fourier transforms and the result from Fourier transform is a group of coefficients. So, we use X(w) to denote the Fourier coefficients and it is a function of frequency which we get by solving the integral such that :",
+  "translation": "因此，为了获得这些系数，我们使用傅立叶变换，并且傅立叶变换的结果是一组系数。 因此，我们使用X（w）来表示傅立叶系数，它是频率的函数，是通过求解以下积分得到的："
+}, {
+  "tag": "P",
+  "text": "The Fourier transform is represented as an indefinite integral:",
+  "translation": "傅立叶变换表示为不定积分："
+}, {
+  "tag": "P",
+  "text": "X(w) : Fourier Transformx(t) : Inverse Fourier transform",
+  "translation": "X（w）：傅立叶变换x（t）：傅立叶逆变换"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*Rm22_xr2sS2Zi2VDWjNszQ.png?q=20",
+  "type": "image",
+  "file": "1!Rm22_xr2sS2Zi2VDWjNszQ.png"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*4f74dqg73UvjUk_xUxe1xw.png?q=20",
+  "caption": "Fourier Transform and Inverse Fourier transform",
+  "type": "image",
+  "file": "1!4f74dqg73UvjUk_xUxe1xw.png"
+}, {
+  "tag": "P",
+  "text": "Also, when we actually solve the above integral, we get these complex numbers where a and b correspond to the coefficients that we are after.",
+  "translation": "同样，当我们实际求解上述积分时，我们得到这些复数，其中a和b对应于我们要求的系数。"
+}, {
+  "tag": "P",
+  "text": "The continuous Fourier transform converts a time-domain signal of infinite duration into a continuous spectrum composed of an infinite number of sinusoids. In practice, we deal with signals that are discretely sampled, usually at constant intervals, and of finite duration or periodic. For this purpose, the classical Fourier transform algorithm can be expressed as a Discrete Fourier transform (DFT), which converts a finite sequence of equally-spaced samples of a function into a same-length sequence of equally-spaced samples of the discrete-time Fourier transform:",
+  "translation": "连续傅立叶变换将无限持续时间的时域信号转换成由无限数量的正弦波组成的连续频谱。 实际上，我们处理的是离散采样的信号，通常以固定间隔，有限的持续时间或周期性地进行。 为此，经典傅里叶变换算法可以表示为离散傅里叶变换（DFT），该函数将函数的等距样本的有限序列转换为离散时间的等距样本的等长序列 傅里叶变换："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*PCIM2qWdn0Bm1VXo_vc_zA.gif?q=20",
+  "type": "image",
+  "file": "1!PCIM2qWdn0Bm1VXo_vc_zA.gif"
+}, {
+  "tag": "P",
+  "text": "So, this is essentially the Discrete Fourier Transform. We can do this computation and it will produce a complex number in the form of a + ib where we have two coefficients for the Fourier series.",
+  "translation": "因此，这本质上是离散傅立叶变换。 我们可以进行此计算，并且将产生+ ib形式的复数，其中对于傅立叶级数有两个系数。"
+}, {
+  "tag": "P",
+  "text": "Now, we know how to sample signals and how to apply a Discrete Fourier Transform. The last thing we would like to do is, we would like to get rid of the complex number i because it's not supported in mllib or systemML by using something known as Euler's formula which states :",
+  "translation": "现在，我们知道了如何对信号进行采样以及如何应用离散傅立叶变换。 我们想做的最后一件事是，我们想摆脱复数i，因为在mllib或systemML中不支持复数，因为它使用称为Euler的公式来表示："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*DJQVtcHwHz_GcSM6_7n6Pw.png?q=20",
+  "type": "image",
+  "file": "1!DJQVtcHwHz_GcSM6_7n6Pw.png"
+}, {
+  "tag": "P",
+  "text": "So, If we plug Euler’s formula in the Fourier Transform equation and solve it, it will produce a real and imaginary part.",
+  "translation": "因此，如果将欧拉公式插入傅立叶变换方程并求解，它将产生实部和虚部。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*G7TZGUY_6JMh1fbpxD3PXg.gif?q=20",
+  "type": "image",
+  "file": "1!G7TZGUY_6JMh1fbpxD3PXg.gif"
+}, {
+  "tag": "P",
+  "text": "As you can see X consist of a complex number of the format a+ib or a-ib. So if you solve the above equation you will get the Fourier coefficients a and b.",
+  "translation": "如您所见，X由a + ib或a-ib格式的复数组成。 因此，如果您求解上述方程，您将获得傅立叶系数a和b。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*-DNUx4tWyr_DZ-5fTQFfew.gif?q=20",
+  "type": "image",
+  "file": "1!-DNUx4tWyr_DZ-5fTQFfew.gif"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*MXEbhGLDj5M23k6_7fWq9w.gif?q=20",
+  "type": "image",
+  "file": "1!MXEbhGLDj5M23k6_7fWq9w.gif"
+}, {
+  "tag": "P",
+  "text": "Now if you just put the values of a and b in the equation of f(t) then you can define a signal in terms of its frequency.",
+  "translation": "现在，如果仅将a和b的值放在f（t）的等式中，则可以根据信号的频率定义信号。"
+}, {
+  "tag": "P",
+  "text": "In general practice, we use Fast Fourier Transformation(FFT) algorithm which recursively divides the DFT in smaller DFT’s bringing down the needed computation time drastically. The time complexity of DFT is 2N² while that of FFT is2NlogN.",
+  "translation": "通常，我们使用快速傅里叶变换（FFT）算法，该算法将DFT递归地划分为较小的DFT，从而大大减少了所需的计算时间。 DFT的时间复杂度为2N²，而FFT的时间复杂度为2NlogN。"
+}, {
+  "tag": "H1",
+  "text": "Why are cosine and sine functions used when representing a signal?",
+  "translation": "为什么表示信号时要使用余弦和正弦函数？"
+}, {
+  "tag": "P",
+  "text": "While Sine and Cosine functions were originally defined based on right-angle triangles, looking at that point of view in the current scenario isn’t really the best thing. You might have been taught to recognize the Sine function as “opposite by hypotenuse”, but now it’s time to have a slightly different point of view.",
+  "translation": "虽然Sine和Cosine函数最初是基于直角三角形定义的，但从当前情况来看，这并不是最好的方法。 您可能已经被教会认识到正弦函数是“斜边对立的”，但是现在该是一个稍微不同的观点了。"
+}, {
+  "tag": "P",
+  "text": "Consider the unit circle :",
+  "translation": "考虑单位圆："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/1*QJxzXsY6XqAWmjyoN12jig.gif?q=20",
+  "type": "image",
+  "file": "1!QJxzXsY6XqAWmjyoN12jig.gif"
+}, {
+  "tag": "P",
+  "text": "on a Cartesian plane. Suppose a line passing through the origin makes an angle θ with the 𝑥-axis in a counterclockwise direction, the point of intersection of the line and the circle is (cos⁡θ, sin⁡θ).",
+  "translation": "在笛卡尔平面上。 假设通过原点的直线与𝑥轴在逆时针方向上形成角度θ，则直线与圆的交点为（cos⁡θ，sin⁡θ）。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*bDv0taHW7ujzVAKx.png?q=20",
+  "type": "image",
+  "file": "0!bDv0taHW7ujzVAKx.png"
+}, {
+  "tag": "P",
+  "text": "Think about it. Does this point of view correlate with the earlier one? Both of the definitions are the same.",
+  "translation": "想一想。 这种观点与较早的观点相关吗？ 这两个定义是相同的。"
+}, {
+  "tag": "P",
+  "text": "Suppose we start to spin the line, by making θ increase linearly. You’d get something like this:",
+  "translation": "假设我们通过使θ线性增加开始旋转直线。 您会得到如下信息："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/0*sHvq0_F1F4oGNScz.gif?q=20",
+  "caption": "Credits",
+  "type": "image",
+  "file": "0!sHvq0_F1F4oGNScz.gif"
+}, {
+  "tag": "P",
+  "text": "The Sine and Cosine functions are arguably the most important periodic functions in several cases:",
+  "translation": "正弦和余弦函数在某些情况下可以说是最重要的周期函数："
+}, {
+  "tag": "OL",
+  "texts": ["The periodic functions of how displacement, velocity, and acceleration change with time in SHM oscillators are sinusoidal functions.", "Every particle has a wave nature and vice versa. This is de Broglie's Wave-Particle duality. Waves are always sinusoidal functions of some physical quantity (such as Electric Field for EM Waves, and Pressure for Sound Waves)."],
+  "translations": ["SHM振荡器中位移，速度和加速度如何随时间变化的周期性函数是正弦函数。", "每个粒子都有波动的性质，反之亦然。 这是德布罗意的波粒对偶。 波始终是某种物理量的正弦函数（例如EM波的电场和声波的压力）。"]
+}, {
+  "tag": "P",
+  "text": "The sound itself is a pressure disturbance that propagates through material media capable of compressing and expanding. It’s the pressure at a point along with the sound wave that varies sinusoidally with time.",
+  "translation": "声音本身就是压力扰动，它通过能够压缩和扩展的材料介质传播。 随声波变化的一点是压力，它随时间呈正弦变化。"
+}, {
+  "tag": "H1",
+  "text": "Convergence in Fourier transformation",
+  "translation": "傅立叶变换的收敛"
+}, {
+  "tag": "P",
+  "text": "If a point travels around a circle at a constant speed, its height above the ground traces a sine function. The speed at which the point moves corresponds to the frequency and the radius of the circle corresponds to the amplitude.",
+  "translation": "如果一个点以恒定的速度绕圆运动，则其在地面上方的高度将跟踪正弦函数。 点移动的速度对应于频率，圆的半径对应于振幅。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/0*cwJARzgjG_g9cCPm.gif?q=20",
+  "type": "image",
+  "file": "0!cwJARzgjG_g9cCPm.gif"
+}, {
+  "tag": "P",
+  "text": "Add 1 more circle,",
+  "translation": "再增加1个圆圈，"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/0*l0zoTQqaOFAFw_6H.gif?q=20",
+  "type": "image",
+  "file": "0!l0zoTQqaOFAFw_6H.gif"
+}, {
+  "tag": "P",
+  "text": "Add 2 more circles,",
+  "translation": "再添加2个圈子，"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/0*qSRvdhTu3L2-O0_u.gif?q=20",
+  "type": "image",
+  "file": "0!qSRvdhTu3L2-O0_u.gif"
+}, {
+  "tag": "P",
+  "text": "Add 9 more circles:",
+  "translation": "再添加9个圈子："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/freeze/max/60/0*up3i1wJ9i92J07UJ.gif?q=20",
+  "type": "image",
+  "file": "0!up3i1wJ9i92J07UJ.gif"
+}, {
+  "tag": "P",
+  "text": "Almost a discrete waveform.",
+  "translation": "几乎是离散的波形。"
+}, {
+  "tag": "P",
+  "text": "Because of the Fourier theorem, we can generate any signal with circles of appropriate frequencies and radii.",
+  "translation": "由于傅立叶定理，我们可以生成具有适当频率和半径的圆的任何信号。"
+}, {
+  "tag": "P",
+  "text": "I used Dan Shiffman’s code from coding challenge #125 to make the animations. You can get the javascript code from his GitHub and can try yourself.",
+  "translation": "我使用了＃125编码挑战中的Dan Shiffman的代码来制作动画。 您可以从他的GitHub获取javascript代码，也可以尝试一下。"
+}, {
+  "tag": "H1",
+  "text": "Fourier Transformation in AI",
+  "translation": "人工智能中的傅立叶变换"
+}, {
+  "tag": "P",
+  "text": "Fourier Transformation is a linear function, to induce non-linearity. Convolutions are used.",
+  "translation": "傅立叶变换是线性函数，可引起非线性。 使用卷积。"
+}, {
+  "tag": "P",
+  "text": "Fourier Transformation of the product of 2 signals is the convolution of the 2 signals.",
+  "translation": "2个信号的乘积的傅立叶变换是2个信号的卷积。"
+}, {
+  "tag": "P",
+  "text": "Let x(t) and y(t) be two functions with convolution X(t)*Y(t), and F represents Fourier transformation, then",
+  "translation": "令x（t）和y（t）是两个具有卷积X（t）* Y（t）的函数，而F表示傅立叶变换，则"
+}, {
+  "tag": "P",
+  "text": "F{x(t).y(t)} = X(t)*Y(t)",
+  "translation": "F {x（t）.y（t）} = X（t）* Y（t）"
+}, {
+  "tag": "P",
+  "text": "Remember the fact that a convolution in the time domain is a multiplication in the frequency domain. This is how Fourier Transform is mostly used in machine learning and more specifically deep learning algorithms.",
+  "translation": "请记住，时域中的卷积是频域中的乘法。 这就是傅立叶变换主要用于机器学习，尤其是深度学习算法的方式。"
+}, {
+  "tag": "P",
+  "text": "I’ll take Convolutional Neural Networks, CNNs as an example;",
+  "translation": "我将以卷积神经网络（CNN）为例；"
+}, {
+  "tag": "P",
+  "text": "90% of computations in CNNs are convolutions and there have been many approaches to reduce the intensity of such computations, one of them is Fast Fourier Transform (FFT).",
+  "translation": "CNN中90％的计算都是卷积，并且有许多方法可以降低这种计算的强度，其中之一是快速傅立叶变换（FFT）。"
+}, {
+  "tag": "P",
+  "text": "Instead of convolutions, the input and filter matrices are converted into the frequency domain by FFT, to do multiplications. Then, the output is converted back into the time domain by Inverse FFT (IFFT).",
+  "translation": "代替卷积，输入和滤波器矩阵通过FFT转换到频域，以进行乘法。 然后，通过逆FFT（IFFT）将输出转换回时域。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*3wqTkVekqCt2gzLt59FIDg.png?q=20",
+  "type": "image",
+  "file": "1!3wqTkVekqCt2gzLt59FIDg.png"
+}, {
+  "tag": "P",
+  "text": "Another use of FFT is that it can be used for dimensionality reduction or feature extraction.",
+  "translation": "FFT的另一用途是可用于降维或特征提取。"
+}, {
+  "tag": "P",
+  "text": "When each sample in the dataset is a signal (time series, or images, etc.), it may consist of thousands of samples. But they might actually correspond to just a few points in the Fourier domain (especially if there is some periodicity). This simplifies the problem a lot.",
+  "translation": "当数据集中的每个样本都是信号（时间序列或图像等）时，它可能包含数千个样本。 但是它们实际上可能只对应于傅立叶域中的几个点（特别是如果存在一定的周期性）。 这大大简化了问题。"
+}, {
+  "tag": "P",
+  "text": "Or sometimes using the Fourier domain might provide translation-invariance. That is, even if there are lags between the signals, such variances will not affect their presentation in the Fourier domain.",
+  "translation": "有时使用傅立叶域可能会提供平移不变性。 也就是说，即使信号之间存在滞后，这种方差也不会影响它们在傅立叶域中的表示。"
+}, {
+  "tag": "H1",
+  "text": "Python implementation of Fourier Transform",
+  "translation": "傅立叶变换的Python实现"
+}, {
+  "tag": "P",
+  "text": "The simplest possible implementation of FFT can be done using numpy and scipy python libraries.",
+  "translation": "可以使用numpy和scipy python库完成FFT的最简单实现。"
+}, {
+  "tag": "PRE",
+  "text": "%matplotlib inlineimport numpy as npimport matplotlib.pyplot as pltimport scipy.fftpack# Number of samplepointsN = 600# sample spacingT = 1.0 / 800.0x = np.linspace(0.0, N*T, N)y = np.sin(50.0 * 2.0*np.pi*x) + 0.5*np.sin(80.0 * 2.0*np.pi*x)yf = scipy.fftpack.fft(y)xf = np.linspace(0.0, 1.0/(2.0*T), N/2)fig, ax = plt.subplots()ax.plot(xf, 2.0/N * np.abs(yf[:N//2]))plt.show()",
+  "translation": "％matplotlib inlineimport numpy作为npimport matplotlib.pyplot作为pltimport scipy.fftpack＃采样点数N = 600＃采样间距T = 1.0 / 800.0x = np.linspace（0.0，N * T，N）y = np.sin（50.0 * 2.0 * np.pi * x）+ 0.5 * np.sin（80.0 * 2.0 * np.pi * x）yf = scipy.fftpack.fft（y）xf = np.linspace（0.0，1.0 /（2.0 * T）， N / 2）个图，ax = plt.subplots（）ax.plot（xf，2.0 / N * np.abs（yf [：N // 2]））plt.show（）"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*oAAdPPSiCzrvb1ikIsPVIA.png?q=20",
+  "caption": "FFT plot",
+  "type": "image",
+  "file": "1!oAAdPPSiCzrvb1ikIsPVIA.png"
+}, {
+  "tag": "H1",
+  "text": "Conclusion",
+  "translation": "结论"
+}, {
+  "tag": "P",
+  "text": "The FFT is used in digital recording, sampling, additive synthesis and pitch correction software.",
+  "translation": "FFT用于数字记录，采样，加法合成和音高校正软件。"
+}, {
+  "tag": "P",
+  "text": "The FFT’s importance derives from the fact that it has made working in the frequency domain equally computationally feasible as working in the temporal or spatial domain. Some of the important applications of the FFT include:",
+  "translation": "FFT的重要性源于以下事实：它使在频域中的工作与在时域或空间域中的工作在计算上同样可行。 FFT的一些重要应用包括："
+}, {
+  "tag": "UL",
+  "texts": ["Fast large-integer and polynomial multiplication", "Efficient matrix-vector multiplication for Toeplitz, circulant and other structured matrices", "Filtering algorithms", "Fast algorithms for discrete cosine or sine transform (e.g. Fast Discrete Cosine Transform used for JPEG and MPEG/MP3 encoding and decoding).", "Fast Chebyshev approximation.", "Solving difference equations.", "Computation of isotopic distributions."],
+  "translations": ["快速大整数和多项式乘法", "Toeplitz，循环矩阵和其他结构化矩阵的高效矩阵向量乘法", "过滤算法", "离散余弦或正弦变换的快速算法（例如用于JPEG和MPEG / MP3编码和解码的快速离散余弦变换）。", "快速切比雪夫逼近。", "求解差分方程。", "同位素分布的计算。"]
+}, {
+  "tag": "P",
+  "text": "Well, that’s all for this article hope you guys have enjoyed reading it and I’ll be glad if the article is of any help. Feel free to share your comments/thoughts/feedback in the comment section.",
+  "translation": "好吧，这就是本文的全部内容，希望大家喜欢阅读，如果本文对您有所帮助，我将感到非常高兴。 随时在评论部分分享您的评论/想法/反馈。"
+}, {
+  "tag": "P",
+  "text": "Thanks for reading!!!",
+  "translation": "谢谢阅读！！！"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Nagesh Singh Chauhan的文章《Fourier Transformation for a Data Scientist》，参考：https://medium.com/swlh/fourier-transformation-for-a-data-scientist-1f3731115097)",
+  "translation": "（本文翻译自Nagesh Singh Chauhan的文章，《傅里叶变换为数据科学家》，参考：https：//medium.com/swlh/fourier-transformation-for-a-data-scientist-1f3731115097）"
+}]

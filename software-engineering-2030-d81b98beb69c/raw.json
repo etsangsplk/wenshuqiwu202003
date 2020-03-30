@@ -1,0 +1,217 @@
+[{
+  "tag": "H1",
+  "text": "Software Engineering: 2030",
+  "translation": "软件工程：2030年"
+}, {
+  "tag": "H2",
+  "text": "Knowledge and Skill Investments for the Decade Ahead",
+  "translation": "未来十年的知识和技能投资"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*W1SNw5tyhT9srUFRAi5LRA.jpeg?q=20",
+  "caption": "Photo by Tudor Baciu on Unsplash",
+  "type": "image",
+  "file": "1!W1SNw5tyhT9srUFRAi5LRA.jpeg"
+}, {
+  "tag": "P",
+  "text": "Do you invest in the stock market?",
+  "translation": "您在股票市场投资吗？"
+}, {
+  "tag": "P",
+  "text": "If so, what are the principles you apply when deciding how to invest your hard earned money?",
+  "translation": "如果是这样，在决定如何用您的血汗钱进行投资时，您应遵循哪些原则？"
+}, {
+  "tag": "P",
+  "text": "Do you:",
+  "translation": "你做："
+}, {
+  "tag": "OL",
+  "texts": ["Look exclusively at past performance?", "Follow your close circle of friends, and invest in the same things?", "Follow the market? You trust the masses, most of them are probably right… right?", "Not see the need to invest? You have enough money for your current expenses, and the money you are saving in a low interest account is good enough. But what about the falling purchasing power of that capital over time?", "Carefully research company fundamentals, look at the price-equity ratio, consider future direction etc., assuming you either have some knowledge of the domain, or rely on trusted experts who do?", "Look at broad social, economic and industrial trends, spot areas of promise, and find investments that fit these areas?"],
+  "translations": ["只看过去的表现吗？", "跟随您的朋友圈，并投资于相同的事物？", "跟随市场？ 您相信群众，其中大多数人是对的...对吗？", "没看到需要投资吗？ 您有足够的钱来支付当前的支出，并且您将钱存入低利率帐户中就足够了。 但是随着时间的流逝，该资本的购买力下降了呢？", "假设您对领域有一定了解，或者依赖可信赖的专家，那么仔细研究公司的基础知识，研究价格/股权比率，考虑未来的方向等。", "看一下广泛的社会，经济和工业趋势，发现有希望的领域，并找到适合这些领域的投资？"]
+}, {
+  "tag": "P",
+  "text": "If you’ve ever had money to invest, you’ve given this some thought (hopefully).",
+  "translation": "如果您有足够的资金进行投资，则可以（希望）考虑一下。"
+}, {
+  "tag": "P",
+  "text": "Now let me ask you this:",
+  "translation": "现在让我问你这个："
+}, {
+  "tag": "P",
+  "text": "Have you given as much thought to your knowledge and skill investments, as your monetary investments?",
+  "translation": "您是否对金钱和知识投资给予了足够的考虑？"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/40/1*5v2HiSCo0jpzoduHAfEtLg.jpeg?q=20",
+  "caption": "Photo by Jaredd Craig on Unsplash",
+  "type": "image",
+  "file": "1!5v2HiSCo0jpzoduHAfEtLg.jpeg"
+}, {
+  "tag": "P",
+  "text": "If you’re a Software Engineer like me, you are a knowledge worker. You invest your time, energy and money acquiring knowledge. You expect these knowledge investments will pay dividends, and increase your value to the market (Aside from the satisfaction of constant growth from learning).",
+  "translation": "如果您是像我这样的软件工程师，那么您就是知识工作者。 您花费时间，精力和金钱来获取知识。 您预计这些知识投资将带来红利，并增加您在市场上的价值（除了对学习带来的持续增长感到满意之外）。"
+}, {
+  "tag": "P",
+  "text": "Look back at the 6 broad strategies above, they’re all equally applicable to making knowledge investment choices.",
+  "translation": "回顾上面的6种主要策略，它们都同样适用于做出知识投资选择。"
+}, {
+  "tag": "P",
+  "text": "What has your strategy been? What are some of the areas you’ll want to invest in over the next few years?",
+  "translation": "您的策略是什么？ 在接下来的几年中，您将要投资哪些领域？"
+}, {
+  "tag": "P",
+  "text": "Here are some of the big trends I anticipate. Emphasis on some, because I won’t call out the ones that seem obvious to me (e.g. Artificial Intelligence) or ones I am not personally interested in investing in right now.",
+  "translation": "这是我预期的一些大趋势。 强调一些内容，因为我不会说出对我来说显而易见的内容（例如，人工智能）或我个人目前不感兴趣的那些内容。"
+}, {
+  "tag": "H1",
+  "text": "The rise of the socially and environmentally conscious engineer",
+  "translation": "具有社会和环境意识的工程师的崛起"
+}, {
+  "tag": "P",
+  "text": "The standout challenges of the coming decade will likely be in the areas of",
+  "translation": "未来十年的突出挑战可能会在以下领域"
+}, {
+  "tag": "UL",
+  "texts": ["Clean energy tech", "Economic empowerment and social mobility", "Equal access to quality education", "Food technology for a growing population and,", "Health technology for an ageing one"],
+  "translations": ["清洁能源技术", "经济赋权和社会流动", "平等接受优质教育", "不断增长的人口的食品技术，", "老化技术的健康"]
+}, {
+  "tag": "P",
+  "text": "All while building products and services that have a low environmental impact.",
+  "translation": "同时构建对环境影响小的产品和服务。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*INymnXQhRXpxFLmwo9Cl6w.jpeg?q=20",
+  "caption": "Photo by Jason Blackeye on Unsplash",
+  "type": "image",
+  "file": "1!INymnXQhRXpxFLmwo9Cl6w.jpeg"
+}, {
+  "tag": "P",
+  "text": "It’s going to be a unique time in the short history of software engineers, as we have the opportunity to engage in deeply meaningful and valuable work, and a responsibility to be a defining force for good in all of these areas.",
+  "translation": "这将是软件工程师短暂历史上的一个独特时期，因为我们有机会从事深远而有意义的工作，并有责任在所有这些领域成为决定性力量。"
+}, {
+  "tag": "P",
+  "text": "Actions for Impact:",
+  "translation": "影响行动："
+}, {
+  "tag": "OL",
+  "texts": ["As of December 2019, Angellist shows 250+ startups in clean energy tech, and 1400+ startups in education tech. And those are just the startups! Have you explored their mission and vision? What about the other areas mentioned above?", "As a software engineer, have you thought about the role you can play in the climate crisis? The energy crisis? Or helping to level the playing field for those vastly less fortunate than you?", "What diverse sources of information can you tap, to educate yourself about global issues and the ways in which some people / organizations are tackling the problem?"],
+  "translations": ["截至2019年12月，Angellist展示了250多家清洁能源技术初创公司和1400多家教育技术初创公司。 这些只是初创公司！ 您是否探讨了他们的使命和愿景？ 上面提到的其他领域呢？", "作为软件工程师，您是否考虑过在气候危机中可以扮演的角色？ 能源危机？ 还是为那些比您不幸的人提供了一个公平的竞争环境？", "您可以利用哪些不同的信息源来教育自己有关全球性问题以及某些人/组织解决该问题的方式？"]
+}, {
+  "tag": "H1",
+  "text": "A demand-supply tension for systems programmers",
+  "translation": "系统程序员的需求紧张"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*S0Jg9Nu0K-jpnf_IrZiCvg.jpeg?q=20",
+  "caption": "Photo by Zan on Unsplash",
+  "type": "image",
+  "file": "1!S0Jg9Nu0K-jpnf_IrZiCvg.jpeg"
+}, {
+  "tag": "P",
+  "text": "Hundreds of millions of devices are online with more coming online every second. We know this as the Internet of Things (IoT).",
+  "translation": "数以亿计的设备处于联机状态，而每秒又有更多的设备联机。 我们将其称为物联网（IoT）。"
+}, {
+  "tag": "P",
+  "text": "5G is almost here, which means a lot of these devices, now and in the future, won’t be constrained to a WiFi connection to talk to each other.",
+  "translation": "5G即将来临，这意味着无论现在还是将来，这些设备中的许多设备都不会被WiFi连接所限制。"
+}, {
+  "tag": "P",
+  "text": "This is going to further enable",
+  "translation": "这将进一步启用"
+}, {
+  "tag": "UL",
+  "texts": ["Robotics (everything from drones, to warehouse bots)", "Autonomous systems", "Augmented reality systems", "Data gathering and transmitting sensors etc."],
+  "translations": ["机器人技术（从无人机到仓库机器人的所有事物）", "自治系统", "增强现实系统", "数据收集和传输传感器等"]
+}, {
+  "tag": "P",
+  "text": "We’ll all be living on the “edge”. (Sorry, I couldn’t resist!).",
+  "translation": "我们所有人都将生活在“边缘”。 （对不起，我无法抗拒！）。"
+}, {
+  "tag": "P",
+  "text": "The complexity of “edge” devices is dramatically scaling up with every passing year. I expect this to lead to a spike in demand for Systems engineers and programmers.",
+  "translation": "“边缘”设备的复杂性每年都在急剧增加。 我希望这会导致系统工程师和程序员的需求激增。"
+}, {
+  "tag": "P",
+  "text": "On the supply side, we have numerous issues:",
+  "translation": "在供应方面，我们有很多问题："
+}, {
+  "tag": "OL",
+  "texts": ["Formal computer science course enrollment seems to be dropping year-over-year, all the way from secondary school to college, at least in the US.", "I suspect languages like Python and Javascript are becoming the lingua franca of programming courses, with an increased emphasis on application building, and a reduced emphasis on deep computer science concepts."],
+  "translations": ["从中学到大学，至少在美国，正规计算机科学课程的入学人数似乎逐年下降。", "我怀疑像Python和Javascript这样的语言已成为编程课程的通用语言，越来越强调应用程序构建，而不再强调深层的计算机科学概念。"]
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*d90IFfumJV7zznF8FYvGRw.jpeg?q=20",
+  "caption": "Photo by stem.T4L on Unsplash",
+  "type": "image",
+  "file": "1!d90IFfumJV7zznF8FYvGRw.jpeg"
+}, {
+  "tag": "P",
+  "text": "The silver lining here is that a lot more children are being exposed to robotics and hardware-software interfaces through school, or coding / robotics camps.",
+  "translation": "一线希望是，越来越多的孩子正在通过学校或编码/机器人营地接触机器人技术和硬件-软件界面。"
+}, {
+  "tag": "P",
+  "text": "I should add that a lot of systems programming, particularly for complex applications (think industries like industrial automation, automotive and aerospace) is also done via “Model-Based Design”. High-level block diagrams created in software result in auto-generated code for embedded devices.",
+  "translation": "我还要补充说，很多系统编程，特别是针对复杂应用程序（例如工业自动化，汽车和航空航天等行业）也通过“基于模型的设计”完成。 在软件中创建的高级框图会为嵌入式设备自动生成代码。"
+}, {
+  "tag": "P",
+  "text": "Even here, having a solid knowledge of low-level programming languages and hardware fundamental is inescapable.",
+  "translation": "即使在这里，也必须具备对底层编程语言和硬件基础的扎实知识。"
+}, {
+  "tag": "P",
+  "text": "Actions for impact:",
+  "translation": "影响行动："
+}, {
+  "tag": "OL",
+  "texts": ["Learn a systems / low-level programming language like C or C++, or a more modern systems programming language like Rust.", "Work towards building an awareness of low-level / deeper computer science concepts. You don’t necessarily need a computer science degree for this.", "Buy an Arduino, or maybe a Raspberry Pi. Understand the hardware-software interface, make a few LEDs light up, then do something bigger and cooler.", "Learn about Model-Based Design, and explore some tools that allow you to model your system and generate code from the model."],
+  "translations": ["学习系统/低级编程语言，例如C或C ++，或学习更现代的系统编程语言，例如Rust。", "努力建立对低级/深层计算机科学概念的认识。 您不一定需要计算机科学学位。", "购买Arduino，或购买Raspberry Pi。 了解软硬件接口，使一些LED点亮，然后做一些更大更凉的事情。", "了解基于模型的设计，并探索一些工具，这些工具使您可以对系统进行建模并从模型生成代码。"]
+}, {
+  "tag": "P",
+  "text": "Full Disclosure: Model-Based Design Tools like Simulink and Stateflow are close to my heart, since I spent a good chunk of my early career on Stateflow development.",
+  "translation": "全面披露：Simulink和Stateflow之类的基于模型的设计工具非常贴心，因为我在Stateflow开发上花费了大量的职业生涯。"
+}, {
+  "tag": "H1",
+  "text": "Emotional Intelligence in an era of low empathy",
+  "translation": "低共情时代的情商"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*GX7K9MFTo7yWeP2hRUiYyQ.png?q=20",
+  "caption": "Image by DAMIAN NIOLET from Pixabay",
+  "type": "image",
+  "file": "1!GX7K9MFTo7yWeP2hRUiYyQ.png"
+}, {
+  "tag": "P",
+  "text": "My last suggestion is not a tech-skill, but a collection of soft-skills. The term “soft-skills” doesn’t do it justice. I’m referring to Emotional Intelligence and everything it signifies, such as excellent communication, the ability to have difficult but candid conversations, demonstrating grit, motivating others, being mindful of mental health etc.",
+  "translation": "我的最后建议不是技术技能，而是一系列软技能。 “软技能”一词并不公平。 我指的是情绪智力及其所代表的一切，例如出色的沟通能力，进行困难但坦率的对话的能力，展示勇气，激励他人，注意心理健康等。"
+}, {
+  "tag": "P",
+  "text": "All of these skills are only “soft” in that they are not as tangible as learning a technology. In reality, there’s nothing soft or easy about them.",
+  "translation": "所有这些技能只是“软”的，因为它们不像学习技术那样有形。 实际上，它们没有什么软弱或容易的地方。"
+}, {
+  "tag": "P",
+  "text": "Add to this the fact that we live in an era of low and divided attention spans, lower empathy and lower social interconnectedness.",
+  "translation": "除此之外，我们生活在一个注意力分散度低，分散感低，社会联系度低的时代。"
+}, {
+  "tag": "P",
+  "text": "Sadly, emotional intelligence runs the risk of becoming rare at a time when we need it the most.",
+  "translation": "可悲的是，情绪智力有在我们最需要的时候变得稀有的风险。"
+}, {
+  "tag": "P",
+  "text": "Emotional Intelligence has always been necessary, but it’s especially important now as the decade brings an economy that is becoming increasingly knowledge based.",
+  "translation": "情绪智力一直是必需的，但由于十年来带来的经济正变得越来越以知识为基础，因此现在尤为重要。"
+}, {
+  "tag": "P",
+  "text": "An economy that rewards innovation, creativity and working well with others. Exhibiting emotional intelligence is going to be a hard pre-requisite, as opposed to a “nice to have”.",
+  "translation": "奖励创新，创造力并与他人合作的经济。 与“好拥有”相反，展示情商将是一个艰难的前提。"
+}, {
+  "tag": "P",
+  "text": "Actions for impact:",
+  "translation": "影响行动："
+}, {
+  "tag": "OL",
+  "texts": ["How well do you truly know yourself? Have you taken something like a briggs-meyers personality assessment test to get a rough sense for how you operate in most scenarios? How self-aware are you?", "The World Health Organization says that Depression is one of the leading causes of disability worldwide. What do you know about mental health in general? Do you know how to spot the signs of a mental health issue in yourself, or others? If you did, would you know how to intervene?"],
+  "translations": ["您真正了解自己的程度如何？ 您是否进行过类似Briggs-Meyers的性格评估测试，以大致了解您在大多数情况下的操作方式？ 您的自我意识如何？", "世界卫生组织说，抑郁症是全世界致残的主要原因之一。 您总体上对心理健康了解多少？ 您是否知道如何在自己或他人中发现精神健康问题的征兆？ 如果您这样做了，您知道如何进行干预吗？"]
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Sid Shankar的文章《Software Engineering: 2030》，参考：https://medium.com/swlh/software-engineering-2030-d81b98beb69c)",
+  "translation": "（本文翻译自Sid Shankar的文章，《软件工程：2030》，参考：https：//medium.com/swlh/software-engineering-2030-d81b98beb69c）"
+}]

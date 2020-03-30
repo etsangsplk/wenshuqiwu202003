@@ -1,0 +1,304 @@
+[{
+  "tag": "H1",
+  "text": "Building Data Pipelines With Kafka",
+  "translation": "使用Kafka构建数据管道"
+}, {
+  "tag": "H2",
+  "text": "Goal: Write A Data Pipeline using Kafka & Serving Layer using Redis.",
+  "translation": "目标：使用Kafka和使用Redis的服务层编写数据管道。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*XcBf5izZ5jZUl-5ERZ1dcw.png?q=20",
+  "type": "image",
+  "file": "1!XcBf5izZ5jZUl-5ERZ1dcw.png"
+}, {
+  "tag": "H1",
+  "text": "Prerequisites",
+  "translation": "先决条件"
+}, {
+  "tag": "P",
+  "text": "Please install below components as per your OS:",
+  "translation": "请根据您的操作系统安装以下组件："
+}, {
+  "tag": "UL",
+  "texts": ["Kafka", "Zookeeper", "Redis", "Java"],
+  "translations": ["卡夫卡", "动物园管理员", "雷迪斯", "爪哇"]
+}, {
+  "tag": "H1",
+  "text": "Target Audience",
+  "translation": "目标观众"
+}, {
+  "tag": "P",
+  "text": "This post is aimed at engineers who are building their first data pipeline. However, engineers who have built data pipelines can quickly skim through it.",
+  "translation": "本文针对的是正在构建第一个数据管道的工程师。 但是，已建立数据管道的工程师可以快速浏览它。"
+}, {
+  "tag": "H1",
+  "text": "What to Expect",
+  "translation": "期待什么"
+}, {
+  "tag": "P",
+  "text": "A Proof of concept on how to build a data pipeline. This does not include effort needed for the data pipeline to be operational, resilient and scalable i.e., production ready.",
+  "translation": "关于如何建立数据管道的概念证明。 这不包括数据管道可操作，具有弹性和可扩展性（即生产就绪）所需的工作。"
+}, {
+  "tag": "H1",
+  "text": "Outline",
+  "translation": "大纲"
+}, {
+  "tag": "P",
+  "text": "Let’s say we have a product that can be accessed only by voice(Similar to Google Home or Amazon Alexa). We have permission to listen to users’ conversations for the entire session the product[in the form of hardware device] is On.",
+  "translation": "假设我们有一种只能通过语音访问的产品（类似于Google Home或Amazon Alexa）。 在产品（以硬件设备的形式）处于打开状态的整个会话中，我们有权听取用户的对话。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*7d6PXzSjszc9qwfk?q=20",
+  "caption": "Photo by Ben White on Unsplash",
+  "type": "image",
+  "file": "0!7d6PXzSjszc9qwfk"
+}, {
+  "tag": "H1",
+  "text": "Objective",
+  "translation": "目的"
+}, {
+  "tag": "P",
+  "text": "Find out interesting topics that are being discussed at the current moment, in each home(or any location the device is connected via WiFi). This information would help us in better serving our customers.Note: The interesting topics we want to find are different from Kafka topics. More on Kafka topics in below sections.",
+  "translation": "在每个家庭（或设备通过WiFi连接的任何位置）中查找当前正在讨论的有趣话题。 这些信息将帮助我们更好地为客户提供服务。注意：我们要找到的有趣主题与Kafka主题不同。 以下各节中有关Kafka主题的更多信息。"
+}, {
+  "tag": "H1",
+  "text": "Approach",
+  "translation": "方法"
+}, {
+  "tag": "OL",
+  "texts": ["Voice conversations should be converted to text. Techniques like speech to text are at our rescue. We could either build our own model or buy third party service. For this post, this module is out of scope.", "Converted text should be sent to backend systems in realtime. These systems/processes are called producers.", "Data should be held in a way that, processes(other than producers) can either ask for future data or wait for future data to get generated. We call this kind of system as a Queue which follows First In, First Out semantics.", "Processes called as consumers should be deployed to read the data from queues, hold the data in memory for certain amount of time usually in the order of minutes and perform business logic computations needed.", "Aggregated data which is the outcome of the above computations could either be sent to another Queue or can be persisted to a database, depending on the need."],
+  "translations": ["语音对话应转换为文本。 语音朗读等技术可为我们提供帮助。 我们可以建立自己的模型或购买第三方服务。 对于此帖子，此模块超出范围。", "转换后的文本应实时发送到后端系统。 这些系统/过程称为生产者。", "数据的保存方式应使过程（生产者除外）可以要求将来的数据，也可以等待将来的数据生成。 我们称这种系统为遵循先进先出语义的队列。", "应该部署称为使用者的进程，以从队列中读取数据，将数据在内存中保留一定时间（通常以分钟为单位），并执行所需的业务逻辑计算。", "根据需要，可以将上述计算的结果汇总的数据发送到另一个Queue或将其持久化到数据库中。"]
+}, {
+  "tag": "P",
+  "text": "Note: Some hardware devices are capable of performing business logic computations[these kind of devices are called edge devices]. Building data pipelines using edge devices is out of scope of the current post.",
+  "translation": "注意：某些硬件设备能够执行业务逻辑计算（这类设备称为边缘设备）。 使用边缘设备构建数据管道不在当前文章的讨论范围之内。"
+}, {
+  "tag": "H1",
+  "text": "Assumptions",
+  "translation": "假设条件"
+}, {
+  "tag": "P",
+  "text": "Movie descriptions are used to simulate users’ conversations. In the next post we will replace descriptions with movies subtitles. Each movie is considered as home.",
+  "translation": "电影说明用于模拟用户的对话。 在下一篇文章中，我们将用电影字幕代替描述。 每部电影都被视为家。"
+}, {
+  "tag": "H1",
+  "text": "Kafka Concepts",
+  "translation": "卡夫卡概念"
+}, {
+  "tag": "P",
+  "text": "Before getting our hands dirty in building our first data pipeline lets get a crisp view of the following essential building blocks of Kafka. Brokers: Brokers are entry point to the ecosystem. They allow producers to write data to Queue in a partition of a topic and allow consumers to read data at a particular offset in a partition of a topic. Topic: Topic is a logical identifier in Kafka storage. It is analogous to table name in a database. Producers and Consumers must specify the topic name to write or read to the Kafka storage respectively.",
+  "translation": "在动手构建第一个数据管道之前，让我们清晰地了解以下Kafka的基本构建基块。 经纪人：经纪人是生态系统的切入点。 它们允许生产者将数据写入主题分区中的Queue中，并允许使用者以特定偏移量读取数据在主题分区中。 主题：主题是Kafka存储中的逻辑标识符。 它类似于数据库中的表名。 生产者和消费者必须指定主题名称以分别写入或读取Kafka存储。"
+}, {
+  "tag": "P",
+  "text": "Partitions: Partitions are the building blocks of fault tolerance and throughput in Kafka distributed system.",
+  "translation": "分区：分区是Kafka分布式系统中容错能力和吞吐量的基础。"
+}, {
+  "tag": "P",
+  "text": "Partition is a unit of parallelism in Kafka. More partitions will allow messages to be consumed in parallel by consumers. However it comes with a cost of more File Pointers needed to write to partitions, more memory needed on the client side(both producer and consumer). For more information on this, checkout confluent blog about partitions.",
+  "translation": "分区是Kafka中并行性的一个单元。 更多分区将允许消费者并行使用消息。 但是，这样做的代价是要写入分区需要更多的文件指针，客户端（生产者和使用者）都需要更多的内存。 有关此的更多信息，请查看有关分区的融合博客。"
+}, {
+  "tag": "P",
+  "text": "When Kafka is spin up as a multi node cluster, one of the nodes is assigned as the leader to each partition[of a particular topic]. Each partition is replicated to multiple nodes for fault tolerance. Leader node is responsible to send the data written to it to its replicated nodes. In the event of leader node went out of service, one of the replicated nodes are elected as Leader for the partition.",
+  "translation": "当Kafka作为多节点群集启动时，其中一个节点被分配为[特定主题]每个分区的领导者。 每个分区都复制到多个节点以实现容错功能。 领导者节点负责将写入其中的数据发送到其复制节点。 如果领导者节点停止服务，则将复制的节点之一选作分区的领导者。"
+}, {
+  "tag": "P",
+  "text": "Designing Partitions:While designing no. of partitions and partition key within a topic following should be given importance:",
+  "translation": "设计分区：设计编号 以下主题中的分区和分区键的重要性应给予重视："
+}, {
+  "tag": "UL",
+  "texts": ["Ordering Guarantee — all the events generated should be read in chronological order. Lets say, the consumption pattern is to read all events in sequence of a home(from our example), then partition key could be unique identifier for home. This would ensure all events of the same home would go to same partition. This does not mean we need to create a partition for each home, which could be in millions. A partition will contain conversations from multiple homes. But no conversation of a home will present in 2 partitions.", "Concurrency — Messages residing in partitions could be read simultaneously.", "Logical separation of data — Ability to read data simultaneously is good. The partition key should be designed in such a way that, all the data needed by our consumption patterns should reside in a partition."],
+  "translations": ["顺序保证-应该按时间顺序阅读所有生成的事件。 可以说，消耗模式是按顺序读取所有事件（从我们的示例中读取），然后分区键可以是唯一标识符。 这将确保同一家庭的所有事件都将进入同一分区。 这并不意味着我们需要为每个房屋创建一个分区，该分区可能以百万计。 一个分区将包含来自多个家庭的对话。 但是在2个分区中不会出现家庭对话。", "并发性—可以同时读取分区中的消息。", "逻辑上的数据分离—能够同时读取数据是好的。 分区键的设计方式应使我们的消费模式所需的所有数据都驻留在分区中。"]
+}, {
+  "tag": "P",
+  "text": "Offsets: Each message in the partition is identified with an offset, an ever increasing number. Offset is analogous to index in a table or index in a array. These offsets act as a reference to retrieve data.",
+  "translation": "偏移量：分区中的每条消息都用一个偏移量标识，该数量不断增加。 偏移量类似于表中的索引或数组中的索引。 这些偏移量用作检索数据的参考。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*GoRlq7O8qMNui6tvnq30cg.png?q=20",
+  "caption": "Anatomy of Kafka Topic",
+  "type": "image",
+  "file": "1!GoRlq7O8qMNui6tvnq30cg.png"
+}, {
+  "tag": "P",
+  "text": "Producer: A producer is any client that has made connection to the broker using Producers API. It has to mention a topic name to write data to the Kafka. If the topic is not yet created, new topic will be created automatically(the configuration to create new topic automatically can be turned off from properties)",
+  "translation": "生产者：生产者是使用生产者API与经纪人建立联系的任何客户端。 它必须提到一个主题名称才能将数据写入Kafka。 如果尚未创建主题，则将自动创建新主题（可以从属性中关闭自动创建新主题的配置）"
+}, {
+  "tag": "P",
+  "text": "Consumer: A consumer is any client that has made connection the broker using Consumers API. It has to mention a topic name to read data from the Kafka.",
+  "translation": "消费者：消费者是使用消费者API与经纪人建立联系的任何客户端。 它必须提到一个主题名称才能从Kafka中读取数据。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*PiTOdiJNRwffuc5FOpJnHg.png?q=20",
+  "caption": "Producer writes and consumer(s) read simultaneously",
+  "type": "image",
+  "file": "1!PiTOdiJNRwffuc5FOpJnHg.png"
+}, {
+  "tag": "P",
+  "text": "Consumer Groups: A set of consumers[possibly running on same machine or on different machines] can have a unique consumer group id[a string or integer]. While spinning up a new consumer using Consumers API, this consumer group id can be used. Consumers of a consumer group subscribe to a topic(or multiple topics). Kafka takes up the responsibility of delivering the next message to the consumers set subscribed to a topic. Zookeeper is used to make a note of offset read by each consumer group. Once the server gets the ack that a consumer had read the message, next message is delivered.",
+  "translation": "使用者组：一组使用者（可能在同一台计算机上或在不同计算机上运行）可以具有唯一的使用者组ID [字符串或整数]。 使用消费者API扩展新消费者时，可以使用此消费者组ID。 消费者组的消费者订阅一个主题（或多个主题）。 Kafka负责将下一条消息传递给订阅该主题的消费者。 Zookeeper用于记录每个消费者组读取的偏移量。 一旦服务器确认消费者已经阅读了该消息，就下一条消息被传递。"
+}, {
+  "tag": "P",
+  "text": "Examples: Examples of consumer groups are email notification sending group with group id emailnotif, SMS notification sending group with group id smsnotif, App notification sending group with group id appnotif etc.. The consumer group config in our codebase could contain- name of the consumer group- id of the consumer group- number of consumers in the consumer group. This information can be saved as configuration file or in a database and be used to spin up enough number of consumer threads.",
+  "translation": "示例：消费者组的示例是具有组ID为emailnotif的电子邮件通知发送组，具有组ID为smsnotif的SMS通知发送组，具有组ID为appnotif的App通知发送组等。我们代码库中的消费者组配置可以包含-消费者的名称 消费者组的组ID消费者组中的消费者数量。 该信息可以另存为配置文件或数据库中，并用于启动足够数量的使用者线程。"
+}, {
+  "tag": "H1",
+  "text": "Publisher-Subscriber(Pubsub) Model",
+  "translation": "发布者-订阅者（Pubsub）模型"
+}, {
+  "tag": "P",
+  "text": "Pubsub is the only way of producing and consuming messages, i.e., producer will publish a message and consumer will subscribe to a topic partition to read messages. Kafka topic is used only as a storage system for the messages. Until the retention period of the message, the message stays in the system. After that, message gets purged by the Kafka.",
+  "translation": "Pubsub是产生和使用消息的唯一方法，即生产者将发布消息，而消费者将订阅主题分区以读取消息。 Kafka主题仅用作消息的存储系统。 在邮件的保留期之前，邮件将保留在系统中。 之后，Kafka将清除消息。"
+}, {
+  "tag": "P",
+  "text": "Message Queue Mode: Pubsub model can also be used to convert a topic into a message queue using application logic. This mode is generally used when one of the consumers in all consumer groups have read the message it should be deleted from the Queue.Application logic should delete message from the topic, once consumer groups have read the message.",
+  "translation": "消息队列模式：Pubsub模型也可以用于使用应用程序逻辑将主题转换为消息队列。 当所有使用者组中的一个使用者已读取消息时，通常应使用此模式。一旦使用者组读取消息，应用程序逻辑应从主题中删除消息。"
+}, {
+  "tag": "P",
+  "text": "Lets say, we have a stream of messages in a queue and for every message in the queue we need to send an email, app and SMS notification[You can assume that message will have all the required details ]. In this case we assign a set of consumers to a consumer group id, Kafka will make sure that a message will be sent to only one of the consumers.",
+  "translation": "可以说，我们在队列中有一条消息流，对于队列中的每条消息，我们都需要发送电子邮件，应用程序和SMS通知[您可以假定该消息将具有所有必需的详细信息]。 在这种情况下，我们将一组消费者分配给消费者组ID，Kafka将确保仅将消息发送给其中一个消费者。"
+}, {
+  "tag": "H1",
+  "text": "Let’s (Actually) Get Started",
+  "translation": "让我们（实际上）开始"
+}, {
+  "tag": "P",
+  "text": "Run Zookeeper and Kafka Server",
+  "translation": "运行Zookeeper和Kafka服务器"
+}, {
+  "tag": "P",
+  "text": "Producer: Let’s Write messages to Kafka Server on to the topic voice.",
+  "translation": "制作人：让我们将有关主题语音的消息写到Kafka Server。"
+}, {
+  "tag": "P",
+  "text": "Create an instance of KafkaProducer which is thread-safe. The instance can be shared between multiple threads without any additional overhead.",
+  "translation": "创建一个线程安全的KafkaProducer实例。 实例可以在多个线程之间共享，而没有任何额外的开销。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/94a394f0dffce53c3accda3613aedcac/raw/833622925522188d9a3f1deb2504c42b7cece6f3/Create%20Producer",
+  "code": "Properties producerProps = new Properties();\nproducerProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\nproducerProps.put(\"acks\", \"all\");\nproducerProps.put(\"retries\", 0);\nproducerProps.put(\"batch.size\", 16384);\nproducerProps.put(\"buffer.memory\", 33554432);\nproducerProps.put(\"linger.ms\", 1);\nproducerProps.put(\"key.serializer\", \"org.apache.kafka.common.serialization.StringSerializer\");\nproducerProps.put(\"value.serializer\", \"org.apache.kafka.common.serialization.StringSerializer\");\n\n//KafkaProducer is thread-safe\nlistenProducer = new KafkaProducer<String, String>(producerProps);\n"
+}, {
+  "tag": "P",
+  "text": "Why KafkaProducer with key value pair?Key could be any datatype(for ex: Integer or String for most of the cases) which could be used to designate a partition in the topic. Value could be any datatype(Avro or Json etc.), which ultimately will encoded to byte array by Kafka before sending to broker by producer and also decoded to original dataype by Kafka after consumer has received the message.",
+  "translation": "为什么使用带有键值对的KafkaProducer？Key可以是任何数据类型（例如，在大多数情况下为Integer或String），可用于在主题中指定分区。 值可以是任何数据类型（Avro或Json等），最终将由Kafka编码为字节数组，然后再由生产者发送给代理，并在消费者收到消息后由Kafka解码为原始dataype。"
+}, {
+  "tag": "P",
+  "text": "Simulate text conversation by using a file which contain movie id and movie summary as tab delimited lines",
+  "translation": "通过使用包含电影ID和电影摘要作为制表符分隔行的文件来模拟文本对话"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/f300c36ffdef5025acae158da10219e2/raw/cfc243b5371ca497b948d8115716644f1518ec0e/Simulate%20Streaming%20data",
+  "code": "//simulate: read a file and send its content to kafka\ntry (Stream<String> lines = Files.lines(Paths.get(\"plot_summaries.txt\"))) {\n  lines.forEach(p::action);\n } catch (IOException e) {\n //additional logging as needed. \n  e.printStackTrace();\n}"
+}, {
+  "tag": "P",
+  "text": "For each line in the above file plot_summaries.txt below action is performed, which also involves sending data to broker",
+  "translation": "对于上述文件plot_summaries.txt中的每一行，将执行以下操作，该操作还涉及将数据发送到代理"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/a7023a5d2829bfc4f63bd658f73ab6bf/raw/77ed34d4c298179748c6191c1a1be0b9ee86daad/Write%20Records",
+  "code": "    void action(String s) {\n        String[] split = s.split(\"\\\\t\");\n        s = split[1];\n        listenProducer.send(new ProducerRecord<>(\"voice\", split[0], s));\n    }"
+}, {
+  "tag": "P",
+  "text": "The operation .send does not invoke a network call immediately. This is balanced by batch.size and buffer.memory configurations.",
+  "translation": "操作.send不会立即调用网络调用。 这由batch.size和buffer.memory配置平衡。"
+}, {
+  "tag": "UL",
+  "texts": ["Messages are sent in batches. Batches are decided on batch.size(in bytes). This setting applies to per partition.", "When a client invokes a .send method, the message is buffered using buffer.memory to accumulate upto a batch.size. buffer.memory applies to entire producer", ".Producer client will block .send invocation if buffer.memory is filled up. If before max.block.ms client can add message to buffer then client will be blocked. Post the max.block.ms exception would be raised"],
+  "translations": ["邮件是批量发送的。 批次取决于batch.size（以字节为单位）。 此设置适用于每个分区。", "客户端调用.send方法时，将使用buffer.memory对消息进行缓冲以累积到batch.size。 buffer.memory适用于整个生产者", "如果buffer.memory已填满，.producer客户端将阻止.send调用。 如果在max.block.ms之前客户端可以将消息添加到缓冲区，则客户端将被阻止。 发布max.block.ms异常将被引发"]
+}, {
+  "tag": "P",
+  "text": "Complete code for the producer can be found at ListenProducer",
+  "translation": "制作人的完整代码可以在ListenProducer上找到"
+}, {
+  "tag": "P",
+  "text": "Consumer: Lets read data from the topic voice.",
+  "translation": "使用者：允许从主题语音中读取数据。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/354b9846ede8b70d22056b0f1a390734/raw/be6e6b18a93a756855f5782d51bf9c56ba3121cd/Consumer%20Properties",
+  "code": "consumerProps = new Properties();\nconsumerProps.put(\"bootstrap.servers\", \"localhost:9092\");\nconsumerProps.put(\"group.id\", \"text-reading-group\");\nconsumerProps.put(\"enable.auto.commit\", true);\nconsumerProps.put(\"auto.commit.interval.ms\", 1000);\nconsumerProps.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, \"latest\");\nconsumerProps.put(\"key.deserializer\", \"org.apache.kafka.common.serialization.StringDeserializer\");\nconsumerProps.put(\"value.deserializer\", \"org.apache.kafka.common.serialization.StringDeserializer\");"
+}, {
+  "tag": "P",
+  "text": "KafkaConsumer is not thread-safe. So, a single instance of KafkaConsumer cannot be shared across multiple threads. Spinning up of new consumer should happen after child threads are created. Complete code for the producer is at ListenConsumer.",
+  "translation": "KafkaConsumer不是线程安全的。 因此，不能在多个线程之间共享KafkaConsumer的单个实例。 创建子线程之后，应该启动新的使用者。 生产者的完整代码在ListenConsumer中。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/742914003d4cdd148eae116dc9bb4424/raw/b9e0604dea718824ed2e325d828a3c0bc91c221e/Create%20Consumer",
+  "code": "ListenFrom l = new ListenFrom();\n//KafkaConsumer is not thread-safe\nKafkaConsumer<String, String> listenConsumer = new KafkaConsumer<>(l.consumerProps);\nlistenConsumer.subscribe(Arrays.asList(\"voice\"));"
+}, {
+  "tag": "P",
+  "text": "There are two ways to determine the number of threads.",
+  "translation": "有两种方法可以确定线程数。"
+}, {
+  "tag": "OL",
+  "texts": ["Using Assign Method:Assign is used when a finer control over assignment of partitions to consumer threads is required. Care should be taken that same partition is not read by multiple consumer threads belonging to the same consumer group.", "Using Subscribe Method:Using subscribe, kafka makes sure a fair balance of partitions across consumer threads. It gives the consumer job more flexibility in forking appropriate no. of consumer threads. This would be ideal way to create consumer threads."],
+  "translations": ["使用分配方法：当需要对分配给使用者线程的分区进行更好的控制时，将使用分配。 应当注意，属于同一使用者组的多个使用者线程不会读取同一分区。", "使用订阅方法：使用订阅，kafka可以确保使用者线程之间分区的公平平衡。 它使消费者工作更灵活地分叉适当的编号。 消费者线程。 这将是创建使用者线程的理想方法。"]
+}, {
+  "tag": "P",
+  "text": "Note:",
+  "translation": "注意："
+}, {
+  "tag": "UL",
+  "texts": ["There are also other ways to determine the no. of consumers, but are in general too complex to code and maintain[in my opinion].", "To build data pipeline, if any stream processing framework being used [like Spark or Flink], then the overhead of creating threads[or cores] is handled by the frameworks itself."],
+  "translations": ["还有其他方法可以确定编号。 消费者，但总的来说太复杂而无法编码和维护（在我看来）。", "为了建立数据管道，如果使用了任何流处理框架（例如Spark或Flink），则创建线程[或内核]的开销将由框架本身来处理。"]
+}, {
+  "tag": "P",
+  "text": "Lets apply business logic:Read stopwords from a file and create a list out of it. This list is used to remove words that are of no significance(words like I,you, a, an, the etc.,)",
+  "translation": "让我们应用业务逻辑：从文件中读取停用词并从中创建列表。 此列表用于删除无关紧要的单词（例如I，you，a，an等单词）"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/43b589b7d69374fe737dc03309125aaa/raw/4f8fdbc027eb2b262d005a966bc5ac56423f27d0/Create%20list%20from%20File",
+  "code": "Stream<String> lines = Files.lines(Paths.get(\"stopwords.txt\"));\nList<String> stopwords = lines.map(String::trim)\n                              .map(String::toLowerCase)\n                              .distinct()\n                              .collect(Collectors.toList());"
+}, {
+  "tag": "P",
+  "text": "For every minute poll the server for latest messages, process the records as needed and persist the aggregated data to Redis.",
+  "translation": "对于服务器上每分钟的轮询，以获取最新消息，根据需要处理记录，并将聚合的数据持久保存到Redis。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/203b26db2142b19f2b083667cd9db42e/raw/bd65fcab9c9b247a6d3a17052d8eb6d81bd3adca/Process%20Conversation",
+  "code": "while (true) {\n  Duration d = Duration.ofMillis(1000*60);\n  ConsumerRecords<String, String> records = listenConsumer.poll(d);\n  l.consume(records, stopwords);\n}\n\nprivate void consume(ConsumerRecords<String, String> records, List<String> stopwords) {\n        for (ConsumerRecord r : records) {\n            String[] tokens = ((String) r.value()).split(\"\\\\s\");\n            HashSet<String> keys = new HashSet<>();\n            for (String t : tokens) {\n                if (!stopwords.contains(t.toLowerCase())) {\n                    String key = (String) r.key();\n                    //TODO: change to pipeline commands\n                    j.zincrby(key, 1.0, t);\n                    j.zincrby(\"global-token-count\", 1.0, t);\n                    keys.add(key);\n                }\n            }\n            if(keys.size()>0) {\n                System.out.println(keys);\n                String[] a = new String[keys.size()];\n                j.sadd(\"movies-list\", keys.toArray(a));\n            }\n\n        }\n    }"
+}, {
+  "tag": "P",
+  "text": "Data Consumption Layer:Data persisted to Redis via our data-pipeline can be consumed by multiple downstream clients. One such client queries the Redis for every 5 minutes and checks the latest 10 topics with highest number of conversations.",
+  "translation": "数据消耗层：通过我们的数据管道持久化到Redis的数据可以被多个下游客户端使用。 一个这样的客户端每5分钟查询一次Redis，并检查对话次数最多的最新10个主题。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/sarathjiguru/ce503d2beea2315906cc7e4b76adab74/raw/0a06e74b885a12dc31c8fec8e78b38a681acfe4d/ZREVRANGEBYSCORE",
+  "code": "public ViewLayer() {\n        //TODO: change to pool\n        j = new Jedis(\"127.0.0.1\", 6379);\n    }\n\npublic static void main(String args[]) throws InterruptedException {\n        ViewLayer v = new ViewLayer();\n        while (true) {\n            Set<Tuple> tokens = v.j\n                                  .zrevrangeByScoreWithScores(\"global-token-count\", \"+inf\", \"-inf\", 10, 10);\n            for (Tuple token : tokens) {\n                System.out.println(token.getElement() + \",\" + token.getScore());\n            }\n            Thread.sleep(1000*60*5);\n            //TODO: repeat the same for each movie\n//            for (String s : j.smembers(\"movieslist\")) {\n//\n//            }\n        }\n    }"
+}, {
+  "tag": "P",
+  "text": "Next Steps:Though not mentioned in the heading, what we have built now is a realtime datapipeline, but without any support of distributed processing framework like Spark or Flink.",
+  "translation": "后续步骤：尽管标题中未提及，但我们现在构建的是实时数据管道，但没有任何分布式处理框架（如Spark或Flink）的支持。"
+}, {
+  "tag": "P",
+  "text": "The pipeline that we have built now is cumbersome to scale for the following reasons:",
+  "translation": "由于以下原因，我们现在构建的管道难以扩展："
+}, {
+  "tag": "OL",
+  "texts": ["Glue code to spin up multiple consumers to scale them according to load should be written and maintained by the data pipeline developers. This would be additional burden along with the processing logic code that should be written.", "There are two kinds in realtime data pipelines. One kind reads the data at an offset applies the required business logic, writes to the destination. The second kind will accumulate related data from a stream or different streams for a certain time in the order of minutes to perform business logic. The business logic could include transformations and aggregations similar to our example. This is called microbatch. Distributed frameworks [like Spark] has the capability to handle these multiple microbatches. For the first kind too, to make the pipeline scalable, fault tolerant and resilient, using distributed processing framework is better."],
+  "translations": ["数据管道开发人员应编写和维护胶合代码，以使多个使用者根据负载扩展规模。 这与应该编写的处理逻辑代码一起将是额外的负担。", "实时数据管道有两种。 一种读取偏移量的数据应用所需的业务逻辑，然后写入目标。 第二种将在一定时间内以分钟为单位从一个或多个流中累积相关数据，以执行业务逻辑。 业务逻辑可以包括与我们的示例类似的转换和聚合。 这称为微批处理。 分布式框架（如Spark）具有处理这些多个微批处理的能力。 对于第一种方法，要使管道具有可伸缩性，容错性和弹性，最好使用分布式处理框架。"]
+}, {
+  "tag": "P",
+  "text": "So, in our next post,lets convert the current realtime datapipeline to use distributed framework like Flink and Spark.",
+  "translation": "因此，在我们的下一篇文章中，让我们将当前的实时数据管道转换为使用Flink和Spark等分布式框架。"
+}, {
+  "tag": "P",
+  "text": "Resources:1. plot_summaries.txt is at CMU Movie Summary Corpus.",
+  "translation": "资源：1。 plot_summaries.txt在CMU电影摘要语料库中。"
+}, {
+  "tag": "P",
+  "text": "2. stopwords.txt is at NLTK Stopwords list.",
+  "translation": "2. stopwords.txt在NLTK停用词列表中。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Sarath Jiguru的文章《Building Data Pipelines With Kafka》，参考：https://medium.com/@sarathjiguru/building-data-pipelines-with-kafka-735ea0b739b4)",
+  "translation": "（本文翻译自Sarath Jiguru的文章，《使用Kafka构建数据管道》，参考：https：//medium.com/@sarathjiguru/building-data-pipelines-with-kafka-735ea0b739b4）"
+}]

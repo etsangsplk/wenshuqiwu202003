@@ -1,0 +1,962 @@
+[{
+  "tag": "H1",
+  "text": "What to Do With Them",
+  "translation": "与他们做什么"
+}, {
+  "tag": "P",
+  "text": "The best place to start is by getting and displaying data. Maybe it’s sending a cat photo a day to someone, creating a joke generator, or sending updates to yourself on what the temperature is at a certain time — the ideas are endless.",
+  "translation": "最好的起点是获取和显示数据。 也许是每天向某人发送一张猫的照片，创建一个笑话生成器，或者向您发送有关特定时间温度的更新信息-这些想法无穷无尽。"
+}, {
+  "tag": "P",
+  "text": "If you still feel stuck, many of the links above will share different projects that were built using their API. Check them out, jot some ideas down, and have some fun!",
+  "translation": "如果您仍然感到困惑，上面的许多链接将共享使用其API构建的不同项目。 看看他们，记下一些想法，然后玩得开心！"
+}, {
+  "tag": "H1",
+  "text": "Weather",
+  "translation": "天气"
+}, {
+  "tag": "H2",
+  "text": "ClimbingWeather",
+  "translation": "攀登天气"
+}, {
+  "tag": "P",
+  "text": "Up-to-date weather data for climbing areas in the U.S.",
+  "translation": "美国攀岩区的最新天气数据"
+}, {
+  "tag": "H2",
+  "text": "DiveSites",
+  "translation": "潜水地点"
+}, {
+  "tag": "P",
+  "text": "Returns database information for scuba divers including location, weather, latitude and longitude, map, and tide stations.",
+  "translation": "返回潜水员的数据库信息，包括位置，天气，纬度和经度，地图和潮汐站。"
+}, {
+  "tag": "H2",
+  "text": "OpenUV",
+  "translation": "OpenUV"
+}, {
+  "tag": "P",
+  "text": "Fetch global real-time UV index forecast — indispensable sun safety details.",
+  "translation": "获取全球实时紫外线指数预测-必不可少的太阳安全细节。"
+}, {
+  "tag": "H2",
+  "text": "OpenWeatherMap Air Pollution",
+  "translation": "OpenWeatherMap空气污染"
+}, {
+  "tag": "P",
+  "text": "Access a carbon monoxide index for any location on Earth!",
+  "translation": "获取地球上任何位置的一氧化碳指数！"
+}, {
+  "tag": "H2",
+  "text": "RainViewer",
+  "translation": "RainViewer"
+}, {
+  "tag": "P",
+  "text": "Provides access to mapping data of rainfall based on information from weather radars globally.",
+  "translation": "根据全球天气雷达提供的信息，提供对降雨的制图数据的访问。"
+}, {
+  "tag": "H2",
+  "text": "Wunderground",
+  "translation": "地下世界"
+}, {
+  "tag": "P",
+  "text": "Local and long-range weather forecast, weather reports, maps, and tropical weather conditions for locations worldwide in 80 languages.",
+  "translation": "全球各地以80种语言提供的本地和远程天气预报，天气预报，地图和热带天气情况。"
+}, {
+  "tag": "H1",
+  "text": "Travel",
+  "translation": "旅行"
+}, {
+  "tag": "H2",
+  "text": "BlaBlaCar Search",
+  "translation": "BlaBlaCar搜索"
+}, {
+  "tag": "P",
+  "text": "Search for carpool trips, just as the BlaBlaCar’s website does.",
+  "translation": "就像BlaBlaCar网站一样，搜索拼车旅行。"
+}, {
+  "tag": "H2",
+  "text": "FlightStats Weather API",
+  "translation": "FlightStats天气API"
+}, {
+  "tag": "P",
+  "text": "Up-to-date information on current weather conditions at an airport using tag annotations to identify prevailing conditions and notable hazards that may impact aviation.",
+  "translation": "使用标签注释来识别机场当前天气状况的最新信息，以识别可能影响航空业的主要状况和重大危害。"
+}, {
+  "tag": "H2",
+  "text": "GraphHopper",
+  "translation": "GraphHopper"
+}, {
+  "tag": "P",
+  "text": "Integrate A-to-B route planning, turn-by-turn navigation, route optimization, isochrone calculations, and more.",
+  "translation": "集成了A到B的路线规划，逐行导航，路线优化，等时线计算等。"
+}, {
+  "tag": "H2",
+  "text": "REFUGE Restrooms",
+  "translation": "洗手间"
+}, {
+  "tag": "P",
+  "text": "Safe restroom access for transgender, intersex, and gender-nonconforming individuals — search restrooms by proximity to a search location, add new restroom listings, and comment and rate existing listings.",
+  "translation": "跨性别，双性恋和不符合性别要求的个人可以安全使用洗手间-通过在搜索位置附近搜索洗手间，添加新的洗手间清单，并对现有清单进行评论和评分。"
+}, {
+  "tag": "H2",
+  "text": "Travelbriefing",
+  "translation": "简报"
+}, {
+  "tag": "P",
+  "text": "Access to country-specific information about travel regulations, prevailing environmental conditions, health & vaccines, weather, visa requirements, currency, electric sockets, and language.",
+  "translation": "访问有关旅行法规，现行环境条件，健康和疫苗，天气，签证要求，货币，电源插座和语言的国家特定信息。"
+}, {
+  "tag": "H2",
+  "text": "Walk Score",
+  "translation": "步行分数"
+}, {
+  "tag": "P",
+  "text": "Calculates travel times between an origin and a set of destinations. Visualize travel times on a map and supports walking, public transit, driving, and biking times.",
+  "translation": "计算起点和目的地之间的旅行时间。 在地图上可视化旅行时间，并支持步行，公交，驾车和骑自行车的时间。"
+}, {
+  "tag": "H1",
+  "text": "Sports",
+  "translation": "体育"
+}, {
+  "tag": "H2",
+  "text": "Balldontlie",
+  "translation": "球不要说谎"
+}, {
+  "tag": "P",
+  "text": "Access statistical data from the NBA.",
+  "translation": "从NBA访问统计数据。"
+}, {
+  "tag": "H2",
+  "text": "SportsDB",
+  "translation": "体育数据库"
+}, {
+  "tag": "P",
+  "text": "A database of sports metadata with events, TV listings, artwork, and scores.",
+  "translation": "运动元数据数据库，其中包含事件，电视节目表，艺术品和乐谱。"
+}, {
+  "tag": "H2",
+  "text": "Soccer Sports Open Data",
+  "translation": "足球运动公开数据"
+}, {
+  "tag": "P",
+  "text": "Allow you to manage data for every single match they store on their database.",
+  "translation": "允许您管理他们存储在数据库中的每个匹配项的数据。"
+}, {
+  "tag": "H2",
+  "text": "SuredBits",
+  "translation": "SuredBits"
+}, {
+  "tag": "P",
+  "text": "Query their NFL, NBA, and Crypto Exchange data.",
+  "translation": "查询他们的NFL，NBA和Crypto Exchange数据。"
+}, {
+  "tag": "H2",
+  "text": "Yahoo’s Fantasy Sports API",
+  "translation": "雅虎的Fantasy Sports API"
+}, {
+  "tag": "P",
+  "text": "Provides rich data on leagues, teams, and player information.",
+  "translation": "提供有关联赛，球队和球员信息的丰富数据。"
+}, {
+  "tag": "H1",
+  "text": "Space",
+  "translation": "空间"
+}, {
+  "tag": "H2",
+  "text": "Auroras.Live",
+  "translation": "Auroras.Live"
+}, {
+  "tag": "P",
+  "text": "Friendly way of accessing various aurora hunting data: current space weather conditions, weather, skycams, satellite images, and archived information from the past 15 years.",
+  "translation": "友好的方式来访问各种极光狩猎数据：当前太空天气状况，天气，空中摄影，卫星图像以及过去15年的存档信息。"
+}, {
+  "tag": "H2",
+  "text": "International Space Station Current Location",
+  "translation": "国际空间站当前位置"
+}, {
+  "tag": "P",
+  "text": "Access data on the current location of the International Space Station, which travels at 28,000 km/h.",
+  "translation": "访问国际空间站当前位置的数据，该位置的时速为28,000 km / h。"
+}, {
+  "tag": "H2",
+  "text": "Launch Library",
+  "translation": "启动库"
+}, {
+  "tag": "P",
+  "text": "Information on upcoming space launches.",
+  "translation": "有关即将发射的太空的信息。"
+}, {
+  "tag": "H2",
+  "text": "Mercury Retrograde",
+  "translation": "水星逆行"
+}, {
+  "tag": "P",
+  "text": "Allows you to determine whether Mercury is in retrograde for a given date.",
+  "translation": "允许您确定在给定日期水星是否处于逆行状态。"
+}, {
+  "tag": "H2",
+  "text": "NASA",
+  "translation": "美国宇航局"
+}, {
+  "tag": "P",
+  "text": "NASA has a bunch of different open APIs — like near Earth object data, images of Mars, astronomy picture of the day, Mars weather data, plus much more!",
+  "translation": "NASA有很多不同的开放式API，例如近地物体数据，火星图像，当天的天文学图像，火星天气数据等等！"
+}, {
+  "tag": "H2",
+  "text": "Open Astronomy Catalogs API",
+  "translation": "开放天文目录API"
+}, {
+  "tag": "P",
+  "text": "Provides machine-readable access to curated astronomy catalogs, including supernovae, tidal disruptions of stars, kilonovae, and fast stars.",
+  "translation": "提供对选定的天文学目录的机器可读访问，包括超新星，恒星的潮汐破坏，千新星和快速恒星。"
+}, {
+  "tag": "H1",
+  "text": "Music",
+  "translation": "音乐"
+}, {
+  "tag": "H2",
+  "text": "Bandsintown",
+  "translation": "Bandsintown"
+}, {
+  "tag": "P",
+  "text": "Allows you to view local concerts, gives live music recommendations, lists an artist’s events, and provides users with the ability to buy tickets and RSVP to events.",
+  "translation": "允许您查看本地音乐会，提供现场音乐推荐，列出艺术家的活动，并为用户提供购买门票和活动的RSVP的功能。"
+}, {
+  "tag": "H2",
+  "text": "Genrenator",
+  "translation": "绅士"
+}, {
+  "tag": "P",
+  "text": "Fetch a random genre or genre story.",
+  "translation": "获取随机类型或类型故事。"
+}, {
+  "tag": "H2",
+  "text": "MusixMatch",
+  "translation": "MusixMatch"
+}, {
+  "tag": "P",
+  "text": "Display lyrics of over 13M tracks on your app or website.",
+  "translation": "在您的应用或网站上显示超过1300万首曲目的歌词。"
+}, {
+  "tag": "H2",
+  "text": "Niland",
+  "translation": "尼兰"
+}, {
+  "tag": "P",
+  "text": "Easily build powerful music search and discovery into your applications by encapsulating cutting-edge deep learning-based technologies. It finds musically similar tracks and classifies music into hundreds of labels.",
+  "translation": "通过封装基于深度学习的尖端技术，轻松将强大的音乐搜索和发现构建到您的应用程序中。 它会找到音乐上相似的曲目，并将音乐分类为数百个标签。"
+}, {
+  "tag": "H2",
+  "text": "Songsterr",
+  "translation": "宋斯特"
+}, {
+  "tag": "P",
+  "text": "Allows you to search, get, and present songs and guitar, bass, and drums tabs and chords from the Songsterr database.",
+  "translation": "允许您从Songsterr数据库中搜索，获取和呈现歌曲以及吉他，贝司和鼓的乐谱和和弦。"
+}, {
+  "tag": "H2",
+  "text": "SoundCloud",
+  "translation": "声云"
+}, {
+  "tag": "P",
+  "text": "Discover, stream, and share a constantly expanding mix of music.",
+  "translation": "发现，流式传输和共享不断扩展的音乐组合。"
+}, {
+  "tag": "H1",
+  "text": "Movies",
+  "translation": "电影"
+}, {
+  "tag": "H2",
+  "text": "Harry Potter",
+  "translation": "哈利·波特"
+}, {
+  "tag": "P",
+  "text": "Returns spell routes, character routes, house, and sorting hat routes.",
+  "translation": "返回拼写路线，角色路线，房屋和排序帽子路线。"
+}, {
+  "tag": "H2",
+  "text": "The New York Times Movie Review",
+  "translation": "纽约时报电影评论"
+}, {
+  "tag": "P",
+  "text": "Access over 22,000 movie reviews by the New York Times critics from today back to 1924.",
+  "translation": "从今天到1924年，《纽约时报》评论家获得了超过22,000条电影评论。"
+}, {
+  "tag": "H2",
+  "text": "The Star Wars",
+  "translation": "星球大战"
+}, {
+  "tag": "P",
+  "text": "All the Star Wars data you’ve ever wanted: planets, spaceships, vehicles, people, films, and species from all the Star Wars films.",
+  "translation": "您想要的所有《星球大战》数据：所有《星球大战》电影中的行星，宇宙飞船，飞行器，人，电影和物种。"
+}, {
+  "tag": "H2",
+  "text": "Star Wars Quotes",
+  "translation": "星球大战行情"
+}, {
+  "tag": "P",
+  "text": "Returns quotes from Star Wars films. You can even choose to get quotes from the Dark Side!",
+  "translation": "返回《星球大战》电影的报价。 您甚至可以选择从黑暗面获取报价！"
+}, {
+  "tag": "H2",
+  "text": "The Marvel",
+  "translation": "奇迹"
+}, {
+  "tag": "P",
+  "text": "Access information about Marvel’s library of comics — from new to old.",
+  "translation": "访问有关Marvel漫画库的信息-从新到旧。"
+}, {
+  "tag": "H2",
+  "text": "Netflix Roulette",
+  "translation": "Netflix轮盘赌"
+}, {
+  "tag": "P",
+  "text": "Returns a random Netflix title based on a user’s input, including genre, rating, and whether it is a movie or a TV show.",
+  "translation": "根据用户的输入（包括体裁，等级以及电影或电视节目）返回一个随机的Netflix标题。"
+}, {
+  "tag": "H1",
+  "text": "Mapping",
+  "translation": "制图"
+}, {
+  "tag": "H2",
+  "text": "Google Earth Engine",
+  "translation": "Google Earth Engine"
+}, {
+  "tag": "P",
+  "text": "Provides a library of functions that may be applied to imagery for display and analysis.",
+  "translation": "提供可以应用于图像进行显示和分析的功能库。"
+}, {
+  "tag": "H2",
+  "text": "Here",
+  "translation": "这里"
+}, {
+  "tag": "P",
+  "text": "Create and customize digital maps based on HERE Maps data.",
+  "translation": "根据此处的地图数据创建和自定义数字地图。"
+}, {
+  "tag": "H2",
+  "text": "Mapbox",
+  "translation": "地图框"
+}, {
+  "tag": "P",
+  "text": "Create and customize beautiful digital maps.",
+  "translation": "创建和自定义精美的数字地图。"
+}, {
+  "tag": "H2",
+  "text": "On Water",
+  "translation": "在水上"
+}, {
+  "tag": "P",
+  "text": "An API for determining if a point (latitude and longitude) is on water or land.",
+  "translation": "用于确定某个点（纬度和经度）在水上还是陆地上的API。"
+}, {
+  "tag": "H2",
+  "text": "uebermaps",
+  "translation": "uebermaps"
+}, {
+  "tag": "P",
+  "text": "Discover and share maps with friends of your favorite spots.",
+  "translation": "与您喜欢的景点的朋友发现并分享地图。"
+}, {
+  "tag": "H1",
+  "text": "Machine Learning",
+  "translation": "机器学习"
+}, {
+  "tag": "H2",
+  "text": "Cloudmersive",
+  "translation": "Cloudmersive"
+}, {
+  "tag": "P",
+  "text": "Advanced Machine Learning APIs for recognizing and processing images.",
+  "translation": "先进的机器学习API，用于识别和处理图像。"
+}, {
+  "tag": "H2",
+  "text": "PixLab",
+  "translation": "像素实验室"
+}, {
+  "tag": "P",
+  "text": "Process and analyze input media images or video content. Allows you to process, transform, and filter any images from any programming language with machine vision and deep learning APIs.",
+  "translation": "处理和分析输入的媒体图像或视频内容。 允许您使用机器视觉和深度学习API处理，转换和过滤来自任何编程语言的任何图像。"
+}, {
+  "tag": "H2",
+  "text": "PredictionIO",
+  "translation": "预测IO"
+}, {
+  "tag": "P",
+  "text": "An open-source Machine Learning Server built on top of an open-source stack for developers and data scientists to create predictive engines for any machine learning task.",
+  "translation": "在开源堆栈之上构建的开源机器学习服务器，供开发人员和数据科学家使用，以为任何机器学习任务创建预测引擎。"
+}, {
+  "tag": "H2",
+  "text": "RxNLP Sentence Clustering",
+  "translation": "RxNLP句子聚类"
+}, {
+  "tag": "P",
+  "text": "Can group sentences (such as sentences from multiple news articles) or short texts (such as posts from Twitter or Facebook Status Updates) into logical groups.",
+  "translation": "可以将句子（例如来自多个新闻文章的句子）或短文本（例如来自Twitter或Facebook Status Updates的帖子）分组为逻辑分组。"
+}, {
+  "tag": "H2",
+  "text": "Wit.AI",
+  "translation": "Wit.AI"
+}, {
+  "tag": "P",
+  "text": "A natural open-source language processing platform that offers the function to add intelligent speech functionality to web and mobile applications.",
+  "translation": "一个自然的开源语言处理平台，提供向Web和移动应用程序添加智能语音功能的功能。"
+}, {
+  "tag": "H1",
+  "text": "Humor",
+  "translation": "幽默"
+}, {
+  "tag": "H2",
+  "text": "Be Like Bill",
+  "translation": "像比尔"
+}, {
+  "tag": "P",
+  "text": "Create and use Be like Bill memes.",
+  "translation": "创建和使用像比尔模因。"
+}, {
+  "tag": "H2",
+  "text": "Chuck Norris Facts",
+  "translation": "查克·诺里斯事实"
+}, {
+  "tag": "P",
+  "text": "Hand curated Chuck Norris facts!",
+  "translation": "亲自策划查克·诺里斯的事实！"
+}, {
+  "tag": "H2",
+  "text": "Fuck Off as a Service",
+  "translation": "他妈的服务"
+}, {
+  "tag": "P",
+  "text": "Scalable solution to the common problem of telling people to fuck off.",
+  "translation": "告诉人们滚蛋的常见问题的可扩展解决方案。"
+}, {
+  "tag": "H2",
+  "text": "Geeky Joke",
+  "translation": "令人讨厌的笑话"
+}, {
+  "tag": "P",
+  "text": "Fetch a random geeky/programming related joke.",
+  "translation": "获取一个与怪胎/编程相关的随机笑话。"
+}, {
+  "tag": "H2",
+  "text": "I Can Haz Dad Joke",
+  "translation": "我可以给爸爸开个玩笑"
+}, {
+  "tag": "P",
+  "text": "Largest selections of dad jokes; fetch a random joke or a specific joke, or search for jokes in a variety of formats.",
+  "translation": "爸爸笑话最多的选择； 获取一个随机的笑话或特定的笑话，或搜索各种格式的笑话。"
+}, {
+  "tag": "H2",
+  "text": "Kanye.Rest",
+  "translation": "Kanye.Rest"
+}, {
+  "tag": "P",
+  "text": "Random Kanye West quotes.",
+  "translation": "Kanye West随机报价。"
+}, {
+  "tag": "H2",
+  "text": "Meme Generator",
+  "translation": "模因发生器"
+}, {
+  "tag": "P",
+  "text": "Generate memes by choosing preloaded images and short top and bottom text sentences.",
+  "translation": "通过选择预加载的图像以及简短的顶部和底部文本句子来生成模因。"
+}, {
+  "tag": "H2",
+  "text": "Ron Swanson Quotes",
+  "translation": "罗恩·斯旺森行情"
+}, {
+  "tag": "P",
+  "text": "Access Ron Swanson quotes directly.",
+  "translation": "直接访问Ron Swanson报价。"
+}, {
+  "tag": "H2",
+  "text": "Tronald Dump",
+  "translation": "Tronald转储"
+}, {
+  "tag": "P",
+  "text": "An archive for the dumbest things Donald Trump has ever said.",
+  "translation": "唐纳德·特朗普曾经说过的最愚蠢的话的档案。"
+}, {
+  "tag": "H1",
+  "text": "Health",
+  "translation": "健康"
+}, {
+  "tag": "H2",
+  "text": "BetterDoctor",
+  "translation": "更好的医生"
+}, {
+  "tag": "P",
+  "text": "Detailed information about doctors in your area.",
+  "translation": "有关您所在地区医生的详细信息。"
+}, {
+  "tag": "H2",
+  "text": "EndlessMedical API",
+  "translation": "EndlessMedical API"
+}, {
+  "tag": "P",
+  "text": "Using artificial intelligence, this API lets you connect users’ symptoms and complaints with test results and a doctor’s examination. It then provides a list of possible diagnoses.",
+  "translation": "使用API，该API可让您将用户的症状和投诉与测试结果和医生的检查联系起来。 然后提供了可能的诊断列表。"
+}, {
+  "tag": "H2",
+  "text": "FluTrack",
+  "translation": "流感追踪"
+}, {
+  "tag": "P",
+  "text": "Data on influenza symptoms from processing and displaying influenza-related Twitter messages.",
+  "translation": "处理和显示与流感相关的Twitter消息中有关流感症状的数据。"
+}, {
+  "tag": "H2",
+  "text": "NeuroVault",
+  "translation": "NeuroVault"
+}, {
+  "tag": "P",
+  "text": "A public repository of unthresholded statistical maps, parcellations, and atlases of the brain.",
+  "translation": "公共存储库，其中包含无限制的统计图，分类图和大脑图集。"
+}, {
+  "tag": "H2",
+  "text": "PredictBGL Diabetes",
+  "translation": "预测BGL糖尿病"
+}, {
+  "tag": "P",
+  "text": "Record and manage diabetes information.",
+  "translation": "记录和管理糖尿病信息。"
+}, {
+  "tag": "H1",
+  "text": "Games",
+  "translation": "游戏类"
+}, {
+  "tag": "H2",
+  "text": "CheapShark",
+  "translation": "便宜鲨鱼"
+}, {
+  "tag": "P",
+  "text": "A service that tracks the prices of PC games on sites like Amazon, Steam, and GamersGate and shows shoppers the best deals.",
+  "translation": "该服务可跟踪Amazon，Steam和GamersGate等网站上的PC游戏价格，并向购物者显示最佳交易。"
+}, {
+  "tag": "H2",
+  "text": "Fortnite Tracker",
+  "translation": "Fortnite追踪器"
+}, {
+  "tag": "P",
+  "text": "Provides Fornite BR player stats, match history, score, and active challenges from Fortnite.",
+  "translation": "提供Fornite BR的球员统计数据，比赛历史记录，得分以及Fortnite的活跃挑战。"
+}, {
+  "tag": "H2",
+  "text": "Magic: The Gathering",
+  "translation": "魔术：聚会"
+}, {
+  "tag": "P",
+  "text": "Provides access to game card information like boocard ID, name, type, statistics, printing information, rating and votes, and more.",
+  "translation": "提供对游戏卡信息的访问，例如boocard ID，名称，类型，统计信息，打印信息，评分和投票等。"
+}, {
+  "tag": "H2",
+  "text": "Overwolf",
+  "translation": "狼人"
+}, {
+  "tag": "P",
+  "text": "Create extensions for video games, which are then made available via the Overwolf Appstore.",
+  "translation": "创建视频游戏的扩展程序，然后通过Overwolf Appstore提供这些扩展程序。"
+}, {
+  "tag": "H2",
+  "text": "Pinball Map",
+  "translation": "弹球地图"
+}, {
+  "tag": "P",
+  "text": "Access data on pinball locations for public pinball machines.",
+  "translation": "访问公共弹球机的弹球位置数据。"
+}, {
+  "tag": "H2",
+  "text": "Smashlounge",
+  "translation": "Smashlounge"
+}, {
+  "tag": "P",
+  "text": "Provides a compendium for Super Smash Brothers Melee, associated with groups, techniques, characters, and attacks.",
+  "translation": "提供《超级粉碎兄弟近战》的纲要，并与团体，技术，角色和攻击相关。"
+}, {
+  "tag": "H1",
+  "text": "Food",
+  "translation": "餐饮"
+}, {
+  "tag": "H2",
+  "text": "FatSecret Platform",
+  "translation": "FatSecret平台"
+}, {
+  "tag": "P",
+  "text": "Complete access to a comprehensive database of accurate food and nutrition information as well as exercise and weight management tools.",
+  "translation": "完整访问准确的食物和营养信息的综合数据库以及运动和体重管理工具。"
+}, {
+  "tag": "H2",
+  "text": "Fruityvice",
+  "translation": "果味"
+}, {
+  "tag": "P",
+  "text": "Provides data for all kinds of fruit!",
+  "translation": "提供各种水果的数据！"
+}, {
+  "tag": "H2",
+  "text": "Street Food App API",
+  "translation": "街头食品应用API"
+}, {
+  "tag": "P",
+  "text": "Add food trucks’ scheduled stops to an app or website.",
+  "translation": "将食品卡车的预定站点添加到应用程序或网站。"
+}, {
+  "tag": "H2",
+  "text": "TacoFancy",
+  "translation": "TacoFancy"
+}, {
+  "tag": "P",
+  "text": "A community-driven taco recipe repository.",
+  "translation": "社区驱动的炸玉米饼食谱存储库。"
+}, {
+  "tag": "H2",
+  "text": "Zomato",
+  "translation": "佐马托"
+}, {
+  "tag": "P",
+  "text": "Access to the freshest and most exhaustive information for over 1.5 million restaurants across 10,000 cities globally.",
+  "translation": "可以访问全球10,000个城市的150万多家餐厅的最新信息和最详尽的信息。"
+}, {
+  "tag": "H1",
+  "text": "Drinks",
+  "translation": "饮料"
+}, {
+  "tag": "H2",
+  "text": "BARZZ",
+  "translation": "巴兹"
+}, {
+  "tag": "P",
+  "text": "Quick and easy access to the most detailed information on bar and club venues across the U.S. with over 30,000 businesses.",
+  "translation": "快速便捷地访问拥有超过30,000家企业的全美酒吧和俱乐部场所的最详细信息。"
+}, {
+  "tag": "H2",
+  "text": "BreweryDB",
+  "translation": "啤酒数据库"
+}, {
+  "tag": "P",
+  "text": "An open library of breweries and beers.",
+  "translation": "一个开放的啤酒厂和啤酒图书馆。"
+}, {
+  "tag": "H2",
+  "text": "CocktailDB",
+  "translation": "鸡尾酒数据库"
+}, {
+  "tag": "P",
+  "text": "Database of drinks and cocktail recipes from around the world.",
+  "translation": "来自世界各地的饮料和鸡尾酒配方数据库。"
+}, {
+  "tag": "H2",
+  "text": "Untappd",
+  "translation": "t"
+}, {
+  "tag": "P",
+  "text": "Allows users to socially share with friends the beer they’re currently enjoying as well as where they’re enjoying it.",
+  "translation": "允许用户与朋友社交分享他们目前正在享用的啤酒以及他们在何处享用啤酒。"
+}, {
+  "tag": "H2",
+  "text": "Wine-Searcher",
+  "translation": "寻酒者"
+}, {
+  "tag": "P",
+  "text": "A search engine of the price lists of 24,909 wine stores around the world.",
+  "translation": "搜索引擎，搜索世界各地24,909家葡萄酒店的价目表。"
+}, {
+  "tag": "H1",
+  "text": "Cryptocurrency",
+  "translation": "加密货币"
+}, {
+  "tag": "H2",
+  "text": "Blockchain API",
+  "translation": "区块链API"
+}, {
+  "tag": "P",
+  "text": "Send and receive payment from Blockchain Wallets, transactions, and blocks data.",
+  "translation": "从区块链钱包发送，接收付款，交易和区块数据。"
+}, {
+  "tag": "H2",
+  "text": "CoinAPI",
+  "translation": "CoinAPI"
+}, {
+  "tag": "P",
+  "text": "Market data on 274 Currency Exchanges integrated under a single API.",
+  "translation": "在单个API下集成的274个货币交易所的市场数据。"
+}, {
+  "tag": "H2",
+  "text": "CoinDesk",
+  "translation": "硬币桌"
+}, {
+  "tag": "P",
+  "text": "Access data from the Bitcoin Price Index, which represents an average of bitcoin prices across leading global exchanges.",
+  "translation": "从比特币价格指数访问数据，该数据代表全球领先交易所的平均比特币价格。"
+}, {
+  "tag": "H2",
+  "text": "ExchangeRate",
+  "translation": "汇率"
+}, {
+  "tag": "P",
+  "text": "Free currency conversion on 50 currencies used in 70+ countries.",
+  "translation": "在70多个国家/地区使用50种货币进行免费货币转换。"
+}, {
+  "tag": "H2",
+  "text": "Rates API",
+  "translation": "费率API"
+}, {
+  "tag": "P",
+  "text": "Current and historical foreign exchange rates.",
+  "translation": "当前和历史汇率。"
+}, {
+  "tag": "H1",
+  "text": "Crime",
+  "translation": "犯罪"
+}, {
+  "tag": "H2",
+  "text": "FBI Wanted",
+  "translation": "联邦调查局通缉"
+}, {
+  "tag": "P",
+  "text": "Easily get information on the FBI Wanted program.",
+  "translation": "轻松获取有关FBI Wanted计划的信息。"
+}, {
+  "tag": "H2",
+  "text": "Jailbase",
+  "translation": "监狱"
+}, {
+  "tag": "P",
+  "text": "Get access to a database of mugshots and arrest data sourced from many counties across the U.S.",
+  "translation": "可以访问面部照片数据库并逮捕来自美国许多县的数据"
+}, {
+  "tag": "H2",
+  "text": "NFL Arrest",
+  "translation": "NFL逮捕"
+}, {
+  "tag": "P",
+  "text": "Get NFL arrest data.",
+  "translation": "获取NFL逮捕数据。"
+}, {
+  "tag": "H2",
+  "text": "Sweat & Toil",
+  "translation": "汗水与辛劳"
+}, {
+  "tag": "P",
+  "text": "Integrates information on child labor and forced labor taken from the reports “Findings on the Worst Forms of Child Labor,” “List of Goods Produced by Child Labor or Forced Labor,” and “List of Products Produced by Forced or Indentured Child Labor.”",
+  "translation": "汇总了以下报告中有关童工和强迫劳动的信息：“关于最恶劣形式的童工的发现”，“由童工或强迫劳动生产的商品清单”和“由强迫或契约童工生产的产品清单”。"
+}, {
+  "tag": "H2",
+  "text": "BikeWise",
+  "translation": "BikeWise"
+}, {
+  "tag": "P",
+  "text": "A place to learn about and report bike crashes, hazards, and thefts.",
+  "translation": "一个了解和报告自行车碰撞，危险和盗窃的地方。"
+}, {
+  "tag": "H1",
+  "text": "Art",
+  "translation": "艺术"
+}, {
+  "tag": "H2",
+  "text": "Burning Man’s PlayaEvents",
+  "translation": "燃烧人的PlayaEvent"
+}, {
+  "tag": "P",
+  "text": "Provides programmatic access to information describing events, theme camps, art installations, and streets.",
+  "translation": "提供对描述事件，主题营，艺术装置和街道的信息的编程访问。"
+}, {
+  "tag": "H2",
+  "text": "Poems",
+  "translation": "诗篇"
+}, {
+  "tag": "P",
+  "text": "Return poem of the day and random poems. You can also search for poems based on author, tag, and keyword, and you can access a private poem collection.",
+  "translation": "返回当天的诗歌和随机诗歌。 您还可以根据作者，标签和关键字搜索诗歌，并且可以访问私人诗歌集。"
+}, {
+  "tag": "H2",
+  "text": "Harvard Art Museum"
+}, {
+  "tag": "P",
+  "text": "Explore and integrate the museum’s collections in your projects and access data about objects, people, exhibitions, publications, and galleries.",
+  "translation": "在您的项目中探索和整合博物馆的藏品，并访问有关物品，人物，展览，出版物和画廊的数据。"
+}, {
+  "tag": "H2",
+  "text": "Queeky",
+  "translation": "魁基"
+}, {
+  "tag": "P",
+  "text": "Add QueekyPaint to your personal blog or website.",
+  "translation": "将QueekyPaint添加到您的个人博客或网站。"
+}, {
+  "tag": "H2",
+  "text": "Svrf",
+  "translation": "svrf"
+}, {
+  "tag": "P",
+  "text": "Search and experience the largest database of immersive face filters, 360 videos, and 360 photos.",
+  "translation": "搜索并体验最大的沉浸式面部滤镜，360视频和360照片数据库。"
+}, {
+  "tag": "H1",
+  "text": "Anime",
+  "translation": "日本动漫"
+}, {
+  "tag": "H2",
+  "text": "Anime News Network Encyclopedia",
+  "translation": "动漫新闻网百科全书"
+}, {
+  "tag": "P",
+  "text": "Holds over 20,000 anime and manga titles and returns key encyclopedia data in XML format.",
+  "translation": "拥有20,000多个动漫和漫画标题，并以XML格式返回关键的百科全书数据。"
+}, {
+  "tag": "H2",
+  "text": "Studio Ghibli",
+  "translation": "吉卜力工作室"
+}, {
+  "tag": "P",
+  "text": "Access the catalogs of the people, places, and things found in the worlds of Ghibli.",
+  "translation": "访问吉卜力世界中发现的人物，地点和事物的目录。"
+}, {
+  "tag": "H2",
+  "text": "Jikan",
+  "translation": "吉坎"
+}, {
+  "tag": "P",
+  "text": "The most active online anime + manga community and database.",
+  "translation": "最活跃的在线动漫+漫画社区和数据库。"
+}, {
+  "tag": "H2",
+  "text": "Pokémon",
+  "translation": "神奇宝贝"
+}, {
+  "tag": "P",
+  "text": "All the Pokémon data you’ll ever need in one place.",
+  "translation": "您将需要的所有神奇宝贝数据集中在一处。"
+}, {
+  "tag": "H2",
+  "text": "What Anime",
+  "translation": "什么动漫"
+}, {
+  "tag": "P",
+  "text": "Trace back the original anime by screenshot. Searches over 22,300 hours of anime to find the best matching scene.",
+  "translation": "通过屏幕快照追溯原始动漫。 搜索超过22,300个小时的动画，以找到最匹配的场景。"
+}, {
+  "tag": "H1",
+  "text": "Animals",
+  "translation": "动物"
+}, {
+  "tag": "H2",
+  "text": "Cat Facts",
+  "translation": "猫的事实"
+}, {
+  "tag": "P",
+  "text": "Send a daily cat fact via text message.",
+  "translation": "通过短信每天发送猫的事实。"
+}, {
+  "tag": "H2",
+  "text": "Dog API",
+  "translation": "狗API"
+}, {
+  "tag": "P",
+  "text": "Access and integrate over 20,000 dog images based on the Stanford Dogs Dataset.",
+  "translation": "根据斯坦福狗数据集访问和集成超过20,000张狗图像。"
+}, {
+  "tag": "H2",
+  "text": "IUCN Red List",
+  "translation": "IUCN红色名录"
+}, {
+  "tag": "P",
+  "text": "List of threatened species and provides an evaluation of the conservation status of plant and animal species.",
+  "translation": "受威胁物种清单，并提供对动植物物种保护状况的评估。"
+}, {
+  "tag": "H2",
+  "text": "RescueGroups.org APIs",
+  "translation": "RescueGroups.org API"
+}, {
+  "tag": "P",
+  "text": "Live adoptable pet data queries including radius searches, animal-specific locations, animal-specific contact information, rescue and shelter searches, species, breeds, colors, patterns, and qualities lists.",
+  "translation": "可实时采集的宠物数据查询，包括半径搜索，特定动物的位置，特定动物的联系信息，救援和庇护所搜索，物种，品种，颜色，样式和品质列表。"
+}, {
+  "tag": "H2",
+  "text": "The Whale Hotline",
+  "translation": "鲸鱼热线"
+}, {
+  "tag": "P",
+  "text": "Explore marine mammal sighting data.",
+  "translation": "探索海洋哺乳动物的目击数据。"
+}, {
+  "tag": "H1",
+  "text": "This List",
+  "translation": "这个清单"
+}, {
+  "tag": "P",
+  "text": "These APIs are ones I’ve personally come across and thought were cool, fun, interesting, and different — giving you an edge on your next project!",
+  "translation": "这些API是我亲自遇到的，并认为它们很酷，有趣，有趣且与众不同-使您在下一个项目中独占！头！"
+}, {
+  "tag": "P",
+  "text": "They are totally free, don’t require you to figure out how to handle OAuth, and are super easy to get started.",
+  "translation": "它们是完全免费的，不需要您弄清楚如何处理OAuth，而且超级容易上手。"
+}, {
+  "tag": "H2",
+  "text": "Categories",
+  "translation": "分类目录"
+}, {
+  "tag": "P",
+  "text": "These are the categories these APIs are under, in this order:",
+  "translation": "这些API属于以下类别，按此顺序排列："
+}, {
+  "tag": "UL",
+  "texts": ["Animals (5)", "Anime (5)", "Art ( 5)", "Crime (5)", "Cryptocurrency (5)", "Drink (5)", "Food (5)", "Games (6)", "Health (5)", "Humor (9)", "Machine Learning (5)", "Mapping (5)", "Movies (6)", "Music (6)", "Space (6)", "Sports ( 5)", "Travel (6)", "Weather (6)"],
+  "translations": ["动物（5）", "动漫（5）", "艺术（5）", "犯罪（5）", "加密货币（5）", "饮料（5）", "食物（5）", "游戏（6）", "保健（5）", "幽默（9）", "机器学习（5）", "映射（5）", "电影（6）", "音乐（6）", "空间（6）", "运动（5）", "旅行（6）", "天气（6）"]
+}, {
+  "tag": "H1",
+  "text": "What Is a REST API?",
+  "translation": "什么是REST API？"
+}, {
+  "tag": "P",
+  "text": "REST API stands for Representable State Transfer Application Programming Interface. Ultimately, you can think of them as a shortcut into a web service’s database. They provide a set of methods that a programmer can use via HTTP to send and receive data.",
+  "translation": "REST API代表可表示状态传输应用程序编程接口。 最终，您可以将它们视为Web服务数据库的快捷方式。 它们提供了一组方法，程序员可以通过HTTP使用这些方法来发送和接收数据。"
+}, {
+  "tag": "P",
+  "text": "Companies won’t just let you log into their internal database and look around, but they will give you an easier way to access it in certain limited ways using their API. Some have limitations on the number of times you can call, some require signing up to receive a private API Key, and some require setting up OAuth for users to log in securely.",
+  "translation": "公司不仅会允许您登录内部数据库并环顾四周，而且会为您提供一种更简便的方法，可以使用其API以某些有限的方式访问数据库。 有些限制了您可以调用的次数，有些需要注册才能接收私有API密钥，有些需要设置OAuth，以便用户安全登录。"
+}, {
+  "tag": "H1",
+  "text": "What Is an API?",
+  "translation": "什么是API？"
+}, {
+  "tag": "P",
+  "text": "API stands for Application Programming Interface. Don’t worry about the Application Programming part — focus on Interface. You use interfaces all the time. Your keyboard is an interface. An ATM. A search engine.",
+  "translation": "API代表应用程序编程接口。 不用担心应用程序编程部分-专注于接口。 您一直在使用接口。 您的键盘是一个界面。 自动取款机。 搜索引擎。"
+}, {
+  "tag": "P",
+  "text": "An interface sits on top of a complicated system and simplifies things for you, saving you from needing to know every complex detail of what’s under the hood. It’s a simple way to use smart things.",
+  "translation": "界面位于复杂的系统之上，可以为您简化操作，从而使您无需了解幕后的所有复杂细节。 这是使用智能事物的简单方法。"
+}, {
+  "tag": "H1",
+  "text": "A Curated List of 100 Cool and Fun Public APIs to Inspire Your Next Project",
+  "translation": "精选的100个酷炫有趣的公共API来激发您的下一个项目"
+}, {
+  "tag": "H2",
+  "text": "Humor, food, machine learning, crime, sports, and more",
+  "translation": "幽默，食物，机器学习，犯罪，体育等"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*qqSHCBs_v7FNLtzuc6y45g.jpeg?q=20",
+  "caption": "Image by AndSus on Adobe Stock",
+  "type": "image",
+  "file": "1!qqSHCBs_v7FNLtzuc6y45g.jpeg"
+}, {
+  "tag": "P",
+  "text": "As a beginner developer, some of the first questions you’ll ask yourself and others are:",
+  "translation": "作为新手开发人员，您首先要问自己的一些问题是："
+}, {
+  "tag": "UL",
+  "texts": ["What projects should I work on as a beginner?", "What makes a good side project?", "Where should I start?"],
+  "translations": ["作为初学者，我应该从事哪些项目？", "是什么使一个好的附带项目？", "我应该从哪里开始？"]
+}, {
+  "tag": "P",
+  "text": "If you aren’t fond of the basic to-do list, calculator, or some type of clone answers, then the perfect place to start is by building interesting applications around public-facing REST APIs!",
+  "translation": "如果您不喜欢基本的工作清单，计算器或某种克隆答案，那么理想的起点是围绕面向公众的REST API构建有趣的应用程序！"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Angelica Dietzel的文章《A Curated List of 100 Cool and Fun Public APIs to Inspire Your Next Project》，参考：https://medium.com/better-programming/a-curated-list-of-100-cool-and-fun-public-apis-to-inspire-your-next-project-7600ce3e9b3)",
+  "translation": "（本文翻译自Angelica Dietzel的文章，《 100个有趣且有趣的公共API的启发清单，以激发您的下一个项目》，参考：https：//medium.com/better-programming/a-curated-list-of-100- 酷而有趣的公共API启发您的下一个项目7600ce3e9b3）"
+}]

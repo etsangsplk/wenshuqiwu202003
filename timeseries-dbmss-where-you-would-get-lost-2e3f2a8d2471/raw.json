@@ -1,0 +1,64 @@
+[{
+  "tag": "H1",
+  "text": "Timeseries DBMSs, Where You Would Get Lost",
+  "translation": "时间序列DBMS，您会迷路的地方"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*2ljbhlCeb1eLzTwsf9Gj4A.jpeg?q=20",
+  "type": "image",
+  "file": "1!2ljbhlCeb1eLzTwsf9Gj4A.jpeg"
+}, {
+  "tag": "P",
+  "text": "Recently I joined as a research engineer in a project mainly focused in weather forecasting, modelling, and risk assessing in Colombo metropolitan area (namely Center for Urban Waters, Sri Lanka. in short CUrW-SL). My first responsibility was to implement a data storage layer suitable for the center. Almost all the forecasting, modelling, risk assessments, and real-time observations outputs are time-series data with a geo-tag (i.e latitude and longitude) and a substantial amount of data get generated in daily forecasts and daily runs of weather models and risk assessing models.",
+  "translation": "最近，我以研究工程师的身份加入了一个项目，该项目主要致力于科伦坡市区（即斯里兰卡城市水域中心，简称CUrW-SL）的天气预报，建模和风险评估。 我的首要职责是实现适合中心的数据存储层。 几乎所有的预测，建模，风险评估和实时观测输出都是带有地理标签（即纬度和经度）的时间序列数据，并且在每日天气预报和天气模型的每日运行中会生成大量数据， 风险评估模型。"
+}, {
+  "tag": "P",
+  "text": "It was obvious that what the center need was a database management system (DBMS) that can store and handle substantial amount of time-series data coming from variety of sources efficiently and effectively. As the research for a suitable time-series data platform or a DBMS take place, we got lost in the vast sea for time-series data platforms and DBMSs. One can find enormous number of data platforms specialized for time-series data and also most of them are opensource. The real question was what should we choose. Obviously trying all of them was not a feasible option hence we were running late and had to finish off the work and had to have a working system when the next monsoon hits Sri Lanka (i.e. by end of April 2018).",
+  "translation": "显然，中心需要的是一个数据库管理系统（DBMS），该系统可以有效地存储和处理来自各种来源的大量时间序列数据。 随着对合适的时序数据平台或DBMS的研究的进行，我们迷失了对时序数据平台和DBMS的茫茫大海。 人们可以找到大量专门用于时间序列数据的数据平台，而且其中大多数都是开源的。 真正的问题是我们应该选择什么。 显然尝试所有这些都不是一个可行的选择，因此我们下班了，不得不推迟工作，并且必须在下一个季风袭击斯里兰卡时（即到2018年4月底）建立一个工作系统。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*wa2M9u7K_fleo_bxap1obA.jpeg?q=20",
+  "type": "image",
+  "file": "1!wa2M9u7K_fleo_bxap1obA.jpeg"
+}, {
+  "tag": "P",
+  "text": "When it comes to time-series DBs InfluxDB is most probably the first thing that you would hit in an internet search. It looks attractive and tentative and might feel like that InfluxDB is the thing. But to get the scalable version you want to purchase the enterprise version. Then obviously if it is a big data problem you might wanna look into Hadoop based solution. Of course there are plenty and here (namely Warp10) is something that we came across, but for us it seemed like a overkill to think that the problem we have at hand is a big data problem. However, in this link you can find a nice comparison of InfluxDB and Warp10 platform.",
+  "translation": "关于时序数据库，InfluxDB最有可能是您在互联网搜索中遇到的第一件事。 它看起来很吸引人，而且尝试性的，并且可能感觉像InfluxDB就是这样。 但是要获得可伸缩版本，您要购买企业版。 然后很明显，如果这是一个大数据问题，您可能想研究基于Hadoop的解决方案。 当然，这里有很多东西（即Warp10）是我们遇到的，但是对我们来说，认为我们手头的问题是大数据问题似乎太过分了。 但是，在此链接中，您可以找到InfluxDB和Warp10平台的不错比较。"
+}, {
+  "tag": "P",
+  "text": "Why and how to use RDBMSs instead of NoSQL",
+  "translation": "为什么以及如何使用RDBMS代替NoSQL"
+}, {
+  "tag": "P",
+  "text": "In an environment where most of the community agree for time-series data application it is better to go with No-SQL solutions, an organization called ‘Timescale’ introducing ‘TimescaleDB’ hold a strong ground saying it should be otherwise. In this blog post CEO explains why and how to use RDBMSs instead of NoSQL for applications that deals with time-series data. In my opinion I know for a fact that their blog posts are incredible, and may be you’ll love them. May be who knows you might end up using ‘TimescaleDB’ for your application.",
+  "translation": "在大多数社区都同意使用时间序列数据应用程序的环境中，最好使用No-SQL解决方案，一个名为“ Timescale”并引入“ TimescaleDB”的组织拥有坚强的理由说应该不这样做。 CEO在这篇博客文章中解释了为什么以及如何在处理时间序列数据的应用程序中使用RDBMS而不是NoSQL。 以我的观点，我知道他们的博客文章令人难以置信，也许您会喜欢他们。 可能是谁知道您可能最终将“ TimescaleDB”用于您的应用程序。"
+}, {
+  "tag": "P",
+  "text": "Why Uber Engineering Switched from Postgres to MySQL?",
+  "translation": "为什么Uber Engineering从Postgres切换到MySQL？"
+}, {
+  "tag": "P",
+  "text": "TimescaleDB is written as an extension for PostgreSQL. In the community there is a debate on what is better, PostgreSQL or MySQL?. I’m still searching for a distinguish answer to that question. However Uber has moved from PostgresSQL to MySQL and they have written a blog post on why they have done so. In that blog post they explain the technicalities issues they had with PostgreSQL and how MySQL solves them or does not have that kind of problems. On the other hand I would say that that blog post is a good place to learn about how DBMSs actually work.",
+  "translation": "TimescaleDB被编写为PostgreSQL的扩展。 在社区中，关于更好的是PostgreSQL还是MySQL争论不休。 我仍在寻找该问题的独特答案。 但是，Uber已从PostgresSQL迁移到MySQL，他们写了一篇博客文章介绍这样做的原因。 在那篇博客文章中，他们解释了PostgreSQL的技术性问题，以及MySQL如何解决这些问题或没有此类问题。 另一方面，我想说的是，该博客文章是了解DBMS如何实际工作的好地方。"
+}, {
+  "tag": "P",
+  "text": "‘At first we need to have something working, It is good if we can adhere to best practices and software development principles but it is optional because if we fail to bring the product into the market on time, there will be no product at all. Of course later we should refactor or may be rewrite to make it a manageable product such that it will thrive to be the best among the rest.’",
+  "translation": "‘起初，我们需要采取一些措施，如果我们能够遵循最佳实践和软件开发原则，那是很好的选择，但是这是可选的，因为如果我们不能按时将产品推向市场，那将根本没有产品。 当然，稍后我们应该重构或可能重写以使其成为可管理的产品，从而使其在其他产品中脱颖而出。”"
+}, {
+  "tag": "P",
+  "text": "Coming back to our use case, other than the technical concerns there was some opinionative concerns as well. Our team-lead, consultant, supervisor, and head of CUrW-SL who is a professor in Civil Engineering in Tokyo University had requirements to analyse and manipulate data as required. One of the tools he uses is Wolfram Mathematica. Since NoSQL and BigData platforms are comparatively newer than RDBMSs there were no connectors for those to be used with Analytical Tools like Mathematica. Also the professor and the Civil Engineering Staff was familiar with SQL and was kind of reluctant to shift to NoSQL. Furthermore time and the working hands were enough even close to writing connectors of our own for the analytical tools in order to work with the NoSQL solution that we see as the best fit for our requirement.",
+  "translation": "回到我们的用例，除了技术上的关注之外，还有一些观点上的关注。 我们的团队负责人，顾问，主管和CUrW-SL负责人（东京大学土木工程教授）要求根据需要分析和处理数据。 他使用的工具之一是Wolfram Mathematica。 由于NoSQL和BigData平台比RDBMS相对新，因此没有与Mathematica之类的分析工具一起使用的连接器。 教授和土木工程人员也都熟悉SQL，因此不愿转向NoSQL。 此外，时间和工作量甚至足以为分析工具编写我们自己的连接器，以便与我们认为最适合我们要求的NoSQL解决方案一起使用。"
+}, {
+  "tag": "P",
+  "text": "On the other hand the data inflow up-to the time of writing was not that problematic for MySQL to handle, even with the free version. Ohh.. didn’t I mention that finally we decided to go with MySQL?. I remember once Dr. Sanjiva Weerawarna quoted that ‘At first we need to have something working, It is good if we can adhere to best practices and software development principles but it is optional because if we fail to bring the product into the market on time, there will be no product at all. Of course later we should refactor or may be rewrite to make it a manageable product such that it will thrive to be the best among the rest.’ To be honest this was exactly what our team lead had in his mind as he hold the ground that we should go with MySQL.",
+  "translation": "另一方面，即使是免费版本，直到撰写本文时，数据流入对于MySQL来说也不成问题。 哦..我没有提到最后我们决定使用MySQL吗？ 我记得曾经有一次Sanjiva Weerawarna博士说过：“起初我们需要做一些工作，如果我们能够坚持最佳实践和软件开发原则是件好事，但它是可选的，因为如果我们未能按时将产品推向市场， ，将完全没有产品。 当然，稍后我们应该重构或重新编写以使其成为可管理的产品，以使其在其他产品中脱颖而出。'说实话，这正是我们团队领导在他坚持的基础上所想到的 我们应该使用MySQL。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*g9naGHMVjs3i6lIir77_CQ.jpeg?q=20",
+  "type": "image",
+  "file": "1!g9naGHMVjs3i6lIir77_CQ.jpeg"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Thilina Madumal的文章《Timeseries DBMSs, Where You Would Get Lost》，参考：https://medium.com/@madumalt/timeseries-dbmss-where-you-would-get-lost-2e3f2a8d2471)",
+  "translation": "（本文翻译自Thilina Madumal的文章，《时间序列DBMS，您将在何处迷失》，参考：https：//medium.com/@madumalt/timeseries-dbmss-where-you-would-get-lost-2e3f2a8d2471）"
+}]

@@ -1,0 +1,293 @@
+[{
+  "tag": "H1",
+  "text": "AI = “Automated Inspiration”",
+  "translation": "AI =“自动灵感”"
+}, {
+  "tag": "H2",
+  "text": "A brief tour of the history (and future!) of data science",
+  "translation": "简要介绍数据科学的历史（和未来！）"
+}, {
+  "tag": "P",
+  "text": "(Adapted from my original Forbes AI article.)",
+  "translation": "（改编自我最初的《福布斯》人工智能文章。）"
+}, {
+  "tag": "P",
+  "text": "In the 19th century, doctors might have prescribed mercury for mood swings and arsenic for asthma. It might not have occurred to them to wash their hands before your surgery. They weren’t trying to kill you, of course — they just didn’t know any better.",
+  "translation": "在19世纪，医生可能开出了汞用于治疗情绪波动，而砷则用于治疗哮喘。 在您进行手术之前，他们可能没有洗过手。 他们当然不是想杀了你-他们只是不知道而已。"
+}, {
+  "tag": "P",
+  "text": "These early doctors had valuable data scribbled in their notebooks, but each held only one piece in a grand jigsaw puzzle. Without modern tools for sharing and analyzing information — as well as a science for making sense of that data — there wasn’t much to stop superstition from superseding what could be seen through a keyhole of observable facts.",
+  "translation": "这些早期的医生在笔记本上写有宝贵的数据，但每个人只能在一个巨大的拼图游戏中保留一张。 如果没有现代的工具来共享和分析信息，也没有科学的方法来理解这些数据，那么就没有什么可以阻止迷信取代通过可观察的事实的关键孔可以看到的东西了。"
+}, {
+  "tag": "P",
+  "text": "Humans have come a long way with technology since then, but today’s boom in machine learning (ML) and artificial intelligence (AI) isn’t really a break with the past. It’s the continuation of the basic human instinct to make sense of the world around us so that we can make smarter decisions. We simply have dramatically better technology than we’ve ever had before.",
+  "translation": "从那时起，人类在技术上已经走了很长一段路，但是今天的机器学习（ML）和人工智能（AI）的繁荣并不是过去的真正突破。 这是人类基本本能的延续，它使我们了解周围的世界，以便我们做出更明智的决策。 我们拥有比以往任何时候都更好的技术。"
+}, {
+  "tag": "P",
+  "text": "Today’s boom in AI isn’t really a break with the past. We simply have dramatically better technology than we’ve ever had before.",
+  "translation": "今天的AI繁荣并不是与过去的突破。 我们拥有比以往任何时候都更好的技术。"
+}, {
+  "tag": "P",
+  "text": "One way to think of this pattern through the ages is as a revolution of datasets, not data points. The difference isn’t trivial. Datasets helped shape the modern world.",
+  "translation": "长期以来，这种模式的一种思考方式是数据集而不是数据点的革命。 差别并不小。 数据集帮助塑造了现代世界。"
+}, {
+  "tag": "H2",
+  "text": "The invention of writing",
+  "translation": "写作的发明"
+}, {
+  "tag": "P",
+  "text": "Consider the scribes of Sumer (modern day Iraq), who pressed their styluses to tablets of clay more than 5,000 years ago. When they did so, they invented not just the first system of writing, but the first data storage and sharing technology.",
+  "translation": "考虑一下Sumer（伊拉克现代）的抄写员，他们在5,000多年前就将其笔针压在粘土片上。 当他们这样做时，他们不仅发明了第一个书写系统，而且发明了第一个数据存储和共享技术。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*q-ujGqwCy82F35lj?q=20",
+  "caption": "An example of the world’s first data storage and sharing technology, the clay tablet. You can’t fit much of your data on it and retrieval is a pain, literally (you’ll have to put your back into it).",
+  "type": "image",
+  "file": "0!q-ujGqwCy82F35lj"
+}, {
+  "tag": "P",
+  "text": "If you’re inspired by the promise of AI’s better-than-human abilities, consider that stationery gives us superhuman memory. Though it’s easy to take writing for granted today, the ability to store datasets reliably represents a ground-breaking first step on the path to higher intelligence.",
+  "translation": "如果您对AI超越人类的能力的承诺感到鼓舞，请考虑文具为我们带来了超人的记忆。 尽管今天写写作很容易，但是可靠地存储数据集的能力代表了迈向更高智能的第一步。"
+}, {
+  "tag": "P",
+  "text": "If you’re inspired by the promise of AI’s better-than-human abilities, consider that stationery gives us superhuman memory.",
+  "translation": "如果您对AI超越人类的能力的承诺感到鼓舞，请考虑文具为我们带来了超人的记忆。"
+}, {
+  "tag": "P",
+  "text": "Unfortunately, retrieving information from clay tablets and their pre-electronic cousins is a pain. You can’t snap your fingers at a book to get its word count. Instead, you’d have to upload every word into your brain to process it. This made early data analysis time-consuming, so initial forays into it stuck to the essentials. While a kingdom might analyze how much gold it raised in taxes, only an intrepid soul would try the same line of effortful reasoning on an application like, say, medicine, where millennia of tradition encouraged just winging it.",
+  "translation": "不幸的是，从粘土片及其前电子表兄弟中检索信息是一件痛苦的事情。 您无法用手指指一本书来获取字数。 取而代之的是，您必须将每个单词上传到大脑中进行处理。 这使得早期的数据分析非常耗时，因此最初的尝试固守了基本要素。 尽管一个王国可以分析它从税收中筹集了多少黄金，但只有一个勇敢的人会在诸如医学之类的应用程序上尝试相同的费力推理，而数千年的传统鼓励这种情况。"
+}, {
+  "tag": "H2",
+  "text": "The rise of analytics",
+  "translation": "分析的兴起"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*spPLxPgzAPh0mE9G?q=20",
+  "caption": "Map by John Snow showing the clusters of cholera cases in the London epidemic of 1854.",
+  "type": "image",
+  "file": "0!spPLxPgzAPh0mE9G"
+}, {
+  "tag": "P",
+  "text": "Luckily, our species produced some incredible pioneers. For example, John Snow’s map of deaths during the 1858 cholera outbreak in London inspired the medical profession to reconsider the superstition that the disease was caused by miasma (toxic air) and to start taking a closer look at the drinking water.",
+  "translation": "幸运的是，我们的物种产生了一些不可思议的开拓者。 例如，约翰·斯诺（John Snow）在1858年伦敦霍乱爆发期间的死亡地图激发了医学界重新考虑这种疾病是由mi气（有毒空气）引起的迷信，并开始仔细研究饮用水。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/48/0*h2rshFec7XWyHJBr?q=20",
+  "caption": "Florence Nightingale, Analyst (1820–1910)",
+  "type": "image",
+  "file": "0!h2rshFec7XWyHJBr"
+}, {
+  "tag": "P",
+  "text": "If you know “The Lady With The Lamp,” Florence Nightingale, for her heroic compassion as a nurse, you might be surprised to learn that she was also an analytics pioneer. Her inventive infographics during the Crimean War saved many lives by identifying poor hygiene as a leading cause of hospital deaths and inspiring her government to take sanitation seriously.",
+  "translation": "如果您知道佛罗伦萨·南丁格尔（Florence Nightingale）的《戴灯的女人》，以她对护士的英勇同情，您可能会惊讶地发现她也是分析先驱。 在克里米亚战争期间，她极富创造力的信息图表将不良的卫生状况视为医院死亡的主要原因，并激发了她的政府对卫生的重视，从而挽救了许多生命。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*2T6WRpQy7Zu7vacM?q=20",
+  "caption": "Polar area diagram invented by Florence Nightingale, showing the number of deaths that occurred from preventable diseases (in blue), those that were the results of wounds (in red), and those due to other causes (in black).",
+  "type": "image",
+  "file": "0!2T6WRpQy7Zu7vacM"
+}, {
+  "tag": "P",
+  "text": "The one-dataset era took off as the value of information began to assert itself in a growing number of fields, leading to the invention of the computer. No, not the electronic buddy you’re used to today. “Computer” started out as a human profession, with its practitioners performing computations and processing data manually to extract its value.",
+  "translation": "单数据集时代开始了，信息的价值开始在越来越多的领域中确立起来，从而导致了计算机的发明。 不，不是您今天习惯的电子伙伴。 “计算机”最初是人类的职业，其从业人员执行计算和手动处理数据以提取其价值。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*8HbJs0p4NuALzFmL?q=20",
+  "caption": "All of these people were computers! Photograph taken in the 1950s of the Supersonic Pressure Tunnel staff.",
+  "type": "image",
+  "file": "0!8HbJs0p4NuALzFmL"
+}, {
+  "tag": "P",
+  "text": "The beauty of data is that it allows you to form an opinion out of something better than thin air. By taking a look at information, you’re inspired to ask new questions, following in the footsteps of Florence Nightingale and John Snow. That’s what the discipline of analytics is all about: inspiring models and hypotheses through exploration.",
+  "translation": "数据的优点在于，它使您可以凭空想出更好的意见。 通过查看信息，您可以跟随佛罗伦萨·南丁格尔和约翰·斯诺的足迹，提出新的问题。 这就是分析学科的全部内容：通过探索启发模型和假设。"
+}, {
+  "tag": "H2",
+  "text": "The downside of analytics",
+  "translation": "分析的缺点"
+}, {
+  "tag": "P",
+  "text": "Unfortunately, without a second dataset, you can’t know if this data-inspired opinion of yours is nonsense or not. Does it work in general, outside the specific datapoints you looked at? You have no legitimate way of knowing. Welcome to analytics in the 1900s.",
+  "translation": "不幸的是，如果没有第二个数据集，您将无法知道您的这种以数据为灵感的观点是否废话。 它通常可以在您查看的特定数据点之外正常工作吗？ 您没有合法的认识方式。 欢迎使用1900年代的分析技术。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*68-0AtAA0qsfPLEU.png?q=20",
+  "caption": "Illustration by Paul J created for my article about confirmation bias in data-driven decision-making.",
+  "type": "image",
+  "file": "0!68-0AtAA0qsfPLEU.png"
+}, {
+  "tag": "P",
+  "text": "You can’t trust your findings because your unconscious biases (such as confirmation bias) take the wheel — you’ll immediately see whatever is most convenient to see and you’ll miss all the rest. You may think you’re seeing all there is to see, but you’re actually barely scratching the surface. We humans have smaller attention spans and memories than we like to think, so exploratory datasets are often a sort of baboon trap for us.",
+  "translation": "您无法相信自己的发现，因为您的潜意识偏见（例如确认偏见）使您大开眼界-您会立即看到最方便看到的内容，而您将错过所有其他内容。 您可能会认为自己已经看到了所有可以看到的东西，但实际上几乎没有刮擦表面。 人类的注意力范围和记忆力比我们想像的要小，因此探索性数据集通常是我们的狒狒陷阱。"
+}, {
+  "tag": "P",
+  "text": "Analytics is about inspiration and exploration, but opinions that grasp beyond the data explored cannot be taken seriously.",
+  "translation": "分析是关于灵感和探索的，但超出所探索数据范围的观点不能被认真对待。"
+}, {
+  "tag": "P",
+  "text": "To test your opinion about how the world beyond your data works, you can’t use the data that inspired that opinion in the first place. Our species finds Elvis’s face in potato chips. While this chip might look like Elvis, we can’t use it to conclude that most chips do. To learn whether our opinion is to be taken seriously beyond the examples that inspired them, we must test them on new chips we haven’t seen before.",
+  "translation": "要测试您对数据之外的世界如何运作的看法，您不能一开始就使用能激发人们意见的数据。 我们的物种在薯片中发现了猫王的脸。 虽然该芯片看起来像猫王，但我们不能用它来推断大多数芯片都可以。 要了解我们的观点是否会受到启发他们的例子之外的重视，我们必须在我们从未见过的新芯片上对其进行测试。"
+}, {
+  "tag": "H1",
+  "text": "From datasets to data-splitting",
+  "translation": "从数据集到数据拆分"
+}, {
+  "tag": "P",
+  "text": "In the early 20th century, a desire to make better decisions under uncertainty led to the birth of a parallel profession: statistics. Statisticians help you test whether it’s sensible to behave as though a phenomenon also applies beyond your current dataset.",
+  "translation": "20世纪初，在不确定性下做出更好决策的愿望导致了并行行业的诞生：统计学。 统计人员可以帮助您测试行为是否明智，就好像某种现象也适用于您当前的数据集之外。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*Qf-nGfjaVL9DlGeD?q=20",
+  "caption": "Ronald A. Fisher, “The Father of Statistics” (1890–1962)",
+  "type": "image",
+  "file": "0!Qf-nGfjaVL9DlGeD"
+}, {
+  "tag": "P",
+  "text": "A famous example comes from Ronald A. Fisher, who developed the world’s first statistics textbook. Fisher describes performing a hypothesis test in response to his friend’s claim that she could taste whether milk was added to tea before or after the water. Hoping to prove her wrong, he was instead forced by the data to conclude that she could.",
+  "translation": "著名的例子来自罗纳德·费舍尔（Ronald A. Fisher），他开发了世界上第一本统计学教科书。 费舍尔（Fisher）描述了一项假设检验，以回应他朋友的说法，即无论饮水前后是在茶中添加牛奶，她都可以品尝。 为了证明她是错的，数据迫使他断定她可以。"
+}, {
+  "tag": "P",
+  "text": "Statistical rigor requires you to call your shots before you take them; analytics is more a game of advanced hindsight.",
+  "translation": "严格的统计要求您在拍摄之前先进行拍照； 分析更像是事后的游戏。"
+}, {
+  "tag": "H2",
+  "text": "Achilles’ heel",
+  "translation": "阿喀琉斯之heel"
+}, {
+  "tag": "P",
+  "text": "Analytics and statistics have a major Achilles’ heel: If you use the same data point for hypothesis generation and for hypothesis testing, you’re cheating. (Read this to understand why.) If you choose to use your data for rigor instead of inspiration, you have to get your inspiration elsewhere. The classic source is thinking hard. In other words, you sit and meditate in a broom closet, carefully framing your statistical question, articulating all your assumptions, and then you’ve got one shot at testing whether your mental model of the world actually holds any water.",
+  "translation": "分析和统计数据有一个致命的弱点：如果您使用相同的数据点进行假设生成和假设检验，那么您就是在作弊。 （阅读此书以了解原因。）如果您选择使用数据来代替严谨而不是灵感，那么您就必须从别处获得灵感。 经典消息来源在认真思考。 换句话说，您坐在扫帚壁橱里打坐，仔细思考一下统计问题，阐明所有假设，然后就可以测试世界上的心理模型是否真正积水了。"
+}, {
+  "tag": "P",
+  "text": "Unfortunately, it takes an awful lot of effort and training to mathematically specify the entirety of your hunch in such a way as to test it. You need quite the mental focus. But at least now you have a legitimate way of checking whether your impressions are worth acting on. Welcome to statistics in the late 1900s.",
+  "translation": "不幸的是，以数学方式测试您的直觉需要花费大量的精力和训练。 您需要相当的精神专注。 但是至少现在您拥有一种合法的方法来检查您的印象是否值得采取行动。 欢迎使用1900年代后期的统计数据。"
+}, {
+  "tag": "H2",
+  "text": "The dataset revolution",
+  "translation": "数据集革命"
+}, {
+  "tag": "P",
+  "text": "Statistical rigor requires you to call your shots before you take them; analytics is more a game of advanced hindsight. These disciplines were almost tragicomically incompatible, until the next major revolution — data splitting — changed everything.",
+  "translation": "严格的统计要求您在拍摄之前先进行拍照； 分析更像是事后的游戏。 这些学科在交通上几乎是不相容的，直到下一次重大革命（数据拆分）改变了一切。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*Hn38NRqBLcALy28C?q=20",
+  "type": "image",
+  "file": "0!Hn38NRqBLcALy28C"
+}, {
+  "tag": "P",
+  "text": "Data splitting is a simple idea, but to a data scientist like myself, it’s one of the most profound. If you have only one dataset, you must choose between analytics (untestable inspiration) and statistics (rigorous conclusions). The hack? Split your dataset into two pieces, then have your cake and eat it too!",
+  "translation": "数据拆分是一个简单的想法，但对像我这样的数据科学家来说，这是最深刻的想法之一。 如果只有一个数据集，则必须在分析（令人鼓舞的灵感）和统计信息（严格的结论）之间进行选择。 骇客？ 将您的数据集分为两部分，然后吃点蛋糕也吃！"
+}, {
+  "tag": "P",
+  "text": "The two-dataset era replaces the analytics-statistics tension with coordinated teamwork between two different breeds of data specialist. Analysts use one dataset to help you frame your questions, then statisticians use the other dataset to bring you rigorous answers.",
+  "translation": "两数据集时代用两个不同品种的数据专家之间的协作团队合作来取代分析统计的紧张关系。 分析师使用一个数据集来帮助您提出问题，然后统计学家使用另一个数据集来为您提供严格的答案。"
+}, {
+  "tag": "P",
+  "text": "Split your dataset into two pieces, then have your cake and eat it too!",
+  "translation": "将您的数据集分为两部分，然后吃点蛋糕也吃！"
+}, {
+  "tag": "P",
+  "text": "Such luxury comes with a hefty price tag: quantity. Splitting is easier said than done if you’ve struggled to scrape together enough information for even one respectable dataset. The two-dataset era is a fairly new development that goes hand-in-hand with better processing hardware, lower storage costs and the ability to share collected information over the internet.",
+  "translation": "这样的奢侈品带有高昂的价格标签：数量。 如果您很难为一个可观的数据集收集足够的信息，那么说起来容易做起来难。 两数据集时代是一个相当新的发展，它与更好的处理硬件，更低的存储成本以及通过Internet共享收集的信息的能力紧密结合。"
+}, {
+  "tag": "P",
+  "text": "In fact, the technological innovations that led to the two-dataset era rapidly ushered in the next phase, a three-dataset era of automated inspiration. There’s a more familiar word for it: machine learning.",
+  "translation": "实际上，导致两数据集时代的技术创新迅速进入了下一阶段，即自动灵感的三数据集时代。 有一个更熟悉的词：机器学习。"
+}, {
+  "tag": "H2",
+  "text": "Testing as a one-shot proposition",
+  "translation": "一口气进行测试"
+}, {
+  "tag": "P",
+  "text": "Ever wondered why statisticians tend to be tend to be on the twitchy side when it comes to rigor and data? Looking at a dataset before you’ve planned your questions destroys its purity as a source of statistical rigor. If you ask the wrong question or you ask it foolishly, you don’t get to ask the oracle a second time.",
+  "translation": "曾经想过为什么在涉及严格性和数据性时，为什么统计学家倾向于倾向于抽搐呢？ 在计划问题之前先查看数据集会破坏其作为统计严谨性来源的纯度。 如果您问错了问题或愚蠢地提出了问题，那么您就不必第二次询问神谕了。"
+}, {
+  "tag": "P",
+  "text": "Even if you’re thinking about making multiple comparisons corrections — that statistical incantation that allows multiple hypotheses per dataset — your procedures are only valid if you plan all your hypotheses in advance. You’re not allowed to play 20 questions with your test dataset, zooming in on a shiny result iteratively and pretending that you’ve kept your hands clean."
+}, {
+  "tag": "P",
+  "text": "Testing is still a one-shot proposition — you’re not allowed to go creeping iteratively towards a solution.",
+  "translation": "测试仍然是一针见血的提议-不允许您迭代地寻求解决方案。"
+}, {
+  "tag": "P",
+  "text": "For the rigorous approach to be valid, you must plan up front, use some apology-laden math if there’s more than one question, then execute the tests simultaneously one time. You may not open that test dataset more than once.",
+  "translation": "为了使这种严格的方法有效，您必须预先计划，如果有多个问题，请使用一些道歉的数学运算，然后同时执行一次测试。 您不能多次打开该测试数据集。"
+}, {
+  "tag": "H2",
+  "text": "The luxury of a third dataset",
+  "translation": "第三数据集的奢华"
+}, {
+  "tag": "P",
+  "text": "Since you only get one shot, how do you know which “insight” from analytics is most worthy of testing? Well, if you had a third dataset, you could use it to take your inspiration for a test drive. This screening process is called validation; it’s at the heart of what makes machine learning tick.",
+  "translation": "既然您只有一个机会，您如何知道分析中最值得测试的“洞察力”？ 好吧，如果您有第三个数据集，则可以用它来激发您进行测试的灵感。 此筛选过程称为验证； 这是使机器学习成功的关键。"
+}, {
+  "tag": "P",
+  "text": "Validation is at the heart of what makes machine learning tick — it allows you to automate inspiration.",
+  "translation": "验证是使机器学习更上一层楼的核心-它使您可以自动激发灵感。"
+}, {
+  "tag": "P",
+  "text": "Once you’re free to throw everything at the validation wall and see what sticks, you can safely let everyone have a go at coming up with a solution: seasoned analyst, intern, tea leaves, and even algorithms with no context about your business problem. Whichever solution works best in validation becomes a candidate for the proper statistical test. You’ve just empowered yourself to automate inspiration!",
+  "translation": "一旦您有空将所有内容扔到验证墙上，看看有什么问题，就可以放心地让每个人都提出解决方案：经验丰富的分析师，实习生，茶叶，甚至是与您的业务问题无关的算法 。 哪种解决方案在验证方面最有效，都将成为进行适当统计检验的候选者。 您刚刚授权自己可以自动化灵感！"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/0*baVmQDqZjg7OMz8G?q=20",
+  "caption": "Image: source.",
+  "type": "image",
+  "file": "0!baVmQDqZjg7OMz8G"
+}, {
+  "tag": "H2",
+  "text": "AI = Automated inspiration",
+  "translation": "AI =自动化灵感"
+}, {
+  "tag": "P",
+  "text": "This is why machine learning is a revolution of datasets, not just data. It depends on the luxury of having enough data for a three-way split.",
+  "translation": "这就是为什么机器学习是数据集的革命，而不仅仅是数据。 这取决于是否有足够的数据进行三路拆分。"
+}, {
+  "tag": "P",
+  "text": "Where does artificial intelligence (AI) fit into the picture? Machine learning with deep neural networks is technically called deep learning, but it got another nickname that stuck: AI. Although AI once had a different meaning, today you’re most likely to find it used as a synonym for deep learning.",
+  "translation": "人工智能（AI）在哪里适合？ 深度神经网络的机器学习在技术上被称为深度学习，但它又有一个绰号：人工智能。 尽管AI曾经有不同的含义，但今天您最有可能发现AI被用作深度学习的同义词。"
+}, {
+  "tag": "P",
+  "text": "Deep neural networks earned their hype by virtue of outclassing less sophisticated ML algorithms on many complex tasks. But they require much more data to train them, and with processing requirements beyond those of a typical laptop. That’s why the rise of modern AI is a cloud story; the cloud allows you to rent someone else’s data center instead of committing to building your deep learning rig, making AI a try-before-you-buy proposition.",
+  "translation": "深度神经网络在许多复杂任务上胜过不那么复杂的ML算法，因此赢得了炒作。 但是它们需要更多的数据来训练它们，并且处理要求超出了典型笔记本电脑的要求。 这就是为什么现代AI的兴起是云计算的故事； 云使您可以租用他人的数据中心，而不必致力于构建深度学习平台，从而使AI成为先试后买的命题。"
+}, {
+  "tag": "P",
+  "text": "The rise of modern AI is a cloud story, since the cloud makes AI a try-before-you-buy proposition.",
+  "translation": "现代AI的兴起是云的故事，因为云使AI成为先试后买的主张。"
+}, {
+  "tag": "P",
+  "text": "With this puzzle piece in place, we have the full complement of professions: ML/AI, analytics and statistics. The umbrella term that encompasses all of them is called data science, the discipline of making data useful.",
+  "translation": "有了这个拼图，我们就可以拥有各种专业的补充：ML / AI，分析和统计。 涵盖所有这些术语的总称称为数据科学，即使数据有用的学科。"
+}, {
+  "tag": "H2",
+  "text": "The future of inspiration",
+  "translation": "灵感的未来"
+}, {
+  "tag": "P",
+  "text": "Modern data science is the product of our three-dataset era, but many industries routinely generate more than enough data. So is there a case for four datasets?",
+  "translation": "现代数据科学是我们三数据集时代的产物，但是许多行业通常会生成足够多的数据。 那么是否有四个数据集的案例？"
+}, {
+  "tag": "P",
+  "text": "Well, what’s your next move if the model you just trained gets a low validation score? If you’re like most people, you’ll immediately demand to know why! Unfortunately, there’s no dataset you can ask. You might be tempted to go sleuthing in your validation dataset, but unfortunately debugging breaks its ability to screen your models effectively.",
+  "translation": "好吧，如果您刚刚训练的模型的验证分数很低，您的下一步行动是什么？ 如果您像大多数人一样，就会立即要求知道原因！ 不幸的是，您无法查询任何数据集。 您可能很想研究验证数据集，但是不幸的是，调试破坏了它有效筛选模型的能力。"
+}, {
+  "tag": "P",
+  "text": "By subjecting your validation dataset to analytics, you’re effectively turning your three datasets back into two. Instead of finding help, you’ve unwittingly gone back an era!",
+  "translation": "通过对验证数据集进行分析，可以有效地将三个数据集变回两个。 您没有寻求帮助，而是不经意地回到了一个时代！"
+}, {
+  "tag": "P",
+  "text": "The solution lies outside the three datasets you’re already using. To unlock smarter training iteration and hyperparameter tuning, you’ll want to join the cutting edge: an era of four datasets.",
+  "translation": "该解决方案不在您已经使用的三个数据集中。 要解锁更智能的训练迭代和超参数调整，您需要加入最前沿的技术：四个数据集的时代。"
+}, {
+  "tag": "P",
+  "text": "The cutting edge is four-way data splitting to fuel acceleration.",
+  "translation": "最前沿的是四路数据分割，以实现燃油加速。"
+}, {
+  "tag": "P",
+  "text": "If you think of the other three datasets as giving you inspiration, iteration and rigorous testing, then the fourth fuels acceleration, shortening your AI development cycle through advanced analytics techniques geared at providing clues as to what approaches to try on each round. By embracing four-way data splitting, you’ll be in the best position to take advantage of data abundance! Welcome to the future.",
+  "translation": "如果您认为其他三个数据集为您提供了灵感，迭代和严格的测试，那么第四个可以加速，通过先进的分析技术缩短AI开发周期，该技术旨在提供有关每轮尝试方法的线索。 通过采用四向数据拆分，您将处于最佳位置，可以充分利用数据量！ 欢迎来到未来。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Cassie Kozyrkov的文章《AI = “Automated Inspiration”》，参考：https://towardsdatascience.com/ai-automated-inspiration-75bff7b9481b)",
+  "translation": "（本文翻译自Cassie Kozyrkov的文章，《 AI =“自动化的灵感”》，参考：https：//towardsdatascience.com/ai-automated-inspiration-75bff7b9481b）"
+}]

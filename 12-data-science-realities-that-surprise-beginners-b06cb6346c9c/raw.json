@@ -1,0 +1,107 @@
+[{
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*MwzFuZvmwE-B2K2N9Q6CvQ.png?q=20",
+  "type": "image",
+  "file": "1!MwzFuZvmwE-B2K2N9Q6CvQ.png"
+}, {
+  "tag": "P",
+  "text": "Hi there, I am Mısra, a data scientist, who arrived where she is through an untraditional path. Now, I am on a mission to help others who are on the same journey and need guidance. I write for aspiring data scientists whose time is valuable. Visit the website to download my free data science compass to help you along your journey.",
+  "translation": "嗨，我是数据科学家Mısra，她通过一条非传统的道路到达了她所在的位置。 现在，我的任务是帮助那些在同一旅程中并需要指导的其他人。 我为有抱负的数据科学家而写，他们的时间很宝贵。 访问该网站以下载我的免费数据科学指南针，以帮助您完成自己的旅程。"
+}, {
+  "tag": "P",
+  "text": "If you are interested in stories from real-life data scientists and data professionals listen to “So you want to be a data scientist?” on your favorite podcast player.",
+  "translation": "如果您对现实生活中的数据科学家的故事感兴趣，那么数据专家会听“那么您想成为数据科学家吗？” 在您最喜欢的播客播放器上。"
+}, {
+  "tag": "FIGURE",
+  "type": "code"
+}, {
+  "tag": "H1",
+  "text": "12 data science realities that surprise beginners",
+  "translation": "令初学者惊讶的12种数据科学现实"
+}, {
+  "tag": "H2",
+  "text": "Things you should be aware of while day-dreaming about a data science job",
+  "translation": "做白日梦的数据科学工作时应注意的事项"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*A0xaGLAVyW54RqmWkTlKXg.jpeg?q=20",
+  "caption": "Photo by You X Ventures on Unsplash",
+  "type": "image",
+  "file": "1!A0xaGLAVyW54RqmWkTlKXg.jpeg"
+}, {
+  "tag": "P",
+  "text": "So you want to become a data scientist? Close your eyes and tell me what you see yourself doing.",
+  "translation": "您想成为一名数据科学家吗？ 闭上你的眼睛，告诉我你在做什么。"
+}, {
+  "tag": "P",
+  "text": "I can’t really hear you but I’m going to assume it sounds something more or less like this: “I’m in front of my computer doing modelling using the latest and coolest algorithms. I make an amazing chart based on the results of my cutting edge model to help decide the next steps of the company I’m working for. I present my findings and everyone is extremely impressed and it changes the way that we do business.” This is what I had in mind when I was an aspiring data scientist. I never really stopped to think about the tiny little annoying details that might come my way.",
+  "translation": "我真的听不到您的声音，但我会假设听起来或多或少是这样的：“我坐在电脑前，使用最新最酷的算法进行建模。 我根据最先进模型的结果制作了一张惊人的图表，以帮助决定我所服务的公司的下一步行动。 我介绍了我的发现，每个人都印象深刻，它改变了我们开展业务的方式。” 这是我有抱负的数据科学家时所想到的。 我从未真正停止过思考可能会出现的微小烦人的细节。"
+}, {
+  "tag": "P",
+  "text": "From what I’ve experienced so far, being a data scientist has its fair share of … side-effects let’s call them. In this article, I will tell you some of the day-to-day problems/realities a data scientist deals with, in hopes to illustrate the reality of the job.",
+  "translation": "从到目前为止的经验来看，作为一名数据科学家，有相当一部分……副作用称为“副作用”。 在本文中，我将告诉您数据科学家正在处理的一些日常问题/现实，以期说明这项工作的现实。"
+}, {
+  "tag": "P",
+  "text": "#1: You’re probably going to receive dirty data that is messy beyond explanation and will need to track down 5 different people to explain 5 different parts of the data to you, in incompatible ways.",
+  "translation": "＃1：您可能会收到脏乱的数据，杂乱无章，无法解释，需要以不兼容的方式跟踪5个不同的人向您解释数据的5个不同部分。"
+}, {
+  "tag": "P",
+  "text": "#2: Prior to implementing something that is going to be useful, you will work on many things that are going to be discarded.",
+  "translation": "＃2：在实施有用的东西之前，您将处理许多将被丢弃的东西。"
+}, {
+  "tag": "P",
+  "text": "#3: You will spend more time than you can imagine on data cleaning and feature engineering. After all, that is many times where the magic happens.",
+  "translation": "＃3：您将在数据清理和功能设计上花费比您想象的更多的时间。 毕竟，这是魔术发生的许多次。"
+}, {
+  "tag": "P",
+  "text": "#4: You might actually need to use excel or build extremely simple products depending on the problem. It is not lazy, but rather smart to start small and build up to more complex solutions.",
+  "translation": "＃4：根据问题，您实际上可能需要使用excel或构建极其简单的产品。 从小处着手，逐步建立更复杂的解决方案，这不是偷懒，而是明智的。"
+}, {
+  "tag": "P",
+  "text": "#5: You’re going to have to learn to ward people off when they come to you asking for dashboards or fancy visualisations on their data. On the bright side, even though it’s annoying not to be using your full potential in those type of assignments, it is fun to work on a simple side project sometimes.",
+  "translation": "＃5：当人们来找您，要求他们提供仪表盘或精美的可视化显示时，您将必须学会避开人们。 从好的方面来说，即使在这种类型的任务中不充分利用自己的潜力很烦人，但有时进行一个简单的副项目还是很有趣的。"
+}, {
+  "tag": "P",
+  "text": "#6: You don’t only need to know data science, you also need to know how to handle data. You have to make sure to follow compliance and GDPR rules.",
+  "translation": "＃6：您不仅需要了解数据科学，还需要知道如何处理数据。 您必须确保遵守法规和GDPR规则。"
+}, {
+  "tag": "P",
+  "text": "#7: Clients are going to come asking about the latest thing they heard (the shiny new algorithm they read about on Wired magazine or a new explainability tool) even if it has nothing to do with the project you’re working on. Most of the time, it will be your responsibility to explain the situation.",
+  "translation": "＃7：客户会来询问他们所听到的最新消息（他们在Wired杂志或新的可解释性工具上读到的闪亮的新算法），即使这与您正在从事的项目无关。 在大多数情况下，解释情况将是您的责任。"
+}, {
+  "tag": "P",
+  "text": "#8: You’re not actually going to develop algorithms. Those are already made, packaged and delivered for you. It sure helps to know how everything works but your relationship with the algorithms themselves will probably only consist of tuning their parameters.",
+  "translation": "＃8：您实际上不会开发算法。 这些已经为您制作，打包和交付。 它肯定有助于了解一切工作原理，但是您与算法本身的关系可能仅包括调整其参数。"
+}, {
+  "tag": "P",
+  "text": "#9: You are going to have to explain what machine learning/data science/AI can or cannot achieve before, during and after a project.",
+  "translation": "＃9：您将不得不解释在项目之前，期间和之后，机器学习/数据科学/人工智能可以实现或不能实现的目标。"
+}, {
+  "tag": "P",
+  "text": "#10: You cannot hide in your computer after receiving a piece of data. Understanding your problem’s domain is one of the most important parts of a data science project. You are going to have to learn a good deal on how “the thing that data is collected from” works.",
+  "translation": "＃10：收到一条数据后，您将无法隐藏在计算机中。 了解问题的领域是数据科学项目中最重要的部分之一。 您将必须学习很多有关“收集数据的东西”如何工作的知识。"
+}, {
+  "tag": "P",
+  "text": "#11: You do have to convince business stakeholders of the value of your solution. Even though we live in a world hyped beyond explanation about data and AI, it still takes effort to bring everyone on board. Especially when you are changing how something is done in your company.",
+  "translation": "＃11：您必须使业务利益相关者相信您的解决方案的价值。 即使我们生活在一个无法解释数据和AI的世界中，仍然需要努力使所有人参与进来。 尤其是当您更改公司的工作方式时。"
+}, {
+  "tag": "P",
+  "text": "#12: You also have to get your business stakeholders to understand the non-deterministic state of your solution. Machine learning solutions do not base the results on physical rules. The results are based on patterns in the data. This fact is sometimes hard to get across to stakeholders who are used to hearing “cat”, “dog” or “rabbit” instead of “dog with a probability of 0.879”.",
+  "translation": "＃12：您还必须让您的业务利益相关者了解您解决方案的不确定性状态。 机器学习解决方案并不基于物理规则得出结果。 结果基于数据中的模式。 有时很难向习惯于听“猫”，“狗”或“兔子”而不是“狗的概率为0.879”的利益相关者传达这一事实。"
+}, {
+  "tag": "P",
+  "text": "If you go online and read answers to Quora questions on “the reality of being a data scientist” you’re likely going to see similar or even worse sounding anecdotes from others. Nevertheless, these facts should not discourage you from pursuing a career in data science.",
+  "translation": "如果您上网阅读有关“成为数据科学家的现实”的Quora问题的答案，则很可能会看到其他人听起来相似甚至更糟的轶事。 但是，这些事实不应妨碍您从事数据科学职业。"
+}, {
+  "tag": "P",
+  "text": "If you ask me, these little “side-effects” are the things that keep me on my toes and make it even more fun for me. I like that the data does not come extremely clean every time. The process of cleaning helps me understand the data better, it helps me learn things about it I would have otherwise not realised. I also like studying different domains. The nature of my job requires me to learn about different industries and no matter how uninterested I think I am about an industry, I always end up learning something that fascinates me.",
+  "translation": "如果您问我，这些小“副作用”就是让我保持警惕并使其变得更有趣的事情。 我喜欢数据并非每次都非常干净。 清除过程可以帮助我更好地理解数据，还可以帮助我了解有关数据的知识，否则我将无法意识到。 我也喜欢研究不同的领域。 我的工作性质要求我学习不同的行业，无论我认为自己对某个行业有多感兴趣，我总会学到一些令我着迷的东西。"
+}, {
+  "tag": "P",
+  "text": "All I want you to do is to be aware of what to expect from a data scientist position. You probably won’t live a dream starting from the first day of the job. But as long as you enjoy what you’re doing enough to deal with the side-troubles, you will be fine.",
+  "translation": "我要做的就是了解数据科学家的职位。 从工作的第一天开始，您可能就不会梦想成真。 但是，只要您喜欢自己做的足以应付麻烦的事情，就可以了。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Mısra Turp的文章《12 data science realities that surprise beginners》，参考：https://towardsdatascience.com/12-data-science-realities-that-surprise-beginners-b06cb6346c9c)",
+  "translation": "（本文翻译自MısraTurp的文章，《使初学者感到惊讶的12个数据科学现实》，参考：https：//towardsdatascience.com/12-data-science-realities-that-surprise-beginners-b06cb6346c9c）"
+}]

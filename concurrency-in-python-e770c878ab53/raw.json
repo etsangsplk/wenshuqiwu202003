@@ -1,0 +1,272 @@
+[{
+  "tag": "H1",
+  "text": "Wrap up",
+  "translation": "包起来"
+}, {
+  "tag": "P",
+  "text": "To summarize:",
+  "translation": "总结一下："
+}, {
+  "tag": "UL",
+  "texts": ["Use the threading library (or asyncio) for I/O bound software: it’s lightweight and improves performance considerably", "Use the multiprocessing library for CPU bound problems. It leverages the full potential of all CPUs in a system."],
+  "translations": ["将线程库（或asyncio）用于受I / O约束的软件：它轻巧，可显着提高性能", "使用多处理库解决CPU受限的问题。 它充分利用了系统中所有CPU的全部潜能。"]
+}, {
+  "tag": "P",
+  "text": "Thank you for reading. Please let me know if you spot any mistakes. You’ll be helping a lot of people!",
+  "translation": "感谢您的阅读。 如果发现任何错误，请告诉我。 您会帮助很多人！"
+}, {
+  "tag": "H1",
+  "text": "Multiprocessing with Python",
+  "translation": "使用Python进行多处理"
+}, {
+  "tag": "P",
+  "text": "After this fairly long, but necessary explanation, we are ready for some example code and experiments. Let’s get to work!",
+  "translation": "经过相当长但必要的解释之后，我们已准备好进行一些示例代码和实验。 开始工作吧！"
+}, {
+  "tag": "H2",
+  "text": "Our test function",
+  "translation": "我们的测试功能"
+}, {
+  "tag": "P",
+  "text": "We first define a function that we can use to benchmark our different options. All the following examples use the same function, called heavy :",
+  "translation": "我们首先定义一个函数，我们可以使用该函数对不同的选项进行基准测试。 以下所有示例都使用相同的函数，称为heavy："
+}, {
+  "tag": "PRE",
+  "text": "def heavy(n, myid):  for x in range(1, n):    for y in range(1, n):      x**y  print(myid, \"is done\")",
+  "translation": "def heavy（n，myid）：适用于范围（1，n）中的x：适用于range（1，n）中的y：x ** y print（myid，“完成”）"
+}, {
+  "tag": "P",
+  "text": "The heavy function is a nested loop that does multiplication. It is a CPU-bound function. If you observe your system while running this, you’ll see CPU usage close to 100%. You can replace it with anything you want, but beware of race conditions — don’t use shared objects or variables.",
+  "translation": "重功能是一个执行乘法的嵌套循环。 它是受CPU限制的功能。 如果您在执行此操作时观察系统，则会发现CPU使用率接近100％。 您可以将其替换为所需的任何内容，但要注意竞争状况-请勿使用共享对象或变量。"
+}, {
+  "tag": "P",
+  "text": "We’ll be running this function in different ways and explore the differences between a regular, single thread Python program, multithreading, and multiprocessing.",
+  "translation": "我们将以不同的方式运行此功能，并探讨常规单线程Python程序，多线程和多处理之间的区别。"
+}, {
+  "tag": "H2",
+  "text": "Option 1: The baseline",
+  "translation": "选项1：基准"
+}, {
+  "tag": "P",
+  "text": "Each Python program has at least one thread: the main thread. Below you’ll find the single-threaded version, which serves as our baseline in terms of speed. It runs our heavy function 80 times, sequentially:",
+  "translation": "每个Python程序都有至少一个线程：主线程。 您可以在下面找到单线程版本，它是速度的基准。 它按顺序运行我们的重功能80次："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/eriky/0de249619e6db10fa47b7d47082b4c36/raw/e50de86f4f5d235c0b528b458a12a099710083ce/sequential.py",
+  "code": "from lib import heavy\nimport time\n\n# A CPU heavy calculation, just\n# as an example. This can be\n# anything you like\ndef heavy(n, myid):\n    for x in range(1, n):\n        for y in range(1, n):\n            x**y\n    print(myid, \"is done\")\n\ndef sequential(n):\n    for i in range(n):    \n        heavy(500, i)\n\nstart = time.time()\nsequential(80)\nend = time.time()\nprint(\"Took: \", end - start)\n\n# On my system, this takes\n# about 46 seconds."
+}, {
+  "tag": "H2",
+  "text": "Option 2: using threads",
+  "translation": "选项2：使用线程"
+}, {
+  "tag": "P",
+  "text": "In the following example, we use multiple threads to run heavy, again 80 times. Each invocation gets its own thread:",
+  "translation": "在下面的示例中，我们使用多个线程再次运行80次。 每个调用都有自己的线程："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/eriky/613d2595aeab93d587c5fe6e1171d394/raw/0e159a846f2d76545333d7bc2380cd4260b3ce86/threads.py",
+  "code": "import threading\nimport time\n\n# A CPU heavy calculation, just\n# as an example. This can be\n# anything you like\ndef heavy(n, myid):\n    for x in range(1, n):\n        for y in range(1, n):\n            x**y\n    print(myid, \"is done\")\n\ndef threaded(n):\n    threads = []\n\n    for i in range(n):\n        t = threading.Thread(target=heavy, args=(500,i,))\n        threads.append(t)\n        t.start()\n\n    for t in threads:\n        t.join()\n\nstart = time.time()\nthreaded(80)\nend = time.time()\nprint(\"Took: \", end - start)\n\n# This takes about 47s on my system\n\n# If the heavy function had a lot of\n# blocking IO, like network calls or\n# filesystem operations, this would \n# be a big optimization though\n\n# The reason this is *not* an optimization\n# for CPU bound functions, is the GIL!"
+}, {
+  "tag": "P",
+  "text": "If Python wouldn’t have the GIL, this would be much faster. But despite having 80 threads, this runs roughly as fast as the baseline. The baseline is, in fact, even a little faster because it does not have all the overhead of thread creation and switching between threads.",
+  "translation": "如果Python没有GIL，则速度会更快。 但是，尽管有80个线程，但运行速度大致与基线一样快。 实际上，基线甚至更快一些，因为它没有线程创建和线程之间切换的所有开销。"
+}, {
+  "tag": "P",
+  "text": "This is the GIL at work. Each thread takes turns, instead of running all at once. If heavy would have been an I/O bound function, however, this would have given us a tremendous speed increase. Let’s test this! We can simulate I/O bound by using time.sleep(). I modified the heavy function in the next code fragment:",
+  "translation": "这是工作中的GIL。 每个线程轮流执行，而不是一次运行。 但是，如果将重载作为I / O绑定功能，则可以极大地提高速度。 让我们测试一下！ 我们可以使用time.sleep（）模拟I / O绑定。 我在下一个代码片段中修改了重功能："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/eriky/5de7c7a1247513fa3c097911026d308c/raw/e66c6087387bbdcab2bc40c022b189c279368868/threads_io_bound.py",
+  "code": "import threading\nimport time\n\n# An I/O intensive calculation.\n# We simulate it with sleep.\ndef heavy(n, myid):\n    time.sleep(2)\n    print(myid, \"is done\")\n\ndef threaded(n):\n    threads = []\n\n    for i in range(n):\n        t = threading.Thread(target=heavy, args=(500,i,))\n        threads.append(t)\n        t.start()\n\n    for t in threads:\n        t.join()\n\nstart = time.time()\nthreaded(80)\nend = time.time()\nprint(\"Took: \", end - start)\n\n# This takes a little over 2s on my system"
+}, {
+  "tag": "P",
+  "text": "Even though we have 80 threads all sleeping for two seconds, this code still finishes in a little over two seconds. While sleeping, Python will schedule other threads to run. Sweet!",
+  "translation": "即使我们有80个线程都在睡眠两秒钟，但此代码仍会在两秒钟多的时间内完成。 在睡眠期间，Python将安排其他线程运行。 甜！"
+}, {
+  "tag": "H2",
+  "text": "Option 3: using multiprocessing",
+  "translation": "选项3：使用多重处理"
+}, {
+  "tag": "P",
+  "text": "Now we’ll try true parallelism, with the multiprocessing library.",
+  "translation": "现在，我们将通过多处理库尝试真正的并行性。"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/eriky/0d31a21a04e069bf66831eaede7a5e59/raw/da513e1a0439dfc58899328b5ea5d0cb8f7e6bc4/multiproc.py",
+  "code": "import time\nimport multiprocessing\n\n# A CPU heavy calculation, just\n# as an example. This can be\n# anything you like\ndef heavy(n, myid):\n    for x in range(1, n):\n        for y in range(1, n):\n            x**y\n    print(myid, \"is done\")\n\ndef multiproc(n):\n    processes = []\n\n    for i in range(n):\n        p = multiprocessing.Process(target=heavy, args=(500,i,))\n        processes.append(p)\n        p.start()\n\n    for p in processes:\n        p.join()\n\nstart = time.time()\nmultiproc(80)\nend = time.time()\nprint(\"Took: \", end - start)\n\n# This takes about 23 seconds.\n# That's half of the threaded version.\n# My pc has two cores, so it's exactly\n# what we would expect.\n\n# On my Mackbook Pro, with 4 cores\n# that are faster as well,\n# it takes 10 seconds!"
+}, {
+  "tag": "P",
+  "text": "As you can see, this looks almost the same as the threaded version, code-wise. The threading and multiprocessing libraries are intentionally made very equivalent. But the 80 invocations of heavy finish roughly twice as fast this time!",
+  "translation": "如您所见，就代码而言，这看起来几乎与线程版本相同。 故意使线程和多处理库等效。 但是这次80次重调用的完成速度大约是这次的两倍！"
+}, {
+  "tag": "P",
+  "text": "My test system (a small desktop computer) has only two CPU cores, so that explains why it’s a factor two. If I run this code on my brand new laptop, with 4 faster CPU cores, it’s more than four times faster. This perfectly demonstrates the linear speed increase multiprocessing offers us in case of CPU-bound code.",
+  "translation": "我的测试系统（一台小型台式计算机）只有两个CPU内核，因此可以解释为什么它只有两个。 如果我在具有4个更快CPU内核的全新笔记本电脑上运行此代码，则速度将提高四倍以上。 这完美地证明了在CPU约束代码的情况下，线性提速多处理为我们提供了。"
+}, {
+  "tag": "H2",
+  "text": "Option 4: using multiprocessing with a pool",
+  "translation": "选项4：对池使用多处理"
+}, {
+  "tag": "P",
+  "text": "We can make the multiprocessing version a little more elegant by using multiprocessing.Pool(p). This helper creates a pool of size p processes. If you don’t supply a value for p, it will default to the number of CPU cores in your system, which is a sensible choice.",
+  "translation": "通过使用multiprocessing.Pool（p），我们可以使多处理版本更加优雅。 该帮助程序创建一个大小为p的进程池。 如果不提供p的值，则默认为系统中CPU内核的数量，这是明智的选择。"
+}, {
+  "tag": "P",
+  "text": "By using the Pool.map() method, we can submit work to the pool. This work comes in the form of a simple function call:",
+  "translation": "通过使用Pool.map（）方法，我们可以将工作提交到池中。 这项工作以简单的函数调用的形式出现："
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/eriky/f58b85c2d74981e6e3651d557643a0d0/raw/60c2cd38265971f306646b4e9355d36cb304a920/multiproc_pooled.py",
+  "code": "import time\nimport multiprocessing\n\n# A CPU heavy calculation, just\n# as an example. This can be\n# anything you like\ndef heavy(n, myid):\n    for x in range(1, n):\n        for y in range(1, n):\n            x**y\n    print(myid, \"is done\")\n\ndef doit(n):\n    heavy(500, n)\n\ndef pooled(n):\n    # By default, our pool will have\n    # numproc slots\n    with multiprocessing.Pool() as pool:\n       pool.map(doit, range(n))\n\nstart = time.time()\npooled(80)\nend = time.time()\nprint(\"Took: \", end - start)\n\n# This takes about 23 seconds as well.\n# That's half of the threaded version.\n# My pc has two cores, so it's exactly\n# what we would expect."
+}, {
+  "tag": "P",
+  "text": "The runtime for this version is roughly the same as the non-pooled version, but it has to create fewer processes so it is more efficient. Instead of creating 80 processes, we create four and reuse those each time.",
+  "translation": "此版本的运行时与非池版本大致相同，但是它必须创建更少的进程，因此效率更高。 我们没有创建80个流程，而是创建了四个并每次都重复使用。"
+}, {
+  "tag": "H1",
+  "text": "The GIL: a blessing, a curse or both?",
+  "translation": "GIL：是福是祸？"
+}, {
+  "tag": "P",
+  "text": "Python has one peculiarity that makes concurrent programming harder. It’s called the GIL, short for Global Interpreter Lock. The GIL makes sure there is, at any time, only one thread running. Because only one thread can run at a time, it’s impossible to make use of multiple processors with threads. But don’t worry, there’s a way around this.",
+  "translation": "Python具有一个特殊性，使得并发编程更加困难。 它称为GIL，是Global Interpreter Lock的缩写。 GIL确保在任何时候都只有一个线程在运行。 由于一次只能运行一个线程，因此不可能同时使用多个带有线程的处理器。 但请放心，这是可以解决的。"
+}, {
+  "tag": "P",
+  "text": "The GIL makes sure there is, at any time, only one thread running.",
+  "translation": "GIL确保在任何时候都只有一个线程在运行。"
+}, {
+  "tag": "P",
+  "text": "The GIL was invented because CPython’s memory management is not thread-safe. With only one thread running at a time, CPython can rest assured there will never be race conditions.",
+  "translation": "GIL的发明是因为CPython的内存管理不是线程安全的。 一次只运行一个线程，CPython可以放心，永远不会出现竞争条件。"
+}, {
+  "tag": "H2",
+  "text": "Race conditions? Thread-safety?",
+  "translation": "比赛条件？ 线程安全？"
+}, {
+  "tag": "P",
+  "text": "These terms might be new to you, so let's define them:",
+  "translation": "这些术语可能对您来说并不陌生，因此让我们对其进行定义："
+}, {
+  "tag": "UL",
+  "texts": ["A race condition occurs when multiple threads can access and change shared data at the same time.", "Thread-safe code only manipulates shared data in such a way, that it does not interfere with other threads."],
+  "translations": ["当多个线程可以同时访问和更改共享数据时，就会发生争用情况。", "线程安全代码仅以不干扰其他线程的方式操纵共享数据。"]
+}, {
+  "tag": "P",
+  "text": "As mentioned already, threads share the same memory. With multiple threads running at the same time, we don’t know the order in which the threads access shared data. Therefore, the result of accessing shared data is dependent on the scheduling algorithm. This algorithm decides which thread runs when. Threads are “racing” to access/change the data.",
+  "translation": "如前所述，线程共享相同的内存。 在多个线程同时运行的情况下，我们不知道线程访问共享数据的顺序。 因此，访问共享数据的结果取决于调度算法。 该算法决定哪个线程何时运行。 线程正在“竞争”以访问/更改数据。"
+}, {
+  "tag": "P",
+  "text": "As an example, let’s create a shared variable a, with a value of 2:",
+  "translation": "举例来说，我们创建一个共享变量a，其值为2："
+}, {
+  "tag": "PRE",
+  "text": "a = 2",
+  "translation": "a = 2"
+}, {
+  "tag": "P",
+  "text": "Now suppose we have two threads, thread_one and thread_two. They perform the following operations:",
+  "translation": "现在假设我们有两个线程，thread_one和thread_two。 他们执行以下操作："
+}, {
+  "tag": "UL",
+  "texts": ["thread_one: a = a + 2", "thread_two: a = a * 3"],
+  "translations": ["thread_one：a = a + 2", "thread_two：a = a * 3"]
+}, {
+  "tag": "P",
+  "text": "If thread_one is able to access a first and thread_two second, the result will be:",
+  "translation": "如果thread_one能够首先访问且thread_two能够访问第二，则结果将是："
+}, {
+  "tag": "OL",
+  "texts": ["a = 2 + 2, a is now 4.", "a = 4 * 3, a is now 12."],
+  "translations": ["a = 2 + 2，a现在是4。", "a = 4 * 3，a现在是12。"]
+}, {
+  "tag": "P",
+  "text": "However, if it so happens that thread_two runs first, and then thread_one, we get a different output:",
+  "translation": "但是，如果发生这种情况，先运行thread_two，然后运行thread_one，我们将获得不同的输出："
+}, {
+  "tag": "OL",
+  "texts": ["a = 2 * 3, a = now 6", "a = 6 + 2, a is now 8"],
+  "translations": ["a = 2 * 3，a =现在6", "a = 6 + 2，a现在是8"]
+}, {
+  "tag": "P",
+  "text": "So the order of execution obviously matters for the output. There’s an even worse possible outcome though. What if both threads read a at the same time, do their thing, and then assign the new value? They will both see that a = 2. Depending on who writes its result first, a will eventually be 4 or 6. Not what we expected! This is what we call a race condition.",
+  "translation": "因此，执行顺序显然对输出很重要。 不过，可能会有更糟的结果。 如果两个线程同时读取a并执行各自的操作，然后分配新值，该怎么办？ 他们都将看到a =2。取决于谁首先写入结果，a最终将是4或6。这不是我们期望的！ 这就是我们所说的竞赛条件。"
+}, {
+  "tag": "P",
+  "text": "Race conditions are difficult to spot, especially for software engineers that are unfamiliar with these issues. Also, they tend to occur randomly, causing erratic and unpredictable behavior. These bugs are notoriously difficult to find and debug. It’s exactly why Python has a GIL — to make life easier for the majority of Python users.",
+  "translation": "竞争条件很难发现，尤其是对于不熟悉这些问题的软件工程师而言。 而且，它们倾向于随机发生，导致不稳定和不可预测的行为。 众所周知，这些错误很难发现和调试。 这就是Python拥有GIL的原因-使大多数Python用户的生活更加轻松。"
+}, {
+  "tag": "P",
+  "text": "But if the GIL holds us back in terms of concurrency, shouldn’t we get rid of it or be able to turn it off? It’s not that easy. Other features, libraries, and packages have come to rely on the GIL, so something must replace it or else the entire ecosystem will break. This turns out to be a difficult problem to solve. If it interests you, you can read more about this on the Python wiki.",
+  "translation": "但是，如果GIL在并发方面使我们受挫，我们是否应该摆脱它或能够将其关闭？ 没有那么容易。 其他功能，库和软件包已经依赖于GIL，因此必须替换某些GIL，否则整个生态系统将崩溃。 事实证明这是一个难以解决的问题。 如果您感兴趣，可以在Python Wiki上阅读有关此内容的更多信息。"
+}, {
+  "tag": "P",
+  "text": "It’s exactly why Python has a GIL — to make life easier for the majority of Python users.",
+  "translation": "这就是Python拥有GIL的原因-使大多数Python用户的生活更加轻松。"
+}, {
+  "tag": "H1",
+  "text": "Concurrency in Python",
+  "translation": "Python中的并发"
+}, {
+  "tag": "H2",
+  "text": "3 ways to implement concurrency in your Python programs",
+  "translation": "在Python程序中实现并发的3种方法"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*39gmdxM4bJqM-SjLEHXgJg.jpeg?q=20",
+  "caption": "Photo by Dennis van Zuijlekom on Flickr",
+  "type": "image",
+  "file": "1!39gmdxM4bJqM-SjLEHXgJg.jpeg"
+}, {
+  "tag": "H1",
+  "text": "What is concurrency?",
+  "translation": "什么是并发？"
+}, {
+  "tag": "P",
+  "text": "Concurrency is working on multiple things at the same time. In Python, this can be done in several ways:",
+  "translation": "并发同时处理多个事情。 在Python中，这可以通过几种方式完成："
+}, {
+  "tag": "UL",
+  "texts": ["With threading, by letting multiple threads take turns.", "By firing off a task and continuing to do other stuff, instead of waiting for an answer from the network or disk. This is how asynchronous IO operates with the asyncio library.", "With multiprocessing we’re using multiple processes. This way we can truly do more than one thing at a time using multiple processor cores. This is called parallelism."],
+  "translations": ["通过线程化，可以让多个线程轮流使用。", "通过执行任务并继续执行其他任务，而不是等待来自网络或磁盘的答案。 这就是异步IO与asyncio库一起运行的方式。", "通过多处理，我们使用了多个过程。 这样，我们可以使用多个处理器内核一次真正完成一件事情。 这称为并行性。"]
+}, {
+  "tag": "H2",
+  "text": "The difference between threads and processes",
+  "translation": "线程和进程之间的区别"
+}, {
+  "tag": "P",
+  "text": "A thread is an independent sequence of execution, but it shares memory with all the other threads belonging to your program. A Python program has, by default, one main thread. You can create more of them and let Python switch between them. This switching happens so fast that it appears like they are running side by side at the same time.",
+  "translation": "线程是一个独立的执行序列，但它与属于您程序的所有其他线程共享内存。 默认情况下，Python程序具有一个主线程。 您可以创建更多它们，并让Python在它们之间切换。 这种切换发生得如此之快，以至于它们似乎同时并排运行。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*pLfQI8cnIxm_3C_t9TojxA.png?q=20",
+  "caption": "Single-threaded vs multithreading — Image © by author",
+  "type": "image",
+  "file": "1!pLfQI8cnIxm_3C_t9TojxA.png"
+}, {
+  "tag": "P",
+  "text": "A process is also an independent sequence of execution. Unlike threads, a process has its own memory space that is not shared with other processes. A process can clone itself, creating two or more instances.",
+  "translation": "流程也是独立的执行顺序。 与线程不同，一个进程具有自己的内存空间，该内存空间不与其他进程共享。 一个进程可以克隆自己，创建两个或更多实例。"
+}, {
+  "tag": "P",
+  "text": "The following image illustrates this:",
+  "translation": "下图说明了这一点："
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*56Gb4UiC4_GUwIUcofDEIg.png?q=20",
+  "caption": "Multiprocessing — Image © by author",
+  "type": "image",
+  "file": "1!56Gb4UiC4_GUwIUcofDEIg.png"
+}, {
+  "tag": "P",
+  "text": "Asynchronous IO is not threading, nor is it multiprocessing. In fact, it is a single-threaded, single-process paradigm. I will not go into asynchronous IO in this article.",
+  "translation": "异步IO既不是线程化的，也不是多处理的。 实际上，它是单线程，单进程的范例。 我不会在本文中介绍异步IO。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Erik-Jan van Baaren的文章《Concurrency in Python》，参考：https://towardsdatascience.com/concurrency-in-python-e770c878ab53)",
+  "translation": "（本文翻译自Erik-Jan van Baaren的文章《 Python中的并发性》，参考：https：//towardsdatascience.com/concurrency-in-python-e770c878ab53）"
+}]

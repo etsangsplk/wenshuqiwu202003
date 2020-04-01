@@ -1,0 +1,98 @@
+[{
+  "tag": "H1",
+  "text": "What, Why and How of Time Series Database",
+  "translation": "时间序列数据库的内容，原因和方式"
+}, {
+  "tag": "H2",
+  "text": "What is Time Series data? Why do we need separate DB to handle DB? How does Time Series DB handle data?",
+  "translation": "什么是时间序列数据？ 为什么我们需要单独的数据库来处理数据库？ 时间序列数据库如何处理数据？"
+}, {
+  "tag": "P",
+  "text": "If you are following tech, there is good chance to encounter the term Time Series Database. This article is indented to convey —",
+  "translation": "如果您关注技术，则很有可能遇到术语“时间序列数据库”。 本文旨在传达-"
+}, {
+  "tag": "UL",
+  "texts": ["What is Time Series data?", "Why is Time Series becoming more relevant now?", "Why do we need a separate DB for handling Time Series data?", "How does Time Series DB work?"],
+  "translations": ["什么是时间序列数据？", "为什么时间序列现在变得越来越重要？", "为什么我们需要一个单独的数据库来处理时间序列数据？", "时间序列数据库如何工作？"]
+}, {
+  "tag": "H2",
+  "text": "What?",
+  "translation": "什么？"
+}, {
+  "tag": "P",
+  "text": "As per Wikipedia",
+  "translation": "根据维基百科"
+}, {
+  "tag": "P",
+  "text": "A time series is a series of data points indexed (or listed or graphed) in time order. Most commonly, a time series is a sequence taken at successive equally spaced points in time.",
+  "translation": "时间序列是按时间顺序索引（或列出或绘制图形）的一系列数据点。 最常见的是，时间序列是在连续的等间隔时间点上获取的序列。"
+}, {
+  "tag": "P",
+  "text": "Time Series data is a sequence of data points. And each data point is a combination of timestamp and a value. For example an application monitoring a server will be sending CPU usage at regular interval. Each entry will be a pair of timestamp and with the CPU usage. And the data will look like —",
+  "translation": "时间序列数据是一系列数据点。 每个数据点都是时间戳和值的组合。 例如，监视服务器的应用程序将定期发送CPU使用率。 每个条目都是一对时间戳记以及CPU使用率。 数据看起来像-"
+}, {
+  "tag": "FIGURE",
+  "type": "code",
+  "raw": "https://gist.github.com/arunghosh/ce7c15c4570041d511cd91fc980969a3/raw/4940eb0136e554727879fa9cd19f1f80a400cc73/server-monitoring.csv",
+  "code": "Timestamp,Value\n2019-12-27T10:50:00, 20\n2019-12-27T10:52:00, 22\n2019-12-27T10:54:00, 23\n2019-12-27T10:56:00, 21"
+}, {
+  "tag": "P",
+  "text": "It is getting more limelight now because of lot of Time Series data is being generated from sources like—",
+  "translation": "由于越来越多的时间序列数据是从诸如"
+}, {
+  "tag": "UL",
+  "texts": ["IoT sensor — There are sensors every where from from big industries to activity sensor in the wrist watches/bands. They generate large amount of data that need to be stored and processed.", "Stock market price generates large amount of data that need to be processed real-time.", "Server monitoring — Servers need to be monitored for different factors like CPU usage, memory usage, disk IOPS, etc."],
+  "translations": ["物联网传感器-从大型行业到手表/表带中的活动传感器，到处都有传感器。 它们会生成大量需要存储和处理的数据。", "股市价格会生成大量需要实时处理的数据。", "服务器监视-需要监视服务器的不同因素，例如CPU使用率，内存使用率，磁盘IOPS等。"]
+}, {
+  "tag": "P",
+  "text": "Why?",
+  "translation": "为什么？"
+}, {
+  "tag": "P",
+  "text": "The above server monitoring data looks simple, right? Simple enough to be handled by most of the data stores like Relational DB(PostgresSQL) or Document Store(MongoDB). Then why do we need a special database to manage time series data? The reason lies in the nature of Time Series data and the way it is managed/processed—",
+  "translation": "上面的服务器监视数据看起来很简单，对吧？ 足够简单，可以处理大多数数据存储，例如关系数据库（PostgresSQL）或文档存储（MongoDB）。 那么，为什么我们需要一个特殊的数据库来管理时间序列数据？ 原因在于时间序列数据的性质及其管理/处理方式，"
+}, {
+  "tag": "UL",
+  "texts": ["High write throughput — need to support high write through put or rather high rate of INSERT operation. The operation is more of INSERT than update.", "Analyze large range of data — the query requirement might be to get the weekly average of the stock value of APPLE for the past 4 years.", "Data lifecycle management — there can requirement where in we need to have higher precision for the recent data than old data. So as data becomes it old it need to be aggregated and downsampled."],
+  "translations": ["高写入吞吐量-需要支持高写入吞吐量或较高的INSERT操作速率。 该操作比更新更多的是INSERT。", "分析大量数据-查询需求可能是获取过去4年APPLE股票周平均价值。", "数据生命周期管理-可以要求我们在什么地方需要对新数据进行比旧数据更高的精度。 因此，随着数据变旧，需要对其进行汇总和下采样。"]
+}, {
+  "tag": "P",
+  "text": "The above points limits the usage of RDBMS and Document Store from handling Time Series data. To summarize Time Series DB should",
+  "translation": "以上几点限制了RDBMS和Document Store在处理时间序列数据方面的使用。 总结时间序列数据库应该"
+}, {
+  "tag": "UL",
+  "texts": ["Support high INSERT rate", "Analyze large rage is data", "Manage TS data lifecycle needs"],
+  "translations": ["支持高插入率", "分析大怒是数据", "管理TS数据生命周期需求"]
+}, {
+  "tag": "P",
+  "text": "In addition to the above mentioned points some DBs(Prometheus) provide monitoring and alerting system.",
+  "translation": "除上述要点外，某些数据库（Prometheus）还提供监视和警报系统。"
+}, {
+  "tag": "H2",
+  "text": "How?",
+  "translation": "怎么样？"
+}, {
+  "tag": "P",
+  "text": "A main factor that differentiates Time Series DB and other DBs is Indexing. The Indexing is designed based the fact that Time Series transaction are mostly INSERTs and not UPDATEs.",
+  "translation": "区分时间序列数据库和其他数据库的一个主要因素是索引。 索引是基于以下事实而设计的：时间序列事务主要是INSERT，而不是UPDATE。"
+}, {
+  "tag": "P",
+  "text": "Different Time Series DBs take different approach for indexing. For example TimeScaleDB is build on top of PostgresSQL. It’s index is based on B-Tree. On the other hand InfluxDB has a new index by name Time Series Index(TSI) based on LSM Tree.",
+  "translation": "不同的时间序列数据库采用不同的索引方法。 例如，TimeScaleDB构建在PostgresSQL之上。 它的索引基于B树。 另一方面，InfluxDB具有一个基于LSM树的名为时间序列索引（TSI）的新索引。"
+}, {
+  "tag": "P",
+  "text": "There is an interesting read on why TimeScaleDB went for an B-Tree based relational database for Time Series DB, given the fact that LSM Tree supports faster inserts than B-Tree.",
+  "translation": "考虑到LSM Tree支持比B-Tree更快的插入这一事实，有一篇有趣的文章介绍了TimeScaleDB为什么选择基于B系列的时间序列DB的关系数据库。"
+}, {
+  "tag": "H2",
+  "text": "Reference",
+  "translation": "参考"
+}, {
+  "tag": "UL",
+  "texts": ["https://habr.com/en/company/postgrespro/blog/441962/", "https://docs.influxdata.com/influxdb/v1.7/concepts/time-series-index/", "https://blog.timescale.com/blog/time-series-data-why-and-how-to-use-a-relational-database-instead-of-nosql-d0cd6975e87c/", "https://prometheus.io/"],
+  "translations": ["https://habr.com/en/company/postgrespro/blog/441962/", "https://docs.influxdata.com/influxdb/v1.7/concepts/time-series-index/", "https://blog.timescale.com/blog/time-series-data-why-and-how-to-use-a-relational-database-instead-of-nosql-d0cd6975e87c/", "https://prometheus.io/"]
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Arun Ghosh的文章《What, Why and How of Time Series Database》，参考：https://medium.com/@_arun_ghosh/what-why-and-how-of-time-series-database-c858cf2e9bb)",
+  "translation": "（本文翻译自Arun Ghosh的文章《时间序列数据库的内容，原因和方式》，参考：https：//medium.com/@__arun_ghosh/what-why-and-how-of-time-series-database-c858cf2e9bb ）"
+}]

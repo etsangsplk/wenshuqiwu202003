@@ -1,0 +1,175 @@
+[{
+  "tag": "P",
+  "text": "Let us see how we can use the __call__ method in a metaclass.",
+  "translation": "让我们看看如何在元类中使用__call__方法。"
+}, {
+  "tag": "P",
+  "text": "Assume that, we have to create a singleton class which creates only 1 object in its lifetime irrespective of the number of times the class is instantiated.",
+  "translation": "假定我们必须创建一个单例类，该类在其生存期内仅创建1个对象，而与实例化该实例的次数无关。"
+}, {
+  "tag": "PRE",
+  "text": "class MyMeta(type):    _instances = {}    def __call__(cls, *args, **kwargs):        if cls not in MyMeta._instances:            MyMeta._instances[cls] = super().__call__(*args, **kwargs)        return MyMeta._instances[cls]class Singleton(metaclass=MyMeta): pass x = Singleton()y = Singleton()print(x is y)  # Outputs True",
+  "translation": "class MyMeta（type）：_instances = {} def __call __（cls，* args，** kwargs）：如果cls不在MyMeta._instances中：MyMeta._instances [cls] = super（）。__call __（* args，** kwargs ）return MyMeta._instances [cls] class Singleton（metaclass = MyMeta）：通过x = Singleton（）y = Singleton（）print（x is y）＃输出True"
+}, {
+  "tag": "P",
+  "text": "So, how it works?",
+  "translation": "那么，它是如何工作的呢？"
+}, {
+  "tag": "OL",
+  "texts": ["Everytime the classes are instantiated, __call__ method from the metaclass gets invoked.", "We maintain a dictionary _instances in our metaclass MyMeta which holds the reference between each class and its object.", "During first invocation, the class is not present in _instances dictionary.", "We call the default __call__ method from type , get the object and update our dictionary.", "For further class instantiations, the same object from the _instances dictionary is returned."],
+  "translations": ["每次实例化类时，都会调用元类中的__call__方法。", "我们在元类MyMeta中维护一个字典_instances，该字典包含每个类与其对象之间的引用。", "在第一次调用期间，该类不在_instances词典中。", "我们从type调用默认的__call__方法，获取对象并更新字典。", "对于进一步的类实例化，将返回_instances词典中的相同对象。"]
+}, {
+  "tag": "H1",
+  "text": "Introduction to metaclasses in Python",
+  "translation": "Python元类简介"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*HdWQ5O4fQ5NyPZhJXpbKAQ.png?q=20",
+  "caption": "Introduction to metaclasses in python",
+  "type": "image",
+  "file": "1!HdWQ5O4fQ5NyPZhJXpbKAQ.png"
+}, {
+  "tag": "P",
+  "text": "Many of you with some experience in writing object oriented code in pythonmight have come across the concept of metaclass If you do not know what it is, then this article is for you!",
+  "translation": "你们中的许多在pythonmight中可能具有编写面向对象代码的经验的人都遇到了元类的概念。如果您不知道它是什么，那么本文适合您！"
+}, {
+  "tag": "P",
+  "text": "What is a metaclass?",
+  "translation": "什么是元类？"
+}, {
+  "tag": "P",
+  "text": "A metaclass is a class that defines the behavior of the classes and their instances. A metaclass is a class whose instances are classes.",
+  "translation": "元类是定义类及其实例的行为的类。 元类是其实例为类的类。"
+}, {
+  "tag": "P",
+  "text": "So, what is so fancy about a metaclass?",
+  "translation": "那么，元类到底有什么好看的呢？"
+}, {
+  "tag": "P",
+  "text": "metaclass lets you to dynamically (i.e. run time) customize the creation of classes. A metaclasscan change the behavior of a class at run time.",
+  "translation": "元类可让您动态（即运行时）自定义类的创建。 元类可以在运行时更改类的行为。"
+}, {
+  "tag": "P",
+  "text": "Let’s go back a bit!",
+  "translation": "让我们回去一点！"
+}, {
+  "tag": "P",
+  "text": "I’m sure most of you by this time would agree that everything in Python are first class objects (i.e.) they have some properties and behavior/methods.",
+  "translation": "我敢肯定，到那时大多数人都会同意Python中的所有内容都是一流的对象（即），它们具有一些属性和行为/方法。"
+}, {
+  "tag": "P",
+  "text": "All objects in Python are children of the class called type. type is like a god in Python (i.e) creator of all other objects",
+  "translation": "Python中的所有对象都是称为type的类的子级。 类型就像Python（即其他所有对象的创建者）中的上帝"
+}, {
+  "tag": "PRE",
+  "text": ">>> type_of_10 = type(10)>>> type(type_of_10)type >>> class Example:       pass>>> type(Example)type >>> a = [1,2,3]>>> type_of_a = type(a)>>> type(type_of_a)type",
+  "translation": ">>> type_of_10 = type（10）>>> type（type_of_10）type >>> class例如：pass >>> type（Example）type >>> a = [1,2,3] >>> type_of_a =类型 （a）>>>类型（type_of_a）类型"
+}, {
+  "tag": "P",
+  "text": "Having said that, type is base of all objects in python. So, any built-in or user defined class is an object from class type",
+  "translation": "话虽如此，类型是python中所有对象的基础。 因此，任何内置或用户定义的类都是类类型的对象"
+}, {
+  "tag": "P",
+  "text": "How to create a class dynamically in python?",
+  "translation": "如何在python中动态创建类？"
+}, {
+  "tag": "PRE",
+  "text": "def mymethod(self):    return self.x > 100class_name = \"MyClass\"base_classes = tuple()params= {\"x\": 10, \"check_greater\": mymethod}MyClass = type(\"MyClass\", base_classes, params)obj = MyClass()print(obj.check_greater())",
+  "translation": "def mymethod（self）：返回self.x> 100class_name =“ MyClass” base_classes = tuple（）params = {“ x”：10，“ check_greater”：mymethod} MyClass = type（“ MyClass”，base_classes，params）obj = MyClass（）打印（obj.check_greater（））"
+}, {
+  "tag": "P",
+  "text": "So the funda is, type acts like a function that accepts 3 arguments.",
+  "translation": "因此，类型是，类型就像接受3个参数的函数一样。"
+}, {
+  "tag": "OL",
+  "texts": ["class name (MyClass)", "list of base classes (base_classes) i.e. I dont have any base class. So I pass empty tuple.", "attributes and methods in a dictionary (params)"],
+  "translations": ["类名（MyClass）", "基类列表（base_classes），即我没有任何基类。 所以我通过空元组。", "字典中的属性和方法（参数）"]
+}, {
+  "tag": "P",
+  "text": "By the time now, you must have got into the groove which confirms that type is actually responsible for producing (built-in and user defined) all objects in python.",
+  "translation": "到现在为止，您必须进入凹槽，以确认类型实际上负责生成（内置和用户定义）python中的所有对象。"
+}, {
+  "tag": "P",
+  "text": "So, why use a metaclass when we can create classes on the fly using type?",
+  "translation": "那么，当我们可以使用类型即时创建类时，为什么要使用元类呢？"
+}, {
+  "tag": "P",
+  "text": "A metaclass lets us to customize the creation of our user-defined classes before they are actually created!",
+  "translation": "通过元类，我们可以在实际创建用户定义的类之前自定义它们的创建！"
+}, {
+  "tag": "P",
+  "text": "In other words, it can add or remove attributes, methods or base classes to the actual class.",
+  "translation": "换句话说，它可以向实际类添加或删除属性，方法或基类。"
+}, {
+  "tag": "P",
+  "text": "Sounds weird ? Lets deep dive.",
+  "translation": "听起来怪怪的 ？ 让我们深潜。"
+}, {
+  "tag": "OL",
+  "texts": ["Metaclass is nothing but a class that derives from class type ."],
+  "translations": ["元类不过是从类类型派生的类。"]
+}, {
+  "tag": "PRE",
+  "text": "class MyMetaclass(type):",
+  "translation": "类MyMetaclass（type）："
+}, {
+  "tag": "P",
+  "text": "2. Metaclass may override the methods__new__, __init__ or __call__ on class typeto provide customized behavior.",
+  "translation": "2.元类可以重写类类型上的方法__new __，__ init__或__call__以提供自定义的行为。"
+}, {
+  "tag": "P",
+  "text": "Note:",
+  "translation": "注意："
+}, {
+  "tag": "P",
+  "text": "1. metaclass.__new__ is called by python when class is getting created.",
+  "translation": "1.创建类时，python将metaclass .__ new__调用。"
+}, {
+  "tag": "P",
+  "text": "2. metaclass.__init__ is called when the class is initialized.",
+  "translation": "2.初始化类时会调用metaclass .__ init__。"
+}, {
+  "tag": "P",
+  "text": "3. metaclass.__call__ is called when the class is used as a callable (i.e) when we use the class to instantiate the object.",
+  "translation": "3.当将类用作可调用对象（即，当我们使用该类实例化对象）时，将调用metaclass .__ call__。"
+}, {
+  "tag": "P",
+  "text": "Lets say, I want to create a custom type of string which has method that says whether the given string equals to zero.",
+  "translation": "可以说，我想创建一个自定义类型的字符串，该字符串的方法说明给定的字符串是否等于零。"
+}, {
+  "tag": "PRE",
+  "text": "x = \"adsads\"# Worksx.replace(\"a\", \"x\")  # replace method is available in str type# Will throw errorx.iszero()  # iszero method is not defined in str type",
+  "translation": "x =“ adsads”＃Worksx.replace（“ a”，“ x”）＃替换方法在str类型中可用＃会抛出错误x.iszero（）＃iszero方法未在str类型中定义"
+}, {
+  "tag": "P",
+  "text": "We can use metaclassto achieve this behavior",
+  "translation": "我们可以使用元类来实现这种行为"
+}, {
+  "tag": "PRE",
+  "text": "class StringFactory(type):    def iszero(self):        \"\"\"Check if the given string is equals to one or more zeros\"\"\"        try:            return not sum([int(chr) for chr in self])         except:            return False    def __new__(cls, name, bases, dct):        print(\"My class is not yet created\")        bases += (str,)  # add str class as base to the new class        dct[\"iszero\"] = StringFactory.iszero  # add our custom method to the new class        class_ = type.__new__(cls, name, bases, dct)        print(\"My class is created with custom method at run time\")        return class_",
+  "translation": "class StringFactory（type）：def iszero（self）：“”“检查给定的字符串是否等于一个或多个零”“”“尝试：不返回sum（[self的int（chr）in chr]]）除外：return 错误的def __new __（cls，name，bases，dct）：print（“尚未创建我的类”）bases + =（str，）＃将str类作为基础添加到新类dct [“ iszero”] = StringFactory中。 iszero＃将我们的自定义方法添加到新类class_ = type .__ new __（cls，name，bases，dct）print（“我的类在运行时使用自定义方法创建”）return class_"
+}, {
+  "tag": "P",
+  "text": "Okay. Now we have defined a metaclass. Lets see how we can use it.",
+  "translation": "好的。 现在，我们定义了一个元类。 让我们看看如何使用它。"
+}, {
+  "tag": "PRE",
+  "text": "class MyCustomString(metaclass=StringFactory):    pass",
+  "translation": "类MyCustomString（metaclass = StringFactory）：通过"
+}, {
+  "tag": "P",
+  "text": "By this time, the class MyCustomString is created with 2 customizations.",
+  "translation": "到此时，将使用2种自定义创建类MyCustomString。"
+}, {
+  "tag": "OL",
+  "texts": ["It derives from type str", "It provides a custom method iszero to see if the string is made of zeros."],
+  "translations": ["它源自类型str", "它提供了一个自定义方法iszero来查看字符串是否由零组成。"]
+}, {
+  "tag": "PRE",
+  "text": "test_string = MyCustomString(\"abcd\")print(test_string.iszero())  # Outputs Falsetest_string = MyCustomString(\"0000\")print(test_string.iszero())  # Outputs True",
+  "translation": "test_string = MyCustomString（“ abcd”）print（test_string.iszero（））＃输出Falsetest_string = MyCustomString（“ 0000”）print（test_string.iszero（））＃输出True"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Bakthavatchalam Gopalswamy的文章《Introduction to metaclasses in Python》，参考：https://medium.com/analytics-vidhya/metaprogramming-in-python-for-beginners-546adbc76f98)",
+  "translation": "（本文翻译自Bakthavatchalam Gopalswamy的文章《 Python元类简介》，参考：https：//medium.com/analytics-vidhya/metaprogramming-in-python-for-beginners-546adbc76f98）"
+}]

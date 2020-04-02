@@ -1,0 +1,267 @@
+[{
+  "tag": "H2",
+  "text": "Opinion",
+  "translation": "意见"
+}, {
+  "tag": "H1",
+  "text": "Why Python is not the programming language of the future",
+  "translation": "为什么Python不是未来的编程语言"
+}, {
+  "tag": "H2",
+  "text": "Even though it will be in high demand for a few more years",
+  "translation": "即使未来几年需求量很大"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*RsAiqSHJHYNJvrfTKebFPA.jpeg?q=20",
+  "caption": "Python has served us well — but will it last? Photo by David Clode on Unsplash",
+  "type": "image",
+  "file": "1!RsAiqSHJHYNJvrfTKebFPA.jpeg"
+}, {
+  "tag": "P",
+  "text": "It took the programming community a couple of decades to appreciate Python. But since the early 2010’s, it has been booming — and eventually surpassing C, C#, Java and JavaScript in popularity.",
+  "translation": "编程社区花了几十年才意识到Python。 但是自2010年初以来，它一直在蓬勃发展-并最终超过了C，C＃，Java和JavaScript。"
+}, {
+  "tag": "P",
+  "text": "But until when will that trend continue? When will Python eventually be replaced by other languages, and why?",
+  "translation": "但是直到这种趋势将持续到何时？ Python最终何时会被其他语言取代，为什么？"
+}, {
+  "tag": "P",
+  "text": "Putting an exact expiry date on Python would be so much speculation, it might as well pass as Science-Fiction. Instead, I will assess the virtues that are boosting Python’s popularity right now, and the weak points that will break it in the future.",
+  "translation": "在Python上指定确切的到期日期将是很多猜测，它可能会像科幻小说一样过去。 相反，我将评估目前正在促进Python普及的优点，以及将来会破坏它的弱点。"
+}, {
+  "tag": "H1",
+  "text": "What makes Python popular right now",
+  "translation": "是什么让Python立即流行"
+}, {
+  "tag": "P",
+  "text": "Python’s success is reflected in the Stack Overflow trends, which measure the count of tags in posts on the platform. Given the size of StackOverflow, this is quite a good indicator for language popularity.",
+  "translation": "Python的成功体现在Stack Overflow趋势上，该趋势衡量了平台上帖子中标签的数量。 考虑到StackOverflow的大小，这是语言受欢迎程度的很好指标。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*itIT95KvtxA1H2bcPcXtlA.png?q=20",
+  "caption": "Snapshot of tags on various programming languages on StackOverflow.",
+  "type": "image",
+  "file": "1!itIT95KvtxA1H2bcPcXtlA.png"
+}, {
+  "tag": "P",
+  "text": "While R has been plateauing over the last few years, and many other languages are on a steady decline, Python’s growth seems unstoppable. Almost 14% of all StackOverflow questions are tagged “python”, and the trend is going up. And there are several reasons for that.",
+  "translation": "尽管R在过去几年一直处于平稳状态，而许多其他语言也在稳步下降，但Python的增长似乎势不可挡。 在所有StackOverflow问题中，几乎有14％被标记为“ python”，并且这种趋势还在上升。 这有几个原因。"
+}, {
+  "tag": "H2",
+  "text": "It’s old",
+  "translation": "老了"
+}, {
+  "tag": "P",
+  "text": "Python has been around since the nineties. That doesn’t only mean that it has had plenty of time to grow. It has also acquired a large and supportive community.",
+  "translation": "自90年代以来，Python就已经存在了。 那不仅意味着它有足够的时间成长。 它还获得了一个庞大的支持社区。"
+}, {
+  "tag": "P",
+  "text": "So if you have any issue while you’re coding in Python, the odds are high that you’ll be able to solve it with a single Google search. Simply because somebody will have already encountered your problem and written something helpful about it.",
+  "translation": "因此，如果您在使用Python进行编码时遇到任何问题，则很有可能通过一次Google搜索就可以解决该问题。 仅仅是因为有人会遇到您的问题，并为此写了一些有用的东西。"
+}, {
+  "tag": "H2",
+  "text": "It’s beginner-friendly",
+  "translation": "初学者友好"
+}, {
+  "tag": "P",
+  "text": "It’s not only the fact that it has been around for decades, giving programmers the time to make brilliant tutorials. More than that, the syntax of Python is very human-readable.",
+  "translation": "它已经存在了数十年，这不仅是事实，它还使程序员有时间制作出色的教程。 不仅如此，Python的语法非常易于理解。"
+}, {
+  "tag": "P",
+  "text": "For a start, there’s no need to specify the data type. You just declare a variable; Python will understand from the context whether it’s an integer, a float value, a boolean or something else. This is a huge edge for beginners. If you’ve ever had to program in C++, you know how frustrating it is your program won’t compile because you swapped a float for an integer.",
+  "translation": "首先，无需指定数据类型。 您只需要声明一个变量即可； Python会从上下文中了解它是整数，浮点值，布尔值还是其他值。 对于初学者来说，这是一个巨大的优势。 如果您曾经使用C ++进行编程，那么您会知道程序将不会令人沮丧，因为您将浮点数替换为整数。"
+}, {
+  "tag": "P",
+  "text": "And if you’ve ever had to read Python and C++ code side-by-side, you’ll know how understandable Python is. Even though C++ was designed with English in mind, it’s a rather bumpy read compared to Python code.",
+  "translation": "而且，如果您曾经不得不并行阅读Python和C ++代码，那么您将了解Python的可理解性。 尽管C ++的设计考虑了英语，但与Python代码相比，它的阅读还是相当坎bump。"
+}, {
+  "tag": "H2",
+  "text": "Learning Python: From Zero to Hero",
+  "translation": "学习Python：从零到英雄"
+}, {
+  "tag": "H3",
+  "text": "A quick and comprehensive guide for your first steps in Python.",
+  "translation": "快速全面的Python入门指南。"
+}, {
+  "tag": "H2",
+  "text": "It’s versatile",
+  "translation": "用途广泛"
+}, {
+  "tag": "P",
+  "text": "Since Python has been around for so long, developers have made a package for every purpose. These days, you can find a package for almost everything.",
+  "translation": "由于Python已经存在了很长时间，因此开发人员已经为各种目的制作了一个程序包。 这些天，您可以找到几乎所有东西的包装。"
+}, {
+  "tag": "P",
+  "text": "Want to crunch numbers, vectors and matrices? NumPy is your guy. Want to do calculations for tech and engineering? Use SciPy. Want to go big in data manipulation and analysis? Give Pandas a go.Want to start out with Artificial Intelligence? Why not use Scikit-Learn.",
+  "translation": "是否想处理数字，向量和矩阵？ NumPy是你的家伙。 是否想对技术和工程进行计算？ 使用SciPy。 是否想在数据处理和分析方面大做文章？ 快去熊猫吧，想从人工智能开始吗？ 为什么不使用Scikit-Learn。"
+}, {
+  "tag": "P",
+  "text": "Whichever computational task you’re trying to manage, chances are that there is a Python package for it out there. This makes Python stay on top of recent developments, can be seen from the surge in Machine Learning over the past few years.",
+  "translation": "无论您要管理哪种计算任务，都有可能会使用Python程序包。 从过去几年机器学习的迅猛发展可以看出，这使得Python处于最新发展的最前沿。"
+}, {
+  "tag": "H1",
+  "text": "Downsides of Python — and whether they’ll be fatal",
+  "translation": "Python的缺点-以及它们是否会致命"
+}, {
+  "tag": "P",
+  "text": "Based on the previous elaborations, you could imagine that Python will stay on top of sh*t for ages to come. But like every technology, Python has its weaknesses. I will go through the most important flaws, one by one, and assess whether these are fatal or not.",
+  "translation": "根据先前的论述，您可以想象Python会在很长一段时间内保持在sh * t之上。 但是像所有技术一样，Python也有其弱点。 我将一一介绍最重要的缺陷，并评估这些缺陷是否致命。"
+}, {
+  "tag": "H2",
+  "text": "Speed",
+  "translation": "速度"
+}, {
+  "tag": "P",
+  "text": "Python is slow. Like, really slow. On average, you’ll need about 2–10 times longer to complete a task with Python than with any other language.",
+  "translation": "Python很慢。 喜欢，真的很慢。 平均而言，使用Python完成任务所需的时间比使用任何其他语言大约要长2–10倍。"
+}, {
+  "tag": "P",
+  "text": "There are various reasons for that. One of them is that it’s dynamically typed — remember that you don’t need to specify data types like in other languages. This means that a lot of memory needs to be used, because the program needs to reserve enough space for each variable that it works in any case. And lots of memory usage translates to lots of computing time.",
+  "translation": "有多种原因。 其中之一是它是动态类型的-请记住，您不需要像其他语言一样指定数据类型。 这意味着需要使用大量内存，因为程序需要为在任何情况下都可以工作的每个变量保留足够的空间。 而且大量的内存使用量转化为大量的计算时间。"
+}, {
+  "tag": "P",
+  "text": "Another reason is that Python can only execute one task at a time. This is a consequence of flexible datatypes — Python needs to make sure each variable has only one datatype, and parallel processes could mess that up.",
+  "translation": "另一个原因是Python一次只能执行一个任务。 这是灵活的数据类型的结果-Python需要确保每个变量只有一个数据类型，并且并行进程可能会将其弄乱。"
+}, {
+  "tag": "P",
+  "text": "In comparison, your average web browser can run a dozen different threads at once. And there are some other theories around, too.",
+  "translation": "相比之下，普通的Web浏览器可以一次运行十二个不同的线程。 周围还有其他一些理论。"
+}, {
+  "tag": "P",
+  "text": "But at the end of the day, none of the speed issues matter. Computers and servers have gotten so cheap that we’re talking about fractions of seconds. And the end user doesn’t really care whether their app loads in 0.001 or 0.01 seconds.",
+  "translation": "但归根结底，所有速度问题都无关紧要。 电脑和服务器的价格如此便宜，以至于我们谈论的只是几分之一秒。 最终用户并不真正在乎他们的应用是在0.001或0.01秒内加载。"
+}, {
+  "tag": "H2",
+  "text": "Why Python is Popular Despite Being (Super) Slow",
+  "translation": "为什么Python（尽管（慢）慢）仍然受欢迎"
+}, {
+  "tag": "H3",
+  "text": "A beautiful explanation of the irrelevance of speed issues in Python by Bobby.",
+  "translation": "Bobby很好地解释了Python中速度问题的重要性。"
+}, {
+  "tag": "H2",
+  "text": "Scope",
+  "translation": "范围"
+}, {
+  "tag": "P",
+  "text": "Originally, Python was dynamically scoped. This basically means that, to evaluate an expression, a compiler first searches the current block and then successively all the calling functions.",
+  "translation": "最初，Python是动态作用域的。 这基本上意味着，为了评估表达式，编译器首先搜索当前块，然后依次搜索所有调用函数。"
+}, {
+  "tag": "P",
+  "text": "The problem with dynamic scoping is that every expression needs to be tested in every possible context — which is tedious. That’s why most modern programming languages use static scoping.",
+  "translation": "动态范围界定的问题在于，每个表达式都需要在每个可能的上下文中进行测试-这很繁琐。 这就是为什么大多数现代编程语言都使用静态作用域。"
+}, {
+  "tag": "P",
+  "text": "Python tried to transition to static scoping, but messed it up. Usually, inner scopes — for example functions within functions — would be able to see and change outer scopes. In Python, inner scopes can only see outer scopes, but not change them. This leads to a lot of confusion.",
+  "translation": "Python试图过渡到静态作用域，但搞砸了。 通常，内部范围（例如函数中的函数）将能够查看和更改外部范围。 在Python中，内部范围只能看到外部范围，而不能更改它们。 这导致很多混乱。"
+}, {
+  "tag": "H2",
+  "text": "Lambdas",
+  "translation": "Lambdas"
+}, {
+  "tag": "P",
+  "text": "Despite all of the flexibility within Python, the usage of Lambdas is rather restrictive. Lambdas can only be expressions in Python, and not be statements.",
+  "translation": "尽管Python具有所有灵活性，但Lambdas的使用还是有一定的局限性。 Lambda只能是Python中的表达式，而不能是语句。"
+}, {
+  "tag": "P",
+  "text": "On the other hand, variable declarations and statements are always statements. This means that Lambdas cannot be used for them.",
+  "translation": "另一方面，变量声明和语句始终是语句。 这意味着Lambda不能用于它们。"
+}, {
+  "tag": "P",
+  "text": "This distinction between expressions and statements is rather arbitrary, and doesn’t occur in other languages.",
+  "translation": "表达式和语句之间的区别相当随意，在其他语言中则没有。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*Dly4IjQNFOMRdEzLRb0mjg.jpeg?q=20",
+  "caption": "Whitespaces make code more readable, but less maintainable. Photo by Irvan Smith on Unsplash",
+  "type": "image",
+  "file": "1!Dly4IjQNFOMRdEzLRb0mjg.jpeg"
+}, {
+  "tag": "H2",
+  "text": "Whitespaces",
+  "translation": "空格"
+}, {
+  "tag": "P",
+  "text": "In Python, you use whitespaces and indentations to indicate different levels of code. This makes it optically appealing and intuitive to understand.",
+  "translation": "在Python中，您使用空格和缩进来指示不同级别的代码。 这使其具有视觉吸引力和直观的理解。"
+}, {
+  "tag": "P",
+  "text": "Other languages, for example C++, rely more on braces and semicolons. While this might not be visually appealing and beginner-friendly, it makes the code a lot more maintainable. For bigger projects, this is a lot more useful.",
+  "translation": "其他语言（例如C ++）更多地依赖花括号和分号。 尽管这可能在视觉上并不吸引人并且对初学者不友好，但它使代码更具可维护性。 对于较大的项目，这会有用得多。"
+}, {
+  "tag": "P",
+  "text": "Newer languages like Haskell solve this problem: They rely on whitespaces, but offer an alternative syntax for those who wish to go without.",
+  "translation": "像Haskell这样的较新的语言解决了这个问题：它们依靠空格，但是为那些希望不用空格的人提供了另一种语法。"
+}, {
+  "tag": "H2",
+  "text": "Mobile Development",
+  "translation": "移动开发"
+}, {
+  "tag": "P",
+  "text": "As we’re witnessing the shift from desktop to smartphone, it’s clear that we need robust languages to build mobile software.",
+  "translation": "目睹了从台式机向智能手机的转变，很明显，我们需要强大的语言来构建移动软件。"
+}, {
+  "tag": "P",
+  "text": "But not many mobile apps are being developed with Python. That doesn’t mean that it can’t be done — there is a Python package called Kivy for this purpose.",
+  "translation": "但是用Python开发的移动应用程序并不多。 这并不意味着它无法完成-为此，有一个名为Kivy的Python包。"
+}, {
+  "tag": "P",
+  "text": "But Python wasn’t made with mobile in mind. So even though it might produce passable results for basic tasks, your best bet is to use a language that was created for mobile app development. Some widely used programming frameworks for mobile include React Native, Flutter, Iconic, and Cordova.",
+  "translation": "但是Python并不是考虑到移动设备的。 因此，即使对于基本任务可能会产生合格的结果，但最好的选择是使用为移动应用程序开发而创建的语言。 一些广泛使用的移动编程框架包括React Native，Flutter，Iconic和Cordova。"
+}, {
+  "tag": "P",
+  "text": "To be clear, laptops and desktop computers should be around for many years to come. But since mobile has long surpassed desktop traffic, it’s safe to say that learning Python is not enough to become a seasoned all-round developer."
+}, {
+  "tag": "H2",
+  "text": "Runtime Errors",
+  "translation": "运行时错误"
+}, {
+  "tag": "P",
+  "text": "A Python script isn’t compiled first and then executed. Instead, it compiles every time you execute it, so any coding error manifests itself at runtime. This leads to poor performance, time consumption, and the need for a lot of tests. Like, a lot of tests.",
+  "translation": "首先不编译Python脚本，然后执行。 相反，它每次执行时都会编译，因此任何编码错误都会在运行时显示出来。 这会导致性能下降，时间浪费以及需要进行大量测试。 像，很多测试。"
+}, {
+  "tag": "P",
+  "text": "This is great for beginners since testing teaches them a lot. But for seasoned developers, having to debug a complex program in Python makes them go awry. This lack of performance is the biggest factor that sets a timestamp on Python.",
+  "translation": "这对初学者非常有用，因为测试可以教给他们很多。 但是对于经验丰富的开发人员而言，必须使用Python调试复杂的程序会使他们出问题。 性能的不足是在Python上设置时间戳的最大因素。"
+}, {
+  "tag": "H2",
+  "text": "Top 7 Modern programming languages to learn now",
+  "translation": "现在需要学习的7种现代编程语言"
+}, {
+  "tag": "H3",
+  "text": "How Rust, Go, Kotlin, TypeScript, Swift, Dart, Julia can boost your career and improve your software development skills"
+}, {
+  "tag": "H1",
+  "text": "What could replace Python in the future — and when",
+  "translation": "将来什么时候可以取代Python？"
+}, {
+  "tag": "P",
+  "text": "There are a few new competitors on the market of programming languages:",
+  "translation": "编程语言市场上有一些新的竞争者："
+}, {
+  "tag": "UL",
+  "texts": ["Rust offers the same kind of safety that Python has — no variable can accidentally be overwritten. But it solves the performance issue with the concept of ownership and borrowing. It is also the most-loved programming language of the last few years, according to StackOverflow Insights.", "Go is great for beginners like Python. And it is so simple that it’s even easier to maintain the code. Fun point: Go developers are among the highest-paid programmers on the market.", "Julia is a very new language that competes head-on with Python. It fills the gap of large-scale technical computations: Usually, one would have used Python or Matlab, and patched the whole thing up with C++ libraries, which are necessary at a large scale. Now, one can use Julia instead of juggling with two languages."],
+  "translations": ["Rust提供了与Python相同的安全性-不会意外覆盖任何变量。 但是，它通过所有权和借款的概念解决了绩效问题。 根据StackOverflow Insights的说法，它也是近几年最受欢迎的编程语言。", "Go非常适合像Python这样的初学者。 它是如此简单，以至于维护代码甚至更加容易。 有趣的地方：Go开发人员是市场上收入最高的程序员之一。", "Julia是一种非常新的语言，可与Python正面竞争。 它填补了大规模技术计算的空白：通常，人们会使用Python或Matlab，并使用C ++库对整个程序进行修补，而这是大规模所必需的。 现在，人们可以使用Julia而不是两种语言的玩杂耍。"]
+}, {
+  "tag": "P",
+  "text": "While there are other languages on the market, Rust, Go, and Julia are the ones that fix weak patches of Python. All of these languages excel in yet-to-come technologies, most notably in Artificial Intelligence. While their market share is still small, as reflected in the number of StackOverflow tags, the trend for all of them is clear: upwards.",
+  "translation": "尽管市场上还有其他语言，但Rust，Go和Julia是可以修复Python弱补丁的语言。 所有这些语言在尚未出现的技术中都表现出色，最著名的是人工智能。 尽管它们的市场份额仍然很小，如StackOverflow标签的数量所示，但所有这些标签的趋势都很明显：向上。"
+}, {
+  "tag": "FIGURE",
+  "image": "https://miro.medium.com/max/60/1*ectt9Nl3dlnhGXKpHBmLuA.png?q=20",
+  "caption": "Snapshot of tags on various programming languages on StackOverflow.",
+  "type": "image",
+  "file": "1!ectt9Nl3dlnhGXKpHBmLuA.png"
+}, {
+  "tag": "P",
+  "text": "Given the ubiquitous popularity of Python at the moment, it will surely take half a decade, maybe even a whole, for any of these new languages to replace it.",
+  "translation": "考虑到目前Python的无处不在，要用这些新语言中的任何一种来取代它肯定要花上半年的时间，甚至可能是整个时间。"
+}, {
+  "tag": "P",
+  "text": "Which of the languages it will be — Rust, Go, Julia, or a new language of the future — is hard to say at this point. But given the performance issues that are fundamental in the architecture of Python, one will inevitably take its spot.",
+  "translation": "在这一点上很难说它将是哪种语言-Rust，Go，Julia或未来的新语言。 但是考虑到Python体系结构中最基本的性能问题，将不可避免地引起人们的关注。"
+}, {
+  "tag": "PRE",
+  "text": "(本文翻译自Rhea Moutafis的文章《Why Python is not the programming language of the future》，参考：https://towardsdatascience.com/why-python-is-not-the-programming-language-of-the-future-30ddc5339b66)",
+  "translation": "（本文翻译自Rhea Moutafis的文章，《为什么Python不是未来的编程语言》，参考：https：//towardsdatascience.com/why-python-is-not-the-programming-language-of-the-future -30ddc5339b66）"
+}]
